@@ -1,3 +1,3 @@
 ## dannypage.github.io
 
-http://dannypage.github.io/index
+http://dannypage.github.io/
