@@ -173,7 +173,7 @@ function scheduleData(gridWidth, gridHeight, square)
                     {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,3,3,3,3,3,3,3,3,3,3,3], record:"4-1-3", points: 15},
                     {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,3,3,3,3,3,3,3,3,3], record:"3-3-4", points: 13},
                     {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,3,3,3,3,3,3,3,3,3,3], record:"3-4-2", points: 11},
-                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,3,3,3,3,3,3,3,3,3], record:"3-4-2", points: 11},
+                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,3,3,3,3,3,3,3,3,3], record:"3-4-3", points: 11},
                     {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3], record:"2-3-4", points: 10},
                     {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,3,3,3,3,3,3,3,3,3,3,3], record:"3-4-1", points: 10},
                     {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,3,3,3,3,3,3,3,3,3,3], record:"1-4-4", points: 7}
