@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title> Towers of Hanoi </title>
-    <script type="text/javascript" src="js/phaser/phaser.min.js"></script>
-    <script type="text/javascript" src="js/internal/towers-of-hanoi.js"></script>
+    <script type="text/javascript" src="/js/phaser/phaser.min.js"></script>
+    <script type="text/javascript" src="/js/internal/towers-of-hanoi.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-2.1.4.min.js.css"></script>
+    <script type="text/javascript" src="/templates/templates.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
   </head>
   <body>
-    <h1> Towers of Hanoi </h1>
-    <p>Can you move all 3 disks to the right side? You cannot put a bigger disk on top of a smaller one,
-      and you must select the disk on top of the column.</p>
-    <p>Click to select a 'disk', keyboard arrows to move it around, and Spacebar to get the next suggested move.<br>
-      The Demo button will play out the most efficent method. The Arrow will reset the board. Have fun!</p>
-      <a href="/">Back</a>
-    <div id="gameDiv"> </div>
+    <div id="navHeader"></div>
+
+    <h1 class="m0"> Towers of Hanoi </h1>
+      <p>Can you move all 3 disks to the right side? You cannot put a bigger disk on top of a smaller one,
+        and you must select the disk on top of the column.</p>
+      <p>Click to select a 'disk', keyboard arrows to move it around, and Spacebar to get the next suggested move.<br>
+        The Demo button will play out the most efficent method. The Arrow will reset the board. Have fun!</p>
+      <div id="gameDiv"> </div>
+    </section>
   </body>
 </html>

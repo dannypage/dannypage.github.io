@@ -147,15 +147,15 @@ function leagueSchedule(id, width, height, square)
 function scheduleData(gridWidth, gridHeight, square)
 {
     var dataset = [
-                    {name:"Chicago", schedule:[2,1,2,2,1,2,1,0,3,3,3,3,3,3,3,3,3,3,3], record:"4-1-3"},
-                    {name:"Boston",  schedule:[0,2,0,0,2,1,2,1,3,3,3,3,3,3,3,3,3,3,3], record:"3-3-2"},
-                    {name:"Houston", schedule:[2,1,0,0,1,2,1,1,3,3,3,3,3,3,3,3,3,3,3], record:"2-2-4"},
-                    {name:"Kansas City", schedule:[0,0,2,2,2,1,0,0,3,3,3,3,3,3,3,3,3,3,3], record:"3-4-1"},
-                    {name:"Portland", schedule:[2,2,1,1,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3], record:"2-3-3"},
-                    {name:"Seattle", schedule:[2,0,0,2,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3], record:"3-2-2"},
-                    {name:"Sky Blue", schedule:[2,1,0,0,1,0,1,1,0,3,3,3,3,3,3,3,3,3,3], record:"1-4-4"},
-                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,3,3,3,3,3,3,3,3,3,3], record:"4-3-2"},
-                    {name:"WNY Flash", schedule:[0,0,2,0,1,2,2,3,3,3,3,3,3,3,3,3,3,3,3], record:"3-3-1"}
+                    {name:"Seattle",    schedule:[2,0,0,2,1,1,2,2,2,3,3,3,3,3,3,3,3,3,3], record:"5-2-2"},
+                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,3,2,3,3,3,3,3,3,3,3], record:"5-3-2"},
+                    {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,3,3,3,3,3,3,3,3,3,3,3], record:"4-1-3"},
+                    {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,3,3,3,3,3,3,3,3,3], record:"3-3-4"},
+                    {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,3,3,3,3,3,3,3,3,3,3], record:"3-4-2"},
+                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,3,3,3,3,3,3,3,3,3,3], record:"3-4-2"},
+                    {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3], record:"2-3-4"},
+                    {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,3,3,3,3,3,3,3,3,3,3,3], record:"3-4-1"},
+                    {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,3,3,3,3,3,3,3,3,3,3], record:"1-4-4"}
                   ];
 
     var data = new Array();

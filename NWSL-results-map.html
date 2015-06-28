@@ -10,10 +10,15 @@
       <script type="text/javascript" src="js/internal/NWSL-results-map.js"></script>
   </head>
   <body>
-    <div id="chart"></div>
+    <div id="navHeader"></div>
 
-    <script type="text/javascript"> leagueSchedule('#chart', 900, 400, true); </script>
+    <section class="container px0 py1">
+      <div id="chart"></div>
+    </section>
 
-    <a href="/">Back</a>
+    <div id="navFooter"></div>
   </body>
+  <footer>
+    <script type="text/javascript"> leagueSchedule('#chart', 900, 400, true); </script>
+  </footer>
 </html>
