@@ -27,7 +27,7 @@ var mainState = {
         game.load.image('large', './assets/towers-of-hanoi/blueHigh6.png');
         game.load.image('red', './assets/towers-of-hanoi/red6.png');
         game.load.image('reload', './assets/towers-of-hanoi/return.png')
-        game.stage.backgroundColor = '#7FDBFF';
+        game.stage.backgroundColor = '#FFFFFF';
     },
     create: function() {
     // This function is called after the preload function
@@ -49,7 +49,7 @@ var mainState = {
     update: function() {
     // This function is called 60 times per second
         if (small.column == 2 && medium.column == 2 && large.column == 2 && !moving) {
-            var text = game.add.text(game.world.centerX, 200, "Congrats! You win!", { font: "65px Arial", fill: "#ffffff", align: "center" });
+            var text = game.add.text(game.world.centerX, 200, "Congrats! You win!", { font: "65px Arial", fill: "#000000", align: "center" });
             text.anchor.set(0.5);
             moving = true;
             demoing = false;
