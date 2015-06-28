@@ -1,9 +1,9 @@
 var mainState = {
     preload: function() {
     // Load all of the images
-        game.load.image('background', './assets/lineup/spirit.jpg');
-        game.load.image('home', './assets/lineup/Washington_Spirit_logo.png');
-        game.load.image('away', './assets/lineup/boston_breakers.png');
+        game.load.image('background', '../../assets/lineup/spirit.jpg');
+        game.load.image('home', '../../assets/lineup/Washington_Spirit_logo.png');
+        game.load.image('away', '../../assets/lineup/boston_breakers.png');
         game.stage.backgroundColor = '#7FDBFF';
     },
     create: function() {
