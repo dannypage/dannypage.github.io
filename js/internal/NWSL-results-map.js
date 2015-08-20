@@ -30,7 +30,6 @@ function leagueSchedule(id, width, height, square)
 
     var nextStartY = 50;
     for (var obj in teamData) {
-        console.log(teamData[obj][0]);
         grid.append("text")
             .attr("x", 790)
             .attr("y", (nextStartY + ((30 + 2) * obj)))
@@ -151,32 +150,18 @@ function leagueSchedule(id, width, height, square)
 
 }
 
-////////////////////////////////////////////////////////////////////////
-
-/**
-*   randomData()        returns an array: [
-                                            [{id:value, ...}],
-                                            [{id:value, ...}],
-                                            [...],...,
-                                            ];
-                        ~ [
-                            [hour1, hour2, hour3, ...],
-                            [hour1, hour2, hour3, ...]
-                          ]
-
-*/
 function scheduleData(gridWidth, gridHeight, square)
 {
     var dataset = [
-                    {name:"Seattle",    schedule:[2,0,0,2,1,1,2,2,2,1,2,0,2,2,3,3,3,3,3,3], record:"8-3-3", points: 27},
-                    {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,2,2,1,2,1,3,3,3,3,3,3,3], record:"7-1-5", points: 26},
-                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,2,0,2,1,3,3,3,3,3,3,3], record:"6-4-3", points: 21},
-                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,2,2,1,3,3,3,3,3,3,3], record:"5-5-3", points: 18},
-                    {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,0,1,2,3,3,3,3,3,3,3], record:"4-4-5", points: 17},
-                    {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,2,1,0,1,0,3,3,3,3,3,3,3], record:"4-6-3", points: 15},
-                    {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,0,0,2,1,2,3,3,3,3,3,3], record:"3-6-5", points: 14},
-                    {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,2,0,0,0,3,3,3,3,3,3,3], record:"3-6-4", points: 13},
-                    {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,0,0,1,0,0,3,3,3,3,3,3], record:"3-8-3", points: 12}
+                    {name:"Seattle",    schedule:[2,0,0,2,1,1,2,2,2,1,2,0,2,2,2,2,3,3,3,3], record:"10-3-3", points: 33},
+                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,2,0,2,1,2,0,1,2,3,3,3], record:"8-5-4", points: 28},
+                    {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,2,2,1,2,1,1,0,1,0,3,3,3], record:"7-3-7", points: 28},
+                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,2,2,1,0,1,2,2,3,3,3], record:"7-6-4", points: 25},
+                    {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,2,0,0,0,2,2,2,0,3,3,3], record:"6-7-4", points: 22},
+                    {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,0,1,2,2,0,0,0,3,3,3], record:"5-7-5", points: 20},
+                    {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,2,1,0,1,0,0,0,2,1,3,3,3], record:"5-8-4", points: 19},
+                    {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,0,0,2,1,2,0,2,1,3,3,3], record:"4-7-6", points: 18},
+                    {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,0,0,1,0,0,0,0,2,3,3,3], record:"4-10-3", points: 15}
                   ];
 
     var data = new Array();
