@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/external/scoreboardjs.css">
+    <link rel="stylesheet" type="text/css" href="/css/internal/scorebug.css">
+    <title>Scorebug</title>
+    <script type="text/javascript" src="js/mootools/mootools-yui-compressed.js"></script>
+    <script type="text/javascript" src="js/scoreboard/scoreboard.js"></script>
+
+    <script type="text/javascript" src="/templates/templates.js"></script>
+    <script type="text/javascript" src="/templates/ga.js"></script>
+  </head>
+  <body>
+    <div id="navHeader"></div>
+
+    <section class="container">
+      <article class="scoreboard" id="scoreboard">
+        <div class="header">
+          <span class="time" data-scoreboard-bind="time"></span>
+          <span class="column" data-scoreboard-bind="">G</span>
+          <span class="column" data-scoreboard-bind="">Shots</span>
+          <span class="column" data-scoreboard-bind="">P%</span>
+          <span class="column" data-scoreboard-bind="">Subs</span>
+        </div>
+        <div class="team homeTeam">
+          <span class="name" data-scoreboard-bind="homeTeamShort">Null</span>
+          <span class="column goals" data-scoreboard-bind="homeTeamGoals">0</span>
+          <span class="column game" data-scoreboard-bind="homeTeamShots">0</span>
+          <span class="column game" data-scoreboard-bind="homeTeamPoss">0</span>
+          <span class="column game" data-scoreboard-bind="homeTeamSubs">0</span>
+        </div>
+
+        <div class="team awayTeam">
+          <span class="name" data-scoreboard-bind="awayTeamShort">Null</span>
+          <span class="column goals" data-scoreboard-bind="awayTeamGoals">0</span>
+          <span class="column game" data-scoreboard-bind="awayTeamShots">0</span>
+          <span class="column game" data-scoreboard-bind="awayTeamPoss">0</span>
+          <span class="column game" data-scoreboard-bind="awayTeamSubs">0</span>
+        </div>
+      </article>
+
+      <script type="text/tim" id="statusMessage">
+      <div class="statusMessage">
+      <div class="logo"><img src="{{scoreboard.homeTeamLogo}}"></div>
+      <div class="logo"><img src="{{scoreboard.awayTeamLogo}}"></div>
+      <div class="score">
+      <span class="team">{{scoreboard.homeTeamName}}</span>
+      <span class="score">
+      {{scoreboard.homeTeamGoals}} - {{scoreboard.awayTeamGoals}}
+      </span>
+      <span class="team">{{scoreboard.awayTeamName}}</span>
+      </div>
+      <footer class="arena">
+      {{scoreboard.arena}}
+      </footer>
+      </div>
+      </script>
+    </section class="container">
+
+    <div id="navFooter"></div>
+
+  </body>
+  <footer>
+    <script type="text/javascript" src="js/internal/scorebug.js"></script>
+  </footer>
+</html>

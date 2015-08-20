@@ -1,0 +1,153 @@
+.scoreboard {
+	font: normal 14px/40px Arial, sans-serif;
+	height: 40px;
+	width: 380px;
+	background: #e64f61;
+	text-align: center;
+	color: #fff;
+}
+
+	.scoreboard > .teams {
+		float: left;
+		width: 280px;
+	}
+	
+		.scoreboard > .teams > span {
+			float: left;
+			width: 33.333%;
+		}
+	
+	.scoreboard > .time {
+		float: left;
+		width: 100px;
+		background: #323031;
+	}
+	
+.scoreboard-message {
+	font: normal 14px Arial, sans-serif;
+	background: #e64f61;
+	background: rgba(230, 79, 97, 0.9);
+	color: #fff;
+	position: absolute;
+	width: 40%;
+}
+
+	.scoreboard-message > div {
+		padding: 20px;
+	}
+
+	.scoreboard-message > .bookingMessage > .yellow::after,
+	.scoreboard-message > .bookingMessage > .red::after {
+		content: "";
+		background: #e6e14f;
+		height: 100px;
+		width: 62px;
+		border-radius: 3px;
+		right: -40px;
+		top: -56px;
+		position: absolute;
+		-webkit-transform: rotate(11deg);
+		-moz-transform: rotate(11deg);
+		transform: rotate(11deg);
+	}
+	
+	.scoreboard-message > .bookingMessage > .red::after {
+		background: #c83c3c;
+	}
+	
+	.scoreboard-message > .substituteMessage > .players:before,
+	.scoreboard-message > .substituteMessage > .players:after {
+		content: " ";
+		display: table;
+	}
+	
+	.scoreboard-message > .substituteMessage > .players:after {
+		clear: both;
+	}
+	
+		.scoreboard-message > .substituteMessage > .players > .player {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		
+		.scoreboard-message > .substituteMessage > .players > .player::after {
+			content: "\2190";
+			position: absolute;
+			top: 50%;
+			right: -2px;
+			font-size: 20px;
+			line-height: 30px;
+			text-align: center;
+			color: #A0C83C;
+			background: #fff;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			margin-top: -15px;
+		}
+		
+		.scoreboard-message > .substituteMessage > .players > .player.out::after {
+			right: auto;
+			left: -2px;
+			content: "\2192";
+			color: #c83c3c;
+		}
+
+	.scoreboard-message h1 {
+		background: #323031;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin: -20px -20px 20px;
+		font-size: 12px;
+	}
+	
+	.scoreboard-message .player {
+		text-align: center;
+		font-size: 16px;
+		position: relative;
+	}
+
+	.scoreboard-message .score {
+		overflow: hidden;
+		position: relative;
+	}
+	
+		.scoreboard-message .logo {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 100px;
+			width: 100px;
+			margin-left: -50px;
+			margin-top: -50px;
+			text-align: center;
+		}
+		
+		.scoreboard-message > div > .logo + .logo {
+			left: auto;
+			right: 0;
+			margin-left: 0;
+			margin-right: -50px;
+		}
+		
+			.scoreboard-message > div > .logo > img {
+				max-height: 100%;
+				max-width: 100%;
+			}
+	
+		.scoreboard-message > .statusMessage > .score > span {
+			float: left;
+			width: 33.333%;
+			text-align: center;
+		}
+	
+	.scoreboard-message footer {
+		background: #323031;
+		height: 20px;
+		line-height: 20px;
+		margin: 20px -20px -20px;
+		text-align: center;
+		font-size: 12px;
+	}
