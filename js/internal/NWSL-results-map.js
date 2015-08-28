@@ -153,15 +153,15 @@ function leagueSchedule(id, width, height, square)
 function scheduleData(gridWidth, gridHeight, square)
 {
     var dataset = [
-                    {name:"Seattle",    schedule:[2,0,0,2,1,1,2,2,2,1,2,0,2,2,2,2,3,3,3,3], record:"10-3-3", points: 33},
-                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,2,0,2,1,2,0,1,2,3,3,3], record:"8-5-4", points: 28},
-                    {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,2,2,1,2,1,1,0,1,0,3,3,3], record:"7-3-7", points: 28},
-                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,2,2,1,0,1,2,2,3,3,3], record:"7-6-4", points: 25},
-                    {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,2,0,0,0,2,2,2,0,3,3,3], record:"6-7-4", points: 22},
-                    {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,0,1,2,2,0,0,0,3,3,3], record:"5-7-5", points: 20},
-                    {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,2,1,0,1,0,0,0,2,1,3,3,3], record:"5-8-4", points: 19},
-                    {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,0,0,2,1,2,0,2,1,3,3,3], record:"4-7-6", points: 18},
-                    {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,0,0,1,0,0,0,0,2,3,3,3], record:"4-10-3", points: 15}
+                    {name:"Seattle",    schedule:[2,0,0,2,1,1,2,2,2,1,2,0,2,2,2,2,2,2,3,3], record:"12-3-3", points: 39},
+                    {name:"Washington", schedule:[0,2,2,0,1,2,0,2,1,2,0,2,1,2,0,1,2,1,3,3], record:"8-5-5", points: 29},
+                    {name:"Chicago",    schedule:[2,1,2,2,1,2,1,0,2,2,1,2,1,1,0,1,0,1,3,3], record:"7-3-8", points: 29},
+                    {name:"Kansas City",schedule:[0,0,2,2,2,1,0,0,1,0,2,2,1,0,1,2,2,2,1,3], record:"7-6-4", points: 29},
+                    {name:"Portland",   schedule:[2,2,1,1,0,0,0,1,1,2,0,0,0,2,2,2,0,0,3,3], record:"6-8-4", points: 22},
+                    {name:"Sky Blue",   schedule:[2,1,0,0,1,0,1,1,0,0,0,2,1,2,0,2,1,2,3,3], record:"5-7-6", points: 21},
+                    {name:"Houston",    schedule:[2,1,0,0,1,2,1,1,2,0,0,1,2,2,0,0,0,0,3,3], record:"5-8-5", points: 20},
+                    {name:"WNY Flash",  schedule:[0,0,2,0,1,2,2,0,2,1,0,1,0,0,0,2,1,1,3,3], record:"5-8-5", points: 20},
+                    {name:"Boston",     schedule:[0,2,0,0,2,1,2,1,0,0,0,1,0,0,0,0,2,0,0,3], record:"4-12-3", points: 15}
                   ];
 
     var data = new Array();
