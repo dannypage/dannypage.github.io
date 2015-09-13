@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Expected Goal Simulator</title>
+    <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+    <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js.css"></script>
+    <script type="text/javascript" src="/templates/templates.js"></script>
+    <script type="text/javascript" src="/templates/ga.js"></script>
+    <script type="text/javascript" src="/js/internal/xg.js"></script>
+  </head>
+  <body>
+    <div id="navHeader"></div>
+
+    <section class="container mb1">
+      <h1>Expected Goal Simulator</h1>
+      <form>
+        <label for="teamAShots">Team A Shots</label>
+        <input value="0.05,0.05,0.05,0.05,0.20,0.20" id="teamAShots" type="text" class="block mb1 field">
+        <label for="teamBShots">Team B Shots</label>
+        <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block mb1 field">
+        <a type="button" class="button" onclick="simulateExpectedGoals()">Calculate</a>
+      </form>
+
+      <div>
+        <h2>Results</h2>
+        <p>Team A: <span id="teamAWins"></span></p>
+        <p>Draws: <span id="draws"></span></p>
+        <p>Team B: <span id="teamBWins"></span></p>
+        <p>Team A PPG: <span id="teamAPPG"></span></p>
+        <p>Team B PPG: <span id="teamBPPG"></span></p>
+      </div>
+    </section>
+
+    <div id="navFooter"></div>
+  </body>
+</html>
