@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <title>Expected Goal Simulator</title>
   <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
-  <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js.css"></script>
+  <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery.hottie.js"></script>
   <script type="text/javascript" src="/templates/templates.js"></script>
   <script type="text/javascript" src="/templates/ga.js"></script>
-  <script type="text/javascript" src="/js/chartjs/chart.min.js"></script>
-  <script type="text/javascript" src="/js/chartjs/chart.scatter.min.js"></script>
+  <script type="text/javascript" src="/js/canvasjs/jquery.canvasjs.min.js"></script>
 </head>
 <body>
   <div id="navHeader"></div>
@@ -16,45 +16,75 @@
   <section class="container px1 py1">
     <div class="clearfix">
       <h1>Expected Goal Simulator</h1>
-      <div class="sm-col sm-col-6 px1">        
+      <div class="sm-col sm-col-6 px1">
         <form id="calculate">
           <label for="teamAShots">Team A Shots</label>
-          <input value="0.05,0.05,0.05,0.05,0.20,0.20" id="teamAShots" type="text" class="block mb1 field">
+          <input value="0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2" id="teamAShots" type="text" class="block mb1 field">
           <label for="teamBShots">Team B Shots</label>
           <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block mb1 field">
           <a type="button" class="button" onclick="simulateExpectedGoals()">Calculate</a>
         </form>
       </div>
       <div class="sm-col sm-col-6 px1">
-        <canvas id="shotsChart" width="400" height="200"></canvas>
+        <h2>Results</h2>
+        <strong>
+          <span>Team A: <span id="teamAAVG"></span> +/- <span id="teamASD"></span></span>
+          <br>
+          <span>Team B: <span id="teamBAVG"></span> +/- <span id="teamBSD"></span></span>
+        </strong>
       </div>
     </div>
     <div class="clearfix">
-      <h2>Results</h2>
-      <div class="sm-col sm-col-12 px1">
-        <p>
-          <span>Team A: <span id="teamAWins"></span></span> /
-          <span>Draws: <span id="draws"></span></span> /
-          <span>Team B: <span id="teamBWins"></span></span> /
-          <span>Team A PPG: <span id="teamAPPG"></span></span> /
-          <span>Team B PPG: <span id="teamBPPG"></span></span> /
-          <span>Team A SD: <span id="teamASD"></span></span> /
-          <span>Team B SD: <span id="teamBSD"></span></span> /
-          <span>Team A Avg: <span id="teamAAVG"></span></span> /
-          <span>Team B Avg: <span id="teamBAVG"></span></span>
-        </p>
+      <div class="sm-col sm-col-6 px1">
+        <div id="winsChart" style="height: 300px; width: 100%;"></div>
       </div>
-    </div>
-    <div class="clearfix">
-      <div class="sm-col sm-col-4 px1">
-        <canvas id="winsChart" width="400" height="200"></canvas>
+      <div class="sm-col sm-col-6 px1">
+        <div id="ppgChart" style="height: 300px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-4 px1">
-        <canvas id="PPGChart" width="400" height="200"></canvas>
+      <div class="sm-col sm-col-6 px1">
+        <div id="diffChart" style="height: 300px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-4 px1">
-        <canvas id="goalsChart" width="400" height="200"></canvas>
+      <div class="sm-col sm-col-6 px1">
+        <div id="goalsChart" style="height: 300px; width: 100%;"></div>
       </div>
+      <!---
+      <div class="sm-col sm-col-6">
+        <table id="scorelineTable" class="table-light">
+          <thead>
+            <tr>
+              <th>Scoreline</th>
+              <th>0</th><th>1</th><th>2</th><th>3</th><th>4</th>
+            </tr>
+          <tbody>
+            <tr><th>0</th>
+              <td>1000</td><td>400</td><td>400</td><td>400</td><td>400</td>
+            </tr>
+            <tr><th>1</th>
+              <td>400</td><td>400</td><td>400</td><td>400</td><td>400</td>
+            </tr>
+            <tr><th>2</th>
+              <td>400</td><td>400</td><td>400</td><td>400</td><td>400</td>
+            </tr>
+            <tr><th>3</th>
+              <td>400</td><td>400</td><td>400</td><td>400</td><td>400</td>
+            </tr>
+            <tr><th>4</th>
+              <td>400</td><td>400</td><td>400</td><td>400</td><td>10</td>
+            </tr>
+          </tbody>
+        </table>
+        <script type="text/javascript">
+        $("#scorelineTable td").hottie({
+            colorArray : [
+                "#e5f5e0",
+                "#a1d99b",
+                "#31a354"
+            ]
+          });
+        </script>
+
+      </div>
+      --->
     </div>
 
     <script type="text/javascript" src="/js/internal/xg.js"></script>

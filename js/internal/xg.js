@@ -1,90 +1,7 @@
-var options = {responsive: true,
-  maintainAspectRatio: false,
-};
-var PPGData = {
-  labels: ["Team A PPG", "Team B PPG"],
-  datasets: [
-    {
-      label: "PPG",
-      fillColor: "rgba(220,220,220,0.8)",
-      strokeColor: "rgba(220,220,220,0.8)",
-      highlightFill: "rgba(220,220,220,0.75)",
-      highlightStroke: "rgba(220,220,220,1)",
-      data: [0,0]
-    }
-  ]
-};
-var WinsData = {
-  labels: ["Team A Wins", "Draws", "Team B Wins"],
-  datasets: [
-    {
-      label: "PPG",
-      fillColor: "rgba(220,220,220,0.8)",
-      strokeColor: "rgba(220,220,220,0.8)",
-      highlightFill: "rgba(220,220,220,0.75)",
-      highlightStroke: "rgba(220,220,220,1)",
-      data: [0,0,0]
-    }
-  ]
-};
-var goalsData = {
-  labels: [],
-  datasets: [
-    {
-      label: "Team A Goals",
-      fillColor: "rgba(220,220,220,0.8)",
-      strokeColor: "rgba(220,220,220,0.8)",
-      highlightFill: "rgba(220,220,220,0.75)",
-      highlightStroke: "rgba(220,220,220,1)",
-      data: []
-    },
-    {
-      label: "Team B Goals",
-      fillColor: "rgba(220,220,220,0.8)",
-      strokeColor: "rgba(220,220,220,0.8)",
-      highlightFill: "rgba(220,220,220,0.75)",
-      highlightStroke: "rgba(220,220,220,1)",
-      data: []
-    }
-  ]
-};
-var shotsData = {
-  labels: [],
-  datasets: [
-    {
-      label: 'Team A',
-      strokeColor: '#F16220',
-      pointColor: '#F16220',
-      pointStrokeColor: '#fff',
-      data: [
-        { x: 0.4, y: 1 , r: 3},
-        { x: 0.5, y: 1 , r: 1},
-        { x: 0.05, y: 1, r: 8}
-      ]
-    },
-    {
-      label: 'Team B',
-      strokeColor: '#007ACC',
-      pointColor: '#007ACC',
-      pointStrokeColor: '#fff',
-      data: [
-        { x: 0.4, y: 2 , r: 3},
-        { x: 0.5, y: 2 , r: 1},
-        { x: 0.05, y: 2, r: 8}
-      ]
-    }
-  ]
-};
-
-var winsctx = document.getElementById("winsChart").getContext("2d");
-var winsChart = new Chart(winsctx).Bar(WinsData, options);
-var ppgctx = document.getElementById("PPGChart").getContext("2d");
-var PPGChart = new Chart(ppgctx).Bar(PPGData, options);
-var goalsctx = document.getElementById("goalsChart").getContext("2d");
-var goalsChart = new Chart(goalsctx).Bar(goalsData, options);
-var shotsctx = document.getElementById("shotsChart").getContext("2d");
-var shotsChart = new Chart(shotsctx).Scatter(shotsData, options);
-
+var results, winsChart, goalsADataPoints, goalsBDataPoints, diffDataPoints, n;
+var red = "#d7191c"
+var blue = "#2c7bb6"
+var draw = "#cfcf6f"
 function simulateExpectedGoals() {
   var teamAShots = document.getElementById('teamAShots');
   var teamBShots = document.getElementById('teamBShots');
@@ -92,12 +9,8 @@ function simulateExpectedGoals() {
   var teamBArray = stringToArray(teamBShots.value);
   var sims = 10000;
 
-  var results = simulateGames(sims, teamAArray, teamBArray)
-  document.getElementById('teamAWins').innerHTML = results.A;
-  document.getElementById('teamBWins').innerHTML = results.B;
-  document.getElementById('draws').innerHTML = results.T;
-  document.getElementById('teamAPPG').innerHTML = (results.T + results.A*3)/sims;
-  document.getElementById('teamBPPG').innerHTML = (results.T + results.B*3)/sims;
+  results = simulateGames(sims, teamAArray, teamBArray)
+
   teamASD = standardDeviation(results.AScores);
   document.getElementById('teamASD').innerHTML = Math.round(teamASD * 100) / 100
   teamBSD = standardDeviation(results.BScores);
@@ -106,48 +19,167 @@ function simulateExpectedGoals() {
   document.getElementById('teamAAVG').innerHTML = Math.round(teamAAVG * 100) / 100
   teamBAVG = average(results.BScores);
   document.getElementById('teamBAVG').innerHTML = Math.round(teamBAVG * 100) / 100
+  teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100
+  teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100
 
+  var ppgChart = new CanvasJS.Chart("ppgChart", {
+		title:{
+			text: "Points Per Game"
+		},
+    animationEnabled: true,
+		data: [
+		{
+			type: "doughnut",
+			startAngle: 90,
+			toolTipContent: "{legendText}: <strong>{y}</strong>",
+			showInLegend: false,
+			dataPoints: [
+				{y: teamAPPG, indexLabel: "{y} ppg", legendText: "Team A", color: red },
+				{y: teamBPPG, indexLabel: "{y} ppg", legendText: "Team B", color: blue }
+      ]
+		}
+		]
+	});
+	ppgChart.render();
+  winsChart = new CanvasJS.Chart("winsChart",{
+    title:{
+      text: "Results (10000 Sims)"
+    },
+    animationEnabled: true,
+    data: [
+      {
+        type: "column",
+        toolTipContent: "{label}: <strong>{y}</strong>",
+  			showInLegend: false,
+        dataPoints: [
+          {y: results.A, label: "Team A Wins", color: red},
+          {y: results.T, label: "Draws", color: draw},
+          {y: results.B, label: "Team B Wins", color: blue}
+        ]
+      }
+    ]
+  });
+  winsChart.render();
 
-  winsChart.datasets[0].bars[0].value = results.A;
-  winsChart.datasets[0].bars[1].value = results.T;
-  winsChart.datasets[0].bars[2].value = results.B;
-  winsChart.update();
-
-  PPGChart.datasets[0].bars[0].value = (results.T + results.A*3)/sims;
-  PPGChart.datasets[0].bars[1].value = (results.T + results.B*3)/sims;
-  PPGChart.update();
-
-  while (goalsChart.datasets[0].bars.length > 0) {
-    goalsChart.removeData();
+  goalsADataPoints = [];
+  goalsBDataPoints = [];
+  for (var i = 0; i < results.AGoals.length; i++){
+    if (results.AGoals[i] > 0) {
+      goalsADataPoints.push({y: results.AGoals[i], label: i});
+    } else {
+      goalsADataPoints.push({y: 0, label: i });
     }
-  for (var i = 0; i <= Math.max(results.AGoals.length, results.BGoals.length); i++){
-    if(typeof results.AGoals[i] === 'undefined') {
-      var AGoals = 0 }
-    else { var AGoals = results.AGoals[i] }
-    if(typeof results.BGoals[i] === 'undefined') {
-      var BGoals = 0 }
-    else { var BGoals = results.BGoals[i] }
-     goalsChart.addData([AGoals, BGoals], i+" Goals")
   }
-  goalsChart.update();
+  for (var i = 0; i < results.BGoals.length; i++){
+    if (results.AGoals[i] > 0) {
+      goalsBDataPoints.push({y: results.BGoals[i], label: i });
+    } else {
+      goalsBDataPoints.push({y: 0, label: i });
+    }
+  }
+  goalsChart = new CanvasJS.Chart("goalsChart",{
+    title:{
+      text: "Games With # of Goals"
+    },
+    toolTip: {
+      shared: true
+    },
+    legend:{
+      cursor:"pointer",
+      itemclick: function(e){
+        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+        	e.dataSeries.visible = false;
+        }
+        else {
+          e.dataSeries.visible = true;
+        }
+      	goalsChart.render();
+      }
+    },
+    animationEnabled: true,
+    data: [
+      {
+        type: "column",
+        name: "Team A",
+        legendText: "Team A",
+  			showInLegend: true,
+        color: red,
+        dataPoints: goalsADataPoints
+      },
+      {
+        type: "column",
+        name: "Team B",
+        legendText: "Team B",
+  			showInLegend: true,
+        color: blue,
+        dataPoints: goalsBDataPoints
+      }
+    ]
+  });
+  goalsChart.render();
+
+  diffDataPoints = [];
+  n = [];
+  for (var i in results.diffGoals) { n.push(Number(i) ); }
+  var diffMax = Math.max(...n);
+  var diffMin = Math.min(...n);
+  console.log(diffMin);
+  console.log(diffMax);
+  for (var key = diffMin; key < diffMax; key++) {
+    if (key == 0) {
+      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: draw})
+    } else if (key < 0) {
+      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: red})
+    } else if (key > 0) {
+      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: blue})
+    }
+  }
+  diffChart = new CanvasJS.Chart("diffChart",{
+    title:{
+      text: "Goal Difference"
+    },
+    animationEnabled: true,
+    data: [
+      {
+        type: "column",
+        toolTipContent: "{label}: <strong>{y}</strong>",
+  			showInLegend: false,
+        dataPoints: diffDataPoints
+      }
+    ]
+  });
+  diffChart.render();
 }
+
 function simulateGames(sims, teamAArray, teamBArray) {
-  var results = {"A":0, "T":0, "B":0,
-                 "AScores":[], "BScores":[],
-                 "AGoals":[], "BGoals":[]
-                };
+  var results = {
+    "A":0, "T":0, "B":0,
+    "AScores":[], "BScores":[],
+    "AGoals":[], "BGoals":[],
+    "diffGoals":{}, "scorelines":[]
+  };
   var scoreA, scoreB;
   for (var i = 0; i < sims; i++) {
     scoreA = simulateShots(teamAArray);
     scoreB = simulateShots(teamBArray);
-    results.AScores.push(scoreA)
-    results.BScores.push(scoreB)
+    results.AScores.push(scoreA);
+    results.BScores.push(scoreB);
     if(typeof results.AGoals[scoreA] === 'undefined') {
-      results.AGoals[scoreA] = 1 }
-    else { results.AGoals[scoreA]++ }
+      results.AGoals[scoreA] = 1;
+    } else {
+      results.AGoals[scoreA]++;
+    }
     if(typeof results.BGoals[scoreB] === 'undefined') {
-      results.BGoals[scoreB] = 1 }
-    else { results.BGoals[scoreB]++ }
+      results.BGoals[scoreB] = 1;
+    } else {
+      results.BGoals[scoreB]++;
+    }
+    scoreline = scoreA + "-" + scoreB;
+    if(typeof results.scorelines[scoreline] === 'undefined') {
+      results.scorelines[scoreline] = {"A": scoreA, "B": scoreB, "C": 1};
+    } else {
+      results.scorelines[scoreline].C++;
+    }
 
     if (scoreA > scoreB) {
       results.A++;
@@ -156,9 +188,18 @@ function simulateGames(sims, teamAArray, teamBArray) {
     } else {
       results.T++;
     }
+
+    var diff = scoreB - scoreA;
+    if(typeof results.diffGoals[diff] === 'undefined') {
+      results.diffGoals[diff] = 1;
+    } else {
+      results.diffGoals[diff]++;
+    }
+
   }
   return results;
 }
+
 function stringToArray(string) {
   trimmed = string.replace(" ","");
   array = trimmed.split(",").map(Number);
