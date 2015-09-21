@@ -19,7 +19,7 @@
             $(function(){
                 var derivers = $.pivotUtilities.derivers;
 
-                $.get("./assets/data/events.csv", function(events) {
+                $.get("./assets/data/mls_xg_2011-2014oct.csv", function(events) {
                     $("#output").pivotUI($.csv.toArrays(events), {
                         // derivedAttributes: {
                         //     "Age Bin": derivers.bin("Age", 10),
