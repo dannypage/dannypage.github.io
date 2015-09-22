@@ -131,7 +131,7 @@ function simulateExpectedGoals() {
   for (var i in results.diffGoals) { n.push(Number(i) ); }
   var diffMax = Math.max.apply(Math, n);
   var diffMin = Math.min.apply(Math, n);
-  for (var key = diffMin; key < diffMax; key++) {
+  for (var key = diffMin; key <= diffMax; key++) {
     if (key == 0) {
       diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: draw})
     } else if (key < 0) {
