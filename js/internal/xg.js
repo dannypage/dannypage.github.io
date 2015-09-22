@@ -21,6 +21,14 @@ function simulateExpectedGoals() {
   document.getElementById('teamBAVG').innerHTML = Math.round(teamBAVG * 100) / 100
   teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100
   teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100
+  teamAWin = Math.round(100*(results.A/sims))
+  document.getElementById('teamAWin').innerHTML = teamAWin;
+  teamBWin = Math.round(100*(results.B/sims))
+  document.getElementById('teamBWin').innerHTML = teamBWin;
+  document.getElementById('teamBAVG').innerHTML = Math.round(teamBAVG * 100) / 100
+  document.getElementById('teamAShotCount').innerHTML = teamAArray.length
+  document.getElementById('teamBShotCount').innerHTML = teamBArray.length
+
 
   var ppgChart = new CanvasJS.Chart("ppgChart", {
 		title:{

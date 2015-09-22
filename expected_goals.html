@@ -14,38 +14,56 @@
   <div id="navHeader"></div>
 
   <section class="container px1 py1">
+    <h1>Expected Goal Simulator</h1>
     <div class="clearfix">
-      <h1>Expected Goal Simulator</h1>
       <div class="sm-col sm-col-6 px1">
+        <h3>Team Shots by Probability</h3>
         <form id="calculate">
           <label for="teamAShots">Team A Shots</label>
-          <input value="0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2" id="teamAShots" type="text" class="block mb1 field">
+          <input value="0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2" id="teamAShots" type="text" class="block col-12 mb1 field">
           <label for="teamBShots">Team B Shots</label>
-          <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block mb1 field">
+          <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block col-12 mb1 field">
           <a type="button" class="button" onclick="simulateExpectedGoals()">Calculate</a>
         </form>
       </div>
       <div class="sm-col sm-col-6 px1">
-        <h2>Results</h2>
-        <strong>
-          <span>Team A: <span id="teamAAVG"></span> +/- <span id="teamASD"></span></span>
-          <br>
-          <span>Team B: <span id="teamBAVG"></span> +/- <span id="teamBSD"></span></span>
-        </strong>
+        <h3>Summary Results</h3>
+        <table class="table-light overflow-hidden bg-white border rounded">
+          <thead><tr>
+              <th></th><th>Goals</th><th>Std Dev</th><th>Shots</th><th>Win %</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <th>Team A:</th>
+              <td><span id="teamAAVG"></span></td>
+              <td>+/- <span id="teamASD"></span></td>
+              <td><span id="teamAShotCount"></span></td>
+              <td><span id="teamAWin"></span>%</td>
+            </tr>
+            <tr>
+              <th style="border-bottom: 0;">Team B:</th>
+              <td><span id="teamBAVG"></span></td>
+              <td>+/- <span id="teamBSD"></span></td>
+              <td><span id="teamBShotCount"></span></td>
+              <td><span id="teamBWin"></span>%</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="clearfix">
-      <div class="sm-col sm-col-6 px1">
-        <div id="winsChart" style="height: 300px; width: 100%;"></div>
+      <h3>Graphs</h3>
+      <div class="sm-col sm-col-6 px1 py1">
+        <div id="winsChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1">
-        <div id="ppgChart" style="height: 300px; width: 100%;"></div>
+      <div class="sm-col sm-col-6 px1 py1">
+        <div id="ppgChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1">
-        <div id="diffChart" style="height: 300px; width: 100%;"></div>
+      <div class="sm-col sm-col-6 px1 py1">
+        <div id="diffChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1">
-        <div id="goalsChart" style="height: 300px; width: 100%;"></div>
+      <div class="sm-col sm-col-6 px1 py1">
+        <div id="goalsChart" style="height: 350px; width: 100%;"></div>
       </div>
       <!---
       <div class="sm-col sm-col-6">
