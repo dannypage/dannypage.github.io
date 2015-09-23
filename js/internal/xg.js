@@ -283,6 +283,6 @@ function getShareURL() {
   var pathname = document.location['pathname'];
   var teamAShots = document.getElementById('teamAShots').value;
   var teamBShots = document.getElementById('teamBShots').value;
-  var search = "?teamAShots=" + teamAShots + "&teamBShots" + teamBShots;
+  var search = "?teamAShots=" + teamAShots + "&teamBShots=" + teamBShots;
   return origin + pathname + search;
 }
