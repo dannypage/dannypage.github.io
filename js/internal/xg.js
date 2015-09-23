@@ -79,7 +79,7 @@ function simulateExpectedGoals() {
     }
   }
   for (var i = 0; i < results.BGoals.length; i++){
-    if (results.AGoals[i] > 0) {
+    if (results.BGoals[i] > 0) {
       goalsBDataPoints.push({y: results.BGoals[i], label: i });
     } else {
       goalsBDataPoints.push({y: 0, label: i });
