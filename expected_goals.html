@@ -20,9 +20,9 @@
         <h3>Team Shots by Probability</h3>
         <form id="calculate">
           <label for="teamAShots">Team A Shots</label>
-          <input value="0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2" id="teamAShots" type="text" class="block col-12 mb1 field">
+          <input id="teamAShots" type="text" class="block col-12 mb1 field">
           <label for="teamBShots">Team B Shots</label>
-          <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block col-12 mb1 field">
+          <input id="teamBShots" type="text" class="block col-12 mb1 field">
           <a type="button" class="button" onclick="simulateExpectedGoals()">Calculate</a>
         </form>
       </div>
@@ -49,6 +49,8 @@
             </tr>
           </tbody>
         </table>
+        <h3>Link to these Results:</h3>
+        <a id="shareURLlink" href="" ><span id="shareURLtext"></span></a>
       </div>
     </div>
     <div class="clearfix">

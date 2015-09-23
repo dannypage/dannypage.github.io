@@ -2,6 +2,23 @@ var results, winsChart, goalsADataPoints, goalsBDataPoints, diffDataPoints, n;
 var red = "#d7191c"
 var blue = "#2c7bb6"
 var draw = "#cfcf6f"
+
+defaults = {
+  'teamAShots': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
+  'teamBShots': "0.4,0.4,0.4"
+}
+
+for (value in defaults) { getURLValue(value, defaults[value]) }
+
+function getURLValue(elementID, defaultValue) {
+  var urlValue = getQueryVariable(elementID);
+  if (urlValue.length > 0 ) {
+    document.getElementById(elementID).value = urlValue;
+  } else {
+    document.getElementById(elementID).value = defaultValue;
+  }
+}
+
 function simulateExpectedGoals() {
   var teamAShots = document.getElementById('teamAShots');
   var teamBShots = document.getElementById('teamBShots');
@@ -155,6 +172,10 @@ function simulateExpectedGoals() {
     ]
   });
   diffChart.render();
+
+  var shareURL = getShareURL();
+  document.getElementById("shareURLtext").innerHTML = shareURL;
+  document.getElementById("shareURLlink").href = shareURL;
 }
 
 function simulateGames(sims, teamAArray, teamBArray) {
@@ -243,4 +264,25 @@ function average(data){
 
   var avg = sum / data.length;
   return avg;
+}
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    return '';
+}
+
+function getShareURL() {
+  var origin = document.location['origin'];
+  var pathname = document.location['pathname'];
+  var teamAShots = document.getElementById('teamAShots').value;
+  var teamBShots = document.getElementById('teamBShots').value;
+  var search = "?teamAShots=" + teamAShots + "?teamBShots" + teamBShots;
+  return origin + pathname + search;
 }
