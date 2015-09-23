@@ -174,7 +174,7 @@ function simulateExpectedGoals() {
   diffChart.render();
 
   var shareURL = getShareURL();
-  document.getElementById("shareURLtext").innerHTML = shareURL;
+  var shareText = "Expected Goals Calcuator for Team A and Team B.";
   document.getElementById("shareURLlink").href = shareURL;
 }
 
