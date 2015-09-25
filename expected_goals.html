@@ -9,6 +9,12 @@
   <script type="text/javascript" src="/templates/templates.js"></script>
   <script type="text/javascript" src="/templates/ga.js"></script>
   <script type="text/javascript" src="/js/canvasjs/jquery.canvasjs.min.js"></script>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dannypage" />
+  <meta name="twitter:title" content="Expected Goals Calcuator" />
+  <meta name="twitter:description" content="How (im)probable was your teams's result? Check it out here." />
+  <meta name="twitter:image" content="http://dannypage.github.io/assets/images/exptected_goals_preview.png" />
 </head>
 <body>
   <div id="navHeader"></div>
@@ -20,9 +26,9 @@
         <h3>Team Shots by Probability</h3>
         <form id="calculate">
           <label for="teamAShots">Team A Shots</label>
-          <input value="0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2" id="teamAShots" type="text" class="block col-12 mb1 field">
+          <input id="teamAShots" type="text" class="block col-12 mb1 field">
           <label for="teamBShots">Team B Shots</label>
-          <input value="0.4,0.4,0.4" id="teamBShots" type="text" class="block col-12 mb1 field">
+          <input id="teamBShots" type="text" class="block col-12 mb1 field">
           <a type="button" class="button" onclick="simulateExpectedGoals()">Calculate</a>
         </form>
       </div>
@@ -49,6 +55,8 @@
             </tr>
           </tbody>
         </table>
+        <h3>Share these results!</h3>
+        <a id="shareURLlink" href="" >Right Click -> Copy Link Address</a>
       </div>
     </div>
     <div class="clearfix">
