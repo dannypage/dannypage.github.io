@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Abel);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Abel', sans-serif;
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      /* Two-column layout */
+      .left-column {
+        color: #FF4136;
+        width: 25%;
+        height: 92%;
+        float: left;
+      }
+      .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #FF4136;
+      }
+      .right-column {
+        width: 65%;
+        float: right;
+        padding-top: 1em;
+      }
+      .right-column-center {
+        width: 65%;
+        text-align: center;
+        float: right;
+        padding-top: 1em;
+      }
+      .title {
+        color: #000;
+        background: #FF4136;
+      }
+      .title h2 {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="js/remark/remark-2015-09.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        sourceUrl: 'assets/markdown/slideshow.md',
+        ratio: '4:3',
+        navigation: {
+          click: true
+        }
+      });
+    </script>
+  </body>
+</html>
