@@ -65,3 +65,59 @@ insert image
 .left-column[
 ## First 20 Days
 ]
+.right-column-center[
+### Inventory of Data Feeds
+
+### Database Schema
+
+### Lean Website
+]
+
+---
+
+.left-column[
+## First 20 Days
+
+## Inventory of Data Feeds
+]
+.right-column-center[
+### Game Statistics
+
+### Contracts
+
+### Scouting Reports
+
+### Fitness
+
+### Advanced Metrics
+]
+
+---
+
+.left-column[
+## First 20 Days
+
+## Database Schema
+]
+.right-column-center[
+### PostgreSQL
+
+### S3 Backups
+
+### Online and Secure
+]
+
+---
+
+.left-column[
+## First 20 Days
+
+## Lean Website
+]
+.right-column-center[
+### Mobile First
+
+### 
+
+###
+]
