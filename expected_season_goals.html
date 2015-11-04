@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Long Term Expected Goals Simulator</title>
+  <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+  <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery.hottie.js"></script>
+  <script type="text/javascript" src="/templates/templates.js"></script>
+  <script type="text/javascript" src="/templates/ga.js"></script>
+  <script type="text/javascript" src="/js/canvasjs/jquery.canvasjs.min.js"></script>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dannypage" />
+  <meta name="twitter:title" content="Long Term Expected Goals Calcuator" />
+  <meta name="twitter:description" content="How (im)probable was your team or player's results? Check it out here." />
+  <meta name="twitter:image" content="http://dannypage.github.io/assets/images/expected_season_goals_preview.png" />
+</head>
+<body>
+  <div id="navHeader"></div>
+
+  <section class="container px1 py1">
+    <h1>Long Term Expected Goals Simulator</h1>
+    <h2>Simulate your favorite team or player's shots over a period of time.</h2>
+    <div class="clearfix">
+      <div class="sm-col sm-col-12 px1">
+        <h3>Shots by Probability</h3>
+        <form id="calculate">
+          <label for="name">Name:</label>
+          <input id="name" value="John Smith FC" type="text" class="block col-12 mb1 field">
+          <label for="chances">Expected Goal Values:</label>
+          <input id="chances" type="text" class="block col-12 mb1 field">
+          <label for="goals">Actual Goals:</label>
+          <input id="goals" type="text" class="block col-2 mb1 field">
+          <a type="button" class="button" onclick="simulateLongTermExpectedGoals()">Calculate</a>
+        </form>
+      </div>
+      <div class="col sm-col-12 px1">
+        <h3>Summary Results</h3>
+          <table class="table-light overflow-hidden bg-white border rounded">
+            <thead><tr>
+                <th>Goals</th><th>Std Dev</th>
+                <th>Underperform %</th><th>Exact %</th><th>Overperform %</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td><span id="averageGoals"></span></td>
+                <td>+/- <span id="stdDevGoals"></span></td>
+                <td><span id="under"></span> %</td>
+                <td><span id="exact"></span> %</td>
+                <td><span id="over"></span> %</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>What does this mean?</h4>
+          <p><span id='explanation'></span></p>
+          <h3>Share these results!</h3>
+          <a id="shareURLlink" href="" >Right Click -> Copy Link Address</a>
+          <h3>Graphs</h3>
+          <div id="goalsChart" style="height: 350px; width: 100%;"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/internal/xg.js"></script>
+    <script type="text/javascript">
+      //On Load
+      simulateLongTermExpectedGoals();
+      $('#calculate').keyup(function(event) {
+        if(event.keyCode === 13) {
+          simulateLongTermExpectedGoals();
+        }
+      });
+    </script>
+  </section>
+
+  <div id="navFooter"></div>
+</body>
+</html>

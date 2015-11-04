@@ -5,17 +5,22 @@ var draw = "#cfcf6f"
 
 defaults = {
   'teamAShots': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
-  'teamBShots': "0.4,0.4,0.4"
+  'teamBShots': "0.4,0.4,0.4",
+  'name': "John Smith FC",
+  'chances': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
+  'goals': "2"
 }
 
 for (value in defaults) { getURLValue(value, defaults[value]) }
 
 function getURLValue(elementID, defaultValue) {
-  var urlValue = getQueryVariable(elementID);
-  if (urlValue.length > 0 ) {
-    document.getElementById(elementID).value = urlValue;
-  } else {
-    document.getElementById(elementID).value = defaultValue;
+  if ( !!(document.getElementById(elementID)) ) {
+    var urlValue = getQueryVariable(elementID);
+    if (urlValue.length > 0 ) {
+      document.getElementById(elementID).value = urlValue;
+    } else {
+      document.getElementById(elementID).value = defaultValue;
+    }
   }
 }
 
@@ -90,7 +95,7 @@ function simulateExpectedGoals() {
   goalsBDataPoints = [];
   for (var i = 0; i < results.AGoals.length; i++){
     if (results.AGoals[i] > 0) {
-      goalsADataPoints.push({y: results.AGoals[i], label: i});
+      goalsADataPoints.push({y: results.AGoals[i], label: i });
     } else {
       goalsADataPoints.push({y: 0, label: i });
     }
@@ -174,8 +179,93 @@ function simulateExpectedGoals() {
   diffChart.render();
 
   var shareURL = getShareURL();
-  var shareText = "Expected Goals Calcuator for Team A and Team B.";
   document.getElementById("shareURLlink").href = shareURL;
+}
+
+function simulateLongTermExpectedGoals(){
+  var entity = document.getElementById('name').value;
+  var chances = document.getElementById('chances').value;
+  var goals = document.getElementById('goals').value;
+  var chancesArray = stringToArray(chances);
+  var sims = 10000;
+
+  results = simulateSeasons(sims, chancesArray, goals);
+  document.getElementById('averageGoals').innerHTML = Math.round(results.average * 100) / 100;
+  document.getElementById('stdDevGoals').innerHTML = Math.round(results.stdDev * 100) / 100;
+  over = results.bin.over / sims;
+  exact = results.bin.exact / sims;
+  under = results.bin.under / sims;
+  document.getElementById('under').innerHTML = Math.round(under*100);
+  document.getElementById('exact').innerHTML = Math.round(exact*100);
+  document.getElementById('over').innerHTML = Math.round(over*100);
+  distance = Math.round(100*(goals - results.average)/results.stdDev)/100;
+  var explanation = {
+    'reality': entity + " scored " + goals + " goals. ",
+    'expectation': "Simulations indicate that you would expect them to score around " + Math.round(results.average) + " goals, give or take " + Math.round(results.stdDev) + ". ",
+    'bins': "<br>" + goals + " goals " + " is exactly correct in " + Math.round(exact*100) + "% of the simulations, while it's a sign of underperforming in " + Math.round(under*100) + "% of the sims and a sign of overperforming in " + Math.round(over*100) + "% of the sims.",
+    'test': "<br>" + entity + " was " + distance + " standard deviations from the expected mean."
+  };
+  document.getElementById('explanation').innerHTML = explanation.reality + explanation.expectation + explanation.bins + explanation.test;
+
+  seasonalGoals = [];
+  for (var i = 0; i < results.goals.length; i++){
+    seasonalGoals.push({y: results.goals[i], x: i, label: i + " goals"});
+  }
+  goalsChart = new CanvasJS.Chart("goalsChart",{
+    title:{
+      text: "Sims With # of Goals by " + entity
+    },
+    toolTip: {
+      shared: true
+    },
+    animationEnabled: true,
+    data: [
+      {
+        type: "column",
+        name: entity,
+        legendText: entity,
+        showInLegend: true,
+        color: red,
+        dataPoints: seasonalGoals
+      }
+    ]
+  });
+  goalsChart.render();
+
+  var shareURL = getLTShareURL();
+  document.getElementById("shareURLlink").href = shareURL;
+}
+
+function simulateSeasons(sims, chancesArray, actualGoals) {
+  var results = {
+    "goals":[], "results":[], "stdDev": 0, "average": 0,
+    "bin": {
+      "under":0,
+      "over":0,
+      "exact":0
+    }
+  };
+
+  for (var i = 0; i < sims; i++) {
+    value = simulateShots(chancesArray);
+    results.results.push(value);
+    if(typeof results.goals[value] === 'undefined') {
+      results.goals[value] = 1;
+    } else {
+      results.goals[value]++;
+    }
+    if (actualGoals < value) {
+      results.bin.under++;
+    } else if (actualGoals > value) {
+      results.bin.over++;
+    } else {
+      results.bin.exact++;
+    }
+
+  }
+  results.stdDev = standardDeviation(results.results);
+  results.average = average(results.results);
+  return results;
 }
 
 function simulateGames(sims, teamAArray, teamBArray) {
@@ -284,5 +374,15 @@ function getShareURL() {
   var teamAShots = document.getElementById('teamAShots').value;
   var teamBShots = document.getElementById('teamBShots').value;
   var search = "?teamAShots=" + teamAShots + "&teamBShots=" + teamBShots;
+  return origin + pathname + search;
+}
+
+function getLTShareURL() {
+  var origin = document.location['origin'];
+  var pathname = document.location['pathname'];
+  var name = document.getElementById('name').value;
+  var chances = document.getElementById('chances').value;
+  var goals = document.getElementById('goals').value;
+  var search = "?name=" + name + "&chances=" + chances + "&goals=" + goals;
   return origin + pathname + search;
 }
