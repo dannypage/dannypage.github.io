@@ -2,6 +2,7 @@ var results, winsChart, goalsADataPoints, goalsBDataPoints, diffDataPoints, n, g
 var red = "#d7191c"
 var blue = "#2c7bb6"
 var draw = "#cfcf6f"
+var seededChance;
 
 defaults = {
   'teamAShots': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
@@ -25,6 +26,7 @@ function getURLValue(elementID, defaultValue) {
 }
 
 function simulateExpectedGoals() {
+  seededChance = new Chance(12345);
   var teamAShots = document.getElementById('teamAShots');
   var teamBShots = document.getElementById('teamBShots');
   var teamAArray = stringToArray(teamAShots.value);
@@ -183,6 +185,7 @@ function simulateExpectedGoals() {
 }
 
 function simulateLongTermExpectedGoals(){
+  seededChance = new Chance(12345);
   var entity = document.getElementById('name').value;
   var chances = document.getElementById('chances').value;
   var goals = document.getElementById('goals').value;
@@ -349,7 +352,7 @@ function stringToArray(string) {
 function simulateShots(shotsArray) {
   var score = 0;
   for (var i = 0; i < shotsArray.length; i++) {
-    if (shotsArray[i] > Math.random() ) {
+    if (seededChance.bool({likelihood: shotsArray[i]*100}) ) {
       score++;
     }
   }
