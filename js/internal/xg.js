@@ -207,30 +207,52 @@ function simulateLongTermExpectedGoals(){
   };
   document.getElementById('explanation').innerHTML = explanation.reality + explanation.expectation + explanation.bins + explanation.test;
 
-  seasonalGoals = [];
-  for (var i = 0; i < results.goals.length; i++){
-    seasonalGoals.push({y: results.goals[i], x: i, label: i + " goals"});
+  var goalBars = {
+    x: [],
+    y: [],
+    text: [],
   }
-  goalsChart = new CanvasJS.Chart("goalsChart",{
-    title:{
-      text: "Sims With # of Goals by " + entity
-    },
-    toolTip: {
-      shared: true
-    },
-    animationEnabled: true,
-    data: [
-      {
-        type: "column",
-        name: entity,
-        legendText: entity,
-        showInLegend: true,
-        color: red,
-        dataPoints: seasonalGoals
+  for (var i = 0; i < results.goals.length; i++){
+    if(typeof results.goals[i] === 'undefined') {
+      goalBars.y.push(0);
+    } else {
+      goalBars.y.push(results.goals[i]/100);
+    }
+    goalBars.x.push(i);
+    goalBars.text.push(Math.round(100*(i - results.average)/results.stdDev)/100 + ' SDs from Mean');
+  }
+  var data = [
+    {
+      x: goalBars.x,
+      y: goalBars.y,
+      type: 'bar',
+      text: goalBars.text,
+      name: 'Percentage',
+      marker: {
+        color: 'rgb(49,130,189)',
+        opacity: 0.7,
       }
-    ]
-  });
-  goalsChart.render();
+    }
+  ];
+  var layout = {
+    title: 'Sims with # of Goals by ' + entity,
+    margin: {
+      l: 40,
+      r: 40,
+      t: 80,
+      b: 40
+    },
+    font: {
+        size: 16
+    },
+    yaxis: {
+      ticksuffix:"%"
+    },
+    xaxis: {
+      title: "Goals"
+    }
+  };
+  Plotly.newPlot('goalsChart', data, layout);
 
   var shareURL = getLTShareURL();
   document.getElementById("shareURLlink").href = shareURL;
