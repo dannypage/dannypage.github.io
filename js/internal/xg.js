@@ -1,4 +1,4 @@
-var results, winsChart, goalsADataPoints, goalsBDataPoints, diffDataPoints, n;
+var results, winsChart, goalsADataPoints, goalsBDataPoints, diffDataPoints, n, goalBars;
 var red = "#d7191c"
 var blue = "#2c7bb6"
 var draw = "#cfcf6f"
@@ -207,10 +207,11 @@ function simulateLongTermExpectedGoals(){
   };
   document.getElementById('explanation').innerHTML = explanation.reality + explanation.expectation + explanation.bins + explanation.test;
 
-  var goalBars = {
+  goalBars = {
     x: [],
     y: [],
     text: [],
+    colors: []
   }
   for (var i = 0; i < results.goals.length; i++){
     if(typeof results.goals[i] === 'undefined') {
@@ -219,8 +220,10 @@ function simulateLongTermExpectedGoals(){
       goalBars.y.push(results.goals[i]/100);
     }
     goalBars.x.push(i);
+    goalBars.colors.push('rgb(158,202,240)');
     goalBars.text.push(Math.round(100*(i - results.average)/results.stdDev)/100 + ' SDs from Mean');
   }
+  goalBars.colors[goals] = 'rgb(116,196,118)';
   var data = [
     {
       x: goalBars.x,
@@ -229,8 +232,7 @@ function simulateLongTermExpectedGoals(){
       text: goalBars.text,
       name: 'Percentage',
       marker: {
-        color: 'rgb(49,130,189)',
-        opacity: 0.7,
+        color: goalBars.colors
       }
     }
   ];
