@@ -43,7 +43,7 @@
           <table class="table-light overflow-hidden bg-white border rounded">
             <thead><tr>
                 <th>Goals</th><th>Std Dev</th>
-                <th>Underperform %</th><th>Exact %</th><th>Overperform %</th>
+                <th>Under %</th><th>Exact %</th><th>Over %</th>
             </tr></thead>
             <tbody>
               <tr>
@@ -56,11 +56,11 @@
             </tbody>
           </table>
           <h4>What does this mean?</h4>
-          <p><span id='explanation'></span></p>
+          <p class="col"><span id='explanation'></span></p>
           <h3>Share these results!</h3>
           <a id="shareURLlink" href="" >Right Click -> Copy Link Address</a>
           <h3>Graphs</h3>
-          <div id="goalsChart" style="height: 350px; width: 100%;"></div>
+          <div id="goalsChart"></div>
       </div>
     </div>
 
@@ -79,4 +79,3 @@
   <div id="navFooter"></div>
 </body>
 </html>
-<script type="text/javascript" src="/js/canvasjs/jquery.canvasjs.min.js"></script>

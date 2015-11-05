@@ -240,7 +240,7 @@ function simulateLongTermExpectedGoals(){
     }
   ];
   var layout = {
-    title: 'Sims with # of Goals by ' + entity,
+    title: 'Simulation Outcomes for ' + entity,
     margin: {
       l: 40,
       r: 40,
