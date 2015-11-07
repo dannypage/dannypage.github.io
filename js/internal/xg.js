@@ -242,10 +242,10 @@ function simulateLongTermExpectedGoals(){
   var layout = {
     title: 'Simulation Outcomes for ' + entity,
     margin: {
-      l: 40,
-      r: 40,
+      l: 80,
+      r: 80,
       t: 80,
-      b: 40
+      b: 80
     },
     font: {
         size: 16
