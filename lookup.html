@@ -31,7 +31,7 @@
             <option value="Select">Select Team</option>
           </select></br>
           <p><strong>Players</strong></p>
-          <select class='mb1 border' data='bertinEPL' id="bertinMLSPlayers" onchange="selectOption(this);">
+          <select class='mb1 border' data='bertinMLS' id="bertinMLSPlayers" onchange="selectOption(this);">
             <option value="Select">Select Player</option>
           </select>
         </div>
@@ -93,7 +93,7 @@
             bertinMLS = results;
             loadSelect(bertinMLS, 'defendingTeamName', 'bertinMLSTeamAgainst');
             loadSelect(bertinMLS, 'shootingTeamName', 'bertinMLSTeamFor');
-            loadSelect(bertinEPL, 'name', 'bertinMLSPlayers');
+            loadSelect(bertinMLS, 'name', 'bertinMLSPlayers');
           }
         });
         Papa.parse('/assets/data/bertinEPL.csv', {
