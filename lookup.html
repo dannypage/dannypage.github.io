@@ -175,11 +175,11 @@
             if (parsed.data[i][variable] == value){
               switch (author) {
                 case 'bertin':
-                  chances = chances + Math.round(parsed.data[i]["expG"] * 1000) / 1000 + ","
+                  chances = chances + Math.round(parsed.data[i]["expG"] * 10000) / 10000 + ","
                   goals = (parsed.data[i]["is.goal"] == "TRUE") ? goals + 1 : goals;
                   break;
                 case 'riley':
-                  chances = chances + Math.round(parsed.data[i]["ExpG"] * 1000) / 1000 + ","
+                  chances = chances + Math.round(parsed.data[i]["ExpG"] * 10000) / 10000 + ","
                   goals = (parsed.data[i]["Outcome"] == "Goal") ? goals + 1 : goals;
                   break;
                 default:
