@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Expected Goals Lookup </title>
+    <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+    <script type="text/javascript" src="/js/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/js/papaparse/papaparse.min.js"></script>
+    <script type="text/javascript" src="/js/d3/d3.min.js"></script>
+    <script type="text/javascript" src="/templates/templates.js"></script>
+    <script type="text/javascript" src="/templates/ga.js"></script>
+  </head>
+  <body>
+    <div id="navHeader"></div>
+
+    <section class="container px1 mb1">
+      <div class="col col-12">
+        <h1>Expected Goal Lookup</h1>
+      </div>
+      <div class="col col-12">
+        <div class="col col-4">
+          <h2>@BertinBertin's MLS xG Values</h2>
+          <p><em>Updated as of 2015-11-10</em></p>
+          <p><strong>Team For</strong></p>
+          <select class='mb1 border' data='bertinMLS' id="bertinMLSTeamFor" onchange="selectOption(this);">
+          </select></br>
+          <p><strong>Team Against</strong></p>
+          <select class='mb1 border' data='bertinMLS' id="bertinMLSTeamAgainst" onchange="selectOption(this);">
+          </select></br>
+        </div>
+        <div class="col col-4">
+          <h2>@BertinBertin's EPL xG Values</h2>
+          <p><em>Updated as of 2015-11-10</em></p>
+          <p><strong>Team For</strong></p>
+          <select class='mb1 border' data='bertinEPL' id="bertinEPLTeamFor" onchange="selectOption(this);">
+          </select></br>
+          <p><strong>Team Against</strong></p>
+          <select class='mb1 border' data='bertinEPL' id="bertinEPLTeamAgainst" onchange="selectOption(this);">
+          </select></br>
+          <p><strong>Players</strong></p>
+          <select class='mb1 border' data='bertinEPL' id="bertinEPLPlayers" onchange="selectOption(this);">
+          </select>
+        </div>
+        <div class="col col-4">
+          <h2>@FootballFactman's EPL xG Values</h2>
+          <p><em>Updated as of 2015-11-04</em></p>
+          <p><strong>Team For</strong></p>
+          <select class='mb1 border' data='rileyEPL' id="rileyEPLTeamFor" onchange="selectOption(this);">
+          </select></br>
+          <p><strong>Team Against</strong></p>
+          <select class='mb1 border' data='rileyEPL' id="rileyEPLTeamAgainst" onchange="selectOption(this);">
+          </select></br>
+          <p><strong>Players</strong></p>
+          <select class='mb1 border' data='rileyEPL' id="rileyEPLPlayers" onchange="selectOption(this);">
+          </select>
+        </div>
+      </div>
+      <div class="col col-12">
+        <form id="expectedGoals">
+          <h2 id="name">None Selected</h2>
+          <label for="chances">Chances</label>
+          <input id="chances" type="text" class="block col-12 mb1 field">
+          <label for="chances">Goals</label>
+          <input id="goals" type="text" class="block col-3 mb1 field">
+        </form>
+      </div>
+    </section>
+
+    <div id="navFooter" class="col col-12"></div>
+
+    <script type="text/javascript">
+      parseFiles();
+      var bertinMLS, bertinEPL, rileyEPL;
+      function parseFiles() {
+
+        Papa.parse('/assets/data/bertinMLS.csv', {
+        	download: true,
+          header: true,
+          complete: function(results) {
+            bertinMLS = results;
+            loadSelect(bertinMLS, 'defendingTeamName', 'bertinMLSTeamAgainst');
+            loadSelect(bertinMLS, 'shootingTeamName', 'bertinMLSTeamFor');
+          }
+        });
+        Papa.parse('/assets/data/bertinEPL.csv', {
+        	download: true,
+          header: true,
+          complete: function(results) {
+            bertinEPL = results;
+            loadSelect(bertinEPL, 'defendingTeamName', 'bertinEPLTeamAgainst');
+            loadSelect(bertinEPL, 'shootingTeamName', 'bertinEPLTeamFor');
+            loadSelect(bertinEPL, 'name', 'bertinEPLPlayers');
+          }
+        });
+        Papa.parse('/assets/data/rileyEPL.csv', {
+        	download: true,
+          header: true,
+          complete: function(results) {
+            rileyEPL = results;
+            loadSelect(rileyEPL, 'Team Against', 'rileyEPLTeamAgainst');
+            loadSelect(rileyEPL, 'Team For', 'rileyEPLTeamFor');
+            loadSelect(rileyEPL, 'Player', 'rileyEPLPlayers');
+          }
+        });
+
+      };
+
+      function loadSelect(parsed, variable, id) {
+
+        var options = d3.map(parsed.data, function(d){return d[variable];}).keys();
+        options.sort();
+        for (var i=0; i< options.length; i++) {
+          var select = document.getElementById(id);
+          var opt = options[i];
+          var el = document.createElement("option");
+          el.textContent = opt;
+          el.value = opt;
+          select.appendChild(el);
+        }
+      }
+
+      function selectOption(sel) {
+        var value = sel.value;
+        var id = sel.id;
+        switch (id) {
+          case 'bertinMLSTeamFor':
+            shotData(bertinMLS, 'shootingTeamName', value, 'bertin', ' Goals For');
+            break;
+          case 'bertinMLSTeamAgainst':
+            shotData(bertinMLS, 'defendingTeamName', value, 'bertin', ' Goals Against');
+            break;
+          case 'bertinEPLTeamFor':
+            shotData(bertinEPL, 'shootingTeamName', value, 'bertin', ' Goals For');
+            break;
+          case 'bertinEPLTeamAgainst':
+            shotData(bertinEPL, 'defendingTeamName', value, 'bertin', 'Goals Against');
+            break;
+          case 'bertinEPLPlayers':
+            shotData(bertinEPL, 'name', value, 'bertin', ' Goals');
+            break;
+          case 'rileyEPLTeamFor':
+            shotData(rileyEPL, 'Team For', value, 'riley', ' Goals For');
+            break;
+          case 'rileyEPLTeamAgainst':
+            shotData(rileyEPL, 'Team Against', value, 'riley', ' Goals Against');
+            break;
+          case 'rileyEPLPlayers':
+            shotData(rileyEPL, 'Player', value, 'riley', ' Goals');
+            break;
+          default:
+            break;
+        }
+
+        function shotData(parsed, variable, value, author, modifier){
+          var goals = 0;
+          var chances = "";
+          for(var i=0;i<parsed.data.length;i++){
+            if (parsed.data[i][variable] == value){
+              switch (author) {
+                case 'bertin':
+                  chances = chances + parsed.data[i]["expG"] + ","
+                  goals = (parsed.data[i]["is.goal"] == "TRUE") ? goals + 1 : goals;
+                  break;
+                case 'riley':
+                  chances = chances + parsed.data[i]["ExpG"] + ","
+                  goals = (parsed.data[i]["Outcome"] == "Goal") ? goals + 1 : goals;
+                  break;
+                default:
+                  break;
+              }
+            }
+          }
+          document.getElementById("name").innerHTML = value + modifier;
+          document.getElementById("chances").value = chances;
+          document.getElementById("goals").value = goals;
+        }
+      }
+    </script>
+  </body>
+</html>
