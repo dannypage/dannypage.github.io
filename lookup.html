@@ -30,6 +30,10 @@
           <select class='mb1 border' data='bertinMLS' id="bertinMLSTeamAgainst" onchange="selectOption(this);">
             <option value="Select">Select Team</option>
           </select></br>
+          <p><strong>Players</strong></p>
+          <select class='mb1 border' data='bertinEPL' id="bertinMLSPlayers" onchange="selectOption(this);">
+            <option value="Select">Select Player</option>
+          </select>
         </div>
         <div class="col col-4">
           <h2><a href="http://twitter.com/BertinBertin" target="_blank">@BertinBertin's</a> EPL xG Values</h2>
@@ -89,6 +93,7 @@
             bertinMLS = results;
             loadSelect(bertinMLS, 'defendingTeamName', 'bertinMLSTeamAgainst');
             loadSelect(bertinMLS, 'shootingTeamName', 'bertinMLSTeamFor');
+            loadSelect(bertinEPL, 'name', 'bertinMLSPlayers');
           }
         });
         Papa.parse('/assets/data/bertinEPL.csv', {
@@ -137,6 +142,9 @@
             break;
           case 'bertinMLSTeamAgainst':
             shotData(bertinMLS, 'defendingTeamName', value, 'bertin', ' Goals Against');
+            break;
+          case 'bertinMLSPlayers':
+            shotData(bertinMLS, 'name', value, 'bertin', ' Goals');
             break;
           case 'bertinEPLTeamFor':
             shotData(bertinEPL, 'shootingTeamName', value, 'bertin', ' Goals For');
