@@ -18,7 +18,7 @@
   <img id="image" src="">
 
   <script type="text/javascript">
-    var timeout = 1000*60*10; // 10 minutes
+    var timeout = 1000*10*60; // 10 minutes
     var action = function() {
       var width = $(window).width();
       var height = $(window).height();
@@ -26,7 +26,7 @@
       $("#image").attr("src", src);
     };
     action();
-    setInterval(action, timeout);
+    window.setInterval(action, timeout);
   </script>
 </body>
 </html>
