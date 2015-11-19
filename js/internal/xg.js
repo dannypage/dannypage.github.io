@@ -346,7 +346,7 @@ function simulateGames(sims, teamAArray, teamBArray) {
 
 function stringToArray(string) {
   trimmed = string.replace(" ","");
-  array = trimmed.split(",").map(Number);
+  array = trimmed.split(/[ ,]+/).map(Number);
   return array;
 }
 function simulateShots(shotsArray) {
