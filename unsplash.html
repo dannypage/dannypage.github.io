@@ -22,8 +22,8 @@
     var action = function() {
       var width = $(window).width();
       var height = $(window).height();
-      var category = "water"
-      var src = "https://source.unsplash.com/category/"+ category + "/" + width + 'x' + height;
+      var term = "water"
+      var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + "term";
       $("#image").attr("src", src);
       setTimeout( action, timeout );
     };
