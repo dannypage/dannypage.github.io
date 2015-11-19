@@ -22,11 +22,13 @@
     var action = function() {
       var width = $(window).width();
       var height = $(window).height();
-      var src = "https://source.unsplash.com/random/" + width + 'x' + height;
+      var category = "water"
+      var src = "https://source.unsplash.com/category/"+ category + "/" + width + 'x' + height;
       $("#image").attr("src", src);
+      setTimeout( action, timeout );
     };
     action();
-    window.setInterval(action, timeout);
+
   </script>
 </body>
 </html>
