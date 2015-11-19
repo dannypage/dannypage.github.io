@@ -15,11 +15,11 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      var reload = 1000*10; // 10 seconds
+      var reload = 1000*10*60; // 10 minutes
       var action = function() {
         var width = $(window).width();
         var height = $(window).height();
-        var term = "water"
+        var term = ""
         var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
         $("#image").attr("src", src);
       }
