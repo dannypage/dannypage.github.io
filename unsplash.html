@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Random Unsplash Photo</title>
+  <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+  <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/templates/templates.js"></script>
+  <script type="text/javascript" src="/templates/ga.js"></script>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dannypage" />
+  <meta name="twitter:title" content="Random Unsplash Photo" />
+  <meta name="twitter:description" content="Displays a random Unsplash photo every 10 minutes." />
+  <meta name="twitter:image" content="https://source.unsplash.com/random" />
+</head>
+<body>
+  <img id="image" src="">
+
+  <script type="text/javascript">
+    var timeout = 1000*60*10; // 10 minutes
+    var action = function() {
+      var width = $(window).width();
+      var height = $(window).height();
+      var src = "https://source.unsplash.com/random/" + width + 'x' + height;
+      $("#image").attr("src", src);
+    };
+    action();
+    setInterval(action, timeout);
+  </script>
+</body>
+</html>
