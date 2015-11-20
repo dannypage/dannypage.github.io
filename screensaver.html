@@ -19,16 +19,16 @@
   <meta name="twitter:image" content="https://source.unsplash.com/200x200/?water" />
 
   <script type="text/javascript">
+    var reload = 1000*10*60; // 10 minutes
+    var action = function() {
+      var width = $(window).width();
+      var height = $(window).height();
+      var term = "water";
+      var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
+      $("#main img:first-child").remove();
+      $( "#main" ).append( "<img id='image' src=" + src + ">" );
+    }
     $(document).ready(function(){
-      var reload = 1000*10*60; // 10 minutes
-      var action = function() {
-        var width = $(window).width();
-        var height = $(window).height();
-        var term = "water"
-        var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
-        $("#main img:first-child").remove();
-        $( "#main" ).append( "<img id='image' src=" + src + ">" );
-      }
       action();
       window.setInterval(function(){
         action();
