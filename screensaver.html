@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Random Unsplash Photo</title>
+  <title>Screensaver</title>
   <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
   <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="/templates/ga.js"></script>
+  <style type="text/css">
+  body {
+      background-color: black;
+  }
+  </style>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@dannypage" />
-  <meta name="twitter:title" content="Random Unsplash Photo" />
-  <meta name="twitter:description" content="Displays a random Unsplash photo every 10 minutes." />
-  <meta name="twitter:image" content="https://source.unsplash.com/random" />
+  <meta name="twitter:title" content="Screensaver" />
+  <meta name="twitter:description" content="Displays a random photo every 10 minutes." />
+  <meta name="twitter:image" content="https://source.unsplash.com/200x200/?water" />
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -19,9 +24,10 @@
       var action = function() {
         var width = $(window).width();
         var height = $(window).height();
-        var term = ""
+        var term = "water"
         var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
-        $("#image").attr("src", src);
+        $("#main img:first-child").remove();
+        $( "#main" ).append( "<img id='image' src=" + src + ">" );
       }
       action();
       window.setInterval(function(){
@@ -31,6 +37,8 @@
   </script>
 </head>
 <body>
-  <img id="image" src="">
+  <div id="main">
+    <img id="image" src="">
+  </div>
 </body>
 </html>
