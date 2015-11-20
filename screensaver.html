@@ -23,7 +23,8 @@
     var action = function() {
       var width = $(window).width();
       var height = $(window).height();
-      var term = "water";
+      var terms = ["earth","fire","wind","water"];
+      var term = terms[Math.floor(Math.random()*terms.length)];
       var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
       $("#main img:first-child").remove();
       $( "#main" ).append( "<img id='image' src=" + src + ">" );
