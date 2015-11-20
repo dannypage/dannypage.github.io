@@ -6,14 +6,44 @@
   <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
   <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="/templates/ga.js"></script>
+  <style type="text/css">
+  body {
+      background-color: black;
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  ul li {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   padding: 10px;
+  }
+  </style>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dannypage" />
+  <meta name="twitter:title" content="Screensaver" />
+  <meta name="twitter:description" content="Displays a random photo every 10 minutes." />
+  <meta name="twitter:image" content="https://source.unsplash.com/200x200/?water" />
 
   <script type="text/javascript">
-    var reload = 1000*15;
+    var reload = 1000*15; // 30 minutes
+    var seconds = new Date().getTime() / 1000;
     var action = function() {
-      var seconds = new Date().getTime() / 1000;
-      $( "#list" ).append( "<li>" + seconds + "</li>" );
+      var now = new Date().getTime() / 1000;
+      var width = $(window).width();
+      var height = $(window).height();
+      var term = "water";
+      var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
+      $("#image").remove();
+      $( "#main" ).append( "<img id='image' src=" + src + ">" );
+      $( "#list" ).append( "<li>" + Math.round(now - seconds) + "</li>" );
+      seconds = now;
     }
-
     $(document).ready(function(){
       action();
       window.setInterval(function(){
@@ -23,10 +53,9 @@
   </script>
 </head>
 <body>
-  <div id="main">
-    <ul id="list">
-    </ul>
+  <div id="main" class="position: relative;">
+    <img id="image" src="" />
+    <ul id="list"></ul>
   </div>
-
 </body>
 </html>
