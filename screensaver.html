@@ -19,20 +19,25 @@
   <meta name="twitter:image" content="https://source.unsplash.com/200x200/?water" />
 
   <script type="text/javascript">
-    var reload = 1000*10*60; // 10 minutes
+    var reload = 10*60; // 10 minutes
+    var start = new Date().getTime() / 1000;
+    start = start - reload; // Initial launch
     var action = function() {
-      var width = $(window).width();
-      var height = $(window).height();
-      var term = "water";
-      var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
-      $("#main img:first-child").remove();
-      $( "#main" ).append( "<img id='image' src=" + src + ">" );
+      var now = new Date().getTime() / 1000;
+      if (now > (start+reload)) {
+        start = now;
+        var width = $(window).width();
+        var height = $(window).height();
+        var term = "water";
+        var src = "https://source.unsplash.com/" + width + 'x' + height + "/" + "?" + term;
+        $("#main img:first-child").remove();
+        $( "#main" ).append( "<img id='image' src=" + src + ">" );
+      }
     }
     $(document).ready(function(){
-      action();
       window.setInterval(function(){
         action();
-      }, reload);
+      }, 1000);
     });
   </script>
 </head>
