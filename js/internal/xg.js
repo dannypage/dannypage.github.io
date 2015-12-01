@@ -4,6 +4,8 @@ var blue = "#2c7bb6"
 var draw = "#cfcf6f"
 var seededChance;
 
+var encode, compressed, decompressed, variables;
+
 defaults = {
   'teamAShots': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
   'teamBShots': "0.4,0.4,0.4",
@@ -12,7 +14,25 @@ defaults = {
   'goals': "2"
 }
 
-for (value in defaults) { getURLValue(value, defaults[value]) }
+var share = getQueryVariable('share');
+if (share.length > 0) {
+  decompressed = LZString.decompressFromEncodedURIComponent(share);
+  variables = decompressed.split(/\|/);
+  if (page_type == "season" && variables.length == 3) {
+    document.getElementById('name').value = variables[0];
+    document.getElementById('chances').value = variables[1];
+    document.getElementById('goals').value = variables[2];
+  } else if (page_type == "match" && variables.length == 2) {
+    document.getElementById('teamAShots').value = variables[0];
+    document.getElementById('teamBShots').value = variables[1];
+  } else {
+    console.log("Share link failed.")
+    for (value in defaults) { getURLValue(value, defaults[value]) }
+  }
+} else {
+  for (value in defaults) { getURLValue(value, defaults[value]) }
+}
+
 
 function getURLValue(elementID, defaultValue) {
   if ( !!(document.getElementById(elementID)) ) {
@@ -400,8 +420,12 @@ function getShareURL() {
   var pathname = document.location['pathname'];
   var teamAShots = document.getElementById('teamAShots').value;
   var teamBShots = document.getElementById('teamBShots').value;
-  var search = "?teamAShots=" + teamAShots + "&teamBShots=" + teamBShots;
-  return origin + pathname + search;
+
+  encode = teamAShots.replace(/\|/g,'') + '|' + teamBShots.replace(/ /g,'');
+  compressed = LZString.compressToEncodedURIComponent(encode);
+
+  var share = "?share=" + compressed;
+  return origin + pathname + share;
 }
 
 function getLTShareURL() {
@@ -410,6 +434,11 @@ function getLTShareURL() {
   var name = document.getElementById('name').value;
   var chances = document.getElementById('chances').value;
   var goals = document.getElementById('goals').value;
-  var search = "?name=" + name + "&chances=" + chances + "&goals=" + goals;
-  return origin + pathname + search;
+
+  encode = name.replace(/\|/g,'') + '|' + chances.replace(/ /g,'') + '|' + goals.replace(/ /g,'');
+  compressed = LZString.compressToEncodedURIComponent(encode);
+
+  var share = "?share=" + compressed;
+
+  return origin + pathname + share;
 }

@@ -10,6 +10,8 @@
   <script type="text/javascript" src="/templates/ga.js"></script>
   <script type="text/javascript" src="/js/canvasjs/jquery.canvasjs.min.js"></script>
   <script type="text/javascript" src="/js/chancejs/chance.min.js"></script>
+  <script type="text/javascript" src="/js/lz-string/lz-string.min.js"></script>  
+  <script type="text/javascript">var page_type = "season";</script>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@dannypage" />
@@ -117,6 +119,7 @@
     <script type="text/javascript" src="/js/internal/xg.js"></script>
     <script type="text/javascript">
       //On Load
+      var page_type = 'match';
       simulateExpectedGoals();
       //On Form Submit
       $('#calculate').keyup(function(event) {
