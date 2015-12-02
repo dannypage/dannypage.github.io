@@ -18,10 +18,10 @@ var share = getQueryVariable('share');
 if (share.length > 0) {
   decompressed = LZString.decompressFromEncodedURIComponent(share);
   variables = decompressed.split(/\|/);
-  if (page_type == "season" && variables.length == 3) {
-    document.getElementById('name').value = variables[0];
-    document.getElementById('chances').value = variables[1];
-    document.getElementById('goals').value = variables[2];
+  if (page_type == "season" && variables.length == 2) {
+    document.getElementById('chances').value = variables[0];
+    document.getElementById('goals').value = variables[1];
+    getURLValue("name", defaults["name"]);
   } else if (page_type == "match" && variables.length == 2) {
     document.getElementById('teamAShots').value = variables[0];
     document.getElementById('teamBShots').value = variables[1];
@@ -73,132 +73,207 @@ function simulateExpectedGoals() {
   document.getElementById('teamAShotCount').innerHTML = teamAArray.length
   document.getElementById('teamBShotCount').innerHTML = teamBArray.length
 
-
-  var ppgChart = new CanvasJS.Chart("ppgChart", {
-		title:{
-			text: "Points Per Game"
-		},
-    animationEnabled: true,
-		data: [
-		{
-			type: "doughnut",
-			startAngle: 90,
-			toolTipContent: "{legendText}: <strong>{y}</strong>",
-			showInLegend: false,
-			dataPoints: [
-				{y: teamAPPG, indexLabel: "{y} ppg", legendText: "Team A", color: red },
-				{y: teamBPPG, indexLabel: "{y} ppg", legendText: "Team B", color: blue }
-      ]
-		}
-		]
-	});
-	ppgChart.render();
-  winsChart = new CanvasJS.Chart("winsChart",{
-    title:{
-      text: "Results (10000 Sims)"
+  ppgData = [{
+    values: [teamAPPG, teamBPPG],
+    labels: ['Team A PPG', 'Team B PPG'],
+    name: 'Points Per Game',
+    textinfo: 'value',
+    hoverinfo: 'label+value',
+    hole: .4,
+    type: 'pie',
+    marker: {
+      colors: [red, blue]
     },
-    animationEnabled: true,
-    data: [
-      {
-        type: "column",
-        toolTipContent: "{label}: <strong>{y}</strong>",
-  			showInLegend: false,
-        dataPoints: [
-          {y: results.A, label: "Team A Wins", color: red},
-          {y: results.T, label: "Draws", color: draw},
-          {y: results.B, label: "Team B Wins", color: blue}
-        ]
-      }
-    ]
-  });
-  winsChart.render();
+    textfont: {
+      color: 'white',
+      size: 18
+    },
+    rotation: -180,
+    sort: false,
+    direction: 'counterclockwise'
+  }];
+  var ppgLayout = {
+    showlegend: false,
+    title: 'Points Per Game',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    }
+  };
+  Plotly.newPlot('ppgChart', ppgData, ppgLayout);
 
-  goalsADataPoints = [];
-  goalsBDataPoints = [];
+  var xValue = ['Team A', 'Draw', 'Team B'];
+  var yValue = [results.A/100, results.T/100, results.B/100]
+  var winsData = [{
+    x: xValue,
+    y: yValue,
+    marker:{
+      color: [red, draw, blue]
+    },
+    type: 'bar'
+  }];
+
+  var annotationContent = [];
+  var winsLayout = {
+    title: 'Result Percentage',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    },
+    annotations: annotationContent
+  };
+
+  for( var i = 0 ; i < xValue.length ; i++ ){
+    var result = {
+      x: xValue[i],
+      y: yValue[i],
+      text: yValue[i],
+      xanchor: 'center',
+      yanchor: 'bottom',
+      showarrow: false
+    };
+    annotationContent.push(result);
+  }
+
+  Plotly.newPlot('winsChart', winsData, winsLayout);
+
+  goalsAx = [];
+  goalsAy = [];
+  goalsBx = [];
+  goalsBy = [];
   for (var i = 0; i < results.AGoals.length; i++){
     if (results.AGoals[i] > 0) {
-      goalsADataPoints.push({y: results.AGoals[i], label: i });
+      goalsAx.push(i);
+      goalsAy.push(results.AGoals[i]/100);
     } else {
-      goalsADataPoints.push({y: 0, label: i });
+      goalsAx.push(i);
+      goalsAy.push(0);
     }
   }
   for (var i = 0; i < results.BGoals.length; i++){
     if (results.BGoals[i] > 0) {
-      goalsBDataPoints.push({y: results.BGoals[i], label: i });
+      goalsBx.push(i);
+      goalsBy.push(results.BGoals[i]/100);
     } else {
-      goalsBDataPoints.push({y: 0, label: i });
+      goalsBx.push(i);
+      goalsBy.push(0);
     }
   }
-  goalsChart = new CanvasJS.Chart("goalsChart",{
-    title:{
-      text: "Games With # of Goals"
-    },
-    toolTip: {
-      shared: true
-    },
-    legend:{
-      cursor:"pointer",
-      itemclick: function(e){
-        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-        	e.dataSeries.visible = false;
-        }
-        else {
-          e.dataSeries.visible = true;
-        }
-      	goalsChart.render();
-      }
-    },
-    animationEnabled: true,
-    data: [
-      {
-        type: "column",
-        name: "Team A",
-        legendText: "Team A",
-  			showInLegend: true,
-        color: red,
-        dataPoints: goalsADataPoints
-      },
-      {
-        type: "column",
-        name: "Team B",
-        legendText: "Team B",
-  			showInLegend: true,
-        color: blue,
-        dataPoints: goalsBDataPoints
-      }
-    ]
-  });
-  goalsChart.render();
 
-  diffDataPoints = [];
+  var goalsData = [{
+    x: goalsAx,
+    y: goalsAy,
+    marker:{
+      color: red
+    },
+    type: 'bar',
+    name: 'Team A',
+    textinfo: 'value',
+    hoverinfo: 'label+value',
+  },{
+    x: goalsBx,
+    y: goalsBy,
+    marker:{
+      color: blue
+    },
+    type: 'bar',
+    name: 'Team B',
+    textinfo: 'value',
+    hoverinfo: 'label+value',
+  }];
+
+  var goalsLayout = {
+    title: 'Goals Scored',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    },
+
+  };
+
+  Plotly.newPlot('goalsChart', goalsData, goalsLayout);
+
+  diffDataPoints = {
+    'y': [],
+    'x': [],
+    'c': [],
+  };
   n = [];
   for (var i in results.diffGoals) { n.push(Number(i) ); }
   var diffMax = Math.max.apply(Math, n);
   var diffMin = Math.min.apply(Math, n);
   for (var key = diffMin; key <= diffMax; key++) {
     if (key == 0) {
-      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: draw})
+      diffDataPoints.y.push(results.diffGoals[key]/100);
+      diffDataPoints.x.push(key);
+      diffDataPoints.c.push(draw);
     } else if (key < 0) {
-      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: red})
+      diffDataPoints.y.push(results.diffGoals[key]/100);
+      diffDataPoints.x.push(key);
+      diffDataPoints.c.push(red);
     } else if (key > 0) {
-      diffDataPoints.push({y: results.diffGoals[key], label: String(key), color: blue})
+      diffDataPoints.y.push(results.diffGoals[key]/100);
+      diffDataPoints.x.push(key);
+      diffDataPoints.c.push(blue);
     }
   }
-  diffChart = new CanvasJS.Chart("diffChart",{
-    title:{
-      text: "Goal Difference"
+
+  var diffData = [{
+    x: diffDataPoints.x,
+    y: diffDataPoints.y,
+    marker:{
+      color: diffDataPoints.c
     },
-    animationEnabled: true,
-    data: [
-      {
-        type: "column",
-        toolTipContent: "{label}: <strong>{y}</strong>",
-  			showInLegend: false,
-        dataPoints: diffDataPoints
-      }
-    ]
-  });
-  diffChart.render();
+    type: 'bar'
+  }];
+
+  var annotationContent = [];
+  var diffLayout = {
+    title: 'Goal Difference',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    },
+    annotations: annotationContent
+  };
+
+  for( var i = 0 ; i < diffDataPoints.x.length ; i++ ){
+    var result = {
+      x: diffDataPoints.x[i],
+      y: diffDataPoints.y[i],
+      text: diffDataPoints.y[i],
+      xanchor: 'center',
+      yanchor: 'bottom',
+      showarrow: false
+    };
+    annotationContent.push(result);
+  }
+
+  Plotly.newPlot('diffChart', diffData, diffLayout);
 
   var shareURL = getShareURL();
   document.getElementById("shareURLlink").href = shareURL;
@@ -435,10 +510,10 @@ function getLTShareURL() {
   var chances = document.getElementById('chances').value;
   var goals = document.getElementById('goals').value;
 
-  encode = name.replace(/\|/g,'') + '|' + chances.replace(/ /g,'') + '|' + goals.replace(/ /g,'');
+  encode = chances.replace(/([0]\.)/g,'.').replace(/\s/g,'') + '|' + goals.replace(/ /g,'');
   compressed = LZString.compressToEncodedURIComponent(encode);
 
-  var share = "?share=" + compressed;
+  var share = "?share=" + compressed + "&name=" + name;
 
   return origin + pathname + share;
 }
