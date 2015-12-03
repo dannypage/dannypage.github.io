@@ -32,7 +32,6 @@ function parseFiles() {
       loadSelect(rileyEPL, 'Player', 'rileyEPLPlayers');
     }
   });
-
 };
 
 function loadSelect(parsed, variable, id) {
@@ -83,28 +82,44 @@ function selectOption(sel) {
     default:
     break;
   }
+  document.getElementById("shareURLlink").href = getShareURL();
+  document.getElementById("shareURLlink").hidden = false;
+}
 
-  function shotData(parsed, variable, value, author, modifier){
-    var goals = 0;
-    var chances = "";
-    for(var i=0;i<parsed.data.length;i++){
-      if (parsed.data[i][variable] == value){
-        switch (author) {
-          case 'bertin':
-          chances = chances + Math.round(parsed.data[i]["expG"] * 10000) / 10000 + ","
-          goals = (parsed.data[i]["is.goal"] == "TRUE") ? goals + 1 : goals;
-          break;
-          case 'riley':
-          chances = chances + Math.round(parsed.data[i]["ExpG"] * 10000) / 10000 + ","
-          goals = (parsed.data[i]["Outcome"] == "Goal") ? goals + 1 : goals;
-          break;
-          default:
-          break;
-        }
+function shotData(parsed, variable, value, author, modifier){
+  var goals = 0;
+  var chances = "";
+  for(var i=0;i<parsed.data.length;i++){
+    if (parsed.data[i][variable] == value){
+      switch (author) {
+        case 'bertin':
+        chances = chances + Math.round(parsed.data[i]["expG"] * 10000) / 10000 + ","
+        goals = (parsed.data[i]["is.goal"] == "TRUE") ? goals + 1 : goals;
+        break;
+        case 'riley':
+        chances = chances + Math.round(parsed.data[i]["ExpG"] * 10000) / 10000 + ","
+        goals = (parsed.data[i]["Outcome"] == "Goal") ? goals + 1 : goals;
+        break;
+        default:
+        break;
       }
     }
-    document.getElementById("name").innerHTML = value + modifier;
-    document.getElementById("chances").value = chances;
-    document.getElementById("goals").value = goals;
   }
+  document.getElementById("name").innerHTML = value + modifier;
+  document.getElementById("chances").value = chances;
+  document.getElementById("goals").value = goals;
+}
+
+function getShareURL() {
+  var origin = document.location['origin'];
+  var name = document.getElementById('name').innerHTML;
+  var chances = document.getElementById('chances').value;
+  var goals = document.getElementById('goals').value;
+
+  encode = chances.replace(/([0]\.)/g,'.').replace(/\s/g,'') + '|' + goals.replace(/ /g,'');
+  compressed = LZString.compressToEncodedURIComponent(encode);
+
+  var share = "?share=" + compressed + "&name=" + name;
+
+  return origin + "/expected_season_goals.html" + share;
 }
