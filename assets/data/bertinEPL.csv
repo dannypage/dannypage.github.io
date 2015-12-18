@@ -3102,234 +3102,6 @@
 "3101",959837,289253,"Kelechi Iheanacho","Man City","Norwich","Man City","Norwich","October",86.5,34,FALSE,FALSE,0.0513491798147042
 "3102",959775,289253,"Kelechi Iheanacho","Man City","Crystal Palace","Crystal Palace","Man City","September",96.6,47.8,FALSE,TRUE,0.648256610608689
 "3103",959810,289253,"Kelechi Iheanacho","Man City","Newcastle","Man City","Newcastle","October",87.6,30.1,FALSE,FALSE,0.0439521830201334
-"1","959578",2837,"Jermain Defoe","Sunderland","Stoke","Sunderland","Stoke","November",79.1,41.2,FALSE,FALSE,0.0445384986454991
-"4","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",95.9,52.4,FALSE,FALSE,0.468235798519607
-"5","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",88,34.5,FALSE,FALSE,0.058669909769227
-"6","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",96.2,62.7,FALSE,FALSE,0.054359526865701
-"14","959578",4574,"Glen Johnson","Stoke","Sunderland","Sunderland","Stoke","November",71.7,47.1,FALSE,FALSE,0.0266549153361766
-"16","959578",8327,"Charlie Adam","Stoke","Sunderland","Sunderland","Stoke","November",94.6,60.4,FALSE,FALSE,0.0362007518770302
-"24","959578",9766,"Steven Fletcher","Sunderland","Stoke","Sunderland","Stoke","November",90.4,68.8,FALSE,FALSE,0.0491014959149847
-"51","959578",14269,"Adam Johnson","Sunderland","Stoke","Sunderland","Stoke","November",73.9,40.6,FALSE,FALSE,0.0359031818431821
-"103","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",77.9,74.7,FALSE,FALSE,0.0181330377129438
-"104","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",84,62.9,FALSE,FALSE,0.054438632809254
-"105","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",85.3,69.5,FALSE,FALSE,0.0458251889726939
-"106","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",94.2,29.7,FALSE,FALSE,0.0339567321412074
-"107","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",79.4,49,FALSE,FALSE,0.0555227823760559
-"117","959578",31402,"Bojan","Stoke","Sunderland","Sunderland","Stoke","November",74.3,62.6,FALSE,FALSE,0.0259707731493725
-"126","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",77.2,42,FALSE,FALSE,0.0387191769232186
-"127","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",79.1,35.6,FALSE,FALSE,0.0721444188940925
-"128","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",77.6,59.1,FALSE,FALSE,0.0385819115329889
-"129","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",89.6,35.9,FALSE,FALSE,0.0752587868997577
-"164","959578",71268,"Sebastián Coates","Sunderland","Stoke","Sunderland","Stoke","November",93.5,41.5,FALSE,FALSE,0.0634451254729177
-"176","959578",76304,"Xherdan Shaqiri","Stoke","Sunderland","Sunderland","Stoke","November",75.8,23.1,FALSE,FALSE,0.0317747163312736
-"177","959578",78221,"Patrick van Aanholt","Sunderland","Stoke","Sunderland","Stoke","November",76.2,39.8,FALSE,TRUE,0.781135009960418
-"178","959578",78221,"Patrick van Aanholt","Sunderland","Stoke","Sunderland","Stoke","November",77.1,26.6,FALSE,FALSE,0.0403209700705389
-"226","959578",126958,"DeAndre Yedlin","Sunderland","Stoke","Sunderland","Stoke","November",96.4,36.7,FALSE,FALSE,0.271206889160453
-"227","959578",141512,"Duncan Watmore","Sunderland","Stoke","Sunderland","Stoke","November",89,27.2,FALSE,FALSE,0.0325785220601246
-"228","959578",141512,"Duncan Watmore","Sunderland","Stoke","Sunderland","Stoke","November",93.3,32.4,FALSE,TRUE,0.0744601035083483
-"25","959694",10254,"Ben Watson","Watford","Aston Villa","Aston Villa","Watford","November",73,47.4,FALSE,FALSE,0.029732524722925
-"26","959694",10254,"Ben Watson","Watford","Aston Villa","Aston Villa","Watford","November",73.2,57.7,FALSE,FALSE,0.0277931759030634
-"31","959694",12779,"Scott Sinclair","Aston Villa","Watford","Aston Villa","Watford","November",92,41.5,FALSE,FALSE,0.0377950327275712
-"32","959694",12779,"Scott Sinclair","Aston Villa","Watford","Aston Villa","Watford","November",77.1,58.5,FALSE,FALSE,0.0314839597220285
-"48","959694",14168,"Micah Richards","Aston Villa","Watford","Aston Villa","Watford","November",92.7,52.2,FALSE,TRUE,0.950283770210478
-"86","959694",25241,"Craig Cathcart","Watford","Aston Villa","Aston Villa","Watford","November",86.9,55.5,FALSE,FALSE,0.0249600729685195
-"91","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",81,50.2,FALSE,FALSE,0.0659558418289293
-"92","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",90.9,47.5,FALSE,FALSE,0.135258387905453
-"93","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",84.2,35.3,FALSE,FALSE,0.0589138547233037
-"94","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",89.6,46.8,FALSE,TRUE,0.11206099277898
-"95","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",76.8,64.5,FALSE,FALSE,0.0351510055073637
-"98","959694",26720,"Carlos Sánchez","Aston Villa","Watford","Aston Villa","Watford","November",76.4,47.7,FALSE,FALSE,0.0141415496856328
-"99","959694",26720,"Carlos Sánchez","Aston Villa","Watford","Aston Villa","Watford","November",93.4,40.1,FALSE,FALSE,0.0297589116744955
-"114","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",90.7,41.7,FALSE,FALSE,0.152955350585577
-"115","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",92.3,47,FALSE,TRUE,0.311496273474571
-"116","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",86.2,66.1,FALSE,FALSE,0.0605818680216384
-"125","959694",33590,"Etienne Capoue","Watford","Aston Villa","Aston Villa","Watford","November",90.5,41.3,FALSE,FALSE,0.363105256145303
-"139","959694",64343,"Adlène Guédioura","Watford","Aston Villa","Aston Villa","Watford","November",90.7,71.2,FALSE,FALSE,0.0482202739487857
-"140","959694",64343,"Adlène Guédioura","Watford","Aston Villa","Aston Villa","Watford","November",75.8,50.7,FALSE,FALSE,0.0471994330182729
-"142","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",79,67.7,FALSE,FALSE,0.0235518021825071
-"143","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",92.7,28.5,FALSE,FALSE,0.105256782548526
-"144","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",82.6,59.4,FALSE,TRUE,0.0371035022208591
-"145","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",93.3,49.3,FALSE,FALSE,0.365453122970429
-"163","959694",70099,"Ciaran Clark","Aston Villa","Watford","Aston Villa","Watford","November",97.6,57.7,FALSE,FALSE,0.277179156824744
-"185","959694",80464,"Idrissa Gueye","Aston Villa","Watford","Aston Villa","Watford","November",77.2,69.5,FALSE,FALSE,0.0192026750216295
-"212","959694",101017,"Jordan Veretout","Aston Villa","Watford","Aston Villa","Watford","November",81.4,29.4,FALSE,FALSE,0.0227084395107317
-"224","959694",122945,"Nathan Aké","Watford","Aston Villa","Aston Villa","Watford","November",77.7,35.2,FALSE,FALSE,0.0368780473661249
-"20","959701",8943,"Arouna Koné","Everton","Bournemouth","Bournemouth","Everton","November",76.8,55.3,FALSE,FALSE,0.0552076074710707
-"21","959701",8943,"Arouna Koné","Everton","Bournemouth","Bournemouth","Everton","November",89.6,70.1,FALSE,FALSE,0.0417554189981094
-"33","959701",13447,"Andrew Surman","Bournemouth","Everton","Bournemouth","Everton","November",85.9,62.7,FALSE,FALSE,0.0426044405440027
-"42","959701",13846,"Dan Gosling","Bournemouth","Everton","Bournemouth","Everton","November",86.2,55.8,FALSE,FALSE,0.108971057617253
-"43","959701",13846,"Dan Gosling","Bournemouth","Everton","Bournemouth","Everton","November",89.2,53.4,FALSE,FALSE,0.0537879395060278
-"72","959701",21427,"Glenn Murray","Bournemouth","Everton","Bournemouth","Everton","November",88.8,53.4,FALSE,FALSE,0.0385594252156463
-"83","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",87.8,68.4,FALSE,FALSE,0.0376168377416163
-"84","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",89.2,74.2,FALSE,FALSE,0.0270213649525629
-"85","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",93.9,43.7,FALSE,FALSE,0.139519922874302
-"113","959701",31281,"James McCarthy","Everton","Bournemouth","Bournemouth","Everton","November",88,71.3,FALSE,FALSE,0.0352545351289427
-"118","959701",31826,"Seamus Coleman","Everton","Bournemouth","Bournemouth","Everton","November",78.5,25.5,FALSE,FALSE,0.0260541898929168
-"146","959701",67807,"Harry Arter","Bournemouth","Everton","Bournemouth","Everton","November",80.8,71.8,FALSE,FALSE,0.0226586001368197
-"149","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",78.8,40,FALSE,FALSE,0.0412596321421664
-"150","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",87.2,53.4,FALSE,FALSE,0.0892795731332945
-"151","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",77.4,58.8,FALSE,FALSE,0.0354311409722433
-"152","959701",68662,"Steve Cook","Bournemouth","Everton","Bournemouth","Everton","November",92,51.5,FALSE,FALSE,0.104139321531873
-"158","959701",69877,"Adam Smith","Bournemouth","Everton","Bournemouth","Everton","November",79.3,31,FALSE,TRUE,0.0247006405453671
-"159","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",84.4,69.1,FALSE,FALSE,0.0328104428950388
-"160","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",77.2,56.6,FALSE,FALSE,0.0373350241776582
-"161","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",90.5,45.6,FALSE,TRUE,0.184605497082254
-"162","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",91.3,44.5,FALSE,TRUE,0.0589066050114371
-"179","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",95.8,73.4,FALSE,FALSE,0.0497374719433864
-"180","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",92.9,44.1,FALSE,FALSE,0.0621227341353439
-"181","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",77.7,63.4,FALSE,FALSE,0.0321431419643245
-"182","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",94.6,39.8,FALSE,TRUE,0.20451460286771
-"186","959701",81026,"Joshua King","Bournemouth","Everton","Bournemouth","Everton","November",87.9,64.5,FALSE,FALSE,0.0596144360951869
-"187","959701",81026,"Joshua King","Bournemouth","Everton","Bournemouth","Everton","November",77.8,54,FALSE,FALSE,0.0454185701385705
-"204","959701",92547,"Ross Barkley","Everton","Bournemouth","Bournemouth","Everton","November",76.7,58.7,FALSE,FALSE,0.0359642214064208
-"205","959701",92547,"Ross Barkley","Everton","Bournemouth","Bournemouth","Everton","November",92.4,34,FALSE,TRUE,0.071330070061676
-"223","959701",121454,"Ramiro Funes Mori","Everton","Bournemouth","Bournemouth","Everton","November",92.9,45.8,FALSE,TRUE,0.0781659178399459
-"22","959707",9156,"Jason Puncheon","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.8,55.7,FALSE,FALSE,0.0831771574239971
-"23","959707",9156,"Jason Puncheon","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.1,70.5,FALSE,FALSE,0.0328794819648921
-"61","959707",18436,"Yoan Gouffran","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",78.1,31,FALSE,FALSE,0.0210982261038916
-"69","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.2,46,FALSE,TRUE,0.0541566635346444
-"70","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.8,53.3,FALSE,FALSE,0.0628210874636282
-"71","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",96.4,63.3,FALSE,TRUE,0.148706105635641
-"78","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",93.3,48.7,FALSE,TRUE,0.430494266084095
-"79","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",84.8,50.3,FALSE,FALSE,0.127459869471154
-"80","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",93.7,41,FALSE,FALSE,0.128688564497559
-"112","959707",29595,"Moussa Sissoko","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",87,34.5,FALSE,FALSE,0.0670813608013617
-"119","959707",32196,"Siem de Jong","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",86.1,53.9,FALSE,FALSE,0.101044233157273
-"133","959707",43105,"Joel Ward","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.1,25.8,FALSE,FALSE,0.0264307055917593
-"138","959707",63885,"Vurnon Anita","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",73.4,51.5,FALSE,FALSE,0.038035438136566
-"153","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",95.9,43.1,FALSE,TRUE,0.984545237154276
-"154","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.5,63.7,FALSE,TRUE,0.0890667264379078
-"155","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.6,48.9,FALSE,FALSE,0.268627027141649
-"156","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",79.4,69,FALSE,FALSE,0.0345234996119872
-"157","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",79.2,60.9,FALSE,FALSE,0.0523818619864549
-"169","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.2,61.7,FALSE,FALSE,0.0593827266884605
-"170","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",89.2,46.8,FALSE,FALSE,0.0534745952450021
-"171","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",95.1,54.5,FALSE,FALSE,0.376057910687002
-"183","959707",79970,"Pape Souaré","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",88.8,63.3,FALSE,FALSE,0.097393670478921
-"184","959707",79970,"Pape Souaré","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",68.4,69.1,FALSE,FALSE,0.0185960469383469
-"195","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",86.6,42.1,FALSE,TRUE,0.118735605487908
-"196","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.4,29.9,FALSE,FALSE,0.0540545288149476
-"197","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.4,45.8,FALSE,FALSE,0.0785923336019747
-"28","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",75.9,27.4,FALSE,FALSE,0.0396478615357558
-"29","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",79.5,40.6,FALSE,FALSE,0.11173192944272
-"30","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",93.5,70.7,FALSE,TRUE,0.0542417092087858
-"39","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",81.8,30.1,FALSE,FALSE,0.0276984319253439
-"40","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",96.1,57.1,FALSE,TRUE,0.92512819287703
-"41","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",84.4,63.3,FALSE,FALSE,0.0520040408059802
-"44","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",77.4,70.6,FALSE,FALSE,0.0265811070715896
-"45","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",74.4,43.1,FALSE,FALSE,0.0378615115026413
-"46","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",74.5,57.5,FALSE,FALSE,0.0833132292000838
-"49","959715",14260,"Sergio Agüero","Man City","Southampton","Man City","Southampton","November",97,33.7,FALSE,FALSE,0.0952728406896731
-"50","959715",14260,"Sergio Agüero","Man City","Southampton","Man City","Southampton","November",89.7,45.3,FALSE,FALSE,0.434143331921135
-"62","959715",19119,"Fernandinho","Man City","Southampton","Man City","Southampton","November",91,53,FALSE,FALSE,0.0715847979655555
-"63","959715",19119,"Fernandinho","Man City","Southampton","Man City","Southampton","November",71.2,38,FALSE,FALSE,0.0215223115887354
-"101","959715",27213,"Fabian Delph","Man City","Southampton","Man City","Southampton","November",76.4,56.3,FALSE,TRUE,0.0323188232328114
-"102","959715",27213,"Fabian Delph","Man City","Southampton","Man City","Southampton","November",79.3,27,FALSE,FALSE,0.0256427442445626
-"110","959715",29474,"Dusan Tadic","Southampton","Man City","Man City","Southampton","November",75.6,62.5,FALSE,FALSE,0.0274386495143337
-"111","959715",29474,"Dusan Tadic","Southampton","Man City","Man City","Southampton","November",87.7,65.2,FALSE,FALSE,0.0567250408361906
-"166","959715",71714,"Victor Wanyama","Southampton","Man City","Man City","Southampton","November",90.4,44.7,FALSE,FALSE,0.189227398668558
-"167","959715",71714,"Victor Wanyama","Southampton","Man City","Man City","Southampton","November",77.3,48.8,FALSE,FALSE,0.0425314231935683
-"168","959715",73084,"Kevin De Bruyne","Man City","Southampton","Man City","Southampton","November",98.2,52.4,FALSE,TRUE,0.739046662341942
-"173","959715",75691,"Nicolás Otamendi","Man City","Southampton","Man City","Southampton","November",89.7,56.3,FALSE,FALSE,0.0429724728457636
-"207","959715",95408,"Virgil van Dijk","Southampton","Man City","Man City","Southampton","November",76.9,63.9,FALSE,FALSE,0.0283769020269682
-"210","959715",97692,"Raheem Sterling","Man City","Southampton","Man City","Southampton","November",89.7,66.9,FALSE,FALSE,0.143078897502816
-"211","959715",97692,"Raheem Sterling","Man City","Southampton","Man City","Southampton","November",91.9,40.6,FALSE,FALSE,0.132329108449573
-"214","959715",105172,"James Ward-Prowse","Southampton","Man City","Man City","Southampton","November",78.9,27.2,FALSE,FALSE,0.0430583024023709
-"218","959715",109915,"Sadio Mané","Southampton","Man City","Man City","Southampton","November",84.3,36.9,FALSE,FALSE,0.0523174160152644
-"219","959715",109915,"Sadio Mané","Southampton","Man City","Man City","Southampton","November",88.8,34.7,FALSE,FALSE,0.0603375503768776
-"2","959712",3859,"Wayne Rooney","Man Utd","Leicester","Leicester","Man Utd","November",77.8,57.6,FALSE,FALSE,0.0410661276957333
-"3","959712",3859,"Wayne Rooney","Man Utd","Leicester","Leicester","Man Utd","November",91.4,50.4,FALSE,FALSE,0.0693472026036735
-"10","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",95.3,51.5,FALSE,TRUE,0.183551060593679
-"11","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",90.5,61.1,FALSE,FALSE,0.110320042275349
-"12","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",76.5,65.8,FALSE,FALSE,0.0252820227828787
-"13","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",92,50.3,FALSE,FALSE,0.114769460282529
-"66","959712",19847,"Leonardo Ulloa","Leicester","Man Utd","Leicester","Man Utd","November",89.9,51.1,FALSE,FALSE,0.226963475426712
-"67","959712",19847,"Leonardo Ulloa","Leicester","Man Utd","Leicester","Man Utd","November",79.8,38,FALSE,FALSE,0.040809287974892
-"75","959712",23220,"Matteo Darmian","Man Utd","Leicester","Leicester","Man Utd","November",78.1,34.5,FALSE,FALSE,0.0298069981355907
-"89","959712",25363,"Juan Mata","Man Utd","Leicester","Leicester","Man Utd","November",75.5,50.6,FALSE,FALSE,0.0374758976490843
-"90","959712",25363,"Juan Mata","Man Utd","Leicester","Leicester","Man Utd","November",91.5,37.6,FALSE,FALSE,0.0698880319328593
-"131","959712",42147,"Marc Albrighton","Leicester","Man Utd","Leicester","Man Utd","November",77.2,73,FALSE,FALSE,0.0192172381889622
-"172","959712",75138,"Daniel Drinkwater","Leicester","Man Utd","Leicester","Man Utd","November",72.8,49.3,FALSE,FALSE,0.0297644147218384
-"213","959712",104749,"Riyad Mahrez","Leicester","Man Utd","Leicester","Man Utd","November",90.5,74.1,FALSE,FALSE,0.0368912676083106
-"217","959712",106981,"Jamie Vardy","Leicester","Man Utd","Leicester","Man Utd","November",89.4,29.5,FALSE,TRUE,0.103604313210796
-"220","959712",110154,"Memphis Depay","Man Utd","Leicester","Leicester","Man Utd","November",92.8,40.3,FALSE,FALSE,0.160012875437604
-"222","959712",114075,"N'Golo Kanté","Leicester","Man Utd","Leicester","Man Utd","November",78.5,68,FALSE,FALSE,0.0269824513681488
-"27","959588",12187,"Mousa Dembélé","Tottenham","Chelsea","Tottenham","Chelsea","November",74.8,45.4,FALSE,FALSE,0.0340871457312472
-"123","959588",33404,"Eden Hazard","Chelsea","Tottenham","Tottenham","Chelsea","November",92.9,44.3,FALSE,FALSE,0.0889379287976734
-"124","959588",33404,"Eden Hazard","Chelsea","Tottenham","Tottenham","Chelsea","November",93,67.2,FALSE,FALSE,0.0639018905830022
-"130","959588",41065,"Oscar","Chelsea","Tottenham","Tottenham","Chelsea","November",96.6,68.4,FALSE,FALSE,0.0610717310177035
-"136","959588",44055,"Pedro","Chelsea","Tottenham","Tottenham","Chelsea","November",75.7,53.4,FALSE,FALSE,0.0373315788453024
-"137","959588",44055,"Pedro","Chelsea","Tottenham","Tottenham","Chelsea","November",78.8,57.3,FALSE,FALSE,0.0454755551227738
-"191","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",78.4,37.1,FALSE,FALSE,0.0349582021914722
-"192","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",78.2,39.2,FALSE,FALSE,0.0378987911792021
-"193","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",77.2,54.4,FALSE,FALSE,0.0425495285447362
-"194","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",76.7,60.8,FALSE,FALSE,0.0335702173589009
-"200","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",71.7,49.7,FALSE,FALSE,0.0271973948998304
-"201","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",92.5,60.2,FALSE,FALSE,0.0440879205386316
-"202","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",92.5,59,FALSE,FALSE,0.363155363400434
-"203","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",76.2,56.1,FALSE,FALSE,0.0374023052326492
-"18","959598",8409,"Rickie Lambert","West Brom","West Ham","West Ham","West Brom","November",74.5,32.8,FALSE,FALSE,0.04680097098847
-"19","959598",8409,"Rickie Lambert","West Brom","West Ham","West Ham","West Brom","November",86.3,30.1,FALSE,FALSE,0.0350686856534915
-"47","959598",14061,"Stéphane Sessegnon","West Brom","West Ham","West Ham","West Brom","November",84.8,36.3,FALSE,FALSE,0.0520892889970076
-"54","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",92.5,65.1,FALSE,FALSE,0.0800746361728896
-"55","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",77.8,35.2,FALSE,FALSE,0.0647298802750913
-"56","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",75.3,61.8,FALSE,TRUE,0.061697960880091
-"57","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",86.5,44.5,FALSE,FALSE,0.0935659266346584
-"58","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",81.2,54.3,FALSE,FALSE,0.0641409066895082
-"59","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",86,76.5,FALSE,FALSE,0.0222788172830749
-"68","959598",19969,"Nikica Jelavic","West Ham","West Brom","West Ham","West Brom","November",86.7,63.1,FALSE,FALSE,0.0666455464971751
-"77","959598",23383,"Andy Carroll","West Ham","West Brom","West Ham","West Brom","November",89.8,54.2,FALSE,FALSE,0.195989494114408
-"96","959598",25964,"Salomón Rondón","West Brom","West Ham","West Ham","West Brom","November",78.1,34.5,FALSE,FALSE,0.0298069981355907
-"97","959598",25964,"Salomón Rondón","West Brom","West Ham","West Ham","West Brom","November",95.4,50.9,FALSE,FALSE,0.269330276088135
-"120","959598",33064,"Victor Moses","West Ham","West Brom","West Ham","West Brom","November",92.4,23.9,FALSE,FALSE,0.0327015057359804
-"121","959598",33064,"Victor Moses","West Ham","West Brom","West Ham","West Brom","November",87.9,62.9,FALSE,FALSE,0.0746313621733076
-"141","959598",66741,"Cheikhou Kouyaté","West Ham","West Brom","West Ham","West Brom","November",92.3,47.8,FALSE,FALSE,0.136526575001554
-"147","959598",68049,"Aaron Cresswell","West Ham","West Brom","West Ham","West Brom","November",78.1,38,FALSE,FALSE,0.0752296926559015
-"174","959598",76050,"James McClean","West Brom","West Ham","West Ham","West Brom","November",89.5,59.9,FALSE,FALSE,0.11416899009514
-"175","959598",76050,"James McClean","West Brom","West Ham","West Ham","West Brom","November",91.7,39.4,FALSE,FALSE,0.1296892955642
-"188","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",95.8,38.3,FALSE,FALSE,0.0314479669079546
-"189","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",89,34.2,FALSE,FALSE,0.0731662858996665
-"190","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",90.7,36.4,FALSE,FALSE,0.0854961092306286
-"198","959598",89998,"Manuel Lanzini","West Ham","West Brom","West Ham","West Brom","November",78.4,52.6,FALSE,FALSE,0.0591242971448319
-"199","959598",89998,"Manuel Lanzini","West Ham","West Brom","West Ham","West Brom","November",87,36.5,FALSE,FALSE,0.0787927237916078
-"9","959568",4522,"Santiago Cazorla","Arsenal","Norwich","Norwich","Arsenal","November",79.8,48.1,FALSE,FALSE,0.0571153641470807
-"15","959568",6007,"Gary O'Neil","Norwich","Arsenal","Norwich","Arsenal","November",83.4,85.6,FALSE,FALSE,0.011881773167986
-"34","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",93.1,56.7,FALSE,FALSE,0.243645507939958
-"35","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",97,48,FALSE,FALSE,0.683480705498988
-"36","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",77.7,41.9,FALSE,FALSE,0.0400260210175584
-"37","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",87.3,67,FALSE,TRUE,0.124639791914794
-"38","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",76.2,38.2,FALSE,FALSE,0.0653857055077345
-"60","959568",15782,"Graham Dorrans","Norwich","Arsenal","Norwich","Arsenal","November",72.5,50.6,FALSE,FALSE,0.0290329745682339
-"64","959568",19541,"Wes Hoolahan","Norwich","Arsenal","Norwich","Arsenal","November",95.6,58.1,FALSE,FALSE,0.186167618695883
-"65","959568",19736,"Lewis Grabban","Norwich","Arsenal","Norwich","Arsenal","November",90.6,51.3,FALSE,TRUE,0.219981901162503
-"76","959568",23273,"Jonny Howson","Norwich","Arsenal","Norwich","Arsenal","November",93.7,52.6,FALSE,FALSE,0.404287491823742
-"81","959568",24444,"Olivier Giroud","Arsenal","Norwich","Norwich","Arsenal","November",95.6,57.5,FALSE,FALSE,0.205820764339373
-"82","959568",24444,"Olivier Giroud","Arsenal","Norwich","Norwich","Arsenal","November",92.7,49,FALSE,FALSE,0.133352141989729
-"87","959568",25244,"Alexis Sánchez","Arsenal","Norwich","Norwich","Arsenal","November",73.4,63.9,FALSE,FALSE,0.023252290366461
-"88","959568",25244,"Alexis Sánchez","Arsenal","Norwich","Norwich","Arsenal","November",85.5,34.7,FALSE,FALSE,0.0504834359529903
-"100","959568",26820,"Aaron Ramsey","Arsenal","Norwich","Norwich","Arsenal","November",82.3,62.5,FALSE,FALSE,0.0590278959018317
-"122","959568",33085,"Vadis Odjidja-Ofoe","Norwich","Arsenal","Norwich","Arsenal","November",78.5,60.2,FALSE,FALSE,0.0398748135321344
-"206","959568",93473,"Robbie Brady","Norwich","Arsenal","Norwich","Arsenal","November",79.2,63.1,FALSE,FALSE,0.0306755578854069
-"225","959568",125211,"Héctor Bellerín","Arsenal","Norwich","Norwich","Arsenal","November",92.9,27.7,FALSE,FALSE,0.0378839750461397
-"7","959714",4511,"James Milner","Liverpool","Swansea","Liverpool","Swansea","November",87,69.5,FALSE,FALSE,0.0473782316290054
-"8","959714",4511,"James Milner","Liverpool","Swansea","Liverpool","Swansea","November",88.5,50,TRUE,TRUE,0.7757009
-"17","959714",8408,"Ashley Williams","Swansea","Liverpool","Liverpool","Swansea","November",90.9,54.4,FALSE,FALSE,0.102671652568946
-"52","959714",14308,"Bafétimbi Gomis","Swansea","Liverpool","Liverpool","Swansea","November",74.2,43.6,FALSE,FALSE,0.0297455339758167
-"53","959714",14308,"Bafétimbi Gomis","Swansea","Liverpool","Liverpool","Swansea","November",85.5,30.2,FALSE,FALSE,0.0339568121792631
-"73","959714",21683,"Adam Lallana","Liverpool","Swansea","Liverpool","Swansea","November",88.4,40.7,FALSE,FALSE,0.108821685207932
-"74","959714",22847,"Jack Cork","Swansea","Liverpool","Liverpool","Swansea","November",76.8,49.9,FALSE,FALSE,0.04065485465342
-"108","959714",28416,"Jefferson Montero","Swansea","Liverpool","Liverpool","Swansea","November",81.3,55.5,FALSE,FALSE,0.0595769489142388
-"109","959714",29106,"Dejan Lovren","Liverpool","Swansea","Liverpool","Swansea","November",90.9,43.3,FALSE,FALSE,0.0576256290494716
-"132","959714",42916,"Ki Sung-yueng","Swansea","Liverpool","Liverpool","Swansea","November",77.5,51.3,FALSE,FALSE,0.0452464845222131
-"134","959714",43922,"Eder","Swansea","Liverpool","Liverpool","Swansea","November",95.5,40.4,FALSE,FALSE,0.0629222142700879
-"135","959714",43922,"Eder","Swansea","Liverpool","Liverpool","Swansea","November",77.6,24.6,FALSE,FALSE,0.0171070076373311
-"148","959714",68312,"Christian Benteke","Liverpool","Swansea","Liverpool","Swansea","November",85.8,67.2,FALSE,FALSE,0.0445386378726668
-"165","959714",71327,"Kyle Bartley","Swansea","Liverpool","Liverpool","Swansea","November",91.5,44.5,FALSE,FALSE,0.0515640193252614
-"208","959714",96182,"Roberto Firmino","Liverpool","Swansea","Liverpool","Swansea","November",86,53.2,FALSE,FALSE,0.0246984883509039
-"209","959714",96182,"Roberto Firmino","Liverpool","Swansea","Liverpool","Swansea","November",86.9,37.5,FALSE,FALSE,0.071307274844951
-"215","959714",105797,"Jordon Ibe","Liverpool","Swansea","Liverpool","Swansea","November",85.7,30.1,FALSE,FALSE,0.0237335304355936
-"216","959714",105797,"Jordon Ibe","Liverpool","Swansea","Liverpool","Swansea","November",79.8,76.7,FALSE,FALSE,0.0175748337561992
-"221","959714",113275,"Alberto Moreno","Liverpool","Swansea","Liverpool","Swansea","November",79.8,35.3,FALSE,FALSE,0.0745331285006396
 "8","959679",4567,"Bastian Schweinsteiger","Man Utd","Watford","Watford","Man Utd","November",98.6,40.3,FALSE,FALSE,0.224139947205219
 "9","959679",4567,"Bastian Schweinsteiger","Man Utd","Watford","Watford","Man Utd","November",74.2,38,FALSE,FALSE,0.032381320908471
 "30","959679",10254,"Ben Watson","Watford","Man Utd","Watford","Man Utd","November",71.5,46,FALSE,FALSE,0.0217569560752278
@@ -3592,3 +3364,753 @@
 "260","959687",4522,"Santiago Cazorla","Arsenal","West Brom","West Brom","Arsenal","November",88.5,50,FALSE,TRUE,0.7757009
 "261","959679",25832,"Troy Deeney","Watford","Man Utd","Watford","Man Utd","November",88.5,50.1,TRUE,TRUE,0.7757009
 "262","959660",40027,"Jonjo Shelvey","Swansea","Bournemouth","Swansea","Bournemouth","November",88.5,50,TRUE,TRUE,0.7757009
+"1","959578",2837,"Jermain Defoe","Sunderland","Stoke","Sunderland","Stoke","November",79.1,41.2,FALSE,FALSE,0.0445384986454991
+"4","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",95.9,52.4,FALSE,FALSE,0.468235798519607
+"5","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",88,34.5,FALSE,FALSE,0.058669909769227
+"6","959578",3860,"Jonathan Walters","Stoke","Sunderland","Sunderland","Stoke","November",96.2,62.7,FALSE,FALSE,0.054359526865701
+"14","959578",4574,"Glen Johnson","Stoke","Sunderland","Sunderland","Stoke","November",71.7,47.1,FALSE,FALSE,0.0266549153361766
+"16","959578",8327,"Charlie Adam","Stoke","Sunderland","Sunderland","Stoke","November",94.6,60.4,FALSE,FALSE,0.0362007518770302
+"24","959578",9766,"Steven Fletcher","Sunderland","Stoke","Sunderland","Stoke","November",90.4,68.8,FALSE,FALSE,0.0491014959149847
+"51","959578",14269,"Adam Johnson","Sunderland","Stoke","Sunderland","Stoke","November",73.9,40.6,FALSE,FALSE,0.0359031818431821
+"103","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",77.9,74.7,FALSE,FALSE,0.0181330377129438
+"104","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",84,62.9,FALSE,FALSE,0.054438632809254
+"105","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",85.3,69.5,FALSE,FALSE,0.0458251889726939
+"106","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",94.2,29.7,FALSE,FALSE,0.0339567321412074
+"107","959578",27512,"Jeremain Lens","Sunderland","Stoke","Sunderland","Stoke","November",79.4,49,FALSE,FALSE,0.0555227823760559
+"117","959578",31402,"Bojan","Stoke","Sunderland","Sunderland","Stoke","November",74.3,62.6,FALSE,FALSE,0.0259707731493725
+"126","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",77.2,42,FALSE,FALSE,0.0387191769232186
+"127","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",79.1,35.6,FALSE,FALSE,0.0721444188940925
+"128","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",77.6,59.1,FALSE,FALSE,0.0385819115329889
+"129","959578",33886,"Yann M'Vila","Sunderland","Stoke","Sunderland","Stoke","November",89.6,35.9,FALSE,FALSE,0.0752587868997577
+"164","959578",71268,"Sebastián Coates","Sunderland","Stoke","Sunderland","Stoke","November",93.5,41.5,FALSE,FALSE,0.0634451254729177
+"176","959578",76304,"Xherdan Shaqiri","Stoke","Sunderland","Sunderland","Stoke","November",75.8,23.1,FALSE,FALSE,0.0317747163312736
+"177","959578",78221,"Patrick van Aanholt","Sunderland","Stoke","Sunderland","Stoke","November",76.2,39.8,FALSE,TRUE,0.781135009960418
+"178","959578",78221,"Patrick van Aanholt","Sunderland","Stoke","Sunderland","Stoke","November",77.1,26.6,FALSE,FALSE,0.0403209700705389
+"226","959578",126958,"DeAndre Yedlin","Sunderland","Stoke","Sunderland","Stoke","November",96.4,36.7,FALSE,FALSE,0.271206889160453
+"227","959578",141512,"Duncan Watmore","Sunderland","Stoke","Sunderland","Stoke","November",89,27.2,FALSE,FALSE,0.0325785220601246
+"228","959578",141512,"Duncan Watmore","Sunderland","Stoke","Sunderland","Stoke","November",93.3,32.4,FALSE,TRUE,0.0744601035083483
+"25","959694",10254,"Ben Watson","Watford","Aston Villa","Aston Villa","Watford","November",73,47.4,FALSE,FALSE,0.029732524722925
+"26","959694",10254,"Ben Watson","Watford","Aston Villa","Aston Villa","Watford","November",73.2,57.7,FALSE,FALSE,0.0277931759030634
+"31","959694",12779,"Scott Sinclair","Aston Villa","Watford","Aston Villa","Watford","November",92,41.5,FALSE,FALSE,0.0377950327275712
+"32","959694",12779,"Scott Sinclair","Aston Villa","Watford","Aston Villa","Watford","November",77.1,58.5,FALSE,FALSE,0.0314839597220285
+"48","959694",14168,"Micah Richards","Aston Villa","Watford","Aston Villa","Watford","November",92.7,52.2,FALSE,TRUE,0.950283770210478
+"86","959694",25241,"Craig Cathcart","Watford","Aston Villa","Aston Villa","Watford","November",86.9,55.5,FALSE,FALSE,0.0249600729685195
+"91","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",81,50.2,FALSE,FALSE,0.0659558418289293
+"92","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",90.9,47.5,FALSE,FALSE,0.135258387905453
+"93","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",84.2,35.3,FALSE,FALSE,0.0589138547233037
+"94","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",89.6,46.8,FALSE,TRUE,0.11206099277898
+"95","959694",25832,"Troy Deeney","Watford","Aston Villa","Aston Villa","Watford","November",76.8,64.5,FALSE,FALSE,0.0351510055073637
+"98","959694",26720,"Carlos Sánchez","Aston Villa","Watford","Aston Villa","Watford","November",76.4,47.7,FALSE,FALSE,0.0141415496856328
+"99","959694",26720,"Carlos Sánchez","Aston Villa","Watford","Aston Villa","Watford","November",93.4,40.1,FALSE,FALSE,0.0297589116744955
+"114","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",90.7,41.7,FALSE,FALSE,0.152955350585577
+"115","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",92.3,47,FALSE,TRUE,0.311496273474571
+"116","959694",31376,"Odion Ighalo","Watford","Aston Villa","Aston Villa","Watford","November",86.2,66.1,FALSE,FALSE,0.0605818680216384
+"125","959694",33590,"Etienne Capoue","Watford","Aston Villa","Aston Villa","Watford","November",90.5,41.3,FALSE,FALSE,0.363105256145303
+"139","959694",64343,"Adlène Guédioura","Watford","Aston Villa","Aston Villa","Watford","November",90.7,71.2,FALSE,FALSE,0.0482202739487857
+"140","959694",64343,"Adlène Guédioura","Watford","Aston Villa","Aston Villa","Watford","November",75.8,50.7,FALSE,FALSE,0.0471994330182729
+"142","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",79,67.7,FALSE,FALSE,0.0235518021825071
+"143","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",92.7,28.5,FALSE,FALSE,0.105256782548526
+"144","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",82.6,59.4,FALSE,TRUE,0.0371035022208591
+"145","959694",67491,"Jordan Ayew","Aston Villa","Watford","Aston Villa","Watford","November",93.3,49.3,FALSE,FALSE,0.365453122970429
+"163","959694",70099,"Ciaran Clark","Aston Villa","Watford","Aston Villa","Watford","November",97.6,57.7,FALSE,FALSE,0.277179156824744
+"185","959694",80464,"Idrissa Gueye","Aston Villa","Watford","Aston Villa","Watford","November",77.2,69.5,FALSE,FALSE,0.0192026750216295
+"212","959694",101017,"Jordan Veretout","Aston Villa","Watford","Aston Villa","Watford","November",81.4,29.4,FALSE,FALSE,0.0227084395107317
+"224","959694",122945,"Nathan Aké","Watford","Aston Villa","Aston Villa","Watford","November",77.7,35.2,FALSE,FALSE,0.0368780473661249
+"20","959701",8943,"Arouna Koné","Everton","Bournemouth","Bournemouth","Everton","November",76.8,55.3,FALSE,FALSE,0.0552076074710707
+"21","959701",8943,"Arouna Koné","Everton","Bournemouth","Bournemouth","Everton","November",89.6,70.1,FALSE,FALSE,0.0417554189981094
+"33","959701",13447,"Andrew Surman","Bournemouth","Everton","Bournemouth","Everton","November",85.9,62.7,FALSE,FALSE,0.0426044405440027
+"42","959701",13846,"Dan Gosling","Bournemouth","Everton","Bournemouth","Everton","November",86.2,55.8,FALSE,FALSE,0.108971057617253
+"43","959701",13846,"Dan Gosling","Bournemouth","Everton","Bournemouth","Everton","November",89.2,53.4,FALSE,FALSE,0.0537879395060278
+"72","959701",21427,"Glenn Murray","Bournemouth","Everton","Bournemouth","Everton","November",88.8,53.4,FALSE,FALSE,0.0385594252156463
+"83","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",87.8,68.4,FALSE,FALSE,0.0376168377416163
+"84","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",89.2,74.2,FALSE,FALSE,0.0270213649525629
+"85","959701",24827,"Charlie Daniels","Bournemouth","Everton","Bournemouth","Everton","November",93.9,43.7,FALSE,FALSE,0.139519922874302
+"113","959701",31281,"James McCarthy","Everton","Bournemouth","Bournemouth","Everton","November",88,71.3,FALSE,FALSE,0.0352545351289427
+"118","959701",31826,"Seamus Coleman","Everton","Bournemouth","Bournemouth","Everton","November",78.5,25.5,FALSE,FALSE,0.0260541898929168
+"146","959701",67807,"Harry Arter","Bournemouth","Everton","Bournemouth","Everton","November",80.8,71.8,FALSE,FALSE,0.0226586001368197
+"149","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",78.8,40,FALSE,FALSE,0.0412596321421664
+"150","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",87.2,53.4,FALSE,FALSE,0.0892795731332945
+"151","959701",68648,"Matt Ritchie","Bournemouth","Everton","Bournemouth","Everton","November",77.4,58.8,FALSE,FALSE,0.0354311409722433
+"152","959701",68662,"Steve Cook","Bournemouth","Everton","Bournemouth","Everton","November",92,51.5,FALSE,FALSE,0.104139321531873
+"158","959701",69877,"Adam Smith","Bournemouth","Everton","Bournemouth","Everton","November",79.3,31,FALSE,TRUE,0.0247006405453671
+"159","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",84.4,69.1,FALSE,FALSE,0.0328104428950388
+"160","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",77.2,56.6,FALSE,FALSE,0.0373350241776582
+"161","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",90.5,45.6,FALSE,TRUE,0.184605497082254
+"162","959701",69912,"Junior Stanislas","Bournemouth","Everton","Bournemouth","Everton","November",91.3,44.5,FALSE,TRUE,0.0589066050114371
+"179","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",95.8,73.4,FALSE,FALSE,0.0497374719433864
+"180","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",92.9,44.1,FALSE,FALSE,0.0621227341353439
+"181","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",77.7,63.4,FALSE,FALSE,0.0321431419643245
+"182","959701",78498,"Romelu Lukaku","Everton","Bournemouth","Bournemouth","Everton","November",94.6,39.8,FALSE,TRUE,0.20451460286771
+"186","959701",81026,"Joshua King","Bournemouth","Everton","Bournemouth","Everton","November",87.9,64.5,FALSE,FALSE,0.0596144360951869
+"187","959701",81026,"Joshua King","Bournemouth","Everton","Bournemouth","Everton","November",77.8,54,FALSE,FALSE,0.0454185701385705
+"204","959701",92547,"Ross Barkley","Everton","Bournemouth","Bournemouth","Everton","November",76.7,58.7,FALSE,FALSE,0.0359642214064208
+"205","959701",92547,"Ross Barkley","Everton","Bournemouth","Bournemouth","Everton","November",92.4,34,FALSE,TRUE,0.071330070061676
+"223","959701",121454,"Ramiro Funes Mori","Everton","Bournemouth","Bournemouth","Everton","November",92.9,45.8,FALSE,TRUE,0.0781659178399459
+"22","959707",9156,"Jason Puncheon","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.8,55.7,FALSE,FALSE,0.0831771574239971
+"23","959707",9156,"Jason Puncheon","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.1,70.5,FALSE,FALSE,0.0328794819648921
+"61","959707",18436,"Yoan Gouffran","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",78.1,31,FALSE,FALSE,0.0210982261038916
+"69","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.2,46,FALSE,TRUE,0.0541566635346444
+"70","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.8,53.3,FALSE,FALSE,0.0628210874636282
+"71","959707",20339,"James McArthur","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",96.4,63.3,FALSE,TRUE,0.148706105635641
+"78","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",93.3,48.7,FALSE,TRUE,0.430494266084095
+"79","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",84.8,50.3,FALSE,FALSE,0.127459869471154
+"80","959707",24223,"Papiss Demba Cissé","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",93.7,41,FALSE,FALSE,0.128688564497559
+"112","959707",29595,"Moussa Sissoko","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",87,34.5,FALSE,FALSE,0.0670813608013617
+"119","959707",32196,"Siem de Jong","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",86.1,53.9,FALSE,FALSE,0.101044233157273
+"133","959707",43105,"Joel Ward","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",80.1,25.8,FALSE,FALSE,0.0264307055917593
+"138","959707",63885,"Vurnon Anita","Newcastle","Crystal Palace","Crystal Palace","Newcastle","November",73.4,51.5,FALSE,FALSE,0.038035438136566
+"153","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",95.9,43.1,FALSE,TRUE,0.984545237154276
+"154","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.5,63.7,FALSE,TRUE,0.0890667264379078
+"155","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.6,48.9,FALSE,FALSE,0.268627027141649
+"156","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",79.4,69,FALSE,FALSE,0.0345234996119872
+"157","959707",69844,"Yannick Bolasie","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",79.2,60.9,FALSE,FALSE,0.0523818619864549
+"169","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.2,61.7,FALSE,FALSE,0.0593827266884605
+"170","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",89.2,46.8,FALSE,FALSE,0.0534745952450021
+"171","959707",73382,"Connor Wickham","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",95.1,54.5,FALSE,FALSE,0.376057910687002
+"183","959707",79970,"Pape Souaré","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",88.8,63.3,FALSE,FALSE,0.097393670478921
+"184","959707",79970,"Pape Souaré","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",68.4,69.1,FALSE,FALSE,0.0185960469383469
+"195","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",86.6,42.1,FALSE,TRUE,0.118735605487908
+"196","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",91.4,29.9,FALSE,FALSE,0.0540545288149476
+"197","959707",85059,"Wilfried Zaha","Crystal Palace","Newcastle","Crystal Palace","Newcastle","November",81.4,45.8,FALSE,FALSE,0.0785923336019747
+"28","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",75.9,27.4,FALSE,FALSE,0.0396478615357558
+"29","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",79.5,40.6,FALSE,FALSE,0.11173192944272
+"30","959715",12267,"Aleksandar Kolarov","Man City","Southampton","Man City","Southampton","November",93.5,70.7,FALSE,TRUE,0.0542417092087858
+"39","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",81.8,30.1,FALSE,FALSE,0.0276984319253439
+"40","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",96.1,57.1,FALSE,TRUE,0.92512819287703
+"41","959715",13798,"Shane Long","Southampton","Man City","Man City","Southampton","November",84.4,63.3,FALSE,FALSE,0.0520040408059802
+"44","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",77.4,70.6,FALSE,FALSE,0.0265811070715896
+"45","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",74.4,43.1,FALSE,FALSE,0.0378615115026413
+"46","959715",14053,"Yaya Touré","Man City","Southampton","Man City","Southampton","November",74.5,57.5,FALSE,FALSE,0.0833132292000838
+"49","959715",14260,"Sergio Agüero","Man City","Southampton","Man City","Southampton","November",97,33.7,FALSE,FALSE,0.0952728406896731
+"50","959715",14260,"Sergio Agüero","Man City","Southampton","Man City","Southampton","November",89.7,45.3,FALSE,FALSE,0.434143331921135
+"62","959715",19119,"Fernandinho","Man City","Southampton","Man City","Southampton","November",91,53,FALSE,FALSE,0.0715847979655555
+"63","959715",19119,"Fernandinho","Man City","Southampton","Man City","Southampton","November",71.2,38,FALSE,FALSE,0.0215223115887354
+"101","959715",27213,"Fabian Delph","Man City","Southampton","Man City","Southampton","November",76.4,56.3,FALSE,TRUE,0.0323188232328114
+"102","959715",27213,"Fabian Delph","Man City","Southampton","Man City","Southampton","November",79.3,27,FALSE,FALSE,0.0256427442445626
+"110","959715",29474,"Dusan Tadic","Southampton","Man City","Man City","Southampton","November",75.6,62.5,FALSE,FALSE,0.0274386495143337
+"111","959715",29474,"Dusan Tadic","Southampton","Man City","Man City","Southampton","November",87.7,65.2,FALSE,FALSE,0.0567250408361906
+"166","959715",71714,"Victor Wanyama","Southampton","Man City","Man City","Southampton","November",90.4,44.7,FALSE,FALSE,0.189227398668558
+"167","959715",71714,"Victor Wanyama","Southampton","Man City","Man City","Southampton","November",77.3,48.8,FALSE,FALSE,0.0425314231935683
+"168","959715",73084,"Kevin De Bruyne","Man City","Southampton","Man City","Southampton","November",98.2,52.4,FALSE,TRUE,0.739046662341942
+"173","959715",75691,"Nicolás Otamendi","Man City","Southampton","Man City","Southampton","November",89.7,56.3,FALSE,FALSE,0.0429724728457636
+"207","959715",95408,"Virgil van Dijk","Southampton","Man City","Man City","Southampton","November",76.9,63.9,FALSE,FALSE,0.0283769020269682
+"210","959715",97692,"Raheem Sterling","Man City","Southampton","Man City","Southampton","November",89.7,66.9,FALSE,FALSE,0.143078897502816
+"211","959715",97692,"Raheem Sterling","Man City","Southampton","Man City","Southampton","November",91.9,40.6,FALSE,FALSE,0.132329108449573
+"214","959715",105172,"James Ward-Prowse","Southampton","Man City","Man City","Southampton","November",78.9,27.2,FALSE,FALSE,0.0430583024023709
+"218","959715",109915,"Sadio Mané","Southampton","Man City","Man City","Southampton","November",84.3,36.9,FALSE,FALSE,0.0523174160152644
+"219","959715",109915,"Sadio Mané","Southampton","Man City","Man City","Southampton","November",88.8,34.7,FALSE,FALSE,0.0603375503768776
+"2","959712",3859,"Wayne Rooney","Man Utd","Leicester","Leicester","Man Utd","November",77.8,57.6,FALSE,FALSE,0.0410661276957333
+"3","959712",3859,"Wayne Rooney","Man Utd","Leicester","Leicester","Man Utd","November",91.4,50.4,FALSE,FALSE,0.0693472026036735
+"10","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",95.3,51.5,FALSE,TRUE,0.183551060593679
+"11","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",90.5,61.1,FALSE,FALSE,0.110320042275349
+"12","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",76.5,65.8,FALSE,FALSE,0.0252820227828787
+"13","959712",4567,"Bastian Schweinsteiger","Man Utd","Leicester","Leicester","Man Utd","November",92,50.3,FALSE,FALSE,0.114769460282529
+"66","959712",19847,"Leonardo Ulloa","Leicester","Man Utd","Leicester","Man Utd","November",89.9,51.1,FALSE,FALSE,0.226963475426712
+"67","959712",19847,"Leonardo Ulloa","Leicester","Man Utd","Leicester","Man Utd","November",79.8,38,FALSE,FALSE,0.040809287974892
+"75","959712",23220,"Matteo Darmian","Man Utd","Leicester","Leicester","Man Utd","November",78.1,34.5,FALSE,FALSE,0.0298069981355907
+"89","959712",25363,"Juan Mata","Man Utd","Leicester","Leicester","Man Utd","November",75.5,50.6,FALSE,FALSE,0.0374758976490843
+"90","959712",25363,"Juan Mata","Man Utd","Leicester","Leicester","Man Utd","November",91.5,37.6,FALSE,FALSE,0.0698880319328593
+"131","959712",42147,"Marc Albrighton","Leicester","Man Utd","Leicester","Man Utd","November",77.2,73,FALSE,FALSE,0.0192172381889622
+"172","959712",75138,"Daniel Drinkwater","Leicester","Man Utd","Leicester","Man Utd","November",72.8,49.3,FALSE,FALSE,0.0297644147218384
+"213","959712",104749,"Riyad Mahrez","Leicester","Man Utd","Leicester","Man Utd","November",90.5,74.1,FALSE,FALSE,0.0368912676083106
+"217","959712",106981,"Jamie Vardy","Leicester","Man Utd","Leicester","Man Utd","November",89.4,29.5,FALSE,TRUE,0.103604313210796
+"220","959712",110154,"Memphis Depay","Man Utd","Leicester","Leicester","Man Utd","November",92.8,40.3,FALSE,FALSE,0.160012875437604
+"222","959712",114075,"N'Golo Kanté","Leicester","Man Utd","Leicester","Man Utd","November",78.5,68,FALSE,FALSE,0.0269824513681488
+"27","959588",12187,"Mousa Dembélé","Tottenham","Chelsea","Tottenham","Chelsea","November",74.8,45.4,FALSE,FALSE,0.0340871457312472
+"123","959588",33404,"Eden Hazard","Chelsea","Tottenham","Tottenham","Chelsea","November",92.9,44.3,FALSE,FALSE,0.0889379287976734
+"124","959588",33404,"Eden Hazard","Chelsea","Tottenham","Tottenham","Chelsea","November",93,67.2,FALSE,FALSE,0.0639018905830022
+"130","959588",41065,"Oscar","Chelsea","Tottenham","Tottenham","Chelsea","November",96.6,68.4,FALSE,FALSE,0.0610717310177035
+"136","959588",44055,"Pedro","Chelsea","Tottenham","Tottenham","Chelsea","November",75.7,53.4,FALSE,FALSE,0.0373315788453024
+"137","959588",44055,"Pedro","Chelsea","Tottenham","Tottenham","Chelsea","November",78.8,57.3,FALSE,FALSE,0.0454755551227738
+"191","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",78.4,37.1,FALSE,FALSE,0.0349582021914722
+"192","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",78.2,39.2,FALSE,FALSE,0.0378987911792021
+"193","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",77.2,54.4,FALSE,FALSE,0.0425495285447362
+"194","959588",83532,"Harry Kane","Tottenham","Chelsea","Tottenham","Chelsea","November",76.7,60.8,FALSE,FALSE,0.0335702173589009
+"200","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",71.7,49.7,FALSE,FALSE,0.0271973948998304
+"201","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",92.5,60.2,FALSE,FALSE,0.0440879205386316
+"202","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",92.5,59,FALSE,FALSE,0.363155363400434
+"203","959588",91909,"Son Heung-Min","Tottenham","Chelsea","Tottenham","Chelsea","November",76.2,56.1,FALSE,FALSE,0.0374023052326492
+"18","959598",8409,"Rickie Lambert","West Brom","West Ham","West Ham","West Brom","November",74.5,32.8,FALSE,FALSE,0.04680097098847
+"19","959598",8409,"Rickie Lambert","West Brom","West Ham","West Ham","West Brom","November",86.3,30.1,FALSE,FALSE,0.0350686856534915
+"47","959598",14061,"Stéphane Sessegnon","West Brom","West Ham","West Ham","West Brom","November",84.8,36.3,FALSE,FALSE,0.0520892889970076
+"54","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",92.5,65.1,FALSE,FALSE,0.0800746361728896
+"55","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",77.8,35.2,FALSE,FALSE,0.0647298802750913
+"56","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",75.3,61.8,FALSE,TRUE,0.061697960880091
+"57","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",86.5,44.5,FALSE,FALSE,0.0935659266346584
+"58","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",81.2,54.3,FALSE,FALSE,0.0641409066895082
+"59","959598",14524,"Mauro Zárate","West Ham","West Brom","West Ham","West Brom","November",86,76.5,FALSE,FALSE,0.0222788172830749
+"68","959598",19969,"Nikica Jelavic","West Ham","West Brom","West Ham","West Brom","November",86.7,63.1,FALSE,FALSE,0.0666455464971751
+"77","959598",23383,"Andy Carroll","West Ham","West Brom","West Ham","West Brom","November",89.8,54.2,FALSE,FALSE,0.195989494114408
+"96","959598",25964,"Salomón Rondón","West Brom","West Ham","West Ham","West Brom","November",78.1,34.5,FALSE,FALSE,0.0298069981355907
+"97","959598",25964,"Salomón Rondón","West Brom","West Ham","West Ham","West Brom","November",95.4,50.9,FALSE,FALSE,0.269330276088135
+"120","959598",33064,"Victor Moses","West Ham","West Brom","West Ham","West Brom","November",92.4,23.9,FALSE,FALSE,0.0327015057359804
+"121","959598",33064,"Victor Moses","West Ham","West Brom","West Ham","West Brom","November",87.9,62.9,FALSE,FALSE,0.0746313621733076
+"141","959598",66741,"Cheikhou Kouyaté","West Ham","West Brom","West Ham","West Brom","November",92.3,47.8,FALSE,FALSE,0.136526575001554
+"147","959598",68049,"Aaron Cresswell","West Ham","West Brom","West Ham","West Brom","November",78.1,38,FALSE,FALSE,0.0752296926559015
+"174","959598",76050,"James McClean","West Brom","West Ham","West Ham","West Brom","November",89.5,59.9,FALSE,FALSE,0.11416899009514
+"175","959598",76050,"James McClean","West Brom","West Ham","West Ham","West Brom","November",91.7,39.4,FALSE,FALSE,0.1296892955642
+"188","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",95.8,38.3,FALSE,FALSE,0.0314479669079546
+"189","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",89,34.2,FALSE,FALSE,0.0731662858996665
+"190","959598",83297,"Diafra Sakho","West Ham","West Brom","West Ham","West Brom","November",90.7,36.4,FALSE,FALSE,0.0854961092306286
+"198","959598",89998,"Manuel Lanzini","West Ham","West Brom","West Ham","West Brom","November",78.4,52.6,FALSE,FALSE,0.0591242971448319
+"199","959598",89998,"Manuel Lanzini","West Ham","West Brom","West Ham","West Brom","November",87,36.5,FALSE,FALSE,0.0787927237916078
+"9","959568",4522,"Santiago Cazorla","Arsenal","Norwich","Norwich","Arsenal","November",79.8,48.1,FALSE,FALSE,0.0571153641470807
+"15","959568",6007,"Gary O'Neil","Norwich","Arsenal","Norwich","Arsenal","November",83.4,85.6,FALSE,FALSE,0.011881773167986
+"34","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",93.1,56.7,FALSE,FALSE,0.243645507939958
+"35","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",97,48,FALSE,FALSE,0.683480705498988
+"36","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",77.7,41.9,FALSE,FALSE,0.0400260210175584
+"37","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",87.3,67,FALSE,TRUE,0.124639791914794
+"38","959568",13756,"Mesut Özil","Arsenal","Norwich","Norwich","Arsenal","November",76.2,38.2,FALSE,FALSE,0.0653857055077345
+"60","959568",15782,"Graham Dorrans","Norwich","Arsenal","Norwich","Arsenal","November",72.5,50.6,FALSE,FALSE,0.0290329745682339
+"64","959568",19541,"Wes Hoolahan","Norwich","Arsenal","Norwich","Arsenal","November",95.6,58.1,FALSE,FALSE,0.186167618695883
+"65","959568",19736,"Lewis Grabban","Norwich","Arsenal","Norwich","Arsenal","November",90.6,51.3,FALSE,TRUE,0.219981901162503
+"76","959568",23273,"Jonny Howson","Norwich","Arsenal","Norwich","Arsenal","November",93.7,52.6,FALSE,FALSE,0.404287491823742
+"81","959568",24444,"Olivier Giroud","Arsenal","Norwich","Norwich","Arsenal","November",95.6,57.5,FALSE,FALSE,0.205820764339373
+"82","959568",24444,"Olivier Giroud","Arsenal","Norwich","Norwich","Arsenal","November",92.7,49,FALSE,FALSE,0.133352141989729
+"87","959568",25244,"Alexis Sánchez","Arsenal","Norwich","Norwich","Arsenal","November",73.4,63.9,FALSE,FALSE,0.023252290366461
+"88","959568",25244,"Alexis Sánchez","Arsenal","Norwich","Norwich","Arsenal","November",85.5,34.7,FALSE,FALSE,0.0504834359529903
+"100","959568",26820,"Aaron Ramsey","Arsenal","Norwich","Norwich","Arsenal","November",82.3,62.5,FALSE,FALSE,0.0590278959018317
+"122","959568",33085,"Vadis Odjidja-Ofoe","Norwich","Arsenal","Norwich","Arsenal","November",78.5,60.2,FALSE,FALSE,0.0398748135321344
+"206","959568",93473,"Robbie Brady","Norwich","Arsenal","Norwich","Arsenal","November",79.2,63.1,FALSE,FALSE,0.0306755578854069
+"225","959568",125211,"Héctor Bellerín","Arsenal","Norwich","Norwich","Arsenal","November",92.9,27.7,FALSE,FALSE,0.0378839750461397
+"7","959714",4511,"James Milner","Liverpool","Swansea","Liverpool","Swansea","November",87,69.5,FALSE,FALSE,0.0473782316290054
+"8","959714",4511,"James Milner","Liverpool","Swansea","Liverpool","Swansea","November",88.5,50,TRUE,TRUE,0.7757009
+"17","959714",8408,"Ashley Williams","Swansea","Liverpool","Liverpool","Swansea","November",90.9,54.4,FALSE,FALSE,0.102671652568946
+"52","959714",14308,"Bafétimbi Gomis","Swansea","Liverpool","Liverpool","Swansea","November",74.2,43.6,FALSE,FALSE,0.0297455339758167
+"53","959714",14308,"Bafétimbi Gomis","Swansea","Liverpool","Liverpool","Swansea","November",85.5,30.2,FALSE,FALSE,0.0339568121792631
+"73","959714",21683,"Adam Lallana","Liverpool","Swansea","Liverpool","Swansea","November",88.4,40.7,FALSE,FALSE,0.108821685207932
+"74","959714",22847,"Jack Cork","Swansea","Liverpool","Liverpool","Swansea","November",76.8,49.9,FALSE,FALSE,0.04065485465342
+"108","959714",28416,"Jefferson Montero","Swansea","Liverpool","Liverpool","Swansea","November",81.3,55.5,FALSE,FALSE,0.0595769489142388
+"109","959714",29106,"Dejan Lovren","Liverpool","Swansea","Liverpool","Swansea","November",90.9,43.3,FALSE,FALSE,0.0576256290494716
+"132","959714",42916,"Ki Sung-yueng","Swansea","Liverpool","Liverpool","Swansea","November",77.5,51.3,FALSE,FALSE,0.0452464845222131
+"134","959714",43922,"Eder","Swansea","Liverpool","Liverpool","Swansea","November",95.5,40.4,FALSE,FALSE,0.0629222142700879
+"135","959714",43922,"Eder","Swansea","Liverpool","Liverpool","Swansea","November",77.6,24.6,FALSE,FALSE,0.0171070076373311
+"148","959714",68312,"Christian Benteke","Liverpool","Swansea","Liverpool","Swansea","November",85.8,67.2,FALSE,FALSE,0.0445386378726668
+"165","959714",71327,"Kyle Bartley","Swansea","Liverpool","Liverpool","Swansea","November",91.5,44.5,FALSE,FALSE,0.0515640193252614
+"208","959714",96182,"Roberto Firmino","Liverpool","Swansea","Liverpool","Swansea","November",86,53.2,FALSE,FALSE,0.0246984883509039
+"209","959714",96182,"Roberto Firmino","Liverpool","Swansea","Liverpool","Swansea","November",86.9,37.5,FALSE,FALSE,0.071307274844951
+"215","959714",105797,"Jordon Ibe","Liverpool","Swansea","Liverpool","Swansea","November",85.7,30.1,FALSE,FALSE,0.0237335304355936
+"216","959714",105797,"Jordon Ibe","Liverpool","Swansea","Liverpool","Swansea","November",79.8,76.7,FALSE,FALSE,0.0175748337561992
+"221","959714",113275,"Alberto Moreno","Liverpool","Swansea","Liverpool","Swansea","November",79.8,35.3,FALSE,FALSE,0.0745331285006396
+"10","959621",4145,"Robert Huth","Leicester","Chelsea","Leicester","Chelsea","December",91.2,48.7,FALSE,FALSE,0.121142560979016
+"21","959621",8040,"Cesc Fàbregas","Chelsea","Leicester","Leicester","Chelsea","December",91.7,49.7,FALSE,FALSE,0.105692008718984
+"102","959621",15338,"Branislav Ivanovic","Chelsea","Leicester","Leicester","Chelsea","December",97.6,42.7,FALSE,FALSE,0.335208764319442
+"103","959621",15338,"Branislav Ivanovic","Chelsea","Leicester","Leicester","Chelsea","December",97.6,44.7,FALSE,FALSE,0.476493200580296
+"121","959621",19847,"Leonardo Ulloa","Leicester","Chelsea","Leicester","Chelsea","December",83.5,35.7,FALSE,FALSE,0.058521783248367
+"141","959621",23054,"Loïc Remy","Chelsea","Leicester","Leicester","Chelsea","December",97.3,47,FALSE,TRUE,0.318988605764155
+"142","959621",23054,"Loïc Remy","Chelsea","Leicester","Leicester","Chelsea","December",78.6,38.4,FALSE,FALSE,0.0369472184344725
+"158","959621",24248,"Diego Costa","Chelsea","Leicester","Leicester","Chelsea","December",90.5,52,FALSE,FALSE,0.465599695780441
+"196","959621",29463,"Willian","Chelsea","Leicester","Leicester","Chelsea","December",73.9,36.6,FALSE,FALSE,0.0516417602582848
+"234","959621",33404,"Eden Hazard","Chelsea","Leicester","Leicester","Chelsea","December",88.2,65.1,FALSE,FALSE,0.0424448330809175
+"258","959621",38128,"Nemanja Matic","Chelsea","Leicester","Leicester","Chelsea","December",73.8,53.4,FALSE,FALSE,0.0310873968224691
+"262","959621",38128,"Nemanja Matic","Chelsea","Leicester","Leicester","Chelsea","December",93.9,41.9,FALSE,FALSE,0.0496622776094479
+"265","959621",42147,"Marc Albrighton","Leicester","Chelsea","Leicester","Chelsea","December",75.1,53.6,FALSE,FALSE,0.0439536347753683
+"268","959621",42147,"Marc Albrighton","Leicester","Chelsea","Leicester","Chelsea","December",79.6,72.1,FALSE,FALSE,0.0281829720042025
+"277","959621",44055,"Pedro","Chelsea","Leicester","Leicester","Chelsea","December",85,56.5,FALSE,FALSE,0.0383211432087681
+"460","959621",104749,"Riyad Mahrez","Leicester","Chelsea","Leicester","Chelsea","December",84.3,63.3,FALSE,FALSE,0.0556972488949551
+"465","959621",104749,"Riyad Mahrez","Leicester","Chelsea","Leicester","Chelsea","December",79.9,45.4,FALSE,FALSE,0.0569269534880471
+"466","959621",104749,"Riyad Mahrez","Leicester","Chelsea","Leicester","Chelsea","December",89.9,33,FALSE,TRUE,0.0703464916593049
+"473","959621",106981,"Jamie Vardy","Leicester","Chelsea","Leicester","Chelsea","December",91.2,46.6,FALSE,TRUE,0.188107299368882
+"489","959621",114075,"N'Golo Kanté","Leicester","Chelsea","Leicester","Chelsea","December",75.1,64.7,FALSE,FALSE,0.0261774197192053
+"57","959668",12267,"Aleksandar Kolarov","Man City","Stoke","Stoke","Man City","December",96.2,71.5,FALSE,FALSE,0.10960547139547
+"58","959668",12267,"Aleksandar Kolarov","Man City","Stoke","Stoke","Man City","December",69.1,41.9,FALSE,FALSE,0.0200233847467385
+"59","959668",12267,"Aleksandar Kolarov","Man City","Stoke","Stoke","Man City","December",96.5,69,FALSE,FALSE,0.0561071161220608
+"189","959668",27213,"Fabian Delph","Man City","Stoke","Stoke","Man City","December",73.8,46.8,FALSE,FALSE,0.0311582310578996
+"191","959668",27213,"Fabian Delph","Man City","Stoke","Stoke","Man City","December",72.8,65.3,FALSE,FALSE,0.020887891014968
+"222","959668",31402,"Bojan","Stoke","Man City","Stoke","Man City","December",91,32.2,FALSE,FALSE,0.0720384411074054
+"251","959668",34693,"Marko Arnautovic","Stoke","Man City","Stoke","Man City","December",90.3,43.9,FALSE,TRUE,0.433262368343712
+"253","959668",34693,"Marko Arnautovic","Stoke","Man City","Stoke","Man City","December",89.4,35.8,FALSE,FALSE,0.223583993115656
+"254","959668",34693,"Marko Arnautovic","Stoke","Man City","Stoke","Man City","December",88.9,55.9,FALSE,FALSE,0.0600607683010285
+"255","959668",34693,"Marko Arnautovic","Stoke","Man City","Stoke","Man City","December",95.9,49.7,FALSE,TRUE,0.541699028440168
+"256","959668",34693,"Marko Arnautovic","Stoke","Man City","Stoke","Man City","December",91.5,40.9,FALSE,FALSE,0.192655536607566
+"270","959668",42705,"Wilfried Bony","Man City","Stoke","Stoke","Man City","December",80.7,28.3,FALSE,FALSE,0.024015614190492
+"365","959668",73084,"Kevin De Bruyne","Man City","Stoke","Stoke","Man City","December",87.6,40,FALSE,FALSE,0.0923622304767842
+"371","959668",75691,"Nicolás Otamendi","Man City","Stoke","Stoke","Man City","December",69.8,59.4,FALSE,FALSE,0.0204571598516703
+"373","959668",75691,"Nicolás Otamendi","Man City","Stoke","Stoke","Man City","December",73.8,62.9,FALSE,FALSE,0.0244203440981435
+"380","959668",76304,"Xherdan Shaqiri","Stoke","Man City","Stoke","Man City","December",77.5,49.9,FALSE,FALSE,0.0594470150605774
+"451","959668",97692,"Raheem Sterling","Man City","Stoke","Stoke","Man City","December",97,35.1,FALSE,FALSE,0.0942220793937589
+"452","959668",97692,"Raheem Sterling","Man City","Stoke","Stoke","Man City","December",86.8,67.6,FALSE,FALSE,0.0446838658051943
+"50","959571",10254,"Ben Watson","Watford","Norwich","Watford","Norwich","December",75.8,50.1,FALSE,FALSE,0.0399511736021492
+"105","959571",15782,"Graham Dorrans","Norwich","Watford","Watford","Norwich","December",71.5,52.9,FALSE,FALSE,0.0258497512922794
+"106","959571",15782,"Graham Dorrans","Norwich","Watford","Watford","Norwich","December",44.6,58.5,FALSE,FALSE,0.00538028156666118
+"114","959571",19247,"Sebastien Bassong","Norwich","Watford","Watford","Norwich","December",90.6,51.7,FALSE,FALSE,0.0806370208444998
+"164","959571",25832,"Troy Deeney","Watford","Norwich","Watford","Norwich","December",85.8,55.3,FALSE,FALSE,0.0270595794575104
+"165","959571",25832,"Troy Deeney","Watford","Norwich","Watford","Norwich","December",88.5,50,TRUE,TRUE,0.7757009
+"209","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",94,67.5,FALSE,FALSE,0.079103655569322
+"212","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",95,66.6,FALSE,FALSE,0.0903645016144063
+"213","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",98,39.1,FALSE,FALSE,0.215849351149397
+"214","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",90.6,43.4,FALSE,TRUE,0.215871557186501
+"215","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",91.6,44.7,FALSE,FALSE,0.27592737490902
+"216","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",90.1,70.7,FALSE,FALSE,0.0501896631868663
+"220","959571",31376,"Odion Ighalo","Watford","Norwich","Watford","Norwich","December",92.1,55,FALSE,FALSE,0.303095861516816
+"242","959571",33590,"Etienne Capoue","Watford","Norwich","Watford","Norwich","December",79,28.2,FALSE,FALSE,0.0278277129518469
+"285","959571",64343,"Adlène Guédioura","Watford","Norwich","Watford","Norwich","December",59.9,33.1,FALSE,FALSE,0.0130206867986303
+"442","959571",93473,"Robbie Brady","Norwich","Watford","Watford","Norwich","December",81.3,52.6,FALSE,FALSE,0.0658720499799173
+"443","959571",93473,"Robbie Brady","Norwich","Watford","Watford","Norwich","December",86.2,32.6,FALSE,FALSE,0.0439057006072867
+"444","959571",93473,"Robbie Brady","Norwich","Watford","Watford","Norwich","December",91.5,45.4,FALSE,FALSE,0.0815614001907834
+"456","959571",101763,"Andre Wisdom","Norwich","Watford","Watford","Norwich","December",89.5,45,FALSE,FALSE,0.0535274803843853
+"501","959571",122945,"Nathan Aké","Watford","Norwich","Watford","Norwich","December",76.4,67.1,FALSE,FALSE,0.0307928166715618
+"502","959571",122945,"Nathan Aké","Watford","Norwich","Watford","Norwich","December",76.1,71.7,FALSE,FALSE,0.0200094836613565
+"20","959581",6695,"Jonas Olsson","West Brom","Tottenham","West Brom","Tottenham","December",95.6,49,FALSE,FALSE,0.604844370095849
+"33","959581",8507,"Chris Brunt","West Brom","Tottenham","West Brom","Tottenham","December",88.5,15,FALSE,FALSE,0.0302841339967181
+"55","959581",12187,"Mousa Dembélé","Tottenham","West Brom","West Brom","Tottenham","December",76.3,50.4,FALSE,FALSE,0.0415477380126914
+"56","959581",12187,"Mousa Dembélé","Tottenham","West Brom","West Brom","Tottenham","December",76.6,64.1,FALSE,FALSE,0.029568011394334
+"82","959581",14038,"Craig Gardner","West Brom","Tottenham","West Brom","Tottenham","December",89.5,52.3,FALSE,FALSE,0.0666249496142968
+"129","959581",22079,"Jonny Evans","West Brom","Tottenham","West Brom","Tottenham","December",77.2,52.5,FALSE,FALSE,0.0450371978002123
+"169","959581",25964,"Salomón Rondón","West Brom","Tottenham","West Brom","Tottenham","December",83.8,75.3,FALSE,FALSE,0.0151930086456473
+"171","959581",25964,"Salomón Rondón","West Brom","Tottenham","West Brom","Tottenham","December",47.2,41.9,FALSE,FALSE,0.00634480968922475
+"172","959581",25964,"Salomón Rondón","West Brom","Tottenham","West Brom","Tottenham","December",76.3,49,FALSE,FALSE,0.0417879050545227
+"173","959581",25964,"Salomón Rondón","West Brom","Tottenham","West Brom","Tottenham","December",86.7,56.1,FALSE,FALSE,0.116951752062967
+"174","959581",25964,"Salomón Rondón","West Brom","Tottenham","West Brom","Tottenham","December",78.1,76.6,FALSE,FALSE,0.0305624419750055
+"318","959581",69344,"Christian Eriksen","Tottenham","West Brom","West Brom","Tottenham","December",74.1,41.2,FALSE,FALSE,0.0298184673829754
+"376","959581",75830,"Erik Lamela","Tottenham","West Brom","West Brom","Tottenham","December",93.3,43.1,FALSE,FALSE,0.0583612876295839
+"378","959581",76050,"James McClean","West Brom","Tottenham","West Brom","Tottenham","December",93.9,49.9,FALSE,TRUE,0.161761051661342
+"379","959581",76050,"James McClean","West Brom","Tottenham","West Brom","Tottenham","December",86.2,55.9,FALSE,FALSE,0.0486198764141041
+"417","959581",83532,"Harry Kane","Tottenham","West Brom","West Brom","Tottenham","December",71.8,43.3,FALSE,FALSE,0.0261948979378293
+"419","959581",83532,"Harry Kane","Tottenham","West Brom","West Brom","Tottenham","December",95.3,45,FALSE,FALSE,0.652570357017307
+"420","959581",83532,"Harry Kane","Tottenham","West Brom","West Brom","Tottenham","December",83.5,33.2,FALSE,FALSE,0.0287517272539144
+"510","959581",131519,"Dele Alli","Tottenham","West Brom","West Brom","Tottenham","December",89.6,52.8,FALSE,TRUE,0.208437839315083
+"511","959581",131519,"Dele Alli","Tottenham","West Brom","West Brom","Tottenham","December",78.1,72.5,FALSE,FALSE,0.0210543721537719
+"47","959608",9766,"Steven Fletcher","Sunderland","Arsenal","Arsenal","Sunderland","December",98,55.5,FALSE,FALSE,0.485110075519516
+"48","959608",9766,"Steven Fletcher","Sunderland","Arsenal","Arsenal","Sunderland","December",76.8,35.5,FALSE,FALSE,0.0294405542740258
+"71","959608",13756,"Mesut Özil","Arsenal","Sunderland","Arsenal","Sunderland","December",81.4,69.1,FALSE,FALSE,0.030864807719587
+"72","959608",13796,"Theo Walcott","Arsenal","Sunderland","Arsenal","Sunderland","December",90.1,70.7,FALSE,FALSE,0.0501896631868663
+"101","959608",14805,"Younes Kaboul","Sunderland","Arsenal","Arsenal","Sunderland","December",76.8,66.6,FALSE,FALSE,0.0255163417933828
+"160","959608",24444,"Olivier Giroud","Arsenal","Sunderland","Arsenal","Sunderland","December",91,54.8,FALSE,TRUE,0.0736930666744374
+"161","959608",24444,"Olivier Giroud","Arsenal","Sunderland","Arsenal","Sunderland","December",93,45,FALSE,FALSE,0.0886793004231745
+"180","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",82.3,67.4,FALSE,FALSE,0.0363774748392459
+"181","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",89.8,58.7,FALSE,FALSE,0.137178138963744
+"183","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",78,62,FALSE,FALSE,0.0363613066101515
+"184","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",94.9,52.6,FALSE,TRUE,0.544219897705782
+"185","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",91.3,41.3,FALSE,FALSE,0.390808623515342
+"186","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",87.8,55.6,FALSE,FALSE,0.163451767279411
+"188","959608",26820,"Aaron Ramsey","Arsenal","Sunderland","Arsenal","Sunderland","December",73.5,46.7,FALSE,FALSE,0.0319206111693561
+"247","959608",33886,"Yann M'Vila","Sunderland","Arsenal","Arsenal","Sunderland","December",74.5,47.7,FALSE,FALSE,0.0334288980067109
+"248","959608",33886,"Yann M'Vila","Sunderland","Arsenal","Arsenal","Sunderland","December",74.8,34.9,FALSE,FALSE,0.0250375822666397
+"381","959608",78221,"Patrick van Aanholt","Sunderland","Arsenal","Arsenal","Sunderland","December",87.5,62.9,FALSE,FALSE,0.173421697853134
+"404","959608",80882,"Fabio Borini","Sunderland","Arsenal","Arsenal","Sunderland","December",83.3,32,FALSE,FALSE,0.0953112357523924
+"405","959608",80882,"Fabio Borini","Sunderland","Arsenal","Arsenal","Sunderland","December",90.5,51.7,FALSE,FALSE,0.0822761091035993
+"425","959608",84146,"Alex Oxlade-Chamberlain","Arsenal","Sunderland","Arsenal","Sunderland","December",74,54.7,FALSE,FALSE,0.0326730391383596
+"449","959608",95977,"Joel Campbell","Arsenal","Sunderland","Arsenal","Sunderland","December",89.5,69.3,FALSE,TRUE,0.118029512268223
+"503","959608",124316,"Calum Chambers","Arsenal","Sunderland","Arsenal","Sunderland","December",89.7,34.7,FALSE,FALSE,0.0822633490469621
+"504","959608",124316,"Calum Chambers","Arsenal","Sunderland","Arsenal","Sunderland","December",78,42.5,FALSE,FALSE,0.052196071405448
+"508","959608",125211,"Héctor Bellerín","Arsenal","Sunderland","Arsenal","Sunderland","December",90.3,33.1,FALSE,FALSE,0.0724887284726336
+"509","959608",126958,"DeAndre Yedlin","Sunderland","Arsenal","Arsenal","Sunderland","December",74.4,36.3,FALSE,FALSE,0.0257981040200197
+"517","959608",141512,"Duncan Watmore","Sunderland","Arsenal","Arsenal","Sunderland","December",93.7,49.7,FALSE,FALSE,0.248410325865161
+"518","959608",141512,"Duncan Watmore","Sunderland","Arsenal","Arsenal","Sunderland","December",89.2,32.6,FALSE,FALSE,0.0519089029722436
+"5","959638",2115,"Michael Carrick","Man Utd","West Ham","Man Utd","West Ham","December",77.9,44.5,FALSE,FALSE,0.0456278241297496
+"15","959638",4567,"Bastian Schweinsteiger","Man Utd","West Ham","Man Utd","West Ham","December",84.7,53.4,FALSE,FALSE,0.102343414405499
+"27","959638",8247,"Mark Noble","West Ham","Man Utd","Man Utd","West Ham","December",78.1,50.7,FALSE,FALSE,0.0495401370142089
+"29","959638",8247,"Mark Noble","West Ham","Man Utd","Man Utd","West Ham","December",72,61.4,FALSE,FALSE,0.0236386487953285
+"95","959638",14524,"Mauro Zárate","West Ham","Man Utd","Man Utd","West Ham","December",90.6,39.4,FALSE,FALSE,0.025055387888246
+"96","959638",14524,"Mauro Zárate","West Ham","Man Utd","Man Utd","West Ham","December",77.2,67.4,FALSE,FALSE,0.0262473974485219
+"97","959638",14524,"Mauro Zárate","West Ham","Man Utd","Man Utd","West Ham","December",92.9,41,FALSE,FALSE,0.181382475463004
+"98","959638",14524,"Mauro Zárate","West Ham","Man Utd","Man Utd","West Ham","December",79.1,64.4,FALSE,FALSE,0.0348188575256088
+"115","959638",19277,"Winston Reid","West Ham","Man Utd","Man Utd","West Ham","December",91.8,56.4,FALSE,FALSE,0.0498780718216185
+"132","959638",22738,"Marouane Fellaini","Man Utd","West Ham","Man Utd","West Ham","December",95.9,56.1,FALSE,FALSE,0.137028030142073
+"133","959638",22738,"Marouane Fellaini","Man Utd","West Ham","Man Utd","West Ham","December",88.6,48,FALSE,FALSE,0.0407045916331754
+"134","959638",22738,"Marouane Fellaini","Man Utd","West Ham","Man Utd","West Ham","December",77.2,53.1,FALSE,FALSE,0.0446998901826408
+"136","959638",22738,"Marouane Fellaini","Man Utd","West Ham","Man Utd","West Ham","December",94,54,FALSE,FALSE,0.383482305004368
+"143","959638",23220,"Matteo Darmian","Man Utd","West Ham","Man Utd","West Ham","December",79.2,66.4,FALSE,FALSE,0.0316830247844714
+"150","959638",23547,"Angelo Ogbonna","West Ham","Man Utd","Man Utd","West Ham","December",92.1,40.4,FALSE,FALSE,0.070096900482044
+"163","959638",25363,"Juan Mata","Man Utd","West Ham","Man Utd","West Ham","December",88.4,39.8,FALSE,FALSE,0.102876995577159
+"200","959638",29544,"Morgan Schneiderlin","Man Utd","West Ham","Man Utd","West Ham","December",84.3,49.1,FALSE,FALSE,0.101872065165763
+"229","959638",33064,"Victor Moses","West Ham","Man Utd","Man Utd","West Ham","December",88.8,37.7,FALSE,FALSE,0.0866192504820214
+"355","959638",71345,"Chris Smalling","Man Utd","West Ham","Man Utd","West Ham","December",80.3,67.2,FALSE,FALSE,0.0324814081753608
+"356","959638",71345,"Chris Smalling","Man Utd","West Ham","Man Utd","West Ham","December",95.2,42.9,FALSE,FALSE,0.218027743380593
+"357","959638",71345,"Chris Smalling","Man Utd","West Ham","Man Utd","West Ham","December",87.5,58.2,FALSE,FALSE,0.0541840225538786
+"358","959638",71345,"Chris Smalling","Man Utd","West Ham","Man Utd","West Ham","December",91.3,40.8,FALSE,FALSE,0.152204665323653
+"477","959638",109000,"Jesse Lingard","Man Utd","West Ham","Man Utd","West Ham","December",70.5,63.4,FALSE,FALSE,0.0202589168423305
+"478","959638",109000,"Jesse Lingard","Man Utd","West Ham","Man Utd","West Ham","December",90.6,42.1,FALSE,FALSE,0.16268555431561
+"479","959638",109000,"Jesse Lingard","Man Utd","West Ham","Man Utd","West Ham","December",75.9,59.1,FALSE,FALSE,0.0344034485508396
+"497","959638",122366,"Anthony Martial","Man Utd","West Ham","Man Utd","West Ham","December",89.6,57.7,FALSE,FALSE,0.147636815384127
+"499","959638",122366,"Anthony Martial","Man Utd","West Ham","Man Utd","West Ham","December",84.2,66.4,FALSE,FALSE,0.044044771310367
+"500","959638",122366,"Anthony Martial","Man Utd","West Ham","Man Utd","West Ham","December",90.9,52.5,FALSE,FALSE,0.261491464048475
+"520","959638",244565,"Patrick McNair","Man Utd","West Ham","Man Utd","West Ham","December",80.2,31,FALSE,FALSE,0.0289876661259305
+"18","959658",6434,"Alan Hutton","Aston Villa","Southampton","Southampton","Aston Villa","December",93,60.6,FALSE,FALSE,0.0386667217216242
+"22","959658",8137,"Joleon Lescott","Aston Villa","Southampton","Southampton","Aston Villa","December",92.7,37.5,FALSE,FALSE,0.02872175368188
+"23","959658",8137,"Joleon Lescott","Aston Villa","Southampton","Southampton","Aston Villa","December",97.2,48.2,FALSE,TRUE,0.537128783325875
+"45","959658",9734,"Steven Davis","Southampton","Aston Villa","Southampton","Aston Villa","December",89.6,62.1,FALSE,FALSE,0.0539038222328136
+"65","959658",12779,"Scott Sinclair","Aston Villa","Southampton","Southampton","Aston Villa","December",77.2,47.8,FALSE,FALSE,0.0448420838510529
+"74","959658",13798,"Shane Long","Southampton","Aston Villa","Southampton","Aston Villa","December",74.9,76.9,FALSE,FALSE,0.014678092167209
+"79","959658",13798,"Shane Long","Southampton","Aston Villa","Southampton","Aston Villa","December",90.8,67.5,FALSE,FALSE,0.0247119270510385
+"109","959658",17909,"Graziano Pellè","Southampton","Aston Villa","Southampton","Aston Villa","December",90.2,46.2,FALSE,FALSE,0.0583189250233446
+"110","959658",17909,"Graziano Pellè","Southampton","Aston Villa","Southampton","Aston Villa","December",92.1,51.8,FALSE,FALSE,0.242953754365021
+"111","959658",17909,"Graziano Pellè","Southampton","Aston Villa","Southampton","Aston Villa","December",92.4,39.9,FALSE,FALSE,0.045537374523488
+"122","959658",19859,"Jose Fonte","Southampton","Aston Villa","Southampton","Aston Villa","December",92.1,53.7,FALSE,FALSE,0.294778966098544
+"198","959658",29474,"Dusan Tadic","Southampton","Aston Villa","Southampton","Aston Villa","December",74.2,34.4,FALSE,FALSE,0.0508587271993499
+"199","959658",29474,"Dusan Tadic","Southampton","Aston Villa","Southampton","Aston Villa","December",85.4,44.8,FALSE,FALSE,0.104363131466184
+"291","959658",67491,"Jordan Ayew","Aston Villa","Southampton","Southampton","Aston Villa","December",88.3,75,FALSE,FALSE,0.0335202159111785
+"292","959658",67491,"Jordan Ayew","Aston Villa","Southampton","Southampton","Aston Villa","December",79.2,57.7,FALSE,FALSE,0.0585008553500189
+"361","959658",71714,"Victor Wanyama","Southampton","Aston Villa","Southampton","Aston Villa","December",92.6,54.7,FALSE,FALSE,0.182887079058905
+"363","959658",71714,"Victor Wanyama","Southampton","Aston Villa","Southampton","Aston Villa","December",93.7,56.3,FALSE,FALSE,0.0688622987538118
+"392","959658",79050,"Ashley Westwood","Aston Villa","Southampton","Southampton","Aston Villa","December",93.3,63.3,FALSE,FALSE,0.106080029088508
+"395","959658",79967,"Leandro Bacuna","Aston Villa","Southampton","Southampton","Aston Villa","December",76.5,74.2,FALSE,FALSE,0.0178404797701138
+"397","959658",80464,"Idrissa Gueye","Aston Villa","Southampton","Southampton","Aston Villa","December",72.7,66.6,FALSE,FALSE,0.0206229890984847
+"414","959658",83080,"Juanmi","Southampton","Aston Villa","Southampton","Aston Villa","December",79.4,52.1,FALSE,FALSE,0.0473032342207573
+"415","959658",83080,"Juanmi","Southampton","Aston Villa","Southampton","Aston Villa","December",93,52.8,FALSE,FALSE,0.111927816233694
+"416","959658",83080,"Juanmi","Southampton","Aston Villa","Southampton","Aston Villa","December",89,60.7,FALSE,FALSE,0.0876184969869054
+"432","959658",90780,"Oriol Romeu","Southampton","Aston Villa","Southampton","Aston Villa","December",80.4,47.5,FALSE,FALSE,0.0626373486004601
+"434","959658",90780,"Oriol Romeu","Southampton","Aston Villa","Southampton","Aston Villa","December",96.2,47.4,FALSE,TRUE,0.359067890669677
+"446","959658",95408,"Virgil van Dijk","Southampton","Aston Villa","Southampton","Aston Villa","December",93.3,49.4,FALSE,FALSE,0.118433877542726
+"448","959658",95408,"Virgil van Dijk","Southampton","Aston Villa","Southampton","Aston Villa","December",91.7,46.7,FALSE,FALSE,0.0581274455108458
+"467","959658",105172,"James Ward-Prowse","Southampton","Aston Villa","Southampton","Aston Villa","December",76.7,43.4,FALSE,FALSE,0.0397042236452768
+"468","959658",105172,"James Ward-Prowse","Southampton","Aston Villa","Southampton","Aston Villa","December",67,49.9,FALSE,FALSE,0.0196264528924535
+"482","959658",109915,"Sadio Mané","Southampton","Aston Villa","Southampton","Aston Villa","December",98.2,46.6,FALSE,FALSE,0.268880740912148
+"484","959658",109915,"Sadio Mané","Southampton","Aston Villa","Southampton","Aston Villa","December",86,54.8,FALSE,FALSE,0.0782330910333061
+"485","959658",109915,"Sadio Mané","Southampton","Aston Villa","Southampton","Aston Villa","December",85.3,43.7,FALSE,FALSE,0.0822082498583586
+"9","959677",4145,"Robert Huth","Leicester","Swansea","Swansea","Leicester","December",88.4,41.8,FALSE,FALSE,0.119599256681525
+"31","959677",8408,"Ashley Williams","Swansea","Leicester","Swansea","Leicester","December",90.4,48.3,FALSE,FALSE,0.0611404947529647
+"63","959677",12431,"Christian Fuchs","Leicester","Swansea","Swansea","Leicester","December",75.4,51.7,FALSE,FALSE,0.0556125726920984
+"90","959677",14308,"Bafétimbi Gomis","Swansea","Leicester","Swansea","Leicester","December",84.2,47.4,FALSE,FALSE,0.1026636601008
+"91","959677",14308,"Bafétimbi Gomis","Swansea","Leicester","Swansea","Leicester","December",84.5,46.3,FALSE,FALSE,0.103537318438541
+"119","959677",19847,"Leonardo Ulloa","Leicester","Swansea","Swansea","Leicester","December",86.6,57.7,FALSE,FALSE,0.139446409789398
+"120","959677",19847,"Leonardo Ulloa","Leicester","Swansea","Swansea","Leicester","December",70.9,52.5,FALSE,FALSE,0.0380061972895026
+"151","959677",23683,"Danny Simpson","Leicester","Swansea","Swansea","Leicester","December",81.4,37.2,FALSE,FALSE,0.0443139210635107
+"205","959677",30060,"André Ayew","Swansea","Leicester","Swansea","Leicester","December",87.5,47.5,FALSE,FALSE,0.16118859358534
+"206","959677",30060,"André Ayew","Swansea","Leicester","Swansea","Leicester","December",87.8,62.9,FALSE,FALSE,0.079750293310806
+"227","959677",32018,"Andy King","Leicester","Swansea","Swansea","Leicester","December",86.2,64.8,FALSE,FALSE,0.0823239043742788
+"249","959677",34131,"Kyle Naughton","Swansea","Leicester","Swansea","Leicester","December",73.6,31.7,FALSE,FALSE,0.0188673324021393
+"266","959677",42147,"Marc Albrighton","Leicester","Swansea","Swansea","Leicester","December",80.5,61.8,FALSE,FALSE,0.0650192000033921
+"267","959677",42147,"Marc Albrighton","Leicester","Swansea","Swansea","Leicester","December",85.2,33.9,FALSE,FALSE,0.0658175089858098
+"274","959677",42916,"Ki Sung-yueng","Swansea","Leicester","Swansea","Leicester","December",91,49.4,FALSE,FALSE,0.0878788937764022
+"322","959677",69346,"Gylfi Sigurdsson","Swansea","Leicester","Swansea","Leicester","December",89.3,38.3,FALSE,FALSE,0.0605857279626533
+"325","959677",69346,"Gylfi Sigurdsson","Swansea","Leicester","Swansea","Leicester","December",79,67.4,FALSE,FALSE,0.0310998918444201
+"329","959677",69346,"Gylfi Sigurdsson","Swansea","Leicester","Swansea","Leicester","December",87.5,64.4,FALSE,FALSE,0.0600986992733206
+"459","959677",104749,"Riyad Mahrez","Leicester","Swansea","Swansea","Leicester","December",81.2,37.1,FALSE,FALSE,0.0612169130306423
+"461","959677",104749,"Riyad Mahrez","Leicester","Swansea","Swansea","Leicester","December",88.3,37.7,FALSE,FALSE,0.259807025093564
+"462","959677",104749,"Riyad Mahrez","Leicester","Swansea","Swansea","Leicester","December",98.2,53.7,FALSE,TRUE,0.445129604369262
+"463","959677",104749,"Riyad Mahrez","Leicester","Swansea","Swansea","Leicester","December",91.6,38.8,FALSE,TRUE,0.322691792255252
+"464","959677",104749,"Riyad Mahrez","Leicester","Swansea","Swansea","Leicester","December",89.7,38.6,FALSE,TRUE,0.138028349800016
+"474","959677",106981,"Jamie Vardy","Leicester","Swansea","Swansea","Leicester","December",96.7,30.4,FALSE,FALSE,0.0796612238646898
+"475","959677",106981,"Jamie Vardy","Leicester","Swansea","Swansea","Leicester","December",81.2,49.9,FALSE,FALSE,0.0843486754978825
+"476","959677",106981,"Jamie Vardy","Leicester","Swansea","Swansea","Leicester","December",87.2,61.2,FALSE,FALSE,0.119546900016528
+"53","959618",11981,"Gary Cahill","Chelsea","Bournemouth","Chelsea","Bournemouth","December",92.2,50.1,FALSE,FALSE,0.090365406840129
+"80","959618",13846,"Dan Gosling","Bournemouth","Chelsea","Chelsea","Bournemouth","December",97.7,38.4,FALSE,FALSE,0.193753293672149
+"81","959618",13846,"Dan Gosling","Bournemouth","Chelsea","Chelsea","Bournemouth","December",74.2,37.1,FALSE,FALSE,0.026231782329961
+"104","959618",15338,"Branislav Ivanovic","Chelsea","Bournemouth","Chelsea","Bournemouth","December",72.8,33.6,FALSE,FALSE,0.0175252115141215
+"125","959618",21427,"Glenn Murray","Bournemouth","Chelsea","Chelsea","Bournemouth","December",96.3,54.5,FALSE,TRUE,0.278824912693719
+"140","959618",23054,"Loïc Remy","Chelsea","Bournemouth","Chelsea","Bournemouth","December",94,51.1,FALSE,FALSE,0.161800632272213
+"157","959618",24248,"Diego Costa","Chelsea","Bournemouth","Chelsea","Bournemouth","December",89.6,64.7,FALSE,FALSE,0.177659479878906
+"197","959618",29463,"Willian","Chelsea","Bournemouth","Chelsea","Bournemouth","December",82.2,28.3,FALSE,FALSE,0.0272227833179014
+"232","959618",33404,"Eden Hazard","Chelsea","Bournemouth","Chelsea","Bournemouth","December",80.9,32.6,FALSE,FALSE,0.0333264492141117
+"233","959618",33404,"Eden Hazard","Chelsea","Bournemouth","Chelsea","Bournemouth","December",91.3,28.6,FALSE,FALSE,0.0408321705263145
+"259","959618",38128,"Nemanja Matic","Chelsea","Bournemouth","Chelsea","Bournemouth","December",73.8,33.6,FALSE,FALSE,0.0224155664219197
+"260","959618",38128,"Nemanja Matic","Chelsea","Bournemouth","Chelsea","Bournemouth","December",96.2,52.6,FALSE,FALSE,0.37600512946158
+"261","959618",38128,"Nemanja Matic","Chelsea","Bournemouth","Chelsea","Bournemouth","December",73.5,53.6,FALSE,FALSE,0.0318096253354977
+"263","959618",41065,"Oscar","Chelsea","Bournemouth","Chelsea","Bournemouth","December",84.5,48.7,FALSE,FALSE,0.104175706254941
+"264","959618",41065,"Oscar","Chelsea","Bournemouth","Chelsea","Bournemouth","December",92.6,68.8,FALSE,FALSE,0.137969793978197
+"278","959618",44055,"Pedro","Chelsea","Bournemouth","Chelsea","Bournemouth","December",84.8,62.9,FALSE,FALSE,0.0597053746099738
+"279","959618",44055,"Pedro","Chelsea","Bournemouth","Chelsea","Bournemouth","December",83.6,52,FALSE,FALSE,0.0918876320044659
+"280","959618",44055,"Pedro","Chelsea","Bournemouth","Chelsea","Bournemouth","December",80.2,66.9,FALSE,FALSE,0.0328550533716822
+"281","959618",44055,"Pedro","Chelsea","Bournemouth","Chelsea","Bournemouth","December",88.8,61.4,FALSE,FALSE,0.0952620365127808
+"282","959618",44055,"Pedro","Chelsea","Bournemouth","Chelsea","Bournemouth","December",90.3,38.4,FALSE,FALSE,0.0721389992783792
+"293","959618",67807,"Harry Arter","Bournemouth","Chelsea","Chelsea","Bournemouth","December",72.5,59.7,FALSE,FALSE,0.0257391129877076
+"294","959618",67807,"Harry Arter","Bournemouth","Chelsea","Chelsea","Bournemouth","December",90.6,33,FALSE,FALSE,0.073648279222387
+"304","959618",68648,"Matt Ritchie","Bournemouth","Chelsea","Chelsea","Bournemouth","December",77.9,31.8,FALSE,FALSE,0.0262786117828056
+"305","959618",68648,"Matt Ritchie","Bournemouth","Chelsea","Chelsea","Bournemouth","December",78.6,63.7,FALSE,FALSE,0.0426885774754767
+"313","959618",68662,"Steve Cook","Bournemouth","Chelsea","Chelsea","Bournemouth","December",91.3,42.3,FALSE,FALSE,0.179030950160776
+"344","959618",69912,"Junior Stanislas","Bournemouth","Chelsea","Chelsea","Bournemouth","December",87.6,69.3,FALSE,FALSE,0.0421189393592025
+"345","959618",69912,"Junior Stanislas","Bournemouth","Chelsea","Chelsea","Bournemouth","December",85.6,65.8,FALSE,FALSE,0.0502026304613601
+"349","959618",69912,"Junior Stanislas","Bournemouth","Chelsea","Chelsea","Bournemouth","December",83.9,57.3,FALSE,FALSE,0.0783425891408716
+"409","959618",81026,"Joshua King","Bournemouth","Chelsea","Chelsea","Bournemouth","December",88.6,31.4,FALSE,FALSE,0.0470079193965479
+"411","959618",81026,"Joshua King","Bournemouth","Chelsea","Chelsea","Bournemouth","December",87.6,51.5,FALSE,FALSE,0.159521003368044
+"412","959618",81026,"Joshua King","Bournemouth","Chelsea","Chelsea","Bournemouth","December",98,29.1,FALSE,FALSE,0.0481178518003996
+"413","959618",81026,"Joshua King","Bournemouth","Chelsea","Chelsea","Bournemouth","December",81.8,68.2,FALSE,FALSE,0.0332226491729376
+"471","959618",106086,"Kurt Zouma","Chelsea","Bournemouth","Chelsea","Bournemouth","December",96.7,59.8,FALSE,FALSE,0.110782507025206
+"472","959618",106086,"Kurt Zouma","Chelsea","Bournemouth","Chelsea","Bournemouth","December",95.9,41,FALSE,FALSE,0.122519257330098
+"118","959648",19840,"Martin Skrtel","Liverpool","Newcastle","Newcastle","Liverpool","December",81.1,50.1,FALSE,FALSE,0.0685500846598409
+"149","959648",23444,"Joe Allen","Liverpool","Newcastle","Newcastle","Liverpool","December",79.3,49.7,FALSE,FALSE,0.0561796090235994
+"152","959648",23736,"Daniel Sturridge","Liverpool","Newcastle","Newcastle","Liverpool","December",89.9,34.5,FALSE,FALSE,0.160866619504348
+"153","959648",23736,"Daniel Sturridge","Liverpool","Newcastle","Newcastle","Liverpool","December",70.3,51,FALSE,FALSE,0.0237703630224839
+"193","959648",29106,"Dejan Lovren","Liverpool","Newcastle","Newcastle","Liverpool","December",95.4,46.6,FALSE,FALSE,0.149262420054618
+"194","959648",29106,"Dejan Lovren","Liverpool","Newcastle","Newcastle","Liverpool","December",89.3,57.2,FALSE,FALSE,0.042570725863529
+"235","959648",33568,"Georginio Wijnaldum","Newcastle","Liverpool","Newcastle","Liverpool","December",69.4,38.4,FALSE,FALSE,0.0426923437614627
+"236","959648",33568,"Georginio Wijnaldum","Newcastle","Liverpool","Newcastle","Liverpool","December",92.5,31.8,FALSE,FALSE,0.0389478130604027
+"237","959648",33568,"Georginio Wijnaldum","Newcastle","Liverpool","Newcastle","Liverpool","December",93.2,39,FALSE,FALSE,0.143476306301296
+"238","959648",33568,"Georginio Wijnaldum","Newcastle","Liverpool","Newcastle","Liverpool","December",88.9,56.1,FALSE,TRUE,0.379644682332171
+"239","959648",33568,"Georginio Wijnaldum","Newcastle","Liverpool","Newcastle","Liverpool","December",78.5,48.1,FALSE,FALSE,0.0515884756018026
+"301","959648",68312,"Christian Benteke","Liverpool","Newcastle","Newcastle","Liverpool","December",96.7,48.2,FALSE,FALSE,0.675237889086953
+"332","959648",69375,"Nathaniel Clyne","Liverpool","Newcastle","Newcastle","Liverpool","December",74.8,28.9,FALSE,FALSE,0.0191102855642171
+"450","959648",96182,"Roberto Firmino","Liverpool","Newcastle","Newcastle","Liverpool","December",85.8,76.4,FALSE,FALSE,0.0227532151931427
+"457","959648",104368,"Chancel Mbemba","Newcastle","Liverpool","Newcastle","Liverpool","December",94.2,52,FALSE,FALSE,0.260203603922003
+"469","959648",105797,"Jordon Ibe","Liverpool","Newcastle","Newcastle","Liverpool","December",80.7,72.9,FALSE,FALSE,0.023314935252189
+"2","959628",188,"Gareth Barry","Everton","Crystal Palace","Everton","Crystal Palace","December",81.2,57.9,FALSE,FALSE,0.0579597585517746
+"4","959628",188,"Gareth Barry","Everton","Crystal Palace","Everton","Crystal Palace","December",89.5,43.3,FALSE,FALSE,0.15944226928991
+"32","959628",8466,"Damien Delaney","Crystal Palace","Everton","Everton","Crystal Palace","December",90.5,54.5,FALSE,FALSE,0.112482245253697
+"34","959628",8943,"Arouna Koné","Everton","Crystal Palace","Everton","Crystal Palace","December",78.9,64.2,FALSE,FALSE,0.0349468381204435
+"35","959628",8943,"Arouna Koné","Everton","Crystal Palace","Everton","Crystal Palace","December",92,67.8,FALSE,FALSE,0.0596297117840332
+"37","959628",8943,"Arouna Koné","Everton","Crystal Palace","Everton","Crystal Palace","December",87.5,61.7,FALSE,FALSE,0.0826569562510755
+"39","959628",9156,"Jason Puncheon","Crystal Palace","Everton","Everton","Crystal Palace","December",85.8,57.3,FALSE,FALSE,0.0968847143177171
+"54","959628",12124,"Scott Dann","Crystal Palace","Everton","Everton","Crystal Palace","December",92.7,50.9,FALSE,TRUE,0.100102455049591
+"60","959628",12376,"Yohan Cabaye","Crystal Palace","Everton","Everton","Crystal Palace","December",67.8,78.1,FALSE,FALSE,0.0103621329916731
+"68","959628",13727,"Mile Jedinak","Crystal Palace","Everton","Everton","Crystal Palace","December",78.5,35.8,FALSE,FALSE,0.0336942640160986
+"69","959628",13727,"Mile Jedinak","Crystal Palace","Everton","Everton","Crystal Palace","December",94.4,44.1,FALSE,FALSE,0.0819454318482089
+"70","959628",13727,"Mile Jedinak","Crystal Palace","Everton","Everton","Crystal Palace","December",92.7,51,FALSE,FALSE,0.0997771664888315
+"124","959628",20339,"James McArthur","Crystal Palace","Everton","Everton","Crystal Palace","December",87.8,71.1,FALSE,FALSE,0.0365533362010415
+"224","959628",31826,"Seamus Coleman","Everton","Crystal Palace","Everton","Crystal Palace","December",75.5,38.9,FALSE,FALSE,0.0310860154588733
+"225","959628",31826,"Seamus Coleman","Everton","Crystal Palace","Everton","Crystal Palace","December",86.5,28,FALSE,FALSE,0.0324531296337856
+"276","959628",43742,"Jordon Mutch","Crystal Palace","Everton","Everton","Crystal Palace","December",76.5,46.8,FALSE,FALSE,0.0414488195828283
+"338","959628",69844,"Yannick Bolasie","Crystal Palace","Everton","Everton","Crystal Palace","December",73.1,69.3,FALSE,FALSE,0.0188970187585887
+"340","959628",69844,"Yannick Bolasie","Crystal Palace","Everton","Everton","Crystal Palace","December",89.7,67.6,FALSE,FALSE,0.0544608166517266
+"342","959628",69844,"Yannick Bolasie","Crystal Palace","Everton","Everton","Crystal Palace","December",89.3,36,FALSE,FALSE,0.0759463431055688
+"351","959628",69956,"Tom Cleverley","Everton","Crystal Palace","Everton","Crystal Palace","December",80.9,46.6,FALSE,FALSE,0.0651321434108142
+"353","959628",69956,"Tom Cleverley","Everton","Crystal Palace","Everton","Crystal Palace","December",80.2,48.4,FALSE,FALSE,0.061945857302115
+"354","959628",69956,"Tom Cleverley","Everton","Crystal Palace","Everton","Crystal Palace","December",77.8,40,FALSE,FALSE,0.0389758590509641
+"368","959628",73382,"Connor Wickham","Crystal Palace","Everton","Everton","Crystal Palace","December",95.5,55.8,FALSE,FALSE,0.13662486939425
+"369","959628",73382,"Connor Wickham","Crystal Palace","Everton","Everton","Crystal Palace","December",81.7,34,FALSE,FALSE,0.0380428137177252
+"384","959628",78498,"Romelu Lukaku","Everton","Crystal Palace","Everton","Crystal Palace","December",82.6,45.4,FALSE,FALSE,0.0764334333740834
+"388","959628",78498,"Romelu Lukaku","Everton","Crystal Palace","Everton","Crystal Palace","December",75.4,54.4,FALSE,FALSE,0.0309210930003989
+"389","959628",78498,"Romelu Lukaku","Everton","Crystal Palace","Everton","Crystal Palace","December",97,64.5,FALSE,FALSE,0.0709425198110489
+"391","959628",78498,"Romelu Lukaku","Everton","Crystal Palace","Everton","Crystal Palace","December",97.1,51.6,FALSE,TRUE,0.681202617516536
+"437","959628",92547,"Ross Barkley","Everton","Crystal Palace","Everton","Crystal Palace","December",77.1,73.2,FALSE,FALSE,0.0194713967538568
+"438","959628",92547,"Ross Barkley","Everton","Crystal Palace","Everton","Crystal Palace","December",79.2,65.5,FALSE,FALSE,0.033296300913513
+"439","959628",92547,"Ross Barkley","Everton","Crystal Palace","Everton","Crystal Palace","December",85.4,68.8,FALSE,FALSE,0.0394496720721749
+"440","959628",92547,"Ross Barkley","Everton","Crystal Palace","Everton","Crystal Palace","December",89.7,47.8,FALSE,FALSE,0.0694686464281433
+"441","959628",92547,"Ross Barkley","Everton","Crystal Palace","Everton","Crystal Palace","December",81.1,49.9,FALSE,FALSE,0.0690539098701999
+"1","959651",188,"Gareth Barry","Everton","Norwich","Norwich","Everton","December",93.5,57.5,FALSE,FALSE,0.23525536877403
+"3","959651",188,"Gareth Barry","Everton","Norwich","Norwich","Everton","December",90,52,FALSE,FALSE,0.0527007114671624
+"36","959651",8943,"Arouna Koné","Everton","Norwich","Norwich","Everton","December",87.2,65.5,FALSE,FALSE,0.171352257545789
+"38","959651",8943,"Arouna Koné","Everton","Norwich","Norwich","Everton","December",84.3,49.5,FALSE,FALSE,0.101403395875366
+"42","959651",9342,"Alexander Tettey","Norwich","Everton","Norwich","Everton","December",76.8,30.7,FALSE,FALSE,0.0234539587961162
+"43","959651",9342,"Alexander Tettey","Norwich","Everton","Norwich","Everton","December",78.4,28.9,FALSE,FALSE,0.0232652300663127
+"52","959651",10737,"Cameron Jerome","Norwich","Everton","Norwich","Everton","December",91.6,49.7,FALSE,FALSE,0.312224683536786
+"107","959651",15834,"Kevin Mirallas","Everton","Norwich","Norwich","Everton","December",93.5,66.8,FALSE,FALSE,0.0699740522664808
+"116","959651",19541,"Wes Hoolahan","Norwich","Everton","Norwich","Everton","December",96.7,47.6,FALSE,TRUE,0.601313961439791
+"117","959651",19541,"Wes Hoolahan","Norwich","Everton","Norwich","Everton","December",97,55.7,FALSE,FALSE,0.438473833729978
+"144","959651",23273,"Jonny Howson","Norwich","Everton","Norwich","Everton","December",74.6,63.1,FALSE,FALSE,0.0269825569170369
+"168","959651",25834,"Ryan Bennett","Norwich","Everton","Norwich","Everton","December",93.2,57.3,FALSE,FALSE,0.045490361407091
+"207","959651",30395,"Darron Gibson","Everton","Norwich","Norwich","Everton","December",73.5,39.4,FALSE,FALSE,0.0269913343590948
+"226","959651",31826,"Seamus Coleman","Everton","Norwich","Norwich","Everton","December",77.5,37.7,FALSE,FALSE,0.0342511431402329
+"352","959651",69956,"Tom Cleverley","Everton","Norwich","Norwich","Everton","December",85.5,39.8,FALSE,FALSE,0.0770067673896893
+"383","959651",78498,"Romelu Lukaku","Everton","Norwich","Norwich","Everton","December",84.1,40.6,FALSE,FALSE,0.086172971627698
+"385","959651",78498,"Romelu Lukaku","Everton","Norwich","Norwich","Everton","December",84.5,66.4,FALSE,FALSE,0.0445771993329042
+"386","959651",78498,"Romelu Lukaku","Everton","Norwich","Norwich","Everton","December",81.5,47.8,FALSE,FALSE,0.0859243133040217
+"387","959651",78498,"Romelu Lukaku","Everton","Norwich","Norwich","Everton","December",96.9,54.8,FALSE,TRUE,0.208374253923344
+"390","959651",78498,"Romelu Lukaku","Everton","Norwich","Norwich","Everton","December",95.6,55.7,FALSE,FALSE,0.432311346427248
+"431","959651",86425,"Nathan Redmond","Norwich","Everton","Norwich","Everton","December",91.2,26.8,FALSE,FALSE,0.0346665123054657
+"445","959651",93473,"Robbie Brady","Norwich","Everton","Norwich","Everton","December",81.5,47.4,FALSE,FALSE,0.0707318923324261
+"495","959651",121454,"Ramiro Funes Mori","Everton","Norwich","Norwich","Everton","December",70.8,45.8,FALSE,FALSE,0.0252057975918956
+"40","959611",9156,"Jason Puncheon","Crystal Palace","Southampton","Crystal Palace","Southampton","December",94.4,65.8,FALSE,FALSE,0.0976351199017849
+"46","959611",9734,"Steven Davis","Southampton","Crystal Palace","Crystal Palace","Southampton","December",93.5,47,FALSE,FALSE,0.143691230926648
+"61","959611",12376,"Yohan Cabaye","Crystal Palace","Southampton","Crystal Palace","Southampton","December",94.2,25.8,FALSE,FALSE,0.0338547861179082
+"62","959611",12376,"Yohan Cabaye","Crystal Palace","Southampton","Crystal Palace","Southampton","December",95.9,47.8,FALSE,TRUE,0.591515725916218
+"73","959611",13798,"Shane Long","Southampton","Crystal Palace","Crystal Palace","Southampton","December",78.1,29.8,FALSE,FALSE,0.0238694223272962
+"75","959611",13798,"Shane Long","Southampton","Crystal Palace","Crystal Palace","Southampton","December",86.8,53.8,FALSE,FALSE,0.127451868234298
+"76","959611",13798,"Shane Long","Southampton","Crystal Palace","Crystal Palace","Southampton","December",85.7,65.8,FALSE,FALSE,0.0505377634989801
+"77","959611",13798,"Shane Long","Southampton","Crystal Palace","Crystal Palace","Southampton","December",94.6,41,FALSE,FALSE,0.0457003262625388
+"78","959611",13798,"Shane Long","Southampton","Crystal Palace","Crystal Palace","Southampton","December",87.9,38.8,FALSE,FALSE,0.0854317895389405
+"123","959611",19859,"Jose Fonte","Southampton","Crystal Palace","Crystal Palace","Southampton","December",87.3,70.7,FALSE,FALSE,0.0354289104771019
+"275","959611",43105,"Joel Ward","Crystal Palace","Southampton","Crystal Palace","Southampton","December",82,32,FALSE,FALSE,0.041304414043071
+"339","959611",69844,"Yannick Bolasie","Crystal Palace","Southampton","Crystal Palace","Southampton","December",92.5,32.2,FALSE,FALSE,0.072753083183139
+"341","959611",69844,"Yannick Bolasie","Crystal Palace","Southampton","Crystal Palace","Southampton","December",91,34.5,FALSE,FALSE,0.0867752473139227
+"343","959611",69844,"Yannick Bolasie","Crystal Palace","Southampton","Crystal Palace","Southampton","December",74.6,46.4,FALSE,FALSE,0.0420687796381565
+"359","959611",71714,"Victor Wanyama","Southampton","Crystal Palace","Crystal Palace","Southampton","December",78.8,66,FALSE,FALSE,0.0299913986136507
+"360","959611",71714,"Victor Wanyama","Southampton","Crystal Palace","Crystal Palace","Southampton","December",80.7,29,FALSE,FALSE,0.0250838051895099
+"362","959611",71714,"Victor Wanyama","Southampton","Crystal Palace","Crystal Palace","Southampton","December",73.9,50.9,FALSE,FALSE,0.0333600037454393
+"366","959611",73382,"Connor Wickham","Crystal Palace","Southampton","Crystal Palace","Southampton","December",82.9,71.3,FALSE,FALSE,0.0348530039525981
+"367","959611",73382,"Connor Wickham","Crystal Palace","Southampton","Crystal Palace","Southampton","December",92.2,41.7,FALSE,FALSE,0.0409876134266327
+"427","959611",85059,"Wilfried Zaha","Crystal Palace","Southampton","Crystal Palace","Southampton","December",88.6,35.2,FALSE,FALSE,0.0805968381299179
+"428","959611",85059,"Wilfried Zaha","Crystal Palace","Southampton","Crystal Palace","Southampton","December",87.2,47,FALSE,FALSE,0.170962836134793
+"429","959611",85059,"Wilfried Zaha","Crystal Palace","Southampton","Crystal Palace","Southampton","December",86.3,28.9,FALSE,FALSE,0.0344963920685776
+"433","959611",90780,"Oriol Romeu","Southampton","Crystal Palace","Crystal Palace","Southampton","December",79.2,65.8,FALSE,FALSE,0.0311471770334147
+"447","959611",95408,"Virgil van Dijk","Southampton","Crystal Palace","Crystal Palace","Southampton","December",76.3,34.8,FALSE,FALSE,0.0263909737044577
+"480","959611",109915,"Sadio Mané","Southampton","Crystal Palace","Crystal Palace","Southampton","December",86.6,63.9,FALSE,FALSE,0.0630130408928528
+"481","959611",109915,"Sadio Mané","Southampton","Crystal Palace","Crystal Palace","Southampton","December",86.3,27,FALSE,FALSE,0.0283621644286786
+"483","959611",109915,"Sadio Mané","Southampton","Crystal Palace","Crystal Palace","Southampton","December",84.9,54.2,FALSE,FALSE,0.0975414543373871
+"16","959641",4759,"Wayne Routledge","Swansea","Man City","Man City","Swansea","December",88.8,37.9,FALSE,FALSE,0.210686722717799
+"44","959641",9446,"Jesús Navas","Man City","Swansea","Man City","Swansea","December",91.8,29,FALSE,FALSE,0.043042098775259
+"83","959641",14053,"Yaya Touré","Man City","Swansea","Man City","Swansea","December",86.5,31.2,FALSE,FALSE,0.0502719700880938
+"84","959641",14053,"Yaya Touré","Man City","Swansea","Man City","Swansea","December",70.1,40.9,FALSE,FALSE,0.0569775266419919
+"85","959641",14053,"Yaya Touré","Man City","Swansea","Man City","Swansea","December",77,59.6,FALSE,FALSE,0.0445258096547822
+"86","959641",14053,"Yaya Touré","Man City","Swansea","Man City","Swansea","December",86.3,25.2,FALSE,FALSE,0.0261172399696439
+"87","959641",14053,"Yaya Touré","Man City","Swansea","Man City","Swansea","December",79.2,64.4,FALSE,FALSE,0.0890384913403442
+"92","959641",14308,"Bafétimbi Gomis","Swansea","Man City","Man City","Swansea","December",88.3,48.8,FALSE,FALSE,0.0782391656909955
+"93","959641",14308,"Bafétimbi Gomis","Swansea","Man City","Man City","Swansea","December",93.5,32.6,FALSE,TRUE,0.155668654457258
+"139","959641",22847,"Jack Cork","Swansea","Man City","Man City","Swansea","December",80,35.5,FALSE,FALSE,0.0354173263849119
+"190","959641",27213,"Fabian Delph","Man City","Swansea","Man City","Swansea","December",78.5,60.6,FALSE,FALSE,0.0484298721277406
+"202","959641",29820,"Angel Rangel","Swansea","Man City","Man City","Swansea","December",85.2,23.2,FALSE,FALSE,0.0207924995260858
+"204","959641",30060,"André Ayew","Swansea","Man City","Man City","Swansea","December",90.3,43.1,FALSE,FALSE,0.050529671085729
+"269","959641",42705,"Wilfried Bony","Man City","Swansea","Man City","Swansea","December",92.8,52.6,FALSE,TRUE,0.093510537108486
+"271","959641",42705,"Wilfried Bony","Man City","Swansea","Man City","Swansea","December",85.5,53.6,FALSE,FALSE,0.112815529305798
+"272","959641",42705,"Wilfried Bony","Man City","Swansea","Man City","Swansea","December",77.9,45.4,FALSE,FALSE,0.0559151737466093
+"273","959641",42916,"Ki Sung-yueng","Swansea","Man City","Man City","Swansea","December",92.3,53.1,FALSE,FALSE,0.0763355056959886
+"283","959641",44847,"Federico Fernández","Swansea","Man City","Man City","Swansea","December",91.4,49.9,FALSE,FALSE,0.0713862047659519
+"323","959641",69346,"Gylfi Sigurdsson","Swansea","Man City","Man City","Swansea","December",73.8,75.3,FALSE,FALSE,0.0310350040130567
+"324","959641",69346,"Gylfi Sigurdsson","Swansea","Man City","Man City","Swansea","December",95.4,35.7,FALSE,FALSE,0.0981646693077147
+"326","959641",69346,"Gylfi Sigurdsson","Swansea","Man City","Man City","Swansea","December",85.8,40.1,FALSE,FALSE,0.0810589645101775
+"327","959641",69346,"Gylfi Sigurdsson","Swansea","Man City","Man City","Swansea","December",77,48.8,FALSE,FALSE,0.0424859298805317
+"328","959641",69346,"Gylfi Sigurdsson","Swansea","Man City","Man City","Swansea","December",85.6,51.8,FALSE,FALSE,0.114517796063572
+"370","959641",75691,"Nicolás Otamendi","Man City","Swansea","Man City","Swansea","December",91.6,40.4,FALSE,FALSE,0.0383831126959598
+"372","959641",75691,"Nicolás Otamendi","Man City","Swansea","Man City","Swansea","December",91.4,59.3,FALSE,FALSE,0.0390744640323018
+"522","959641",289253,"Kelechi Iheanacho","Man City","Swansea","Man City","Swansea","December",87.9,39.1,FALSE,TRUE,0.0920384360636695
+"7","959661",2837,"Jermain Defoe","Sunderland","Watford","Sunderland","Watford","December",87.5,55.9,FALSE,FALSE,0.111038065876415
+"8","959661",2837,"Jermain Defoe","Sunderland","Watford","Sunderland","Watford","December",92.3,51.3,FALSE,FALSE,0.223153320622785
+"26","959661",8236,"Billy Jones","Sunderland","Watford","Sunderland","Watford","December",70.7,67.2,FALSE,FALSE,0.0149973239233403
+"49","959661",9766,"Steven Fletcher","Sunderland","Watford","Sunderland","Watford","December",85.7,25.6,FALSE,FALSE,0.0218918350258532
+"88","959661",14259,"Jurado","Watford","Sunderland","Sunderland","Watford","December",89.3,54.8,FALSE,FALSE,0.21153074512931
+"89","959661",14269,"Adam Johnson","Sunderland","Watford","Sunderland","Watford","December",95.4,67.9,FALSE,FALSE,0.0549669149203317
+"108","959661",16032,"Ola Toivonen","Sunderland","Watford","Sunderland","Watford","December",89,52.9,FALSE,FALSE,0.049551043243416
+"112","959661",18600,"Almen Abdi","Watford","Sunderland","Sunderland","Watford","December",95.9,39.2,FALSE,FALSE,0.145493060417467
+"113","959661",18600,"Almen Abdi","Watford","Sunderland","Sunderland","Watford","December",93,54.4,FALSE,FALSE,0.364412843728162
+"166","959661",25832,"Troy Deeney","Watford","Sunderland","Sunderland","Watford","December",79.2,67.8,FALSE,FALSE,0.0356915647428195
+"167","959661",25832,"Troy Deeney","Watford","Sunderland","Sunderland","Watford","December",75,46.7,FALSE,FALSE,0.0442398171834142
+"208","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",95.9,43.1,FALSE,TRUE,0.241438686760805
+"210","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",88.9,58.5,FALSE,FALSE,0.151022560822356
+"211","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",95.7,35.3,FALSE,FALSE,0.118090440717583
+"217","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",98.6,40.7,FALSE,FALSE,0.288059808711102
+"218","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",89,37.9,FALSE,FALSE,0.108727031938078
+"219","959661",31376,"Odion Ighalo","Watford","Sunderland","Sunderland","Watford","December",87.9,63.7,FALSE,FALSE,0.0859562066310978
+"241","959661",33590,"Etienne Capoue","Watford","Sunderland","Sunderland","Watford","December",80.6,55.9,FALSE,FALSE,0.071339862176473
+"243","959661",33833,"Jack Rodwell","Sunderland","Watford","Sunderland","Watford","December",73.3,34.2,FALSE,FALSE,0.01851469401328
+"244","959661",33833,"Jack Rodwell","Sunderland","Watford","Sunderland","Watford","December",71.2,65.5,FALSE,FALSE,0.0164216084551065
+"245","959661",33833,"Jack Rodwell","Sunderland","Watford","Sunderland","Watford","December",78.5,62.9,FALSE,FALSE,0.0302020303880699
+"246","959661",33833,"Jack Rodwell","Sunderland","Watford","Sunderland","Watford","December",84.7,62,FALSE,FALSE,0.0529901474942985
+"284","959661",64343,"Adlène Guédioura","Watford","Sunderland","Sunderland","Watford","December",77.5,68,FALSE,FALSE,0.0318559902268064
+"382","959661",78221,"Patrick van Aanholt","Sunderland","Watford","Sunderland","Watford","December",73.9,63.9,FALSE,FALSE,0.020745577346315
+"406","959661",80882,"Fabio Borini","Sunderland","Watford","Sunderland","Watford","December",86.6,38.6,FALSE,FALSE,0.0657629500217368
+"407","959661",80882,"Fabio Borini","Sunderland","Watford","Sunderland","Watford","December",93.3,30.5,FALSE,FALSE,0.0436319669421468
+"516","959661",141512,"Duncan Watmore","Sunderland","Watford","Sunderland","Watford","December",71.8,44.3,FALSE,FALSE,0.0223710205647313
+"24","959680",8148,"James Collins","West Ham","Stoke","West Ham","Stoke","December",92.6,48.5,FALSE,FALSE,0.36198625150326
+"25","959680",8148,"James Collins","West Ham","Stoke","West Ham","Stoke","December",89.7,50.9,FALSE,FALSE,0.225366880674551
+"28","959680",8247,"Mark Noble","West Ham","Stoke","West Ham","Stoke","December",76.2,42.5,FALSE,FALSE,0.037063831202412
+"30","959680",8327,"Charlie Adam","Stoke","West Ham","West Ham","Stoke","December",75.4,49.4,FALSE,FALSE,0.0381827286635666
+"64","959680",12480,"Ibrahim Afellay","Stoke","West Ham","West Ham","Stoke","December",81.2,52.3,FALSE,FALSE,0.0681794247760891
+"94","959680",14524,"Mauro Zárate","West Ham","Stoke","West Ham","Stoke","December",76.9,39.8,FALSE,FALSE,0.0359049255390579
+"99","959680",14524,"Mauro Zárate","West Ham","Stoke","West Ham","Stoke","December",75.5,38.8,FALSE,FALSE,0.065733916154172
+"100","959680",14524,"Mauro Zárate","West Ham","Stoke","West Ham","Stoke","December",82.2,38.6,FALSE,FALSE,0.053013750180983
+"145","959680",23383,"Andy Carroll","West Ham","Stoke","West Ham","Stoke","December",91.6,45.6,FALSE,FALSE,0.0853639419353334
+"146","959680",23383,"Andy Carroll","West Ham","Stoke","West Ham","Stoke","December",92.2,51.1,FALSE,FALSE,0.122106323984753
+"147","959680",23383,"Andy Carroll","West Ham","Stoke","West Ham","Stoke","December",88.2,59.4,FALSE,FALSE,0.0315035659117075
+"148","959680",23383,"Andy Carroll","West Ham","Stoke","West Ham","Stoke","December",87.6,50.9,FALSE,FALSE,0.0491939410570132
+"175","959680",26013,"Mame Biram Diouf","Stoke","West Ham","West Ham","Stoke","December",86.6,47.1,FALSE,FALSE,0.133121645677987
+"176","959680",26013,"Mame Biram Diouf","Stoke","West Ham","West Ham","Stoke","December",84.8,54.2,FALSE,FALSE,0.100215774871395
+"177","959680",26013,"Mame Biram Diouf","Stoke","West Ham","West Ham","Stoke","December",89,45,FALSE,FALSE,0.168671186320478
+"201","959680",29798,"Ryan Shawcross","Stoke","West Ham","West Ham","Stoke","December",90,47.8,FALSE,FALSE,0.052250827481427
+"221","959680",31402,"Bojan","Stoke","West Ham","West Ham","Stoke","December",85.9,28.5,FALSE,FALSE,0.0326058258985224
+"223","959680",31402,"Bojan","Stoke","West Ham","West Ham","Stoke","December",86.4,65.2,FALSE,FALSE,0.0556579904544867
+"250","959680",34693,"Marko Arnautovic","Stoke","West Ham","West Ham","Stoke","December",94.7,46,FALSE,FALSE,0.421934503138683
+"252","959680",34693,"Marko Arnautovic","Stoke","West Ham","West Ham","Stoke","December",72.2,49.6,FALSE,FALSE,0.0615191307407789
+"257","959680",34693,"Marko Arnautovic","Stoke","West Ham","West Ham","Stoke","December",90.9,32.8,FALSE,FALSE,0.0600562670564249
+"286","959680",66741,"Cheikhou Kouyaté","West Ham","Stoke","West Ham","Stoke","December",90.6,36.4,FALSE,FALSE,0.0872016388901433
+"287","959680",66741,"Cheikhou Kouyaté","West Ham","Stoke","West Ham","Stoke","December",89.3,57.1,FALSE,FALSE,0.0451753111267801
+"288","959680",66741,"Cheikhou Kouyaté","West Ham","Stoke","West Ham","Stoke","December",72.4,40.7,FALSE,FALSE,0.0260252255131948
+"289","959680",66741,"Cheikhou Kouyaté","West Ham","Stoke","West Ham","Stoke","December",95.5,44.4,FALSE,FALSE,0.203140579793782
+"296","959680",68049,"Aaron Cresswell","West Ham","Stoke","West Ham","Stoke","December",85.9,75.2,FALSE,FALSE,0.0250235108930886
+"333","959680",69517,"Michail Antonio","West Ham","Stoke","West Ham","Stoke","December",76.4,34.5,FALSE,FALSE,0.0275589971278767
+"334","959680",69517,"Michail Antonio","West Ham","Stoke","West Ham","Stoke","December",90.4,62.1,FALSE,FALSE,0.101280741693802
+"335","959680",69517,"Michail Antonio","West Ham","Stoke","West Ham","Stoke","December",82.5,60.8,FALSE,FALSE,0.0563992740333528
+"336","959680",69517,"Michail Antonio","West Ham","Stoke","West Ham","Stoke","December",90.3,48.5,FALSE,FALSE,0.0801492701328599
+"337","959680",69517,"Michail Antonio","West Ham","Stoke","West Ham","Stoke","December",81.8,26.4,FALSE,FALSE,0.0236555260637195
+"422","959680",83895,"Enner Valencia","West Ham","Stoke","West Ham","Stoke","December",69.8,58,FALSE,FALSE,0.0475810089727151
+"423","959680",83895,"Enner Valencia","West Ham","Stoke","West Ham","Stoke","December",66,55.2,FALSE,FALSE,0.0178026746945756
+"424","959680",83895,"Enner Valencia","West Ham","Stoke","West Ham","Stoke","December",93.1,53.9,FALSE,FALSE,0.172817625179089
+"430","959680",85470,"Marco Van Ginkel","Stoke","West Ham","West Ham","Stoke","December",91.6,43.1,FALSE,FALSE,0.202436185108636
+"6","959601",2115,"Michael Carrick","Man Utd","Bournemouth","Bournemouth","Man Utd","December",82.2,51.8,FALSE,FALSE,0.0740242696996608
+"41","959601",9298,"Simon Francis","Bournemouth","Man Utd","Bournemouth","Man Utd","December",94.3,31,FALSE,FALSE,0.0565179545050409
+"126","959601",21427,"Glenn Murray","Bournemouth","Man Utd","Bournemouth","Man Utd","December",91,43.5,FALSE,FALSE,0.449893415021028
+"127","959601",21427,"Glenn Murray","Bournemouth","Man Utd","Bournemouth","Man Utd","December",93.5,47.2,FALSE,FALSE,0.43958542910989
+"130","959601",22738,"Marouane Fellaini","Man Utd","Bournemouth","Bournemouth","Man Utd","December",88,53.2,FALSE,FALSE,0.155053603404136
+"131","959601",22738,"Marouane Fellaini","Man Utd","Bournemouth","Bournemouth","Man Utd","December",90.7,48.7,FALSE,FALSE,0.253874161113935
+"135","959601",22738,"Marouane Fellaini","Man Utd","Bournemouth","Bournemouth","Man Utd","December",89.5,62.7,FALSE,FALSE,0.0844955365592874
+"137","959601",22738,"Marouane Fellaini","Man Utd","Bournemouth","Bournemouth","Man Utd","December",92.3,53.8,FALSE,FALSE,0.290938251876173
+"138","959601",22738,"Marouane Fellaini","Man Utd","Bournemouth","Bournemouth","Man Utd","December",95.9,49.9,FALSE,TRUE,0.632405054406651
+"295","959601",67807,"Harry Arter","Bournemouth","Man Utd","Bournemouth","Man Utd","December",78.1,65.5,FALSE,FALSE,0.0371985489058346
+"306","959601",68648,"Matt Ritchie","Bournemouth","Man Utd","Bournemouth","Man Utd","December",83.8,49.1,FALSE,FALSE,0.0274689471262745
+"307","959601",68648,"Matt Ritchie","Bournemouth","Man Utd","Bournemouth","Man Utd","December",80.1,40.8,FALSE,FALSE,0.0492892743630899
+"346","959601",69912,"Junior Stanislas","Bournemouth","Man Utd","Bournemouth","Man Utd","December",74.6,32.7,FALSE,FALSE,0.0582485374038408
+"347","959601",69912,"Junior Stanislas","Bournemouth","Man Utd","Bournemouth","Man Utd","December",99.5,99.5,FALSE,TRUE,0.00684086951726282
+"348","959601",69912,"Junior Stanislas","Bournemouth","Man Utd","Bournemouth","Man Utd","December",77.5,65.8,FALSE,FALSE,0.0292243629427639
+"408","959601",81026,"Joshua King","Bournemouth","Man Utd","Bournemouth","Man Utd","December",90.6,46.6,FALSE,TRUE,0.179223427582446
+"410","959601",81026,"Joshua King","Bournemouth","Man Utd","Bournemouth","Man Utd","December",91.3,57.7,FALSE,FALSE,0.180189697781259
+"486","959601",110154,"Memphis Depay","Man Utd","Bournemouth","Bournemouth","Man Utd","December",89.9,59.1,FALSE,FALSE,0.12730988739274
+"496","959601",122366,"Anthony Martial","Man Utd","Bournemouth","Bournemouth","Man Utd","December",81.9,47.4,FALSE,FALSE,0.0705863409644028
+"498","959601",122366,"Anthony Martial","Man Utd","Bournemouth","Bournemouth","Man Utd","December",87.5,55.5,FALSE,FALSE,0.128380636068023
+"519","959601",244565,"Patrick McNair","Man Utd","Bournemouth","Bournemouth","Man Utd","December",93.5,45.6,FALSE,FALSE,0.184907025374997
+"521","959601",244565,"Patrick McNair","Man Utd","Bournemouth","Bournemouth","Man Utd","December",89.5,54.8,FALSE,FALSE,0.0807253121909785
+"17","959591",6434,"Alan Hutton","Aston Villa","Arsenal","Aston Villa","Arsenal","December",95.2,39.8,FALSE,FALSE,0.0375834208245637
+"66","959591",12779,"Scott Sinclair","Aston Villa","Arsenal","Aston Villa","Arsenal","December",93.3,48.8,FALSE,FALSE,0.147302702578622
+"67","959591",12779,"Scott Sinclair","Aston Villa","Arsenal","Aston Villa","Arsenal","December",80.2,32.7,FALSE,FALSE,0.0320852776439313
+"159","959591",24444,"Olivier Giroud","Arsenal","Aston Villa","Aston Villa","Arsenal","December",88.5,50,TRUE,TRUE,0.7757009
+"178","959591",26720,"Carlos Sánchez","Aston Villa","Arsenal","Aston Villa","Arsenal","December",73,47.8,FALSE,FALSE,0.0285502683537884
+"179","959591",26820,"Aaron Ramsey","Arsenal","Aston Villa","Aston Villa","Arsenal","December",78.6,49.5,FALSE,FALSE,0.0717974887077862
+"182","959591",26820,"Aaron Ramsey","Arsenal","Aston Villa","Aston Villa","Arsenal","December",88.5,53.4,FALSE,TRUE,0.204002992040507
+"187","959591",26820,"Aaron Ramsey","Arsenal","Aston Villa","Aston Villa","Arsenal","December",92.4,70.5,FALSE,FALSE,0.0629608516947644
+"192","959591",27550,"Kieran Gibbs","Arsenal","Aston Villa","Aston Villa","Arsenal","December",84.5,54.8,FALSE,FALSE,0.0564261987452177
+"203","959591",30051,"Laurent Koscielny","Arsenal","Aston Villa","Aston Villa","Arsenal","December",92.1,59,FALSE,FALSE,0.102521415506576
+"230","959591",33403,"Rudy Gestede","Aston Villa","Arsenal","Aston Villa","Arsenal","December",92.5,48.2,FALSE,FALSE,0.118028533603919
+"231","959591",33403,"Rudy Gestede","Aston Villa","Arsenal","Aston Villa","Arsenal","December",89.5,54,FALSE,FALSE,0.0560935651887088
+"290","959591",67491,"Jordan Ayew","Aston Villa","Arsenal","Aston Villa","Arsenal","December",87.1,73.8,FALSE,FALSE,0.0241019277460738
+"393","959591",79967,"Leandro Bacuna","Aston Villa","Arsenal","Aston Villa","Arsenal","December",90.6,70,FALSE,FALSE,0.0379096140402421
+"394","959591",79967,"Leandro Bacuna","Aston Villa","Arsenal","Aston Villa","Arsenal","December",82.6,72,FALSE,FALSE,0.0251257260975394
+"396","959591",80464,"Idrissa Gueye","Aston Villa","Arsenal","Aston Villa","Arsenal","December",79.1,63.5,FALSE,FALSE,0.0339850178467546
+"398","959591",80464,"Idrissa Gueye","Aston Villa","Arsenal","Aston Villa","Arsenal","December",74.6,59.4,FALSE,FALSE,0.0255743466622429
+"399","959591",80464,"Idrissa Gueye","Aston Villa","Arsenal","Aston Villa","Arsenal","December",76.2,35.5,FALSE,FALSE,0.0262803827959382
+"426","959591",84146,"Alex Oxlade-Chamberlain","Arsenal","Aston Villa","Aston Villa","Arsenal","December",87.6,41,FALSE,FALSE,0.140978619688328
+"453","959591",101017,"Jordan Veretout","Aston Villa","Arsenal","Aston Villa","Arsenal","December",75.7,26.5,FALSE,FALSE,0.0165523604716484
+"454","959591",101017,"Jordan Veretout","Aston Villa","Arsenal","Aston Villa","Arsenal","December",80.2,45.7,FALSE,FALSE,0.0547818528142441
+"455","959591",101017,"Jordan Veretout","Aston Villa","Arsenal","Aston Villa","Arsenal","December",79.5,30.3,FALSE,FALSE,0.0246804981666583
+"491","959591",116164,"Carles Gil","Aston Villa","Arsenal","Aston Villa","Arsenal","December",75,51.3,FALSE,FALSE,0.0341906681065111
+"492","959591",116164,"Carles Gil","Aston Villa","Arsenal","Aston Villa","Arsenal","December",77.2,57.8,FALSE,FALSE,0.037036008490149
+"507","959591",125211,"Héctor Bellerín","Arsenal","Aston Villa","Aston Villa","Arsenal","December",88.2,48,FALSE,FALSE,0.0727559935922483
+"515","959591",140088,"Adama Traoré","Aston Villa","Arsenal","Aston Villa","Arsenal","December",88.8,32.6,FALSE,FALSE,0.0493997143353227
+"11","959631",4511,"James Milner","Liverpool","West Brom","Liverpool","West Brom","December",77.9,34.5,FALSE,FALSE,0.0253842852562284
+"12","959631",4511,"James Milner","Liverpool","West Brom","Liverpool","West Brom","December",74.4,46.7,FALSE,FALSE,0.0344886614523449
+"13","959631",4511,"James Milner","Liverpool","West Brom","Liverpool","West Brom","December",89.5,30.5,FALSE,FALSE,0.045486872811028
+"14","959631",4511,"James Milner","Liverpool","West Brom","Liverpool","West Brom","December",76.4,64.1,FALSE,FALSE,0.0244656748009335
+"19","959631",6695,"Jonas Olsson","West Brom","Liverpool","Liverpool","West Brom","December",95.9,43.3,FALSE,TRUE,0.0870996314364907
+"51","959631",10498,"James Morrison","West Brom","Liverpool","Liverpool","West Brom","December",90.6,61,FALSE,FALSE,0.111031300010456
+"128","959631",21683,"Adam Lallana","Liverpool","West Brom","Liverpool","West Brom","December",93.3,60.6,FALSE,FALSE,0.291212518299049
+"170","959631",25964,"Salomón Rondón","West Brom","Liverpool","Liverpool","West Brom","December",81.6,43.5,FALSE,FALSE,0.0773711108476604
+"195","959631",29106,"Dejan Lovren","Liverpool","West Brom","Liverpool","West Brom","December",92.4,51,FALSE,FALSE,0.128291688791856
+"297","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",92,47.5,FALSE,FALSE,0.108731572552972
+"298","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",85.9,47.7,FALSE,FALSE,0.123646772108996
+"299","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",87.6,65.6,FALSE,FALSE,0.0702278756837661
+"300","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",76.4,67,FALSE,FALSE,0.0256665071829133
+"302","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",88,49.9,FALSE,FALSE,0.173116332015307
+"303","959631",68312,"Christian Benteke","Liverpool","West Brom","Liverpool","West Brom","December",94.6,46.3,FALSE,FALSE,0.16846262318329
+"308","959631",68659,"Jordan Henderson","Liverpool","West Brom","Liverpool","West Brom","December",92.9,49,FALSE,TRUE,0.386812905973398
+"309","959631",68659,"Jordan Henderson","Liverpool","West Brom","Liverpool","West Brom","December",80.6,49.8,FALSE,FALSE,0.054671314746119
+"310","959631",68659,"Jordan Henderson","Liverpool","West Brom","Liverpool","West Brom","December",75.8,56.3,FALSE,FALSE,0.0369506671446627
+"311","959631",68659,"Jordan Henderson","Liverpool","West Brom","Liverpool","West Brom","December",78,44.4,FALSE,FALSE,0.0459474639644498
+"312","959631",68659,"Jordan Henderson","Liverpool","West Brom","Liverpool","West Brom","December",78.1,38.3,FALSE,FALSE,0.0371496128370326
+"330","959631",69375,"Nathaniel Clyne","Liverpool","West Brom","Liverpool","West Brom","December",73.6,34.5,FALSE,FALSE,0.0229596697069719
+"331","959631",69375,"Nathaniel Clyne","Liverpool","West Brom","Liverpool","West Brom","December",75.8,26.6,FALSE,FALSE,0.0181144791126229
+"364","959631",73063,"Craig Dawson","West Brom","Liverpool","Liverpool","West Brom","December",94.6,54.2,FALSE,TRUE,0.396654240580782
+"400","959631",80767,"Philippe Coutinho","Liverpool","West Brom","Liverpool","West Brom","December",73.6,56.5,FALSE,FALSE,0.0305582787303052
+"401","959631",80767,"Philippe Coutinho","Liverpool","West Brom","Liverpool","West Brom","December",76.2,68,FALSE,FALSE,0.0291306076040289
+"402","959631",80767,"Philippe Coutinho","Liverpool","West Brom","Liverpool","West Brom","December",76.9,50.1,FALSE,FALSE,0.0443578545929581
+"403","959631",80767,"Philippe Coutinho","Liverpool","West Brom","Liverpool","West Brom","December",86.2,49.9,FALSE,FALSE,0.132583442975013
+"470","959631",105797,"Jordon Ibe","Liverpool","West Brom","Liverpool","West Brom","December",74.9,64.2,FALSE,FALSE,0.0219477603436813
+"487","959631",111212,"Emre Can","Liverpool","West Brom","Liverpool","West Brom","December",96.8,66.9,FALSE,FALSE,0.0758901127541525
+"488","959631",113275,"Alberto Moreno","Liverpool","West Brom","Liverpool","West Brom","December",82.9,54.5,FALSE,FALSE,0.0666810704209197
+"505","959631",124688,"Divock Origi","Liverpool","West Brom","Liverpool","West Brom","December",70.9,62,FALSE,TRUE,0.0180450480219818
+"506","959631",124688,"Divock Origi","Liverpool","West Brom","Liverpool","West Brom","December",83.8,78.7,FALSE,FALSE,0.0153684655515586
+"154","959671",24223,"Papiss Demba Cissé","Newcastle","Tottenham","Tottenham","Newcastle","December",87.2,47.8,FALSE,FALSE,0.044414471740022
+"155","959671",24223,"Papiss Demba Cissé","Newcastle","Tottenham","Tottenham","Newcastle","December",86.8,45.8,FALSE,FALSE,0.0368953765958732
+"156","959671",24223,"Papiss Demba Cissé","Newcastle","Tottenham","Tottenham","Newcastle","December",92.5,65.5,FALSE,FALSE,0.182229092126014
+"162","959671",24711,"Danny Rose","Tottenham","Newcastle","Tottenham","Newcastle","December",92.3,68.2,FALSE,FALSE,0.0692562819141335
+"228","959671",32196,"Siem de Jong","Newcastle","Tottenham","Tottenham","Newcastle","December",86.2,41,FALSE,FALSE,0.0901929952025529
+"240","959671",33568,"Georginio Wijnaldum","Newcastle","Tottenham","Tottenham","Newcastle","December",93,57.1,FALSE,FALSE,0.226369999011415
+"314","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",76.2,60,FALSE,FALSE,0.0411299257089024
+"315","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",72.4,37.3,FALSE,FALSE,0.0234994035472406
+"316","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",75.3,51.5,FALSE,FALSE,0.0456676344445756
+"317","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",75.9,75.6,FALSE,FALSE,0.0423727429044876
+"319","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",80.5,41.9,FALSE,FALSE,0.0536813185286033
+"320","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",75.4,34.5,FALSE,FALSE,0.0257979644552929
+"321","959671",69344,"Christian Eriksen","Tottenham","Newcastle","Tottenham","Newcastle","December",78.5,47.6,FALSE,FALSE,0.126113075783633
+"350","959671",69933,"Toby Alderweireld","Tottenham","Newcastle","Tottenham","Newcastle","December",91.3,48.7,FALSE,FALSE,0.11789298923623
+"374","959671",75830,"Erik Lamela","Tottenham","Newcastle","Tottenham","Newcastle","December",88,43.7,FALSE,FALSE,0.135938411390576
+"375","959671",75830,"Erik Lamela","Tottenham","Newcastle","Tottenham","Newcastle","December",83.6,63.3,FALSE,FALSE,0.0526949841375273
+"377","959671",75830,"Erik Lamela","Tottenham","Newcastle","Tottenham","Newcastle","December",79.1,38.3,FALSE,FALSE,0.0402461020834091
+"418","959671",83532,"Harry Kane","Tottenham","Newcastle","Tottenham","Newcastle","December",76.4,33.8,FALSE,FALSE,0.0321402358772912
+"421","959671",83532,"Harry Kane","Tottenham","Newcastle","Tottenham","Newcastle","December",78.1,68.2,FALSE,FALSE,0.0268003561800969
+"435","959671",91909,"Son Heung-Min","Tottenham","Newcastle","Tottenham","Newcastle","December",96.7,38.4,FALSE,FALSE,0.0799405159349626
+"436","959671",91909,"Son Heung-Min","Tottenham","Newcastle","Tottenham","Newcastle","December",74.5,44.8,FALSE,FALSE,0.0338002973430865
+"458","959671",104368,"Chancel Mbemba","Newcastle","Tottenham","Tottenham","Newcastle","December",95.6,53.2,FALSE,FALSE,0.296353661522298
+"490","959671",115279,"Aleksandar Mitrovic","Newcastle","Tottenham","Tottenham","Newcastle","December",99,50.6,FALSE,TRUE,0.918622760765223
+"493","959671",117973,"Eric Dier","Tottenham","Newcastle","Tottenham","Newcastle","December",93.9,55.9,FALSE,TRUE,0.0760005566453663
+"494","959671",117973,"Eric Dier","Tottenham","Newcastle","Tottenham","Newcastle","December",75.9,38.4,FALSE,FALSE,0.031448658389229
+"512","959671",131519,"Dele Alli","Tottenham","Newcastle","Tottenham","Newcastle","December",85.9,60.2,FALSE,FALSE,0.0345841228807756
+"513","959671",131519,"Dele Alli","Tottenham","Newcastle","Tottenham","Newcastle","December",72.5,48.5,FALSE,FALSE,0.0297718219720813
+"514","959671",135366,"Ayoze Pérez","Newcastle","Tottenham","Tottenham","Newcastle","December",96.6,34,FALSE,TRUE,0.0841535947077538
