@@ -23,7 +23,7 @@
 <body>
   <div id="navHeader"></div>
 
-  <section class="container px1 py1">
+  <section class="container ">
     <h1>Match Expected Goals Simulator</h1>
     <div class="clearfix">
       <div class="sm-col sm-col-6 px1">
@@ -40,22 +40,24 @@
         <h3>Summary Results</h3>
         <table class="table-light overflow-hidden bg-white border rounded">
           <thead><tr>
-              <th></th><th>Goals</th><th>Std Dev</th><th>Shots</th><th>Win %</th>
+              <th></th><th>Goals</th><th>StdDev</th><th>Shots</th><th>Win%</th><th>PPG</th>
           </tr></thead>
           <tbody>
             <tr>
-              <th>Team A:</th>
+              <th>TeamA:</th>
               <td><span id="teamAAVG"></span></td>
-              <td>+/- <span id="teamASD"></span></td>
+              <td>±<span id="teamASD"></span></td>
               <td><span id="teamAShotCount"></span></td>
               <td><span id="teamAWin"></span>%</td>
+              <td><span id="teamAPPG"></span></td>
             </tr>
             <tr>
-              <th style="border-bottom: 0;">Team B:</th>
+              <th style="border-bottom: 0;">TeamB:</th>
               <td><span id="teamBAVG"></span></td>
-              <td>+/- <span id="teamBSD"></span></td>
+              <td>±<span id="teamBSD"></span></td>
               <td><span id="teamBShotCount"></span></td>
               <td><span id="teamBWin"></span>%</td>
+              <td><span id="teamBPPG"></span></td>
             </tr>
           </tbody>
         </table>
@@ -64,23 +66,26 @@
       </div>
     </div>
     <div class="clearfix">
-      <h3>Graphs</h3>
-      <div class="sm-col sm-col-6 px1 py1">
+      <h3>Match Graphs</h3>
+      <div class="sm-col sm-col-6 ">
         <div id="winsChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1 py1">
+      <div class="sm-col sm-col-6 ">
         <div id="ppgChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1 py1">
+      <div class="sm-col sm-col-6 ">
         <div id="diffChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1 py1">
+      <div class="sm-col sm-col-6 ">
         <div id="goalsChart" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1 py1">
+    </div>
+    <div class="clearfix">
+      <h3>Season Graphs</h3>
+      <div class="sm-col sm-col-6 ">
         <div id="seasonPlot" style="height: 350px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 px1 py1">
+      <div class="sm-col sm-col-6 ">
         <div id="seasonBar" style="height: 350px; width: 100%;"></div>
       </div>
     </div>

@@ -58,22 +58,23 @@ function simulateExpectedGoals() {
 
   results = simulateGames(sims, teamAArray, teamBArray)
 
-  teamASD = standardDeviation(results.AScores);
+  var teamASD = standardDeviation(results.AScores);
+  var teamBSD = standardDeviation(results.BScores);
+  var teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100;
+  var teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100;
+  var teamAWin = Math.round(100*(results.A/sims));
+  var teamBWin = Math.round(100*(results.B/sims));
+
   document.getElementById('teamASD').innerHTML = Math.round(teamASD * 100) / 100
-  teamBSD = standardDeviation(results.BScores);
   document.getElementById('teamBSD').innerHTML = Math.round(teamBSD * 100) / 100
-  teamAAVG = average(results.AScores);
   document.getElementById('teamAAVG').innerHTML = Math.round(sum(teamAArray)*100)/100
-  teamBAVG = average(results.BScores);
   document.getElementById('teamBAVG').innerHTML = Math.round(sum(teamBArray)*100)/100
-  teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100
-  teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100
-  teamAWin = Math.round(100*(results.A/sims))
   document.getElementById('teamAWin').innerHTML = teamAWin;
-  teamBWin = Math.round(100*(results.B/sims))
   document.getElementById('teamBWin').innerHTML = teamBWin;
-  document.getElementById('teamAShotCount').innerHTML = teamAArray.length
-  document.getElementById('teamBShotCount').innerHTML = teamBArray.length
+  document.getElementById('teamAShotCount').innerHTML = teamAArray.length;
+  document.getElementById('teamBShotCount').innerHTML = teamBArray.length;
+  document.getElementById('teamAPPG').innerHTML = teamAPPG;
+  document.getElementById('teamBPPG').innerHTML = teamBPPG;
 
   ppgData = [{
     values: [teamAPPG, teamBPPG],
