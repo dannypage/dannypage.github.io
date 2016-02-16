@@ -3,6 +3,7 @@ var red = "#d7191c"
 var blue = "#2c7bb6"
 var draw = "#cfcf6f"
 var seededChance;
+var seasonPoints;
 
 var encode, compressed, decompressed, variables;
 
@@ -11,7 +12,7 @@ defaults = {
   'teamBShots': "0.4,0.4,0.4",
   'name': "John Smith FC",
   'chances': "0.05,0.05,0.05,0.05,0.20,0.20,0.2,0.2,0.2",
-  'goals': "2"
+  'goals': "2",
 }
 
 var share = getQueryVariable('share');
@@ -52,6 +53,8 @@ function simulateExpectedGoals() {
   var teamAArray = stringToArray(teamAShots.value);
   var teamBArray = stringToArray(teamBShots.value);
   var sims = 10000;
+  var seasonGames = 38;
+  var seasons = 2500;
 
   results = simulateGames(sims, teamAArray, teamBArray)
 
@@ -60,16 +63,15 @@ function simulateExpectedGoals() {
   teamBSD = standardDeviation(results.BScores);
   document.getElementById('teamBSD').innerHTML = Math.round(teamBSD * 100) / 100
   teamAAVG = average(results.AScores);
-  document.getElementById('teamAAVG').innerHTML = Math.round(teamAAVG * 100) / 100
+  document.getElementById('teamAAVG').innerHTML = Math.round(sum(teamAArray)*100)/100
   teamBAVG = average(results.BScores);
-  document.getElementById('teamBAVG').innerHTML = Math.round(teamBAVG * 100) / 100
+  document.getElementById('teamBAVG').innerHTML = Math.round(sum(teamBArray)*100)/100
   teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100
   teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100
   teamAWin = Math.round(100*(results.A/sims))
   document.getElementById('teamAWin').innerHTML = teamAWin;
   teamBWin = Math.round(100*(results.B/sims))
   document.getElementById('teamBWin').innerHTML = teamBWin;
-  document.getElementById('teamBAVG').innerHTML = Math.round(teamBAVG * 100) / 100
   document.getElementById('teamAShotCount').innerHTML = teamAArray.length
   document.getElementById('teamBShotCount').innerHTML = teamBArray.length
 
@@ -79,7 +81,7 @@ function simulateExpectedGoals() {
     name: 'Points Per Game',
     textinfo: 'value',
     hoverinfo: 'label+value',
-    hole: .4,
+    hole: 0.4,
     type: 'pie',
     marker: {
       colors: [red, blue]
@@ -206,7 +208,7 @@ function simulateExpectedGoals() {
       r:60,
       autoexpand:true
     },
-
+    showlegend: false
   };
 
   Plotly.newPlot('goalsChart', goalsData, goalsLayout);
@@ -274,6 +276,94 @@ function simulateExpectedGoals() {
   }
 
   Plotly.newPlot('diffChart', diffData, diffLayout);
+
+  seasonPoints = {
+    teamA: [],
+    teamB: []
+  };
+  for (var i =0 ; i< seasons ; i++){
+    seasonResults = simulateGames(seasonGames, teamAArray, teamBArray);
+    seasonPoints.teamA.push(seasonResults.A*3+seasonResults.T);
+    seasonPoints.teamB.push(seasonResults.B*3+seasonResults.T);
+  }
+
+  var teamASeason = {
+    y: seasonPoints.teamA,
+    type: 'box',
+    name: 'Team A',
+    marker:{
+      color: red
+    },
+    boxmean:"sd"
+  };
+
+  var teamBSeason = {
+    y: seasonPoints.teamB,
+    type: 'box',
+    name: 'Team B',
+    marker:{
+      color: blue
+    },
+    boxmean:"sd"
+  };
+
+  var seasonLayout = {
+    title: '38 Games Season Sim',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    },
+    showlegend: false
+  };
+
+  var seasonData = [teamASeason, teamBSeason];
+
+  Plotly.newPlot('seasonPlot', seasonData, seasonLayout);
+
+  var teamAHistogram = {
+    x: seasonPoints.teamA,
+    type: 'histogram',
+    marker: {
+      color: red
+    },
+    opacity: 0.75,
+    name: 'Team A',
+  };
+  var teamBHistogram = {
+    x: seasonPoints.teamB,
+    marker: {
+      color: blue
+    },
+    opacity: 0.75,
+    type: 'histogram',
+    name: 'Team B'
+  };
+  var seasonBarData = [teamAHistogram, teamBHistogram];
+  var seasonLayout = {
+    title: '38 Games - Histogram',
+    titlefont: {
+      size: 28
+    },
+    margin:{
+      t:60,
+      b:60,
+      l:60,
+      r:60,
+      autoexpand:true
+    },
+    xaxis: {title: 'Season Points'},
+    yaxis: {title: 'Count'},
+    barmode: 'overlay',
+    showlegend: false
+  };
+
+  Plotly.newPlot('seasonBar', seasonBarData, seasonLayout);
 
   var shareURL = getShareURL();
   document.getElementById("shareURLlink").href = shareURL;
@@ -350,7 +440,8 @@ function simulateLongTermExpectedGoals(){
     },
     xaxis: {
       title: "Goals"
-    }
+    },
+    showlegend: false
   };
   Plotly.newPlot('goalsChart', data, layout);
 
@@ -442,8 +533,14 @@ function simulateGames(sims, teamAArray, teamBArray) {
 function stringToArray(string) {
   trimmed = string.replace(" ","");
   array = trimmed.split(/[ ,]+/).map(Number);
+  for(var i = array.length - 1; i >= 0; i--) {
+    if(array[i] === 0) {
+       array.splice(i, 1);
+    }
+  }
   return array;
 }
+
 function simulateShots(shotsArray) {
   var score = 0;
   for (var i = 0; i < shotsArray.length; i++) {
@@ -453,6 +550,7 @@ function simulateShots(shotsArray) {
   }
   return score;
 }
+
 //http://derickbailey.com/2014/09/21/calculating-standard-deviation-with-array-map-and-array-reduce-in-javascript/
 function standardDeviation(values){
   var avg = average(values);
@@ -476,6 +574,12 @@ function average(data){
 
   var avg = sum / data.length;
   return avg;
+}
+
+function sum(data){
+  return data.reduce(function(sum, value){
+    return sum + value;
+  }, 0);
 }
 
 function getQueryVariable(variable) {
