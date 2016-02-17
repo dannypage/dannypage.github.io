@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .axis line, .bullet .axis path { stroke: #666; stroke-width: .5px; fill: none; }
+.bullet .range.s0 { fill: #dddddd; }
+.bullet .range.s1 { fill: #b7b7b7; }
+.bullet .range.s2 { fill: #969696; }
+.bullet .range.s3 { fill: #525252; }
+.bullet .measure.s0 { fill: #2c7bb6; }
+.bullet .measure.s1 { fill: #abd9e9; }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+</style>
+<button>Update</button>
+<script src="/js/d3/d3.min.js"></script>
+<script src="/js/internal/bullet.js"></script>
+<script>
+
+var margin = {top: 5, right: 40, bottom: 50, left: 70},
+    width = 150 - margin.left - margin.right,
+    height = 450 - margin.top - margin.bottom;
+
+var chart = d3.bullet()
+    .orient("bottom")
+    .width(width)
+    .height(height);
+
+d3.json("/assets/hero/example.json", function(error, data) {
+  var svg = d3.select("body").selectAll("svg")
+      .data(data)
+    .enter().append("svg")
+      .attr("class", "bullet")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+      .call(chart);
+
+  var title = svg.append("g")
+      .style("text-anchor", "end")
+      .attr("transform", "translate(" + width + "," + (height + 20) + ")");
+
+  title.append("text")
+      .attr("class", "title")
+      .text(function(d) { return d.title; });
+
+  title.append("text")
+      .attr("class", "subtitle")
+      .attr("dy", "1em")
+      .text(function(d) { return d.subtitle; });
+
+  d3.selectAll("button").on("click", function() {
+    svg.datum(randomize).transition().duration(1000).call(chart);
+  });
+});
+
+function randomize(d) {
+  if (!d.randomizer) d.randomizer = randomizer(d);
+  d.ranges = d.ranges.map(d.randomizer);
+  d.markers = d.markers.map(d.randomizer);
+  d.measures = d.measures.map(d.randomizer);
+  return d;
+}
+
+function randomizer(d) {
+  var k = d3.max(d.ranges) * .2;
+  return function(d) {
+    return Math.max(0, d + k * (Math.random() - .5));
+  };
+}
+
+</script>

@@ -333,7 +333,7 @@ function simulateExpectedGoals() {
       color: red
     },
     opacity: 0.75,
-    name: 'Team A',
+    name: 'Team A'
   };
   var teamBHistogram = {
     x: seasonPoints.teamB,
