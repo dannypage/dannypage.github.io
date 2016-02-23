@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HERO Charts</title>
+  <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+  <script type="text/javascript" src="js/d3/d3.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/plotly/plotly.min.js"></script>
+  <script type="text/javascript" src="js/internal/hero.js"></script>
+  <script type="text/javascript" src="/templates/templates.js"></script>
+  <script type="text/javascript" src="/templates/ga.js"></script>
+</head>
+<body>
+  <div id="navHeader"></div>
+
+  <div class='container py1 px1 border-bottom'>
+    <h1>Hero Charts</h1>
+    <select class='py2 mt3 border' id="playerSelect" onchange="drawGraphs(this.selectedIndex);">
+    </select>
+  </div>
+
+  <div class='container py1 px1'>
+    <div class='clearfix'>
+
+    </div>
+    <div class="clearfix">
+      <div class="col col-6">
+        <div id="heroGraph" style="width: 100%; height: 400px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="navFooter"></div>
+</body>
+</html>
