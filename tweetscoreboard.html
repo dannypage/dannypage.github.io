@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tweet Score Board</title>
+  <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+  <script type="text/javascript" src="/js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/templates/templates.js"></script>
+  <script type="text/javascript" src="/templates/ga.js"></script>
+</head>
+<body>
+  <div id="navHeader"></div>
+
+  <section class="container px1 py1">
+    <div class="clearfix">
+      <div class="col col-12 px1 py1">
+        <h1>Tweet Score Board</h1>
+        <button class="button rounded" onclick="printScoreboard()">Generate Scoreboard!</button>
+      </div>
+      <div class="col col-12 px1 py1">
+        <div class="col col-4">
+          <label class="description" for="homeTeam">Home Team </label>
+          <input id="homeTeam" type="text" maxlength="3" value=""/>
+        </div>
+        <div class="col col-4">
+          <label class="description" for="awayTeam">Away Team </label>
+          <input id="awayTeam" type="text" maxlength="3" value=""/>
+        </div>
+        <div class="col col-4">
+          <input id="halfTime" name="time" class="element radio" type="radio" value="half" />
+          <label class="choice" for="element_3_1">Half Time</label>
+          <input id="fullTime" name="time" class="element radio" type="radio" value="full" />
+          <label class="choice" for="element_3_2">Full Time</label>
+        </div>
+      </div>
+      <div class="col col-12 px1 py1">
+
+        <div class="col col-4">
+          <label class="description" for="homeStat">Home Stat </label>
+          <select class="select" id="homeStat" name="homeStat">
+            <option value="" selected="selected"></option>
+            <option value="00" >0</option>
+            <option value="01" >1</option>
+            <option value="02" >2</option>
+          </select>
+        </div>
+
+        <div class="col col-4">
+          <label class="description" for="statName">Stat </label>
+          <input id="statName" type="text" maxlength="4" value=""/>
+        </div>
+
+        <div class="col col-4">
+          <label class="description" for="awayStat">Away Stat </label>
+          <select class="select" id="awayStat" name="awayStat">
+            <option value="" selected="selected"></option>
+            <option value="00" >0</option>
+            <option value="01" >1</option>
+            <option value="02" >2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col col-12 px1 py1">
+        <label class="description" for="scoreboard">Scoreboard </label>
+        <div class="col col-12  px1 py1">
+          <textarea id="scoreboard" name="scoreboard" class="textarea col col-4"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="navFooter"></div>
+
+  <script type="text/javascript">
+  var home, away;
+  function printScoreboard(){
+    var timeValues = {"half": "ＨＡＬＦ　　ＴＩＭＥ", "full": "ＦＵＬＬ　　ＴＩＭＥ"};
+    var radios = document.getElementsByName('time');
+
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            var timeText = timeValues[radios[i].value];
+            break;
+        }
+    }
+
+    home = document.getElementById('homeTeam').value;
+    away = document.getElementById('awayTeam').value;
+    homeStat = document.getElementById('homeStat').value;
+    statName = document.getElementById('statName').value;
+    awayStat = document.getElementById('awayStat').value;
+    var scoreboard = convert(home) + "　ＶＳ　" + convert(away) + "\n" + timeText + "\n";
+    var stat = convert(homeStat) + "┃" + convert(statName) + "┃" + convert(awayStat) + "\n";
+    scoreboard += stat;
+    document.getElementById('scoreboard').innerHTML = scoreboard;
+
+  }
+  function getShareURL(subject, action, object) {
+    var origin = document.location['origin'];
+    var pathname = document.location['pathname'];
+    return origin + pathname;
+  }
+  function convert(text){
+    var alphabet = "０１２３４５６７８９　　　　　　　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
+    var conversion = "";
+    for (var i = 0; i < text.length; i++){
+      code = ascii(text[i])
+      if (code >= 48 && code < 90){
+        conversion += alphabet[code-48];
+      } else {
+        conversion += "　";
+      }
+    }
+    return conversion;
+  }
+  function ascii (a) { return a.charCodeAt(0); }
+
+  </script>
+</body>
+</html>
