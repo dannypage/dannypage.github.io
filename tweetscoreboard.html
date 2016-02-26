@@ -15,55 +15,86 @@
     <div class="clearfix">
       <div class="col col-12 px1 py1">
         <h1>Tweet Score Board</h1>
+      </div>
+      <table class="col col-6 px1 py1" style="text-align: center;">
+        <tr>
+          <td><label class="description" for="homeTeam">Home Team </label>
+          <input id="homeTeam" type="text" maxlength="3" value=""/></td>
+          <td>　ＶＳ　</td>
+          <td><label class="description" for="awayTeam">Away Team </label>
+          <input id="awayTeam" type="text" maxlength="3" value=""/></td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input id="halfTime" name="time" class="element radio" type="radio" value="half" />
+              <span class="choice" for="element_3_1">Half Time</span>
+            </label>
+          </td>
+          <td></td>
+          <td>
+            <label>
+              <input id="fullTime" name="time" class="element radio" type="radio" value="full" checked="checked"/>
+              <span class="choice" for="element_3_2">Full Time</span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td><label class="description" for="homeStat">Home Stat (#)</label></td>
+          <td><label class="description" for="statName">Stat Name</label></td>
+          <td><label class="description" for="awayStat">Away Stat (#)</label></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat0" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName0" name="statName" type="text" maxlength="4" value="GOAL"/></td>
+          <td><input id="awayStat0" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName1" name="statName" type="text" maxlength="4" value="SHOT"/></td>
+          <td><input id="awayStat1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName2" name="statName" type="text" maxlength="4" value="SoT"/></td>
+          <td><input id="awayStat2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName3" name="statName" type="text" maxlength="4" value="PAS%"/></td>
+          <td><input id="awayStat3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat4" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName4" name="statName" type="text" maxlength="4" value="POS%"/></td>
+          <td><input id="awayStat4" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+        <tr name="statRow">
+          <td><input id="homeStat5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="homeStat" type="text" maxlength="2" value=""/></td>
+          <td><input id="statName5" name="statName" type="text" maxlength="4" value="SUBS"/></td>
+          <td><input id="awayStat5" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+            name="awayStat" type="text" maxlength="2" value=""/></td>
+        </tr>
+      </table>
+
+      <div class="col col-12 px1 py1">
         <button class="button rounded" onclick="printScoreboard()">Generate Scoreboard!</button>
-      </div>
-      <div class="col col-12 px1 py1">
-        <div class="col col-4">
-          <label class="description" for="homeTeam">Home Team </label>
-          <input id="homeTeam" type="text" maxlength="3" value=""/>
-        </div>
-        <div class="col col-4">
-          <label class="description" for="awayTeam">Away Team </label>
-          <input id="awayTeam" type="text" maxlength="3" value=""/>
-        </div>
-        <div class="col col-4">
-          <input id="halfTime" name="time" class="element radio" type="radio" value="half" />
-          <label class="choice" for="element_3_1">Half Time</label>
-          <input id="fullTime" name="time" class="element radio" type="radio" value="full" />
-          <label class="choice" for="element_3_2">Full Time</label>
-        </div>
-      </div>
-      <div class="col col-12 px1 py1">
-
-        <div class="col col-4">
-          <label class="description" for="homeStat">Home Stat </label>
-          <select class="select" id="homeStat" name="homeStat">
-            <option value="" selected="selected"></option>
-            <option value="00" >0</option>
-            <option value="01" >1</option>
-            <option value="02" >2</option>
-          </select>
-        </div>
-
-        <div class="col col-4">
-          <label class="description" for="statName">Stat </label>
-          <input id="statName" type="text" maxlength="4" value=""/>
-        </div>
-
-        <div class="col col-4">
-          <label class="description" for="awayStat">Away Stat </label>
-          <select class="select" id="awayStat" name="awayStat">
-            <option value="" selected="selected"></option>
-            <option value="00" >0</option>
-            <option value="01" >1</option>
-            <option value="02" >2</option>
-          </select>
-        </div>
       </div>
       <div class="col col-12 px1 py1">
         <label class="description" for="scoreboard">Scoreboard </label>
         <div class="col col-12  px1 py1">
-          <textarea id="scoreboard" name="scoreboard" class="textarea col col-4"></textarea>
+          <textarea id="scoreboard" name="scoreboard" class="textarea col col-4" style="width: 300px; height: 300px;"></textarea>
         </div>
       </div>
     </div>
@@ -75,41 +106,50 @@
   var home, away;
   function printScoreboard(){
     var timeValues = {"half": "ＨＡＬＦ　　ＴＩＭＥ", "full": "ＦＵＬＬ　　ＴＩＭＥ"};
+    var timeText = timeValues["full"];
     var radios = document.getElementsByName('time');
 
     for (var i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked) {
-            var timeText = timeValues[radios[i].value];
+            timeText = timeValues[radios[i].value];
             break;
         }
     }
 
     home = document.getElementById('homeTeam').value;
     away = document.getElementById('awayTeam').value;
-    homeStat = document.getElementById('homeStat').value;
-    statName = document.getElementById('statName').value;
-    awayStat = document.getElementById('awayStat').value;
-    var scoreboard = convert(home) + "　ＶＳ　" + convert(away) + "\n" + timeText + "\n";
-    var stat = convert(homeStat) + "┃" + convert(statName) + "┃" + convert(awayStat) + "\n";
-    scoreboard += stat;
+    var title = convert(home, 3, "word") + "　ＶＳ　" + convert(away, 3, "word") + "\n" + timeText;
+    var statlines = "";
+    for (var i =0;i<6; i++){
+      var homeStat = document.getElementById('homeStat' + i).value;
+      var statName = document.getElementById('statName' + i).value;
+      var awayStat = document.getElementById('awayStat' + i).value;
+      var line = "\n" + convert(homeStat, 2, "number") + "┃" + convert(statName, 4, "word") + "┃" + convert(awayStat, 2, "number");
+      statlines += line;
+    }
+    scoreboard = title + statlines;
     document.getElementById('scoreboard').innerHTML = scoreboard;
-
   }
   function getShareURL(subject, action, object) {
     var origin = document.location['origin'];
     var pathname = document.location['pathname'];
     return origin + pathname;
   }
-  function convert(text){
-    var alphabet = "０１２３４５６７８９　　　　　　　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
+  function convert(text, length, type){
+    var alphabet = "％　　　　　　　　　　０１２３４５６７８９　　 　　　　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ　　　　　　ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ";
     var conversion = "";
     for (var i = 0; i < text.length; i++){
       code = ascii(text[i])
-      if (code >= 48 && code < 90){
-        conversion += alphabet[code-48];
+      if (code >= 37 && code < 122){
+        conversion += alphabet[code-37];
       } else {
         conversion += "　";
       }
+    }
+    if (type == "number"){
+      return "０".repeat(length-conversion.length)+conversion
+    } else if (type == "word") {
+      return conversion+"　".repeat(length-conversion.length)
     }
     return conversion;
   }
