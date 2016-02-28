@@ -20,7 +20,17 @@
         <tr>
           <td><label class="description" for="homeTeam">Home Team </label>
           <input id="homeTeam" type="text" maxlength="3" value=""/></td>
-          <td>　ＶＳ　</td>
+          <td>
+            <span>Location</span></br>
+            <label>
+              <input id="at" name="location" class="element radio" type="radio" value="at" />
+              <span class="choice" for="at_location">AT</span>
+            </label>
+            <label>
+              <input id="vs" name="location" class="element radio" type="radio" value="vs" checked="checked"/>
+              <span class="choice" for="vs_location">VS</span>
+            </label>
+          </td>
           <td><label class="description" for="awayTeam">Away Team </label>
           <input id="awayTeam" type="text" maxlength="3" value=""/></td>
         </tr>
@@ -118,18 +128,27 @@
   function printScoreboard(){
     var timeValues = {"half": "ＨＡＬＦ　　ＴＩＭＥ", "full": "ＦＵＬＬ　　ＴＩＭＥ"};
     var timeText = timeValues["full"];
-    var radios = document.getElementsByName('time');
+    var timeRadio = document.getElementsByName('time');
+    for (var i = 0, length = timeRadio.length; i < length; i++) {
+        if (timeRadio[i].checked) {
+            timeText = timeValues[timeRadio[i].value];
+            break;
+        }
+    }
 
-    for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-            timeText = timeValues[radios[i].value];
+    var locationValues = {"at": " AT ", "vs": " VS "}
+    var locationText = convert(locationValues["vs"]);
+    var locationRadio = document.getElementsByName('location');
+    for (var i = 0, length = locationRadio.length; i < length; i++) {
+        if (locationRadio[i].checked) {
+            locationText = locationValues[locationRadio[i].value];
             break;
         }
     }
 
     home = document.getElementById('homeTeam').value;
     away = document.getElementById('awayTeam').value;
-    var title = convert(home, 3, "word") + "　ＶＳ　" + convert(away, 3, "word") + "\n" + timeText;
+    var title = convert(home, 3, "word") + convert(locationText,4,"word") + convert(away, 3, "word") + "\n" + timeText;
     var statlines = "";
     for (var i =0;i<6; i++){
       var homeStat = document.getElementById('homeStat' + i).value;
