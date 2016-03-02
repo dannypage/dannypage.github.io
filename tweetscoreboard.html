@@ -170,12 +170,12 @@
     document.getElementById('encrypted').value = encrypted;
   }
   function convert(text, length, type){
-    var alphabet = "％　　　　　　　　　　０１２３４５６７８９　　 　　　　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ　　　　　　ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ";
+    var alphabet = "＃　％　　　　　　　　　　０１２３４５６７８９　　 　　　　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ　　　　　　ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ";
     var conversion = "";
     for (var i = 0; i < text.length; i++){
       code = ascii(text[i])
-      if (code >= 37 && code < 122){
-        conversion += alphabet[code-37];
+      if (code >= 35 && code < 122){
+        conversion += alphabet[code-35];
       } else {
         conversion += "　";
       }
