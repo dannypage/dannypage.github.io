@@ -68,7 +68,7 @@ d3.json("/assets/hero/example.json", function(error, data) {
       .text(function(d) { return d.subtitle; });
 
   d3.selectAll("button").on("click", function() {
-    svg.datum(randomize).transition().duration(1000).call(chart);
+    svg.datum(load_new_json).transition().duration(1000).call(chart);
   });
 });
 
