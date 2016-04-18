@@ -58,15 +58,15 @@ function simulateExpectedGoals() {
 
   results = simulateGames(sims, teamAArray, teamBArray)
 
-  var teamASD = standardDeviation(results.AScores);
-  var teamBSD = standardDeviation(results.BScores);
+  var teamAMAD = meanDeviation(results.AScores);
+  var teamBMAD = meanDeviation(results.BScores);
   var teamAPPG = Math.round(100*(results.A*3+results.T)/sims)/100;
   var teamBPPG = Math.round(100*(results.B*3+results.T)/sims)/100;
   var teamAWin = Math.round(100*(results.A/sims));
   var teamBWin = Math.round(100*(results.B/sims));
 
-  document.getElementById('teamASD').innerHTML = Math.round(teamASD * 100) / 100
-  document.getElementById('teamBSD').innerHTML = Math.round(teamBSD * 100) / 100
+  document.getElementById('teamAMAD').innerHTML = Math.round(teamAMAD * 100) / 100
+  document.getElementById('teamBMAD').innerHTML = Math.round(teamBMAD * 100) / 100
   document.getElementById('teamAAVG').innerHTML = Math.round(sum(teamAArray)*100)/100
   document.getElementById('teamBAVG').innerHTML = Math.round(sum(teamBArray)*100)/100
   document.getElementById('teamAWin').innerHTML = teamAWin;
@@ -380,19 +380,19 @@ function simulateLongTermExpectedGoals(){
 
   results = simulateSeasons(sims, chancesArray, goals);
   document.getElementById('averageGoals').innerHTML = Math.round(results.average * 100) / 100;
-  document.getElementById('stdDevGoals').innerHTML = Math.round(results.stdDev * 100) / 100;
+  document.getElementById('meanAbsoulteGoals').innerHTML = Math.round(results.meanAbsoulteDev * 100) / 100;
   over = results.bin.over / sims;
   exact = results.bin.exact / sims;
   under = results.bin.under / sims;
   document.getElementById('under').innerHTML = Math.round(under*100);
   document.getElementById('exact').innerHTML = Math.round(exact*100);
   document.getElementById('over').innerHTML = Math.round(over*100);
-  distance = Math.round(100*(goals - results.average)/results.stdDev)/100;
+  distance = Math.round(100*(goals - results.average)/results.meanAbsoulteDev)/100;
   var explanation = {
     'reality': entity + " scored " + goals + " goals. ",
-    'expectation': "Simulations indicate that you would expect them to score around " + Math.round(results.average) + " goals, give or take " + Math.round(results.stdDev) + ". ",
+    'expectation': "Simulations indicate that you would expect them to score around " + Math.round(results.average) + " goals, give or take " + Math.round(results.meanAbsoulteDev) + ". ",
     'bins': "<br>" + goals + " goals " + " is exactly correct in " + Math.round(exact*100) + "% of the simulations, while it's a sign of underperforming in " + Math.round(under*100) + "% of the sims and a sign of overperforming in " + Math.round(over*100) + "% of the sims.",
-    'test': "<br>" + entity + " was " + distance + " standard deviations from the expected mean."
+    'test': "<br>" + entity + " was " + distance + " mean absolute deviations from the expected mean."
   };
   document.getElementById('explanation').innerHTML = explanation.reality + explanation.expectation + explanation.bins + explanation.test;
 
@@ -410,7 +410,7 @@ function simulateLongTermExpectedGoals(){
     }
     goalBars.x.push(i);
     goalBars.colors.push('rgb(158,202,240)');
-    goalBars.text.push(Math.round(100*(i - results.average)/results.stdDev)/100 + ' SDs from Mean');
+    goalBars.text.push(Math.round(100*(i - results.average)/results.meanAbsoulteDev)/100 + ' MADs from Mean');
   }
   goalBars.colors[goals] = 'rgb(116,196,118)';
   var data = [
@@ -452,7 +452,7 @@ function simulateLongTermExpectedGoals(){
 
 function simulateSeasons(sims, chancesArray, actualGoals) {
   var results = {
-    "goals":[], "results":[], "stdDev": 0, "average": 0,
+    "goals":[], "results":[], "meanAbsoulteDev": 0, "average": 0,
     "bin": {
       "under":0,
       "over":0,
@@ -477,7 +477,7 @@ function simulateSeasons(sims, chancesArray, actualGoals) {
     }
 
   }
-  results.stdDev = standardDeviation(results.results);
+  results.meanAbsoulteDev = meanDeviation(results.results);
   results.average = average(results.results);
   return results;
 }
@@ -566,6 +566,18 @@ function standardDeviation(values){
 
   var stdDev = Math.sqrt(avgSquareDiff);
   return stdDev;
+}
+
+function meanDeviation(values){
+  var avg = average(values);
+
+  var meanDiffs = values.map(function(value){
+    var diff = value - avg;
+    return Math.abs(diff);
+  });
+
+  var maDev = average(meanDiffs);
+  return maDev;
 }
 
 function average(data){
