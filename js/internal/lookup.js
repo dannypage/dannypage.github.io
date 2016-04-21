@@ -98,7 +98,7 @@ function shotData(parsed, variable, value, author, modifier){
         break;
         case 'riley':
         chances = chances + Math.round(parsed.data[i]["ExpG"] * 10000) / 10000 + ","
-        goals = (parsed.data[i]["Outcome"] == "Goal") ? goals + 1 : goals;
+        goals = (parsed.data[i]["ActG"] == "1") ? goals + 1 : goals;
         break;
         default:
         break;
