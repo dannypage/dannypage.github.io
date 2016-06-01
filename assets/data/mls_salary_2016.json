@@ -1,0 +1,4442 @@
+[
+  {
+    "club": "ATL",
+    "last": "Burgos",
+    "first": "Efrain",
+    "position": "M",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "ATL",
+    "last": "Oblitey Otoo",
+    "first": "Jeffrey",
+    "position": "M",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "ATL",
+    "last": "Tambakis",
+    "first": "Alexander",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "CHI",
+    "last": "Accam",
+    "first": "David",
+    "position": "F-M",
+    "base": 700000,
+    "guaranteed": 770938
+  },
+  {
+    "club": "CHI",
+    "last": "Alvarez",
+    "first": "Arturo",
+    "position": "F",
+    "base": 115000,
+    "guaranteed": 118264
+  },
+  {
+    "club": "CHI",
+    "last": "Calistri",
+    "first": "Joey",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "CHI",
+    "last": "Campbell",
+    "first": "Jonathan",
+    "position": "D",
+    "base": 70000,
+    "guaranteed": 78125
+  },
+  {
+    "club": "CHI",
+    "last": "Cocis",
+    "first": "Razvan",
+    "position": "M",
+    "base": 160000,
+    "guaranteed": 160000
+  },
+  {
+    "club": "CHI",
+    "last": "Conner",
+    "first": "Drew",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "CHI",
+    "last": "Doody",
+    "first": "Patrick",
+    "position": "D",
+    "base": 53471,
+    "guaranteed": 53471
+  },
+  {
+    "club": "CHI",
+    "last": "Fernandez",
+    "first": "Collin",
+    "position": "M",
+    "base": 75000,
+    "guaranteed": 77000
+  },
+  {
+    "club": "CHI",
+    "last": "Gehrig",
+    "first": "Eric",
+    "position": "D",
+    "base": 106875,
+    "guaranteed": 112708
+  },
+  {
+    "club": "CHI",
+    "last": "Goossens",
+    "first": "John",
+    "position": "M",
+    "base": 200000,
+    "guaranteed": 200000
+  },
+  {
+    "club": "CHI",
+    "last": "Harrington",
+    "first": "Michael",
+    "position": "D",
+    "base": 125000,
+    "guaranteed": 125000
+  },
+  {
+    "club": "CHI",
+    "last": "Igboananike",
+    "first": "Kennedy",
+    "position": "F",
+    "base": 800000,
+    "guaranteed": 901667
+  },
+  {
+    "club": "CHI",
+    "last": "Johnson",
+    "first": "Sean",
+    "position": "GK",
+    "base": 250000,
+    "guaranteed": 253000
+  },
+  {
+    "club": "CHI",
+    "last": "Junior",
+    "first": "Gilberto",
+    "position": "F",
+    "base": 1145000,
+    "guaranteed": 1145000
+  },
+  {
+    "club": "CHI",
+    "last": "Kappelhof",
+    "first": "Johan",
+    "position": "D",
+    "base": 480000,
+    "guaranteed": 520000
+  },
+  {
+    "club": "CHI",
+    "last": "LaBrocca",
+    "first": "Nick",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "CHI",
+    "last": "Lampson",
+    "first": "Matt",
+    "position": "GK",
+    "base": 71250,
+    "guaranteed": 76625
+  },
+  {
+    "club": "CHI",
+    "last": "McLain",
+    "first": "Patrick",
+    "position": "GK",
+    "base": 72500,
+    "guaranteed": 72500
+  },
+  {
+    "club": "CHI",
+    "last": "Meira",
+    "first": "Joao",
+    "position": "D-M",
+    "base": 110000,
+    "guaranteed": 126500
+  },
+  {
+    "club": "CHI",
+    "last": "Morrell",
+    "first": "Alex",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "CHI",
+    "last": "Polster",
+    "first": "Matt",
+    "position": "D-M",
+    "base": 84000,
+    "guaranteed": 99000
+  },
+  {
+    "club": "CHI",
+    "last": "Ramos",
+    "first": "Rodrigo",
+    "position": "D",
+    "base": 80000,
+    "guaranteed": 84000
+  },
+  {
+    "club": "CHI",
+    "last": "Stephens",
+    "first": "Michael",
+    "position": "M",
+    "base": 105000,
+    "guaranteed": 115000
+  },
+  {
+    "club": "CHI",
+    "last": "Thiam",
+    "first": "Khaly",
+    "position": "M",
+    "base": 144000,
+    "guaranteed": 144000
+  },
+  {
+    "club": "CHI",
+    "last": "Vincent",
+    "first": "Brandon",
+    "position": "D",
+    "base": 70000,
+    "guaranteed": 91875
+  },
+  {
+    "club": "CLB",
+    "last": "Afful",
+    "first": "Harrison",
+    "position": "D",
+    "base": 275000,
+    "guaranteed": 291667
+  },
+  {
+    "club": "CLB",
+    "last": "Ashe",
+    "first": "Corey",
+    "position": "D",
+    "base": 95000,
+    "guaranteed": 105500
+  },
+  {
+    "club": "CLB",
+    "last": "Barson",
+    "first": "Chad",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "CLB",
+    "last": "Casey",
+    "first": "Conor",
+    "position": "F",
+    "base": 105000,
+    "guaranteed": 105000
+  },
+  {
+    "club": "CLB",
+    "last": "Clark",
+    "first": "Steve",
+    "position": "GK",
+    "base": 220000,
+    "guaranteed": 238333
+  },
+  {
+    "club": "CLB",
+    "last": "Finlay",
+    "first": "Ethan",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "CLB",
+    "last": "Francis",
+    "first": "Waylon",
+    "position": "D",
+    "base": 200000,
+    "guaranteed": 200000
+  },
+  {
+    "club": "CLB",
+    "last": "Higuain",
+    "first": "Federico",
+    "position": "M",
+    "base": 1175000,
+    "guaranteed": 1175000
+  },
+  {
+    "club": "CLB",
+    "last": "Hollingsworth",
+    "first": "Marshall",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "CLB",
+    "last": "Jimenez",
+    "first": "Hector",
+    "position": "M",
+    "base": 105000,
+    "guaranteed": 105000
+  },
+  {
+    "club": "CLB",
+    "last": "Kamara",
+    "first": "Ola",
+    "position": "F",
+    "base": 425000,
+    "guaranteed": 457500
+  },
+  {
+    "club": "CLB",
+    "last": "Larsen",
+    "first": "Emil",
+    "position": "M",
+    "base": 175000,
+    "guaranteed": 175000
+  },
+  {
+    "club": "CLB",
+    "last": "Mabwati",
+    "first": "Cedrick",
+    "position": "M",
+    "base": 235000,
+    "guaranteed": 263350
+  },
+  {
+    "club": "CLB",
+    "last": "Meram",
+    "first": "Justin",
+    "position": "F",
+    "base": 175000,
+    "guaranteed": 185000
+  },
+  {
+    "club": "CLB",
+    "last": "Pacifici",
+    "first": "Matt",
+    "position": "GK",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "CLB",
+    "last": "Parkhurst",
+    "first": "Michael",
+    "position": "D",
+    "base": 275000,
+    "guaranteed": 300000
+  },
+  {
+    "club": "CLB",
+    "last": "Saeid",
+    "first": "Mohammed",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 120000
+  },
+  {
+    "club": "CLB",
+    "last": "Saravia",
+    "first": "Rodrigo",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "CLB",
+    "last": "Sauro",
+    "first": "Gaston",
+    "position": "D",
+    "base": 585000,
+    "guaranteed": 601313
+  },
+  {
+    "club": "CLB",
+    "last": "Stuver",
+    "first": "Brad",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "CLB",
+    "last": "Swanson",
+    "first": "Ben",
+    "position": "M",
+    "base": 70000,
+    "guaranteed": 90417
+  },
+  {
+    "club": "CLB",
+    "last": "Tchani",
+    "first": "Tony",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 283333
+  },
+  {
+    "club": "CLB",
+    "last": "Trapp",
+    "first": "Wil",
+    "position": "M",
+    "base": 151250,
+    "guaranteed": 178250
+  },
+  {
+    "club": "CLB",
+    "last": "Wahl",
+    "first": "Tyson",
+    "position": "D",
+    "base": 115000,
+    "guaranteed": 115000
+  },
+  {
+    "club": "COL",
+    "last": "Appiah",
+    "first": "Emmanuel",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "COL",
+    "last": "Azira",
+    "first": "Michael",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 65827
+  },
+  {
+    "club": "COL",
+    "last": "Badji",
+    "first": "Dominique",
+    "position": "F",
+    "base": 53472,
+    "guaranteed": 53472
+  },
+  {
+    "club": "COL",
+    "last": "Berner",
+    "first": "John",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "COL",
+    "last": "Burch",
+    "first": "Marc",
+    "position": "D",
+    "base": 120000,
+    "guaranteed": 120000
+  },
+  {
+    "club": "COL",
+    "last": "Burling",
+    "first": "Bobby",
+    "position": "D",
+    "base": 110000,
+    "guaranteed": 116000
+  },
+  {
+    "club": "COL",
+    "last": "Calvert",
+    "first": "Caleb",
+    "position": "F",
+    "base": 75000,
+    "guaranteed": 82500
+  },
+  {
+    "club": "COL",
+    "last": "Castillo",
+    "first": "Dennis",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "COL",
+    "last": "Cronin",
+    "first": "Sam",
+    "position": "M",
+    "base": 225000,
+    "guaranteed": 227500
+  },
+  {
+    "club": "COL",
+    "last": "Doyle",
+    "first": "Conor",
+    "position": "F",
+    "base": 66000,
+    "guaranteed": 67250
+  },
+  {
+    "club": "COL",
+    "last": "Doyle",
+    "first": "Kevin",
+    "position": "F",
+    "base": 1075000,
+    "guaranteed": 1120000
+  },
+  {
+    "club": "COL",
+    "last": "Froschauer",
+    "first": "Chris",
+    "position": "GK",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "COL",
+    "last": "Gashi",
+    "first": "Shkelzen",
+    "position": "M",
+    "base": 1575000,
+    "guaranteed": 1668750
+  },
+  {
+    "club": "COL",
+    "last": "Hairston",
+    "first": "Marlon",
+    "position": "D-M",
+    "base": 90000,
+    "guaranteed": 113000
+  },
+  {
+    "club": "COL",
+    "last": "Howard",
+    "first": "Tim",
+    "position": "GK",
+    "base": 2100000,
+    "guaranteed": 2575000
+  },
+  {
+    "club": "COL",
+    "last": "Jones",
+    "first": "Jermaine",
+    "position": "M",
+    "base": 600000,
+    "guaranteed": 650000
+  },
+  {
+    "club": "COL",
+    "last": "MacMath",
+    "first": "Zac",
+    "position": "GK",
+    "base": 140000,
+    "guaranteed": 140000
+  },
+  {
+    "club": "COL",
+    "last": "Miller",
+    "first": "Eric",
+    "position": "M/D",
+    "base": 66413,
+    "guaranteed": 77413
+  },
+  {
+    "club": "COL",
+    "last": "Pappa",
+    "first": "Marco",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "COL",
+    "last": "Pfeffer",
+    "first": "Zach",
+    "position": "M",
+    "base": 101000,
+    "guaranteed": 101000
+  },
+  {
+    "club": "COL",
+    "last": "Powers",
+    "first": "Dillon",
+    "position": "M",
+    "base": 270000,
+    "guaranteed": 300000
+  },
+  {
+    "club": "COL",
+    "last": "Ramirez",
+    "first": "Juan Edgardo",
+    "position": "M",
+    "base": 85000,
+    "guaranteed": 85000
+  },
+  {
+    "club": "COL",
+    "last": "Serna",
+    "first": "Dillon",
+    "position": "M",
+    "base": 66000,
+    "guaranteed": 79000
+  },
+  {
+    "club": "COL",
+    "last": "Sjoberg",
+    "first": "Axel",
+    "position": "D",
+    "base": 66000,
+    "guaranteed": 81000
+  },
+  {
+    "club": "COL",
+    "last": "Solignac",
+    "first": "Luis",
+    "position": "F",
+    "base": 85000,
+    "guaranteed": 85000
+  },
+  {
+    "club": "COL",
+    "last": "St. Ledger",
+    "first": "Sean",
+    "position": "D",
+    "base": 191875,
+    "guaranteed": 194375
+  },
+  {
+    "club": "COL",
+    "last": "Watts",
+    "first": "Jared",
+    "position": "D-M",
+    "base": 68000,
+    "guaranteed": 68000
+  },
+  {
+    "club": "COL",
+    "last": "Williams",
+    "first": "Mekeil",
+    "position": "D",
+    "base": 85000,
+    "guaranteed": 85000
+  },
+  {
+    "club": "DAL",
+    "last": "Acosta",
+    "first": "Kellyn",
+    "position": "M-D",
+    "base": 220000,
+    "guaranteed": 240000
+  },
+  {
+    "club": "DAL",
+    "last": "Akindele",
+    "first": "Tesho",
+    "position": "M-F",
+    "base": 90000,
+    "guaranteed": 107500
+  },
+  {
+    "club": "DAL",
+    "last": "Barrios",
+    "first": "Michael",
+    "position": "M-F",
+    "base": 70000,
+    "guaranteed": 70000
+  },
+  {
+    "club": "DAL",
+    "last": "Bonner",
+    "first": "Colin",
+    "position": "F",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "DAL",
+    "last": "Castillo",
+    "first": "Fabian",
+    "position": "M-F",
+    "base": 155750,
+    "guaranteed": 170750
+  },
+  {
+    "club": "DAL",
+    "last": "Craft",
+    "first": "Coy",
+    "position": "F-M",
+    "base": 70000,
+    "guaranteed": 87083
+  },
+  {
+    "club": "DAL",
+    "last": "Diaz",
+    "first": "Mauro",
+    "position": "M",
+    "base": 466000,
+    "guaranteed": 544400
+  },
+  {
+    "club": "DAL",
+    "last": "Figueroa",
+    "first": "Maynor",
+    "position": "D",
+    "base": 115000,
+    "guaranteed": 138333
+  },
+  {
+    "club": "DAL",
+    "last": "Gonzalez",
+    "first": "Jesse",
+    "position": "GK",
+    "base": 67500,
+    "guaranteed": 76875
+  },
+  {
+    "club": "DAL",
+    "last": "Gruezo",
+    "first": "Carlos",
+    "position": "M",
+    "base": 450000,
+    "guaranteed": 686500
+  },
+  {
+    "club": "DAL",
+    "last": "Guillen",
+    "first": "Aaron",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "DAL",
+    "last": "Harris",
+    "first": "Atiba",
+    "position": "D-M",
+    "base": 143000,
+    "guaranteed": 143000
+  },
+  {
+    "club": "DAL",
+    "last": "Hedges",
+    "first": "Matt",
+    "position": "D",
+    "base": 152000,
+    "guaranteed": 152000
+  },
+  {
+    "club": "DAL",
+    "last": "Herman",
+    "first": "Ryan",
+    "position": "GK",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "DAL",
+    "last": "Hernandez",
+    "first": "Moises",
+    "position": "D",
+    "base": 100000,
+    "guaranteed": 105000
+  },
+  {
+    "club": "DAL",
+    "last": "Hollingshead",
+    "first": "Ryan",
+    "position": "M-D",
+    "base": 122500,
+    "guaranteed": 122500
+  },
+  {
+    "club": "DAL",
+    "last": "Jara",
+    "first": "Agustin",
+    "position": "F",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "DAL",
+    "last": "Lizarazo",
+    "first": "Carlos",
+    "position": "M-F",
+    "base": 62508,
+    "guaranteed": 130633
+  },
+  {
+    "club": "DAL",
+    "last": "Loyd",
+    "first": "Zach",
+    "position": "D",
+    "base": 200000,
+    "guaranteed": 221667
+  },
+  {
+    "club": "DAL",
+    "last": "Ortiz",
+    "first": "Juan Esteban",
+    "position": "M",
+    "base": 160000,
+    "guaranteed": 204500
+  },
+  {
+    "club": "DAL",
+    "last": "Pitter",
+    "first": "Timo",
+    "position": "M-F",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "DAL",
+    "last": "Rosales",
+    "first": "Mauro",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "DAL",
+    "last": "Seitz",
+    "first": "Chris",
+    "position": "GK",
+    "base": 136000,
+    "guaranteed": 136000
+  },
+  {
+    "club": "DAL",
+    "last": "Ulloa",
+    "first": "Victor",
+    "position": "M",
+    "base": 130000,
+    "guaranteed": 132500
+  },
+  {
+    "club": "DAL",
+    "last": "Urruti",
+    "first": "Maximiliano",
+    "position": "F",
+    "base": 250000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "DAL",
+    "last": "Zendejas",
+    "first": "Alejandro",
+    "position": "M",
+    "base": 70000,
+    "guaranteed": 88467
+  },
+  {
+    "club": "DAL",
+    "last": "Zimmerman",
+    "first": "Walker",
+    "position": "D",
+    "base": 174000,
+    "guaranteed": 174000
+  },
+  {
+    "club": "DC",
+    "last": "Acosta",
+    "first": "Luciano",
+    "position": "M-F",
+    "base": 327273,
+    "guaranteed": 429273
+  },
+  {
+    "club": "DC",
+    "last": "Aguilar",
+    "first": "Miguel",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "DC",
+    "last": "Birnbaum",
+    "first": "Steven",
+    "position": "D",
+    "base": 86350,
+    "guaranteed": 116350
+  },
+  {
+    "club": "DC",
+    "last": "Boswell",
+    "first": "Bobby",
+    "position": "D",
+    "base": 260000,
+    "guaranteed": 260000
+  },
+  {
+    "club": "DC",
+    "last": "Buescher",
+    "first": "Julian",
+    "position": "M",
+    "base": 70000,
+    "guaranteed": 79700
+  },
+  {
+    "club": "DC",
+    "last": "DeLeon",
+    "first": "Nick",
+    "position": "M",
+    "base": 235000,
+    "guaranteed": 235000
+  },
+  {
+    "club": "DC",
+    "last": "Dykstra",
+    "first": "Andrew",
+    "position": "GK",
+    "base": 75000,
+    "guaranteed": 85700
+  },
+  {
+    "club": "DC",
+    "last": "Espindola",
+    "first": "Fabian",
+    "position": "F",
+    "base": 200000,
+    "guaranteed": 200000
+  },
+  {
+    "club": "DC",
+    "last": "Franklin",
+    "first": "Sean",
+    "position": "D",
+    "base": 225000,
+    "guaranteed": 256667
+  },
+  {
+    "club": "DC",
+    "last": "Hall",
+    "first": "Tally",
+    "position": "GK",
+    "base": 75000,
+    "guaranteed": 153750
+  },
+  {
+    "club": "DC",
+    "last": "Halsti",
+    "first": "Markus",
+    "position": "M",
+    "base": 275000,
+    "guaranteed": 336833
+  },
+  {
+    "club": "DC",
+    "last": "Hamid",
+    "first": "Bill",
+    "position": "GK",
+    "base": 325000,
+    "guaranteed": 370500
+  },
+  {
+    "club": "DC",
+    "last": "Horton",
+    "first": "Charlie",
+    "position": "GK",
+    "base": 70000,
+    "guaranteed": 76167
+  },
+  {
+    "club": "DC",
+    "last": "Jeffrey",
+    "first": "Jared",
+    "position": "M",
+    "base": 71663,
+    "guaranteed": 77863
+  },
+  {
+    "club": "DC",
+    "last": "Kamara",
+    "first": "Alhaji",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 59750
+  },
+  {
+    "club": "DC",
+    "last": "Kemp",
+    "first": "Taylor",
+    "position": "D",
+    "base": 100000,
+    "guaranteed": 100000
+  },
+  {
+    "club": "DC",
+    "last": "Korb",
+    "first": "Chris",
+    "position": "D",
+    "base": 108900,
+    "guaranteed": 116380
+  },
+  {
+    "club": "DC",
+    "last": "Mancini",
+    "first": "Andrea",
+    "position": "M-F",
+    "base": 82500,
+    "guaranteed": 82500
+  },
+  {
+    "club": "DC",
+    "last": "Martin",
+    "first": "Collin",
+    "position": "M",
+    "base": 75000,
+    "guaranteed": 89167
+  },
+  {
+    "club": "DC",
+    "last": "Mishu",
+    "first": "Luke",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "DC",
+    "last": "Neagle",
+    "first": "Lamar",
+    "position": "M-F",
+    "base": 185000,
+    "guaranteed": 187833
+  },
+  {
+    "club": "DC",
+    "last": "Nyarko",
+    "first": "Patrick",
+    "position": "F-M",
+    "base": 210000,
+    "guaranteed": 225750
+  },
+  {
+    "club": "DC",
+    "last": "Opare",
+    "first": "Kofi",
+    "position": "D",
+    "base": 90000,
+    "guaranteed": 105000
+  },
+  {
+    "club": "DC",
+    "last": "Robinson",
+    "first": "Jalen",
+    "position": "D",
+    "base": 75000,
+    "guaranteed": 87000
+  },
+  {
+    "club": "DC",
+    "last": "Rolfe",
+    "first": "Chris",
+    "position": "F",
+    "base": 257500,
+    "guaranteed": 272500
+  },
+  {
+    "club": "DC",
+    "last": "Saborio",
+    "first": "Alvaro",
+    "position": "F",
+    "base": 420000,
+    "guaranteed": 535500
+  },
+  {
+    "club": "DC",
+    "last": "Sarvas",
+    "first": "Marcelo",
+    "position": "M",
+    "base": 360000,
+    "guaranteed": 425000
+  },
+  {
+    "club": "DC",
+    "last": "Vincent",
+    "first": "Rob",
+    "position": "M-F",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "DC",
+    "last": "Worra",
+    "first": "Travis",
+    "position": "GK",
+    "base": 53472,
+    "guaranteed": 53472
+  },
+  {
+    "club": "HOU",
+    "last": "Anibaba",
+    "first": "Jalil",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "HOU",
+    "last": "Barnes",
+    "first": "Giles",
+    "position": "F-M",
+    "base": 700000,
+    "guaranteed": 756250
+  },
+  {
+    "club": "HOU",
+    "last": "Beasley",
+    "first": "DaMarcus",
+    "position": "D",
+    "base": 750000,
+    "guaranteed": 813333
+  },
+  {
+    "club": "HOU",
+    "last": "Bourgeois",
+    "first": "Bradley",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "HOU",
+    "last": "Brown",
+    "first": "Calle",
+    "position": "GK",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "HOU",
+    "last": "Bruin",
+    "first": "Will",
+    "position": "F",
+    "base": 310000,
+    "guaranteed": 311667
+  },
+  {
+    "club": "HOU",
+    "last": "Clark",
+    "first": "Ricardo",
+    "position": "M",
+    "base": 319200,
+    "guaranteed": 356700
+  },
+  {
+    "club": "HOU",
+    "last": "Deric",
+    "first": "Tyler",
+    "position": "GK",
+    "base": 170000,
+    "guaranteed": 170000
+  },
+  {
+    "club": "HOU",
+    "last": "Garcia",
+    "first": "Boniek",
+    "position": "M",
+    "base": 225000,
+    "guaranteed": 247500
+  },
+  {
+    "club": "HOU",
+    "last": "Horst",
+    "first": "David",
+    "position": "D",
+    "base": 88594,
+    "guaranteed": 91344
+  },
+  {
+    "club": "HOU",
+    "last": "Ibeagha",
+    "first": "Sebastien",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "HOU",
+    "last": "Iniguez",
+    "first": "Agustin",
+    "position": "D",
+    "base": 132000,
+    "guaranteed": 132000
+  },
+  {
+    "club": "HOU",
+    "last": "Lovejoy",
+    "first": "Rob",
+    "position": "M",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "HOU",
+    "last": "Lucatero",
+    "first": "Christian",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51750
+  },
+  {
+    "club": "HOU",
+    "last": "Maidana",
+    "first": "Cristian",
+    "position": "M",
+    "base": 223850,
+    "guaranteed": 237600
+  },
+  {
+    "club": "HOU",
+    "last": "Manotas",
+    "first": "Mauro",
+    "position": "F",
+    "base": 85000,
+    "guaranteed": 85000
+  },
+  {
+    "club": "HOU",
+    "last": "Mansally",
+    "first": "Kenny",
+    "position": "D",
+    "base": 77500,
+    "guaranteed": 84000
+  },
+  {
+    "club": "HOU",
+    "last": "Miranda",
+    "first": "Leonel",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "HOU",
+    "last": "Monteiro de Lima",
+    "first": "Alex",
+    "position": "M",
+    "base": 152000,
+    "guaranteed": 152000
+  },
+  {
+    "club": "HOU",
+    "last": "Rocha",
+    "first": "David Mateos",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 100000
+  },
+  {
+    "club": "HOU",
+    "last": "Rodriguez",
+    "first": "Raul",
+    "position": "D",
+    "base": 350000,
+    "guaranteed": 379333
+  },
+  {
+    "club": "HOU",
+    "last": "Steinberger",
+    "first": "Zach",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 79250
+  },
+  {
+    "club": "HOU",
+    "last": "Torres",
+    "first": "Erick",
+    "position": "F",
+    "base": 575000,
+    "guaranteed": 650000
+  },
+  {
+    "club": "HOU",
+    "last": "Warner",
+    "first": "Collen",
+    "position": "M",
+    "base": 149934,
+    "guaranteed": 177434
+  },
+  {
+    "club": "HOU",
+    "last": "Wenger",
+    "first": "Andrew",
+    "position": "M-F",
+    "base": 190000,
+    "guaranteed": 190000
+  },
+  {
+    "club": "HOU",
+    "last": "Williams",
+    "first": "Sheanon",
+    "position": "D",
+    "base": 162500,
+    "guaranteed": 171500
+  },
+  {
+    "club": "HOU",
+    "last": "Willis",
+    "first": "Joe",
+    "position": "GK",
+    "base": 94500,
+    "guaranteed": 94500
+  },
+  {
+    "club": "KC",
+    "last": "Abdul-Salaam",
+    "first": "Saad",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 76750
+  },
+  {
+    "club": "KC",
+    "last": "Anor",
+    "first": "Bernardo",
+    "position": "M",
+    "base": 132624,
+    "guaranteed": 132624
+  },
+  {
+    "club": "KC",
+    "last": "Besler",
+    "first": "Matt",
+    "position": "D",
+    "base": 700000,
+    "guaranteed": 733250
+  },
+  {
+    "club": "KC",
+    "last": "Coelho",
+    "first": "Nuno",
+    "position": "D",
+    "base": 275000,
+    "guaranteed": 375000
+  },
+  {
+    "club": "KC",
+    "last": "Davis",
+    "first": "Brad",
+    "position": "M",
+    "base": 355000,
+    "guaranteed": 355000
+  },
+  {
+    "club": "KC",
+    "last": "Dia",
+    "first": "Amadou",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "KC",
+    "last": "Dwyer",
+    "first": "Dom",
+    "position": "F",
+    "base": 500000,
+    "guaranteed": 618750
+  },
+  {
+    "club": "KC",
+    "last": "Ellis",
+    "first": "Kevin",
+    "position": "D",
+    "base": 72000,
+    "guaranteed": 75150
+  },
+  {
+    "club": "KC",
+    "last": "Espinoza",
+    "first": "Roger",
+    "position": "M",
+    "base": 800000,
+    "guaranteed": 800000
+  },
+  {
+    "club": "KC",
+    "last": "Feilhaber",
+    "first": "Benny",
+    "position": "M",
+    "base": 400000,
+    "guaranteed": 412188
+  },
+  {
+    "club": "KC",
+    "last": "Hallisey",
+    "first": "Connor",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 76750
+  },
+  {
+    "club": "KC",
+    "last": "Kann",
+    "first": "Alec",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "KC",
+    "last": "Kempin",
+    "first": "Jonathan",
+    "position": "GK",
+    "base": 82750,
+    "guaranteed": 82750
+  },
+  {
+    "club": "KC",
+    "last": "Mapp",
+    "first": "Justin",
+    "position": "M",
+    "base": 224070,
+    "guaranteed": 239070
+  },
+  {
+    "club": "KC",
+    "last": "Medranda",
+    "first": "Jimmy",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "KC",
+    "last": "Melia",
+    "first": "Tim",
+    "position": "GK",
+    "base": 150000,
+    "guaranteed": 152500
+  },
+  {
+    "club": "KC",
+    "last": "Mustivar",
+    "first": "Soni",
+    "position": "M",
+    "base": 200000,
+    "guaranteed": 200000
+  },
+  {
+    "club": "KC",
+    "last": "Myers",
+    "first": "Chance",
+    "position": "D",
+    "base": 200000,
+    "guaranteed": 225000
+  },
+  {
+    "club": "KC",
+    "last": "Nagamura",
+    "first": "Paulo",
+    "position": "M",
+    "base": 225000,
+    "guaranteed": 225000
+  },
+  {
+    "club": "KC",
+    "last": "Olum",
+    "first": "Lawrence",
+    "position": "M",
+    "base": 105000,
+    "guaranteed": 115000
+  },
+  {
+    "club": "KC",
+    "last": "Opara",
+    "first": "Ike",
+    "position": "D",
+    "base": 125000,
+    "guaranteed": 131250
+  },
+  {
+    "club": "KC",
+    "last": "Palmer-Brown",
+    "first": "Erik",
+    "position": "D",
+    "base": 65000,
+    "guaranteed": 65500
+  },
+  {
+    "club": "KC",
+    "last": "Peterson",
+    "first": "Jacob",
+    "position": "F-M",
+    "base": 137750,
+    "guaranteed": 144625
+  },
+  {
+    "club": "KC",
+    "last": "Quintilla",
+    "first": "Jordi",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 109525
+  },
+  {
+    "club": "KC",
+    "last": "Rubio Kostner",
+    "first": "Diego",
+    "position": "F",
+    "base": 300000,
+    "guaranteed": 333000
+  },
+  {
+    "club": "KC",
+    "last": "Salloi",
+    "first": "Daniel",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "KC",
+    "last": "Sinovic",
+    "first": "Seth",
+    "position": "D",
+    "base": 105000,
+    "guaranteed": 112667
+  },
+  {
+    "club": "KC",
+    "last": "Zusi",
+    "first": "Graham",
+    "position": "F-M",
+    "base": 700000,
+    "guaranteed": 732102
+  },
+  {
+    "club": "LA",
+    "last": "Boateng",
+    "first": "Emmanuel",
+    "position": "F",
+    "base": 100000,
+    "guaranteed": 100000
+  },
+  {
+    "club": "LA",
+    "last": "Cole",
+    "first": "Ashley",
+    "position": "D",
+    "base": 300000,
+    "guaranteed": 327625
+  },
+  {
+    "club": "LA",
+    "last": "de Jong",
+    "first": "Nigel",
+    "position": "M",
+    "base": 500000,
+    "guaranteed": 500000
+  },
+  {
+    "club": "LA",
+    "last": "DeLaGarza",
+    "first": "AJ",
+    "position": "D",
+    "base": 225000,
+    "guaranteed": 227500
+  },
+  {
+    "club": "LA",
+    "last": "Diop",
+    "first": "Clement",
+    "position": "GK",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "LA",
+    "last": "Dos Santos",
+    "first": "Giovani",
+    "position": "F",
+    "base": 2500000,
+    "guaranteed": 4250000
+  },
+  {
+    "club": "LA",
+    "last": "Garcia",
+    "first": "Rafael",
+    "position": "M",
+    "base": 75000,
+    "guaranteed": 75000
+  },
+  {
+    "club": "LA",
+    "last": "Gerrard",
+    "first": "Steven",
+    "position": "M",
+    "base": 6000000,
+    "guaranteed": 6132500
+  },
+  {
+    "club": "LA",
+    "last": "Gordon",
+    "first": "Alan",
+    "position": "F",
+    "base": 170000,
+    "guaranteed": 170000
+  },
+  {
+    "club": "LA",
+    "last": "Husidic",
+    "first": "Baggio",
+    "position": "M",
+    "base": 150000,
+    "guaranteed": 150000
+  },
+  {
+    "club": "LA",
+    "last": "Jamieson",
+    "first": "Bradford",
+    "position": "F",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "LA",
+    "last": "Keane",
+    "first": "Robbie",
+    "position": "F",
+    "base": 3500000,
+    "guaranteed": 3500000
+  },
+  {
+    "club": "LA",
+    "last": "Kennedy",
+    "first": "Dan",
+    "position": "GK",
+    "base": 180000,
+    "guaranteed": 195400
+  },
+  {
+    "club": "LA",
+    "last": "Larentowicz",
+    "first": "Jeff",
+    "position": "M",
+    "base": 175000,
+    "guaranteed": 175000
+  },
+  {
+    "club": "LA",
+    "last": "Lassiter",
+    "first": "Ariel",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "LA",
+    "last": "Lletget",
+    "first": "Sebastian",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 115500
+  },
+  {
+    "club": "LA",
+    "last": "Magee",
+    "first": "Mike",
+    "position": "F-M",
+    "base": 250000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "LA",
+    "last": "Mendiola",
+    "first": "Raul",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "LA",
+    "last": "Ribeiro Da Silva",
+    "first": "Leonardo",
+    "position": "D",
+    "base": 160000,
+    "guaranteed": 165000
+  },
+  {
+    "club": "LA",
+    "last": "Rogers",
+    "first": "Robbie",
+    "position": "D-M",
+    "base": 220000,
+    "guaranteed": 228500
+  },
+  {
+    "club": "LA",
+    "last": "Romney",
+    "first": "David",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "LA",
+    "last": "Rowe",
+    "first": "Brian",
+    "position": "GK",
+    "base": 80000,
+    "guaranteed": 80000
+  },
+  {
+    "club": "LA",
+    "last": "Sorto",
+    "first": "Oscar",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 64875
+  },
+  {
+    "club": "LA",
+    "last": "Steres",
+    "first": "Daniel",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 65086
+  },
+  {
+    "club": "LA",
+    "last": "Van Damme",
+    "first": "Jelle",
+    "position": "D",
+    "base": 425000,
+    "guaranteed": 468750
+  },
+  {
+    "club": "LA",
+    "last": "Villarreal",
+    "first": "Jose",
+    "position": "M-F",
+    "base": 90000,
+    "guaranteed": 90000
+  },
+  {
+    "club": "LA",
+    "last": "Zardes",
+    "first": "Gyasi",
+    "position": "F",
+    "base": 472500,
+    "guaranteed": 472500
+  },
+  {
+    "club": "MTL",
+    "last": "Alexander",
+    "first": "Eric",
+    "position": "M",
+    "base": 165000,
+    "guaranteed": 178750
+  },
+  {
+    "club": "MTL",
+    "last": "Bekker",
+    "first": "Kyle",
+    "position": "M",
+    "base": 67942,
+    "guaranteed": 94192
+  },
+  {
+    "club": "MTL",
+    "last": "Bernier",
+    "first": "Patrice",
+    "position": "M",
+    "base": 95000,
+    "guaranteed": 140000
+  },
+  {
+    "club": "MTL",
+    "last": "Bush",
+    "first": "Evan",
+    "position": "GK",
+    "base": 117500,
+    "guaranteed": 117500
+  },
+  {
+    "club": "MTL",
+    "last": "Cabrera",
+    "first": "Victor",
+    "position": "D",
+    "base": 250000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "MTL",
+    "last": "Camara",
+    "first": "Hassoun",
+    "position": "D/M",
+    "base": 180000,
+    "guaranteed": 180000
+  },
+  {
+    "club": "MTL",
+    "last": "Ciman",
+    "first": "Laurent",
+    "position": "D",
+    "base": 630000,
+    "guaranteed": 661667
+  },
+  {
+    "club": "MTL",
+    "last": "Crepeau",
+    "first": "Maxime",
+    "position": "GK",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "MTL",
+    "last": "Donadel",
+    "first": "Marco",
+    "position": "M",
+    "base": 350000,
+    "guaranteed": 386667
+  },
+  {
+    "club": "MTL",
+    "last": "Drogba",
+    "first": "Didier",
+    "position": "F",
+    "base": 1666667,
+    "guaranteed": 2166667
+  },
+  {
+    "club": "MTL",
+    "last": "Fisher",
+    "first": "Kyle",
+    "position": "D",
+    "base": 65000,
+    "guaranteed": 73375
+  },
+  {
+    "club": "MTL",
+    "last": "Gagnon-Lapare",
+    "first": "Jeremy",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "MTL",
+    "last": "Jackson-Hamel",
+    "first": "Anthony",
+    "position": "F",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "MTL",
+    "last": "Kronberg",
+    "first": "Eric",
+    "position": "GK",
+    "base": 145200,
+    "guaranteed": 145200
+  },
+  {
+    "club": "MTL",
+    "last": "Lefevre",
+    "first": "Wandrille",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "MTL",
+    "last": "Mallace",
+    "first": "Calum",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 116250
+  },
+  {
+    "club": "MTL",
+    "last": "Oduro",
+    "first": "Dominic",
+    "position": "F",
+    "base": 235000,
+    "guaranteed": 235000
+  },
+  {
+    "club": "MTL",
+    "last": "Ontivero",
+    "first": "Lucas",
+    "position": "M-F",
+    "base": 380000,
+    "guaranteed": 440000
+  },
+  {
+    "club": "MTL",
+    "last": "Oyongo",
+    "first": "Ambroise",
+    "position": "D",
+    "base": 100000,
+    "guaranteed": 100000
+  },
+  {
+    "club": "MTL",
+    "last": "Piatti",
+    "first": "Ignacio",
+    "position": "M",
+    "base": 425000,
+    "guaranteed": 425000
+  },
+  {
+    "club": "MTL",
+    "last": "Porter",
+    "first": "Cameron",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 69750
+  },
+  {
+    "club": "MTL",
+    "last": "Romero",
+    "first": "Andres",
+    "position": "M-F",
+    "base": 110000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "MTL",
+    "last": "Salazar",
+    "first": "Michael",
+    "position": "F",
+    "base": 51492,
+    "guaranteed": 51492
+  },
+  {
+    "club": "MTL",
+    "last": "Shipp",
+    "first": "Harrison",
+    "position": "M",
+    "base": 104500,
+    "guaranteed": 129500
+  },
+  {
+    "club": "MTL",
+    "last": "Tissot",
+    "first": "Maxim",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "MTL",
+    "last": "Toia",
+    "first": "Donny",
+    "position": "D",
+    "base": 67500,
+    "guaranteed": 67500
+  },
+  {
+    "club": "MTL",
+    "last": "Venegas",
+    "first": "Johan",
+    "position": "M",
+    "base": 200000,
+    "guaranteed": 212500
+  },
+  {
+    "club": "MTL",
+    "last": "Williams",
+    "first": "Romario",
+    "position": "F",
+    "base": 75000,
+    "guaranteed": 97000
+  },
+  {
+    "club": "NE",
+    "last": "Agudelo",
+    "first": "Juan",
+    "position": "F",
+    "base": 425000,
+    "guaranteed": 452500
+  },
+  {
+    "club": "NE",
+    "last": "Barnes",
+    "first": "Darrius",
+    "position": "D",
+    "base": 110000,
+    "guaranteed": 116667
+  },
+  {
+    "club": "NE",
+    "last": "Bunbury",
+    "first": "Teal",
+    "position": "F",
+    "base": 205000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "NE",
+    "last": "Caldwell",
+    "first": "Scott",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "NE",
+    "last": "Cande",
+    "first": "Mamadu",
+    "position": "D",
+    "base": 75000,
+    "guaranteed": 82288
+  },
+  {
+    "club": "NE",
+    "last": "Davies",
+    "first": "Charlie",
+    "position": "F",
+    "base": 108938,
+    "guaranteed": 113316
+  },
+  {
+    "club": "NE",
+    "last": "Fagundez",
+    "first": "Diego",
+    "position": "F",
+    "base": 145000,
+    "guaranteed": 165000
+  },
+  {
+    "club": "NE",
+    "last": "Farrell",
+    "first": "Andrew",
+    "position": "D",
+    "base": 148500,
+    "guaranteed": 229500
+  },
+  {
+    "club": "NE",
+    "last": "Gamble",
+    "first": "Michael",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NE",
+    "last": "Goncalves",
+    "first": "Jose",
+    "position": "D",
+    "base": 450000,
+    "guaranteed": 479375
+  },
+  {
+    "club": "NE",
+    "last": "Herivaux",
+    "first": "Zachary",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NE",
+    "last": "Hollinger",
+    "first": "Femi",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NE",
+    "last": "Kamara",
+    "first": "Kei",
+    "position": "F",
+    "base": 1000000,
+    "guaranteed": 1000000
+  },
+  {
+    "club": "NE",
+    "last": "Knighton",
+    "first": "Brad",
+    "position": "GK",
+    "base": 86105,
+    "guaranteed": 86105
+  },
+  {
+    "club": "NE",
+    "last": "Kobayashi",
+    "first": "Daigo",
+    "position": "M",
+    "base": 120000,
+    "guaranteed": 132000
+  },
+  {
+    "club": "NE",
+    "last": "Koffie",
+    "first": "Gershon",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 261000
+  },
+  {
+    "club": "NE",
+    "last": "Kouassi",
+    "first": "Xavier",
+    "position": "M",
+    "base": 840000,
+    "guaranteed": 890542
+  },
+  {
+    "club": "NE",
+    "last": "McCrary",
+    "first": "Jordan",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NE",
+    "last": "Neumann",
+    "first": "Steve",
+    "position": "M-F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NE",
+    "last": "Nguyen",
+    "first": "Lee",
+    "position": "M",
+    "base": 500000,
+    "guaranteed": 500000
+  },
+  {
+    "club": "NE",
+    "last": "Rowe",
+    "first": "Kelyn",
+    "position": "M",
+    "base": 160000,
+    "guaranteed": 241000
+  },
+  {
+    "club": "NE",
+    "last": "Shuttleworth",
+    "first": "Robert",
+    "position": "GK",
+    "base": 137500,
+    "guaranteed": 154375
+  },
+  {
+    "club": "NE",
+    "last": "Smith",
+    "first": "Donnie",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "NE",
+    "last": "Tierney",
+    "first": "Chris",
+    "position": "D-M",
+    "base": 125000,
+    "guaranteed": 133333
+  },
+  {
+    "club": "NE",
+    "last": "Turner",
+    "first": "Matt",
+    "position": "GK",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NE",
+    "last": "Watson",
+    "first": "Je-Vaughn",
+    "position": "D",
+    "base": 110004,
+    "guaranteed": 115837
+  },
+  {
+    "club": "NE",
+    "last": "Woodberry",
+    "first": "London",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Allen",
+    "first": "RJ",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Ballouchy",
+    "first": "Mehdi",
+    "position": "M",
+    "base": 71663,
+    "guaranteed": 86663
+  },
+  {
+    "club": "NYCFC",
+    "last": "Brandt",
+    "first": "Connor",
+    "position": "M-D",
+    "base": 53472,
+    "guaranteed": 53472
+  },
+  {
+    "club": "NYCFC",
+    "last": "Bravo",
+    "first": "Federico",
+    "position": "D-M",
+    "base": 110000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Brillant",
+    "first": "Frederic",
+    "position": "D",
+    "base": 260000,
+    "guaranteed": 299667
+  },
+  {
+    "club": "NYCFC",
+    "last": "Diskerud",
+    "first": "Mix",
+    "position": "M",
+    "base": 761250,
+    "guaranteed": 761250
+  },
+  {
+    "club": "NYCFC",
+    "last": "Gomez",
+    "first": "Shannon",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NYCFC",
+    "last": "Harrison",
+    "first": "Jack",
+    "position": "M",
+    "base": 125000,
+    "guaranteed": 160500
+  },
+  {
+    "club": "NYCFC",
+    "last": "Hernandez",
+    "first": "Jason",
+    "position": "D",
+    "base": 200000,
+    "guaranteed": 210000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Iraola",
+    "first": "Andoni",
+    "position": "D",
+    "base": 200004,
+    "guaranteed": 200004
+  },
+  {
+    "club": "NYCFC",
+    "last": "Johansen",
+    "first": "Eirik",
+    "position": "GK",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NYCFC",
+    "last": "Lampard",
+    "first": "Frank",
+    "position": "M",
+    "base": 6000000,
+    "guaranteed": 6000000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Lopez",
+    "first": "Mikey",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NYCFC",
+    "last": "Martinez",
+    "first": "Diego",
+    "position": "D",
+    "base": 135000,
+    "guaranteed": 135000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Matarrita",
+    "first": "Ronald",
+    "position": "D",
+    "base": 150000,
+    "guaranteed": 175000
+  },
+  {
+    "club": "NYCFC",
+    "last": "McNamara",
+    "first": "Thomas",
+    "position": "M",
+    "base": 73500,
+    "guaranteed": 85000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Mena",
+    "first": "Jefferson",
+    "position": "D",
+    "base": 220000,
+    "guaranteed": 231400
+  },
+  {
+    "club": "NYCFC",
+    "last": "Mendoza",
+    "first": "Stiven",
+    "position": "F",
+    "base": 207276,
+    "guaranteed": 207276
+  },
+  {
+    "club": "NYCFC",
+    "last": "Mullins",
+    "first": "Patrick",
+    "position": "F",
+    "base": 96250,
+    "guaranteed": 126250
+  },
+  {
+    "club": "NYCFC",
+    "last": "Pirlo",
+    "first": "Andrea",
+    "position": "M",
+    "base": 5600000,
+    "guaranteed": 5915690
+  },
+  {
+    "club": "NYCFC",
+    "last": "Poku",
+    "first": "Kwadwo",
+    "position": "M",
+    "base": 67500,
+    "guaranteed": 70722
+  },
+  {
+    "club": "NYCFC",
+    "last": "Rawls",
+    "first": "Andre",
+    "position": "GK",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "NYCFC",
+    "last": "Saunders",
+    "first": "Josh",
+    "position": "GK",
+    "base": 150000,
+    "guaranteed": 150000
+  },
+  {
+    "club": "NYCFC",
+    "last": "Shelton",
+    "first": "Khiry",
+    "position": "F",
+    "base": 77000,
+    "guaranteed": 94500
+  },
+  {
+    "club": "NYCFC",
+    "last": "Taylor",
+    "first": "Tony",
+    "position": "F",
+    "base": 82500,
+    "guaranteed": 91875
+  },
+  {
+    "club": "NYCFC",
+    "last": "Villa",
+    "first": "David",
+    "position": "F",
+    "base": 5610000,
+    "guaranteed": 5610000
+  },
+  {
+    "club": "NYCFC",
+    "last": "White",
+    "first": "Ethan",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NYRB",
+    "last": "Abang",
+    "first": "Anatole",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NYRB",
+    "last": "Adams",
+    "first": "Tyler",
+    "position": "M",
+    "base": 65000,
+    "guaranteed": 81042
+  },
+  {
+    "club": "NYRB",
+    "last": "Allen",
+    "first": "Brandon",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NYRB",
+    "last": "Baah",
+    "first": "Gideon",
+    "position": "D",
+    "base": 230000,
+    "guaranteed": 278000
+  },
+  {
+    "club": "NYRB",
+    "last": "Bilyeu",
+    "first": "Justin",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "NYRB",
+    "last": "Collin",
+    "first": "Aurelien",
+    "position": "D",
+    "base": 500000,
+    "guaranteed": 525000
+  },
+  {
+    "club": "NYRB",
+    "last": "Davis",
+    "first": "Sean",
+    "position": "M",
+    "base": 90000,
+    "guaranteed": 107500
+  },
+  {
+    "club": "NYRB",
+    "last": "Duvall",
+    "first": "Chris",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "NYRB",
+    "last": "Etienne",
+    "first": "Derrick",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 56500
+  },
+  {
+    "club": "NYRB",
+    "last": "Grella",
+    "first": "Mike",
+    "position": "F",
+    "base": 155000,
+    "guaranteed": 155000
+  },
+  {
+    "club": "NYRB",
+    "last": "Kljestan",
+    "first": "Sacha",
+    "position": "M",
+    "base": 550000,
+    "guaranteed": 687500
+  },
+  {
+    "club": "NYRB",
+    "last": "Lade",
+    "first": "Connor",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 65313
+  },
+  {
+    "club": "NYRB",
+    "last": "Lawrence",
+    "first": "Kemar",
+    "position": "D",
+    "base": 100000,
+    "guaranteed": 196000
+  },
+  {
+    "club": "NYRB",
+    "last": "Martins",
+    "first": "Felipe",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 280000
+  },
+  {
+    "club": "NYRB",
+    "last": "McCarty",
+    "first": "Dax",
+    "position": "M",
+    "base": 400000,
+    "guaranteed": 500000
+  },
+  {
+    "club": "NYRB",
+    "last": "Meara",
+    "first": "Ryan",
+    "position": "GK",
+    "base": 75246,
+    "guaranteed": 76496
+  },
+  {
+    "club": "NYRB",
+    "last": "Muyl",
+    "first": "Alex",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 66500
+  },
+  {
+    "club": "NYRB",
+    "last": "Ouimette",
+    "first": "Karl",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "NYRB",
+    "last": "Perrinelle",
+    "first": "Damien",
+    "position": "D",
+    "base": 140000,
+    "guaranteed": 140000
+  },
+  {
+    "club": "NYRB",
+    "last": "Reynish",
+    "first": "Kyle",
+    "position": "GK",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "NYRB",
+    "last": "Robles",
+    "first": "Luis",
+    "position": "GK",
+    "base": 265000,
+    "guaranteed": 267500
+  },
+  {
+    "club": "NYRB",
+    "last": "Sam",
+    "first": "Lloyd",
+    "position": "M",
+    "base": 230000,
+    "guaranteed": 240000
+  },
+  {
+    "club": "NYRB",
+    "last": "Veron",
+    "first": "Gonzalo",
+    "position": "M-F",
+    "base": 500000,
+    "guaranteed": 500000
+  },
+  {
+    "club": "NYRB",
+    "last": "Wright-Phillips",
+    "first": "Shaun",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 107500
+  },
+  {
+    "club": "NYRB",
+    "last": "Wright-Phillips",
+    "first": "Bradley",
+    "position": "F",
+    "base": 650000,
+    "guaranteed": 710000
+  },
+  {
+    "club": "NYRB",
+    "last": "Zizzo",
+    "first": "Sal",
+    "position": "D-M",
+    "base": 105000,
+    "guaranteed": 105000
+  },
+  {
+    "club": "NYRB",
+    "last": "Zubar",
+    "first": "Ronald",
+    "position": "D",
+    "base": 240000,
+    "guaranteed": 320000
+  },
+  {
+    "club": "ORL",
+    "last": "Alston",
+    "first": "Kevin",
+    "position": "D",
+    "base": 130000,
+    "guaranteed": 130000
+  },
+  {
+    "club": "ORL",
+    "last": "Baptista",
+    "first": "Julio",
+    "position": "M-F",
+    "base": 90000,
+    "guaranteed": 90000
+  },
+  {
+    "club": "ORL",
+    "last": "Barry",
+    "first": "Hadji",
+    "position": "M/F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "ORL",
+    "last": "Bendik",
+    "first": "Joe",
+    "position": "GK",
+    "base": 140000,
+    "guaranteed": 147667
+  },
+  {
+    "club": "ORL",
+    "last": "Boden",
+    "first": "Luke",
+    "position": "D",
+    "base": 82500,
+    "guaranteed": 82500
+  },
+  {
+    "club": "ORL",
+    "last": "Carrasco",
+    "first": "Servando",
+    "position": "M",
+    "base": 95000,
+    "guaranteed": 99625
+  },
+  {
+    "club": "ORL",
+    "last": "Ceren",
+    "first": "Darwin",
+    "position": "M",
+    "base": 150000,
+    "guaranteed": 174375
+  },
+  {
+    "club": "ORL",
+    "last": "Donovan",
+    "first": "Conor",
+    "position": "D",
+    "base": 90000,
+    "guaranteed": 118000
+  },
+  {
+    "club": "ORL",
+    "last": "Edwards",
+    "first": "Earl",
+    "position": "GK",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "ORL",
+    "last": "Garcia",
+    "first": "Devron",
+    "position": "M-D",
+    "base": 62500,
+    "guaranteed": 70938
+  },
+  {
+    "club": "ORL",
+    "last": "Heath",
+    "first": "Harrison",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "ORL",
+    "last": "Higuita",
+    "first": "Cristian",
+    "position": "M",
+    "base": 80000,
+    "guaranteed": 80000
+  },
+  {
+    "club": "ORL",
+    "last": "Hines",
+    "first": "Sebastian",
+    "position": "D",
+    "base": 150000,
+    "guaranteed": 151250
+  },
+  {
+    "club": "ORL",
+    "last": "Kaka",
+    "first": 0,
+    "position": "M",
+    "base": 6660000,
+    "guaranteed": 7167500
+  },
+  {
+    "club": "ORL",
+    "last": "Larin",
+    "first": "Cyle",
+    "position": "F",
+    "base": 135000,
+    "guaranteed": 177000
+  },
+  {
+    "club": "ORL",
+    "last": "Laryea",
+    "first": "Richmond",
+    "position": "M",
+    "base": 125000,
+    "guaranteed": 154000
+  },
+  {
+    "club": "ORL",
+    "last": "Mateos",
+    "first": "David",
+    "position": "D",
+    "base": 420000,
+    "guaranteed": 453333
+  },
+  {
+    "club": "ORL",
+    "last": "Molino",
+    "first": "Kevin",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 121400
+  },
+  {
+    "club": "ORL",
+    "last": "Nocerino",
+    "first": "Antonio",
+    "position": "M",
+    "base": 600000,
+    "guaranteed": 650000
+  },
+  {
+    "club": "ORL",
+    "last": "Ramos",
+    "first": "Rafael",
+    "position": "D",
+    "base": 96000,
+    "guaranteed": 96000
+  },
+  {
+    "club": "ORL",
+    "last": "Redding",
+    "first": "Tommy",
+    "position": "D",
+    "base": 95000,
+    "guaranteed": 102500
+  },
+  {
+    "club": "ORL",
+    "last": "Ribeiro",
+    "first": "Pedro",
+    "position": "M-F",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "ORL",
+    "last": "Rivas",
+    "first": "Carlos",
+    "position": "M",
+    "base": 80000,
+    "guaranteed": 80000
+  },
+  {
+    "club": "ORL",
+    "last": "Rochez",
+    "first": "Bryan",
+    "position": "F",
+    "base": 180000,
+    "guaranteed": 259500
+  },
+  {
+    "club": "ORL",
+    "last": "Shea",
+    "first": "Brek",
+    "position": "M-D",
+    "base": 550000,
+    "guaranteed": 595000
+  },
+  {
+    "club": "ORL",
+    "last": "Stajduhar",
+    "first": "Mason",
+    "position": "GK",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "ORL",
+    "last": "Turner",
+    "first": "Tyler",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "ORL",
+    "last": "Winter",
+    "first": "Adrian",
+    "position": "M",
+    "base": 180000,
+    "guaranteed": 198333
+  },
+  {
+    "club": "PHI",
+    "last": "Alberg",
+    "first": "Roland",
+    "position": "M",
+    "base": 328000,
+    "guaranteed": 377250
+  },
+  {
+    "club": "PHI",
+    "last": "Alves Macedo",
+    "first": "Fabinho",
+    "position": "D",
+    "base": 142000,
+    "guaranteed": 142000
+  },
+  {
+    "club": "PHI",
+    "last": "Ayuk",
+    "first": "Eric",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "PHI",
+    "last": "Barnetta",
+    "first": "Tranquillo",
+    "position": "M",
+    "base": 650000,
+    "guaranteed": 687500
+  },
+  {
+    "club": "PHI",
+    "last": "Blake",
+    "first": "Andre",
+    "position": "GK",
+    "base": 100000,
+    "guaranteed": 138000
+  },
+  {
+    "club": "PHI",
+    "last": "Carroll",
+    "first": "Brian",
+    "position": "M",
+    "base": 120000,
+    "guaranteed": 120000
+  },
+  {
+    "club": "PHI",
+    "last": "Conceicao",
+    "first": "Anderson",
+    "position": "D",
+    "base": 150000,
+    "guaranteed": 165833
+  },
+  {
+    "club": "PHI",
+    "last": "Creavalle",
+    "first": "Warren",
+    "position": "M",
+    "base": 118000,
+    "guaranteed": 125667
+  },
+  {
+    "club": "PHI",
+    "last": "Edu",
+    "first": "Maurice",
+    "position": "M",
+    "base": 725000,
+    "guaranteed": 793750
+  },
+  {
+    "club": "PHI",
+    "last": "Fernandes",
+    "first": "Leo",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "PHI",
+    "last": "Gaddis",
+    "first": "Raymon",
+    "position": "D",
+    "base": 150000,
+    "guaranteed": 152500
+  },
+  {
+    "club": "PHI",
+    "last": "Herbers",
+    "first": "Fabian",
+    "position": "M-F",
+    "base": 100000,
+    "guaranteed": 125500
+  },
+  {
+    "club": "PHI",
+    "last": "Ilsinho",
+    "first": 0,
+    "position": "M",
+    "base": 430000,
+    "guaranteed": 478333
+  },
+  {
+    "club": "PHI",
+    "last": "Jones",
+    "first": "Matt",
+    "position": "GK",
+    "base": 75000,
+    "guaranteed": 80625
+  },
+  {
+    "club": "PHI",
+    "last": "Lahoud",
+    "first": "Michael",
+    "position": "M",
+    "base": 110000,
+    "guaranteed": 115638
+  },
+  {
+    "club": "PHI",
+    "last": "Le Toux",
+    "first": "Sebastien",
+    "position": "F-M",
+    "base": 300000,
+    "guaranteed": 310228
+  },
+  {
+    "club": "PHI",
+    "last": "Marquez",
+    "first": "Richard",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "PHI",
+    "last": "McCarthy",
+    "first": "John",
+    "position": "GK",
+    "base": 79000,
+    "guaranteed": 85250
+  },
+  {
+    "club": "PHI",
+    "last": "Missimo",
+    "first": "Cole",
+    "position": "M",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "PHI",
+    "last": "Nogueira",
+    "first": "Vincent",
+    "position": "M",
+    "base": 400000,
+    "guaranteed": 400000
+  },
+  {
+    "club": "PHI",
+    "last": "Pontius",
+    "first": "Chris",
+    "position": "M-F",
+    "base": 380000,
+    "guaranteed": 411000
+  },
+  {
+    "club": "PHI",
+    "last": "Restrepo",
+    "first": "Walter",
+    "position": "M",
+    "base": 125000,
+    "guaranteed": 139500
+  },
+  {
+    "club": "PHI",
+    "last": "Rosenberry",
+    "first": "Keegan",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 63750
+  },
+  {
+    "club": "PHI",
+    "last": "Sapong",
+    "first": "CJ",
+    "position": "F",
+    "base": 225000,
+    "guaranteed": 225000
+  },
+  {
+    "club": "PHI",
+    "last": "Tribbett",
+    "first": "Ken",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "PHI",
+    "last": "Washington",
+    "first": "Taylor",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "PHI",
+    "last": "Yaro",
+    "first": "Joshua",
+    "position": "D",
+    "base": 130000,
+    "guaranteed": 194000
+  },
+  {
+    "club": "POOL",
+    "last": "Mitchell",
+    "first": "Trey",
+    "position": "GK",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "POR",
+    "last": "Adi",
+    "first": "Fanendo",
+    "position": "F",
+    "base": 640000,
+    "guaranteed": 712500
+  },
+  {
+    "club": "POR",
+    "last": "Asprilla",
+    "first": "Dairon",
+    "position": "M-F",
+    "base": 76000,
+    "guaranteed": 76000
+  },
+  {
+    "club": "POR",
+    "last": "Barmby",
+    "first": "Jack",
+    "position": "M-D",
+    "base": 72000,
+    "guaranteed": 73800
+  },
+  {
+    "club": "POR",
+    "last": "Besler",
+    "first": "Nick",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "POR",
+    "last": "Borchers",
+    "first": "Nat",
+    "position": "D",
+    "base": 245000,
+    "guaranteed": 255000
+  },
+  {
+    "club": "POR",
+    "last": "Brett",
+    "first": "Neco",
+    "position": "M",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "POR",
+    "last": "Chara",
+    "first": "Diego",
+    "position": "M",
+    "base": 150000,
+    "guaranteed": 172000
+  },
+  {
+    "club": "POR",
+    "last": "Gleeson",
+    "first": "Jake",
+    "position": "GK",
+    "base": 91556,
+    "guaranteed": 96723
+  },
+  {
+    "club": "POR",
+    "last": "Grabavoy",
+    "first": "Ned",
+    "position": "M",
+    "base": 150000,
+    "guaranteed": 150000
+  },
+  {
+    "club": "POR",
+    "last": "Hamilton",
+    "first": "Wade",
+    "position": "GK",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "POR",
+    "last": "Jewsbury",
+    "first": "Jack",
+    "position": "D-M",
+    "base": 140000,
+    "guaranteed": 147000
+  },
+  {
+    "club": "POR",
+    "last": "Klute",
+    "first": "Chris",
+    "position": "D",
+    "base": 86625,
+    "guaranteed": 91925
+  },
+  {
+    "club": "POR",
+    "last": "Kwarasey",
+    "first": "Adam",
+    "position": "GK",
+    "base": 335000,
+    "guaranteed": 335000
+  },
+  {
+    "club": "POR",
+    "last": "Manning",
+    "first": "Anthony",
+    "position": "D",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "POR",
+    "last": "Mattocks",
+    "first": "Darren",
+    "position": "F",
+    "base": 215000,
+    "guaranteed": 231667
+  },
+  {
+    "club": "POR",
+    "last": "McInerney",
+    "first": "Jack",
+    "position": "F",
+    "base": 270000,
+    "guaranteed": 270000
+  },
+  {
+    "club": "POR",
+    "last": "Melano",
+    "first": "Lucas",
+    "position": "F",
+    "base": 760000,
+    "guaranteed": 760000
+  },
+  {
+    "club": "POR",
+    "last": "Nagbe",
+    "first": "Darlington",
+    "position": "M/F",
+    "base": 500000,
+    "guaranteed": 500000
+  },
+  {
+    "club": "POR",
+    "last": "Okugo",
+    "first": "Amobi",
+    "position": "D-M",
+    "base": 300000,
+    "guaranteed": 325000
+  },
+  {
+    "club": "POR",
+    "last": "Peay",
+    "first": "Taylor",
+    "position": "D",
+    "base": 53472,
+    "guaranteed": 53472
+  },
+  {
+    "club": "POR",
+    "last": "Polk",
+    "first": "Ben",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 68750
+  },
+  {
+    "club": "POR",
+    "last": "Powell",
+    "first": "Alvas",
+    "position": "D",
+    "base": 95000,
+    "guaranteed": 103700
+  },
+  {
+    "club": "POR",
+    "last": "Ridgewell",
+    "first": "Liam",
+    "position": "D",
+    "base": 1100000,
+    "guaranteed": 1250000
+  },
+  {
+    "club": "POR",
+    "last": "Taylor",
+    "first": "Jermaine",
+    "position": "D",
+    "base": 150000,
+    "guaranteed": 150000
+  },
+  {
+    "club": "POR",
+    "last": "Thoma",
+    "first": "Andy",
+    "position": "D-M",
+    "base": 62500,
+    "guaranteed": 64000
+  },
+  {
+    "club": "POR",
+    "last": "Valentin",
+    "first": "Zarek",
+    "position": "D",
+    "base": 90000,
+    "guaranteed": 90000
+  },
+  {
+    "club": "POR",
+    "last": "Valeri",
+    "first": "Diego",
+    "position": "M",
+    "base": 600000,
+    "guaranteed": 550000
+  },
+  {
+    "club": "POR",
+    "last": "Zemanski",
+    "first": "Ben",
+    "position": "M",
+    "base": 85000,
+    "guaranteed": 89000
+  },
+  {
+    "club": "RSL",
+    "last": "Acosta",
+    "first": "Danilo",
+    "position": "D/M",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "RSL",
+    "last": "Allen",
+    "first": "Jordan",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 110000
+  },
+  {
+    "club": "RSL",
+    "last": "Attinella",
+    "first": "Jeff",
+    "position": "GK",
+    "base": 90000,
+    "guaranteed": 95083
+  },
+  {
+    "club": "RSL",
+    "last": "Beckerman",
+    "first": "Kyle",
+    "position": "M",
+    "base": 675000,
+    "guaranteed": 750000
+  },
+  {
+    "club": "RSL",
+    "last": "Beltran",
+    "first": "Anthony",
+    "position": "D",
+    "base": 210000,
+    "guaranteed": 220950
+  },
+  {
+    "club": "RSL",
+    "last": "Fernandez",
+    "first": "Eduardo",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "RSL",
+    "last": "Garcia",
+    "first": "Olmes",
+    "position": "F",
+    "base": 160000,
+    "guaranteed": 160000
+  },
+  {
+    "club": "RSL",
+    "last": "Glad",
+    "first": "Justen",
+    "position": "D",
+    "base": 100000,
+    "guaranteed": 111000
+  },
+  {
+    "club": "RSL",
+    "last": "Holness",
+    "first": "Omar",
+    "position": "F",
+    "base": 100000,
+    "guaranteed": 123500
+  },
+  {
+    "club": "RSL",
+    "last": "Kavita",
+    "first": "Phanuel",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "RSL",
+    "last": "Martinez",
+    "first": "Juan Manuel",
+    "position": "F",
+    "base": 1060000,
+    "guaranteed": 1458667
+  },
+  {
+    "club": "RSL",
+    "last": "Maund",
+    "first": "Aaron",
+    "position": "D",
+    "base": 85000,
+    "guaranteed": 88450
+  },
+  {
+    "club": "RSL",
+    "last": "Morales",
+    "first": "Javier",
+    "position": "M",
+    "base": 590000,
+    "guaranteed": 590000
+  },
+  {
+    "club": "RSL",
+    "last": "Movsisyan",
+    "first": "Yura",
+    "position": "F",
+    "base": 200000,
+    "guaranteed": 200000
+  },
+  {
+    "club": "RSL",
+    "last": "Mulholland",
+    "first": "Luke",
+    "position": "M",
+    "base": 93500,
+    "guaranteed": 94750
+  },
+  {
+    "club": "RSL",
+    "last": "Okwuonu",
+    "first": "Boyd",
+    "position": "D",
+    "base": 66000,
+    "guaranteed": 86000
+  },
+  {
+    "club": "RSL",
+    "last": "Olave",
+    "first": "Jamison",
+    "position": "D",
+    "base": 215000,
+    "guaranteed": 215000
+  },
+  {
+    "club": "RSL",
+    "last": "Phillips",
+    "first": "Demar",
+    "position": "D",
+    "base": 127500,
+    "guaranteed": 135333
+  },
+  {
+    "club": "RSL",
+    "last": "Plata",
+    "first": "Joao",
+    "position": "F",
+    "base": 175000,
+    "guaranteed": 175000
+  },
+  {
+    "club": "RSL",
+    "last": "Rimando",
+    "first": "Nick",
+    "position": "GK",
+    "base": 400000,
+    "guaranteed": 420000
+  },
+  {
+    "club": "RSL",
+    "last": "Sandoval",
+    "first": "Devon",
+    "position": "F",
+    "base": 67500,
+    "guaranteed": 67500
+  },
+  {
+    "club": "RSL",
+    "last": "Saucedo",
+    "first": "Sebastian",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 73000
+  },
+  {
+    "club": "RSL",
+    "last": "Stertzer",
+    "first": "John",
+    "position": "M",
+    "base": 66000,
+    "guaranteed": 75167
+  },
+  {
+    "club": "RSL",
+    "last": "Sunday",
+    "first": "Stephen",
+    "position": "M",
+    "base": 220000,
+    "guaranteed": 233000
+  },
+  {
+    "club": "RSL",
+    "last": "Welshman",
+    "first": "Emery",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "RSL",
+    "last": "Wingert",
+    "first": "Chris",
+    "position": "D",
+    "base": 235000,
+    "guaranteed": 235000
+  },
+  {
+    "club": "SEA",
+    "last": "Alfaro",
+    "first": "Tony",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "SEA",
+    "last": "Alonso",
+    "first": "Osvaldo",
+    "position": "M",
+    "base": 900000,
+    "guaranteed": 941667
+  },
+  {
+    "club": "SEA",
+    "last": "Anderson",
+    "first": "Oalex",
+    "position": "F",
+    "base": 51504,
+    "guaranteed": 51504
+  },
+  {
+    "club": "SEA",
+    "last": "Craven",
+    "first": "Andy",
+    "position": "F",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "SEA",
+    "last": "Dempsey",
+    "first": "Clint",
+    "position": "F",
+    "base": 3913008,
+    "guaranteed": 4605942
+  },
+  {
+    "club": "SEA",
+    "last": "Evans",
+    "first": "Brad",
+    "position": "M-D",
+    "base": 276665,
+    "guaranteed": 302666
+  },
+  {
+    "club": "SEA",
+    "last": "Farfan",
+    "first": "Michael",
+    "position": "M",
+    "base": 80000,
+    "guaranteed": 80000
+  },
+  {
+    "club": "SEA",
+    "last": "Fisher",
+    "first": "Oniel",
+    "position": "M-D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "SEA",
+    "last": "Frei",
+    "first": "Stefan",
+    "position": "GK",
+    "base": 200000,
+    "guaranteed": 206250
+  },
+  {
+    "club": "SEA",
+    "last": "Friberg",
+    "first": "Erik",
+    "position": "M",
+    "base": 240000,
+    "guaranteed": 262500
+  },
+  {
+    "club": "SEA",
+    "last": "Gomez",
+    "first": "Herculez",
+    "position": "F",
+    "base": 312000,
+    "guaranteed": 333000
+  },
+  {
+    "club": "SEA",
+    "last": "Ivanschitz",
+    "first": "Andreas",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 271250
+  },
+  {
+    "club": "SEA",
+    "last": "Jones",
+    "first": "Darwin",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 68750
+  },
+  {
+    "club": "SEA",
+    "last": "Jones",
+    "first": "Joevin",
+    "position": "D",
+    "base": 70000,
+    "guaranteed": 76167
+  },
+  {
+    "club": "SEA",
+    "last": "Kovar",
+    "first": "Aaron",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63200
+  },
+  {
+    "club": "SEA",
+    "last": "Lowe",
+    "first": "Damion",
+    "position": "D",
+    "base": 66413,
+    "guaranteed": 77413
+  },
+  {
+    "club": "SEA",
+    "last": "Lyon",
+    "first": "Charlie",
+    "position": "GK",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "SEA",
+    "last": "Mansaray",
+    "first": "Victor",
+    "position": "F",
+    "base": 62500,
+    "guaranteed": 66000
+  },
+  {
+    "club": "SEA",
+    "last": "Marshall",
+    "first": "Chad",
+    "position": "D",
+    "base": 325000,
+    "guaranteed": 341667
+  },
+  {
+    "club": "SEA",
+    "last": "Mears",
+    "first": "Tyrone",
+    "position": "D",
+    "base": 175000,
+    "guaranteed": 184000
+  },
+  {
+    "club": "SEA",
+    "last": "Miller",
+    "first": "Tyler",
+    "position": "GK",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "SEA",
+    "last": "Morris",
+    "first": "Jordan",
+    "position": "F",
+    "base": 178000,
+    "guaranteed": 190500
+  },
+  {
+    "club": "SEA",
+    "last": "Ockford",
+    "first": "Jimmy",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "SEA",
+    "last": "Remick",
+    "first": "Dylan",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "SEA",
+    "last": "Roldan",
+    "first": "Cristian",
+    "position": "M",
+    "base": 95000,
+    "guaranteed": 117000
+  },
+  {
+    "club": "SEA",
+    "last": "Scott",
+    "first": "Zach",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "SEA",
+    "last": "Sturgis",
+    "first": "Nathan",
+    "position": "M",
+    "base": 62508,
+    "guaranteed": 62508
+  },
+  {
+    "club": "SEA",
+    "last": "Torres",
+    "first": "Roman",
+    "position": "D",
+    "base": 416000,
+    "guaranteed": 491813
+  },
+  {
+    "club": "SEA",
+    "last": "Valdez",
+    "first": "Nelson",
+    "position": "F",
+    "base": 1200000,
+    "guaranteed": 1455000
+  },
+  {
+    "club": "SJ",
+    "last": "Alashe",
+    "first": "Fatai",
+    "position": "M",
+    "base": 74250,
+    "guaranteed": 90500
+  },
+  {
+    "club": "SJ",
+    "last": "Amarikwa",
+    "first": "Quincy",
+    "position": "F",
+    "base": 247000,
+    "guaranteed": 260667
+  },
+  {
+    "club": "SJ",
+    "last": "Barrera",
+    "first": "Leandro",
+    "position": "M",
+    "base": 75000,
+    "guaranteed": 75000
+  },
+  {
+    "club": "SJ",
+    "last": "Barrett",
+    "first": "Chad",
+    "position": "F",
+    "base": 90000,
+    "guaranteed": 95500
+  },
+  {
+    "club": "SJ",
+    "last": "Bernardez",
+    "first": "Victor",
+    "position": "D",
+    "base": 210000,
+    "guaranteed": 251600
+  },
+  {
+    "club": "SJ",
+    "last": "Bingham",
+    "first": "David",
+    "position": "GK",
+    "base": 145000,
+    "guaranteed": 152750
+  },
+  {
+    "club": "SJ",
+    "last": "Cato",
+    "first": "Cordell",
+    "position": "M-D",
+    "base": 112500,
+    "guaranteed": 114167
+  },
+  {
+    "club": "SJ",
+    "last": "Colvey",
+    "first": "Kip",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "SJ",
+    "last": "Dawkins",
+    "first": "Simon",
+    "position": "M",
+    "base": 800000,
+    "guaranteed": 800000
+  },
+  {
+    "club": "SJ",
+    "last": "Emeghara",
+    "first": "Innocent",
+    "position": "F",
+    "base": 988000,
+    "guaranteed": 1300000
+  },
+  {
+    "club": "SJ",
+    "last": "Francis",
+    "first": "Shaun",
+    "position": "D",
+    "base": 95000,
+    "guaranteed": 103333
+  },
+  {
+    "club": "SJ",
+    "last": "Godoy",
+    "first": "Anibal",
+    "position": "M",
+    "base": 216000,
+    "guaranteed": 242250
+  },
+  {
+    "club": "SJ",
+    "last": "Goodson",
+    "first": "Clarence",
+    "position": "D",
+    "base": 315000,
+    "guaranteed": 342000
+  },
+  {
+    "club": "SJ",
+    "last": "Imperiale",
+    "first": "Andres",
+    "position": "D",
+    "base": 85000,
+    "guaranteed": 87500
+  },
+  {
+    "club": "SJ",
+    "last": "Jahn",
+    "first": "Adam",
+    "position": "F",
+    "base": 67500,
+    "guaranteed": 67500
+  },
+  {
+    "club": "SJ",
+    "last": "Lenhart",
+    "first": "Steven",
+    "position": "F",
+    "base": 170000,
+    "guaranteed": 179083
+  },
+  {
+    "club": "SJ",
+    "last": "Meredith",
+    "first": "Bryan",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "SJ",
+    "last": "Pelosi",
+    "first": "Marc",
+    "position": "M",
+    "base": 72000,
+    "guaranteed": 84500
+  },
+  {
+    "club": "SJ",
+    "last": "Perez Garcia",
+    "first": "Matias",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "SJ",
+    "last": "Quintero",
+    "first": "Alberto",
+    "position": "M",
+    "base": 169992,
+    "guaranteed": 190717
+  },
+  {
+    "club": "SJ",
+    "last": "Salinas",
+    "first": "Shea",
+    "position": "M",
+    "base": 163125,
+    "guaranteed": 166458
+  },
+  {
+    "club": "SJ",
+    "last": "Sarkodie",
+    "first": "Kofi",
+    "position": "D",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "SJ",
+    "last": "Sherrod",
+    "first": "Mark",
+    "position": "F",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "SJ",
+    "last": "Silva",
+    "first": "Matheus",
+    "position": "M",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "SJ",
+    "last": "Stewart",
+    "first": "Jordan",
+    "position": "D-M",
+    "base": 100000,
+    "guaranteed": 100000
+  },
+  {
+    "club": "SJ",
+    "last": "Tarbell",
+    "first": "Andrew",
+    "position": "GK",
+    "base": 70000,
+    "guaranteed": 84000
+  },
+  {
+    "club": "SJ",
+    "last": "Thompson",
+    "first": "Tommy",
+    "position": "M",
+    "base": 150000,
+    "guaranteed": 155000
+  },
+  {
+    "club": "SJ",
+    "last": "Wondolowski",
+    "first": "Chris",
+    "position": "F",
+    "base": 650000,
+    "guaranteed": 700000
+  },
+  {
+    "club": "SJ",
+    "last": "Wynne",
+    "first": "Marvell",
+    "position": "D",
+    "base": 213750,
+    "guaranteed": 224375
+  },
+  {
+    "club": "TOR",
+    "last": "Altidore",
+    "first": "Jozy",
+    "position": "F",
+    "base": 4825000,
+    "guaranteed": 4825000
+  },
+  {
+    "club": "TOR",
+    "last": "Babouli",
+    "first": "Mo",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "TOR",
+    "last": "Beitashour",
+    "first": "Steven",
+    "position": "D",
+    "base": 230000,
+    "guaranteed": 244000
+  },
+  {
+    "club": "TOR",
+    "last": "Bloom",
+    "first": "Mark",
+    "position": "D",
+    "base": 94500,
+    "guaranteed": 101849
+  },
+  {
+    "club": "TOR",
+    "last": "Bono",
+    "first": "Alex",
+    "position": "GK",
+    "base": 65000,
+    "guaranteed": 85200
+  },
+  {
+    "club": "TOR",
+    "last": "Bradley",
+    "first": "Michael",
+    "position": "M",
+    "base": 6000000,
+    "guaranteed": 6500000
+  },
+  {
+    "club": "TOR",
+    "last": "Chapman",
+    "first": "Jay",
+    "position": "M",
+    "base": 75000,
+    "guaranteed": 93500
+  },
+  {
+    "club": "TOR",
+    "last": "Cheyrou",
+    "first": "Benoit",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 259333
+  },
+  {
+    "club": "TOR",
+    "last": "Delgado",
+    "first": "Marco",
+    "position": "M",
+    "base": 100000,
+    "guaranteed": 102500
+  },
+  {
+    "club": "TOR",
+    "last": "Endoh",
+    "first": "Tsubasa",
+    "position": "F",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "TOR",
+    "last": "Giovinco",
+    "first": "Sebastian",
+    "position": "F",
+    "base": 5600000,
+    "guaranteed": 7115556
+  },
+  {
+    "club": "TOR",
+    "last": "Hagglund",
+    "first": "Nick",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "TOR",
+    "last": "Hamilton",
+    "first": "Jordan",
+    "position": "F",
+    "base": 66150,
+    "guaranteed": 78650
+  },
+  {
+    "club": "TOR",
+    "last": "Irwin",
+    "first": "Clint",
+    "position": "GK",
+    "base": 95000,
+    "guaranteed": 107000
+  },
+  {
+    "club": "TOR",
+    "last": "Johnson",
+    "first": "Will",
+    "position": "M",
+    "base": 375000,
+    "guaranteed": 395333
+  },
+  {
+    "club": "TOR",
+    "last": "Lovitz",
+    "first": "Daniel",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "TOR",
+    "last": "Mannella",
+    "first": "Chris",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "TOR",
+    "last": "Moor",
+    "first": "Drew",
+    "position": "D",
+    "base": 235000,
+    "guaranteed": 250000
+  },
+  {
+    "club": "TOR",
+    "last": "Morgan",
+    "first": "Ashtone",
+    "position": "D",
+    "base": 120000,
+    "guaranteed": 132000
+  },
+  {
+    "club": "TOR",
+    "last": "Morrow",
+    "first": "Justin",
+    "position": "D",
+    "base": 200000,
+    "guaranteed": 216667
+  },
+  {
+    "club": "TOR",
+    "last": "Osorio",
+    "first": "Jonathan",
+    "position": "M",
+    "base": 166750,
+    "guaranteed": 174571
+  },
+  {
+    "club": "TOR",
+    "last": "Perquis",
+    "first": "Damien",
+    "position": "D",
+    "base": 378000,
+    "guaranteed": 427500
+  },
+  {
+    "club": "TOR",
+    "last": "Roberts",
+    "first": "Quillan",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "TOR",
+    "last": "Simonin",
+    "first": "Clement",
+    "position": "D",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "TOR",
+    "last": "Williams",
+    "first": "Josh",
+    "position": "D",
+    "base": 131250,
+    "guaranteed": 131250
+  },
+  {
+    "club": "TOR",
+    "last": "Zavaleta",
+    "first": "Eriq",
+    "position": "F",
+    "base": 110000,
+    "guaranteed": 140600
+  },
+  {
+    "club": "VAN",
+    "last": "Adekugbe",
+    "first": "Samuel",
+    "position": "D",
+    "base": 70000,
+    "guaranteed": 75000
+  },
+  {
+    "club": "VAN",
+    "last": "Aird",
+    "first": "Fraser",
+    "position": "D-M",
+    "base": 51500,
+    "guaranteed": 58625
+  },
+  {
+    "club": "VAN",
+    "last": "Bolanos",
+    "first": "Christian",
+    "position": "M",
+    "base": 250000,
+    "guaranteed": 253500
+  },
+  {
+    "club": "VAN",
+    "last": "Bustos",
+    "first": "Marco",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 67350
+  },
+  {
+    "club": "VAN",
+    "last": "Carducci",
+    "first": "Marco",
+    "position": "GK",
+    "base": 63000,
+    "guaranteed": 63000
+  },
+  {
+    "club": "VAN",
+    "last": "Dean",
+    "first": "Christian",
+    "position": "D",
+    "base": 110000,
+    "guaranteed": 191000
+  },
+  {
+    "club": "VAN",
+    "last": "Flores",
+    "first": "Deybi",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 68385
+  },
+  {
+    "club": "VAN",
+    "last": "Froese",
+    "first": "Kianz",
+    "position": "M",
+    "base": 66000,
+    "guaranteed": 70500
+  },
+  {
+    "club": "VAN",
+    "last": "Harvey",
+    "first": "Jordan",
+    "position": "D",
+    "base": 165000,
+    "guaranteed": 165000
+  },
+  {
+    "club": "VAN",
+    "last": "Hurtado",
+    "first": "Erik",
+    "position": "F/M",
+    "base": 86092,
+    "guaranteed": 121092
+  },
+  {
+    "club": "VAN",
+    "last": "Jacobson",
+    "first": "Andrew",
+    "position": "M",
+    "base": 62500,
+    "guaranteed": 87500
+  },
+  {
+    "club": "VAN",
+    "last": "Kah",
+    "first": "Pa Modou",
+    "position": "D",
+    "base": 97000,
+    "guaranteed": 101850
+  },
+  {
+    "club": "VAN",
+    "last": "Kudo",
+    "first": "Masato",
+    "position": "F",
+    "base": 310000,
+    "guaranteed": 314000
+  },
+  {
+    "club": "VAN",
+    "last": "Laba",
+    "first": "Matias",
+    "position": "M",
+    "base": 560000,
+    "guaranteed": 720500
+  },
+  {
+    "club": "VAN",
+    "last": "Manneh",
+    "first": "Kekuta",
+    "position": "M-F",
+    "base": 127500,
+    "guaranteed": 157000
+  },
+  {
+    "club": "VAN",
+    "last": "McKendry",
+    "first": "Ben",
+    "position": "M",
+    "base": 52500,
+    "guaranteed": 52500
+  },
+  {
+    "club": "VAN",
+    "last": "Mezquida",
+    "first": "Nicolas",
+    "position": "M-F",
+    "base": 88000,
+    "guaranteed": 88000
+  },
+  {
+    "club": "VAN",
+    "last": "Morales",
+    "first": "Pedro",
+    "position": "M",
+    "base": 1232500,
+    "guaranteed": 1258900
+  },
+  {
+    "club": "VAN",
+    "last": "Ousted",
+    "first": "David",
+    "position": "GK",
+    "base": 360000,
+    "guaranteed": 378933
+  },
+  {
+    "club": "VAN",
+    "last": "Parker",
+    "first": "Tim",
+    "position": "D",
+    "base": 66000,
+    "guaranteed": 84750
+  },
+  {
+    "club": "VAN",
+    "last": "Perez",
+    "first": "Blas",
+    "position": "F",
+    "base": 215000,
+    "guaranteed": 215000
+  },
+  {
+    "club": "VAN",
+    "last": "Rivero",
+    "first": "Octavio",
+    "position": "F",
+    "base": 890850,
+    "guaranteed": 890850
+  },
+  {
+    "club": "VAN",
+    "last": "Seiler",
+    "first": "Cole",
+    "position": "D",
+    "base": 51500,
+    "guaranteed": 51500
+  },
+  {
+    "club": "VAN",
+    "last": "Smith",
+    "first": "Jordan",
+    "position": "D",
+    "base": 115000,
+    "guaranteed": 122743
+  },
+  {
+    "club": "VAN",
+    "last": "Techera",
+    "first": "Cristian",
+    "position": "M",
+    "base": 320000,
+    "guaranteed": 345000
+  },
+  {
+    "club": "VAN",
+    "last": "Teibert",
+    "first": "Russell",
+    "position": "M",
+    "base": 115000,
+    "guaranteed": 182500
+  },
+  {
+    "club": "VAN",
+    "last": "Tornaghi",
+    "first": "Paolo",
+    "position": "GK",
+    "base": 62500,
+    "guaranteed": 62500
+  },
+  {
+    "club": "VAN",
+    "last": "Waston",
+    "first": "Kendall",
+    "position": "D",
+    "base": 300000,
+    "guaranteed": 318125
+  },
+  {
+    "club": 0,
+    "last": "Gargan",
+    "first": "Dan",
+    "position": "D",
+    "base": 145000,
+    "guaranteed": 145000
+  },
+  {
+    "club": 0,
+    "last": "Martinez",
+    "first": "Cristian",
+    "position": "M",
+    "base": 62508,
+    "guaranteed": 67008
+  },
+  {
+    "club": 0,
+    "last": "Moore",
+    "first": "Luke",
+    "position": "F",
+    "base": 115000,
+    "guaranteed": 137500
+  },
+  {
+    "club": 0,
+    "last": "Nyassi",
+    "first": "Sanna",
+    "position": "M",
+    "base": 135000,
+    "guaranteed": 141250
+  },
+  {
+    "club": 0,
+    "last": "Ovalle",
+    "first": "Adolfo",
+    "position": "M",
+    "base": 63000,
+    "guaranteed": 73500
+  },
+  {
+    "club": 0,
+    "last": "Tshuma",
+    "first": "Schillo",
+    "position": "F",
+    "base": 82000,
+    "guaranteed": 120000
+  }
+]
