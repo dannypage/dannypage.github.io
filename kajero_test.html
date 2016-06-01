@@ -10,12 +10,12 @@
             ---
             title: "MLS Salary 2016 - Test Blog"
             author: "Danny Page"
-            created: "Wed Jun 01 2016 15:25:24 GMT-0400 (EDT)"
+            created: "Wed Jun 01 2016 15:56:30 GMT-0400 (EDT)"
             datasources:
                 mls_salary_2016: "https://raw.githubusercontent.com/dannypage/dannypage.github.io/master/assets/data/mls_salary_2016.json"
             original:
-                title: "Blank Kajero notebook"
-                url: "http://www.joelotter.com/kajero/blank"
+                title: "MLS Salary 2016 - Test Blog"
+                url: "http://dannypage.github.io/kajero_test.html"
             show_footer: true
             ---
 
@@ -25,11 +25,9 @@
 
             The data via MLS Players Union, formatted by [Michael Bertin](https://twitter.com/bertinbertin). Here's a few things we can do with it!
 
-            ### 0. Examine Our Data
+            ### 1. Examine Our Data
 
             We are going to first examine our JSON dataset. We'll `return` the info that was pre-loaded.
-
-
 
             ```javascript; runnable
             return data.mls_salary_2016
@@ -39,7 +37,7 @@
 
             Let's investigate some numbers for the entire data set.
 
-            ### 1. Average and Median Salary
+            ### 2. Average and Median Salary
 
             Let's start by looking into the guaranteed salary. Each player has a base & gauaranteed salary. Guaranteed includes bonuses and give us a better picture of what compensation players are receiving.
 
@@ -52,6 +50,32 @@
                 "Average Salary: $" + avgRounded + "\n" +
                 "Median Salary:  $" + median;
             ```
+
+            ### 3. Salary Graph for Clubs
+
+            Let's checkout how much each club is paying their players. First, I've sorted by salary in order. Then I've filtered out free-agents, but kept ATL. They have signed a few players even though they aren't playing in the league yet.
+
+            ```javascript; runnable
+            sorted_data = data.mls_salary_2016.sort(function(a,b) {
+              return b.guaranteed - a.guaranteed;
+            });
+
+            return graphs.barChart(sorted_data.filter(
+                     function(d) { return d.club != "" && d.club != "POOL"; }
+                   ), 'Club', 'Total Salary', {label: 'club', value: 'guaranteed'});
+            ```
+
+            We can see that according to the MLS Player Union data release, Orlando has the highest payroll in MLS, followed by Toronto, LA, NYCFC and Seattle. On the far right, NYRB, Dallas, and DC are the cheapest clubs in MLS.
+
+            ## Wrap-Up
+
+            Hopefully seeing the code may be of use for those who are curious about Javascript and data analysis. You can also copy and edit this page by clicking the Edit button in the upper-right hand corner of the page. Then you can save and put on your own server or Gist! If you do this, make sure to save often and **don't leave the page**. Or else you lose your work. Like I did. Twice. :|
+
+            Let me know what you think of this, and if you want more info on the blog system, go to [Kajero by @JoelOtter](http://www.joelotter.com/kajero/).
+
+            Thanks!
+
+            [Danny Page](https://twitter.com/dannypage)
         </script>
         <div id="kajero"></div>
         <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
