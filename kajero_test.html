@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+        <link rel="stylesheet" href="http://www.joelotter.com/kajero/dist/main.css">
+    </head>
+    <body>
+        <script type="text/markdown" id="kajero-md">
+            ---
+            title: "MLS Salary 2016 - Test Blog"
+            author: "Danny Page"
+            created: "Wed Jun 01 2016 15:25:24 GMT-0400 (EDT)"
+            datasources:
+                mls_salary_2016: "https://raw.githubusercontent.com/dannypage/dannypage.github.io/master/assets/data/mls_salary_2016.json"
+            original:
+                title: "Blank Kajero notebook"
+                url: "http://www.joelotter.com/kajero/blank"
+            show_footer: true
+            ---
+
+            ## MLS Salary 2016
+
+            Testing out a new toy: Easy blog posts + Javascript! Hopefully this will code and analysis more accessible.
+
+            The data via MLS Players Union, formatted by [Michael Bertin](https://twitter.com/bertinbertin). Here's a few things we can do with it!
+
+            ### 0. Examine Our Data
+
+            We are going to first examine our JSON dataset. We'll `return` the info that was pre-loaded.
+
+
+
+            ```javascript; runnable
+            return data.mls_salary_2016
+            ```
+
+            We should see `Array[555]`. Click on that arrow, and you can dig into each object, which represents an MLS player, his team, name, and salary.
+
+            Let's investigate some numbers for the entire data set.
+
+            ### 1. Average and Median Salary
+
+            Let's start by looking into the guaranteed salary. Each player has a base & gauaranteed salary. Guaranteed includes bonuses and give us a better picture of what compensation players are receiving.
+
+            ```javascript; runnable
+            var average = d3.mean(data.mls_salary_2016, function(d) { return d.guaranteed; });
+            var avgRounded = Math.round(average * 100) / 100;
+            var median = d3.median(data.mls_salary_2016, function(d) { return d.guaranteed; });
+
+            return "Results: \n" +
+                "Average Salary: $" + avgRounded + "\n" +
+                "Median Salary:  $" + median;
+            ```
+        </script>
+        <div id="kajero"></div>
+        <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
+    </body>
+</html>
