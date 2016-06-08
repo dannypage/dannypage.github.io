@@ -17,6 +17,7 @@ Well... It's up to 2.0 GPG after 9.5 games and Colombia still might drop a few m
 Anyway, I'll keep updating this through the group stage. Might be interesting to see how this tournament stacks up to other recent tournaments involving CONCACAF and CONMEBOL men's senior teams.
 
 ```javascript; auto
+
 // Matches In Order of when they were played via http://www.oddsportal.com/soccer/world/
 worldCup2010 = [2,0,2,1,2,1,1,4,2,1,2,2,0,3,1,1,3,5,3,2,1,4,0,1,2,3,2,2,4,7,1,2,1,3,4,2,1,1,1,3,5,0,4,3,0,3,0,3];
 worldCup2014 = [4,1,6,4,3,4,3,3,3,3,3,4,0,3,3,0,2,5,2,4,3,3,0,1,7,3,1,4,1,1,6,4,2,3,4,5,1,0,5,3,5,4,3,0,1,3,1,2];
