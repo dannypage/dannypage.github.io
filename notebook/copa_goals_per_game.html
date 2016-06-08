@@ -74,6 +74,10 @@
             Now that the data is processed and loaded, we'll graph it.
             
             ```javascript; runnable
+            // graph: GPG
+            
+            var graph = $( "div.codeContainer:contains('graph: GPG')" )[0].children[1].id
+            
             var layout = {
               title:'Group Stage Running Goals Per Game ',
               xaxis: {
@@ -84,14 +88,11 @@
               }
             };
             
-            Plotly.newPlot('graph', graphing_data, layout);
-            
-            return "See below!"
+            Plotly.newPlot(graph, graphing_data, layout, {displayModeBar: false});
             ```
             [Danny Page](https://twitter.com/dannypage)
         </script>
         <div id="kajero"></div>
-        <div id="graph"></div>
 
         <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
     </body>
