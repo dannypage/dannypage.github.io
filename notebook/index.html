@@ -1,38 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/basscss.min.css">
+    <script type="text/javascript" src="../js/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../templates/templates.js"></script>
+    <script type="text/javascript" src="../templates/ga.js"></script>
+    <script type="text/javascript">
+      var files = [];
+      $.ajax({
+        url: "./2016",
+        success: function(data){
+           $(data).find("a:contains(.html)").each(function(){
+              // will loop through
+             files.push($(this).attr("href"));
+           });
+        }
+      });
+      for(var i = 0;i < files.length; i++){
+        $('<li></li>').html(files[i]).appendTo('link_list')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="navHeader"></div>
 
-<title>Feed Display Widget Example - Feedity</title>
+    <div id="links">
+      <ul id="link_list">
+      </ul>
+    </div>
 
-<style>
-    #divFeedityWidget {
-        font-family: Arial;
-        font-size: 16px;
-    }
-</style>
-
-<script language="JavaScript" type="text/javascript">
-<!--
-    // Customize the widget by editing the fields below
-    // All fields are required
-
-    // Your Feedity RSS feed URL
-    feedity_widget_feed = "https://medium.com/feed/@dannypage";
-
-    // Number of items to display in the widget
-    feedity_widget_numberofitems = "5";
-
-    // Show feed item description (values: yes or no)
-    feedity_widget_showdescription = "yes";
-
-    // Show feed item published date (values: yes or no)
-    feedity_widget_showdate = "yes";
-
-    // Widget box width (in px, pt, em, or %)
-    feedity_widget_width = "400px";
-
-    // Widget box background color in hex or by name (eg: #ffffff or white)
-    feedity_widget_backcolor = "#FFFFE9";
-
-    // Widget text & link color in hex or by name (eg: #000000 or black)
-    feedity_widget_fontcolor = "#11729c";
-//-->
-</script>
-<script language="JavaScript" type="text/javascript" src="https://feedity.com/js/widget.js"></script>
+    <div id="navFooter"></div>
+  </body>
+</html>
