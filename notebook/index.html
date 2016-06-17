@@ -9,25 +9,32 @@
     <script type="text/javascript" src="../templates/templates.js"></script>
     <script type="text/javascript" src="../templates/ga.js"></script>
     <script type="text/javascript">
-      var links = {}
-      Papa.parse("./index.csv", {
-        download: true,
-	header: true,
-	delimiter: ",",
-	complete: function(results) {
-            links = results.data;
-        }
-      });
-      var link_list = document.getElementById('link_list');
-      for (var i=0; i<links.length; i++){
-        var a = document.createElement("a");
-        var newItem = document.createElement("li");
-
-        a.textContent = links[i].title;
-        a.setAttribute('href', links[i].url);
-        newItem.appendChild(a);
-        link_list.appendChild(newItem);
+      function appendLinks(data) {
+        var link_list = document.getElementById('link_list');
+	      for (var i=0; i<links.length; i++){
+	        if (links[i].title){
+  	        var a = document.createElement("a");
+  	        var newItem = document.createElement("li");
+  	
+  	        a.textContent = links[i].title;
+  	        a.setAttribute('href', links[i].url);
+  	        newItem.appendChild(a);
+  	        link_list.appendChild(newItem);
+	        }
+	      }
       }
+      
+      function parseData(url, callBack) {
+	      Papa.parse(url, {
+	        download: true,
+		      header: true,
+		      delimiter: ",",
+		      complete: function(results) {
+            callBack(results.data);
+	        }
+	      });
+      }
+      parseData("./index.csv", appendLinks);
     </script>
   </head>
   <body>
