@@ -9,9 +9,14 @@
     <script type="text/javascript" src="../templates/templates.js"></script>
     <script type="text/javascript" src="../templates/ga.js"></script>
     <script type="text/javascript">
-      var links = Papa.parse("./index.csv", {
+      var links = {}
+      Papa.parse("./index.csv", {
         download: true,
-	      header: true
+	header: true,
+	delimiter: ",",
+	complete: function(results) {
+            links = results.data;
+        }
       });
       var link_list = document.getElementById('link_list');
       for (var i=0; i<links.length; i++){
