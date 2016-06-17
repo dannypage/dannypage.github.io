@@ -17,7 +17,7 @@
         var newItem = document.createElement("li");
         
         a.textContent = data[i].title;
-        a.setAttribute('href', data[i].url);
+        a.setAttribute('href', "./" + data[i].url);
         newItem.appendChild(a);
         link_list.appendChild(newItem);
       }
