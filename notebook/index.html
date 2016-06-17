@@ -11,7 +11,7 @@
   <script type="text/javascript">
   function appendLinks(data) {
     var link_list = document.getElementById('link_list');
-    for (var i=0; i<links.length; i++){
+    for (var i=0; i<data.length; i++){
       if (data[i].title){
         var a = document.createElement("a");
         var newItem = document.createElement("li");
