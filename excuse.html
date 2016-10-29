@@ -8,7 +8,32 @@
     <script type="text/javascript" src="/templates/templates.js"></script>
     <script type="text/javascript" src="/templates/ga.js"></script>
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <script src="https://use.fontawesome.com/83536f4ef8.js"></script>
 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@dannypage" />
+    <meta name="twitter:title" content="Mourinho Random Excuse Generator" />
+    <meta name="twitter:description" content="United lost again? It's not Mourinho's fault." />
+    <meta name="twitter:image" content="/assets/mou_images/2.jpg" />
+
+    <style>
+    .btnz {
+        display: block;
+        float: left;
+        padding: 10px 15px;
+        border:none;
+        background-color: #ececec;
+        text-decoration: none;
+        font-size: 18px;
+        color: #FFF;
+      }
+      .btnz:hover {
+        color: #efefef;
+      }
+      .twitter {
+        background-color: #55acee;
+      }
+    </style>
   </head>
   <body>
     <div id="navHeader"></div>
@@ -18,6 +43,7 @@
         <h1>Mourinho Random Excuse Generator</h1>
         <button class="button rounded" onclick="newExcuse()">Generate Excuse!</button></p>
       </div>
+    </br>
       <div class="col col-6 sm-col-6 md-col-4 lg-col-3 px1">
         <a href="#">
           <img id='image' src="/assets/mou_images/1.jpg" />
@@ -25,7 +51,7 @@
       </div>
       <div class="px1">
         <h2><span id="subject"></span> <span id="action"></span> <span id="object"></span>.</h2>
-        <a id="twitterShare" href="https://twitter.com/share" class="twitter-share-button" data-text="" data-via="DannyPage" data-size="large" data-dnt="true">Tweet this excuse!</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a class="btnz share twitter" href="https://twitter.com/intent/tweet?url=dannypage.github.io/excuse.html" id="twitterShare" ><i class="fa fa-twitter"></i> Tweet This Excuse!</a>
       </div>
     </section>
     </br>
@@ -37,11 +63,11 @@
     </br>
     <div id="navFooter"></div>
     <script type="text/javascript">
-      var subjects = ["The referee", "The players", "The post", "The crowd", "John Terry", "Arsene Wenger", "The bus", "The pitch", "The doctor", "The FA", "The Board", "The Media", "The ball boy", "The air-conditioned analyst", "The crossbar", "Paul Pogba"];
-      var actions = ["betrayed", "did not listen to", "parked on", "ignored", "turned a blind eye to", "was disrespectful to", "was distracted by", "was intimidated by", "ruined", "unfairly frustrated", "cheated"];
-      var objects = ["Diego Costa", "my plans", "my instructions", "my ego", "my genius", "my lack of options", "my small transfer budget", "the dressing room", "Cesc's legs", "Roman Abramovich", "the Special One", "karma"];
+    var subjects = ["The referee", "The players", "The post", "The crowd", "Juan Mata", "Arsene Wenger", "The bus", "The pitch", "The doctor", "The FA", "The Glazer Family", "The Media", "The ball boy", "The air-conditioned analyst", "The crossbar", "Paul Pogba"];
+    var actions = ["betrayed", "did not listen to", "parked on", "ignored", "turned a blind eye to", "was disrespectful to", "was distracted by", "was intimidated by", "ruined", "cheated"];
+    var objects = ["Wayne Rooney", "my plans", "my instructions", "my ego", "my genius", "my lack of options", "my small transfer budget", "the dressing room", "the Special One", "expected goals"];
 
-      function newExcuse(){
+    function newExcuse(){
         var subject = Math.floor(Math.random()*subjects.length)
         var action = Math.floor(Math.random()*actions.length);
         var object = Math.floor(Math.random()*objects.length);
@@ -50,11 +76,11 @@
         document.getElementById('action').innerHTML = actions[action];
         document.getElementById('object').innerHTML = objects[object];
         document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
-        var shareURL = getShareURL(subject, action, object);
-        document.getElementById("shareURLlink").href = shareURL;
-        $("#twitterShare").prop('data-text', subjects[subject] + " " + actions[action] + " " + objects[object]);
+        var shareURL = getShareURL();
+        var shareText = encodeURI(subjects[subject] + " " + actions[action] + " " + objects[object] + ".");
+        $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + subjects[subject] + " " + actions[action] + " " + objects[object] + ".&url=" + shareURL + "&via=DannyPage");
       }
-      function getShareURL(subject, action, object) {
+      function getShareURL() {
         var origin = document.location['origin'];
         var pathname = document.location['pathname'];
         return origin + pathname;
