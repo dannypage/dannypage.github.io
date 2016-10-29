@@ -77,8 +77,8 @@
         document.getElementById('object').innerHTML = objects[object];
         document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
         var shareURL = getShareURL();
-        var shareText = encodeURI(subjects[subject] + " " + actions[action] + " " + objects[object] + ".");
-        $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + subjects[subject] + " " + actions[action] + " " + objects[object] + ".&url=" + shareURL + "&via=DannyPage");
+        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '."');
+        $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
       }
       function getShareURL() {
         var origin = document.location['origin'];
