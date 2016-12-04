@@ -77,7 +77,7 @@
         document.getElementById('object').innerHTML = objects[object];
         document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
         var shareURL = getShareURL();
-        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '."');
+        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho');
         $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
       }
       function getShareURL() {
