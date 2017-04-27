@@ -72,25 +72,31 @@
         var subject = 'Envy';
         var action = 'is the greatest tribute';
         var object = 'that the shadows do to the man';
+        document.getElementById('subject').innerHTML = subject;
+        document.getElementById('action').innerHTML = action;
+        document.getElementById('object').innerHTML = object;   
+        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');        
       } else {
         var subject = Math.floor(Math.random()*subjects.length)
         var action = Math.floor(Math.random()*actions.length);
         var object = Math.floor(Math.random()*objects.length);
+        document.getElementById('subject').innerHTML = subjects[subject];
+        document.getElementById('action').innerHTML = actions[action];
+        document.getElementById('object').innerHTML = objects[object];
+        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
       }
       var image = Math.floor(Math.random()*12)
-      document.getElementById('subject').innerHTML = subjects[subject];
-      document.getElementById('action').innerHTML = actions[action];
-      document.getElementById('object').innerHTML = objects[object];
       document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
       var shareURL = getShareURL();
-      var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
       $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
     }
+      
     function getShareURL() {
       var origin = document.location['origin'];
       var pathname = document.location['pathname'];
       return origin + pathname;
     }
+      
     window.onload = newExcuse();
     </script>
   </body>
