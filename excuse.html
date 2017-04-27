@@ -68,24 +68,30 @@
     var objects = ["Wayne Rooney", "my plans", "my instructions", "my ego", "my genius", "my lack of options", "my small transfer budget", "the dressing room", "the Special One", "expected goals", "his teammates"];
 
     function newExcuse(){
+      if (Math.floor(Math.random()*50) == 1) {
+        var subject = 'Envy';
+        var action = 'is the greatest tribute';
+        var object = 'that the shadows do to the man';
+      } else {
         var subject = Math.floor(Math.random()*subjects.length)
         var action = Math.floor(Math.random()*actions.length);
         var object = Math.floor(Math.random()*objects.length);
-        var image = Math.floor(Math.random()*12)
-        document.getElementById('subject').innerHTML = subjects[subject];
-        document.getElementById('action').innerHTML = actions[action];
-        document.getElementById('object').innerHTML = objects[object];
-        document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
-        var shareURL = getShareURL();
-        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
-        $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
       }
-      function getShareURL() {
-        var origin = document.location['origin'];
-        var pathname = document.location['pathname'];
-        return origin + pathname;
-      }
-      window.onload = newExcuse();
+      var image = Math.floor(Math.random()*12)
+      document.getElementById('subject').innerHTML = subjects[subject];
+      document.getElementById('action').innerHTML = actions[action];
+      document.getElementById('object').innerHTML = objects[object];
+      document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
+      var shareURL = getShareURL();
+      var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
+      $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
+    }
+    function getShareURL() {
+      var origin = document.location['origin'];
+      var pathname = document.location['pathname'];
+      return origin + pathname;
+    }
+    window.onload = newExcuse();
     </script>
   </body>
 </html>
