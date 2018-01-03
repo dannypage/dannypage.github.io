@@ -44,7 +44,7 @@
         <h1>sPoNgEbOb mEmE GeNeRaToR</h1>
         <br>
         <input id="inputText" name="inputText" type="text" value=""/>
-        <button class="button rounded" onclick="generateSpongebobText()">gEnErAtE SpOnGeBoB TeXt!</button></p>
+        <button id="submitButton" class="button rounded" onclick="generateSpongebobText()">gEnErAtE SpOnGeBoB TeXt!</button></p>
       </div>
     </br>
       <div>
@@ -71,12 +71,21 @@
         var input = document.getElementById('inputText').value;
         var res = "";
         for (i=0; i < input.length; i++) {
-           res += i % 2 == 1 ? input.charAt(i).toUpperCase() : input.charAt(i).toLowerCase();
+           res += i % 2 == 0 ? input.charAt(i).toLowerCase() : input.charAt(i).toUpperCase();
         }
         document.getElementById('outputText').value = res;
         $( "#image" ).show();
       }
 
+      $("#inputText").keyup(function(event) {
+        if (event.keyCode === 13) {
+          generateSpongebobText();
+        }
+      });
+
+      $("#inputText").onchange(function(event) {
+        generateSpongebobText();
+      });
     </script>
   </body>
 </html>
