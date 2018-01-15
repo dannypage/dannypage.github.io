@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> Mourinho Random Excuse Generator </title>
+  <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
+  <script type="text/javascript" src="/js/jquery/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/templates/templates.js"></script>
+  <script type="text/javascript" src="/templates/ga.js"></script>
+
+  <script type="text/javascript" src="/js/d3/d3.min.js"></script>
+  <script type="text/javascript" src="/js/plotly/plotly.min.js"></script>
+  <script type="text/javascript" src="/js/chancejs/chance.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <script src="https://use.fontawesome.com/83536f4ef8.js"></script>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dannypage" />
+  <meta name="twitter:title" content="Win Probability Simulator" />
+  <meta name="twitter:description" content="Creating a better way to graph Win Probability." />
+  <meta name="twitter:image" content="" />
+</head>
+<body>
+
+  <script>
+
+  function factorialize(num) {
+    if (num === 0 || num === 1)
+      return 1;
+    for (var i = num - 1; i >= 1; i--) {
+      num *= i;
+    }
+    return num;
+  }
+
+  a = function(lambda, minutes){
+    goals = {};
+  	adjLambda = lambda*(minutes/90)
+      for (i=0;i<8;i++){
+          goals[i] = ((adjLambda**i)*(2.7182818**-adjLambda))/factorialize(i);
+      }
+  	return goals;
+  }
+
+  //chance.weighted(['a', 'b', 'c', 'd'], [0.1, 0.2, 0.3, 0.4]);
+  // for 10000 times
+  // do this for team A and B and subtract the goals 
+  //chance.weighted(Object.keys(goals),Object.values(goals));
+
+  Plotly.plot('graph', [{
+    y: [1,2,3].map(rand),
+    mode: 'lines',
+    line: {color: '#80CAF6'}
+  }]);
+
+  var cnt = 0;
+
+  function simulate() {
+    var interval = setInterval(function() {
+
+      Plotly.extendTraces('graph', {
+        y: [[rand()]]
+      }, [0])
+
+      if(cnt === 100) clearInterval(interval);
+    }, 300);
+  }
+  </script>
+</body>
+</html>
