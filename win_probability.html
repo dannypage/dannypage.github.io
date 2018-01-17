@@ -32,7 +32,7 @@
           <input id="homeGoals" type="text" class="block col-4 mb1 field" value=1.5>
           <label for="awayGoals">Away Goals Per Game</label>
           <input id="awayGoals" type="text" class="block col-4 mb1 field" value=1.0>
-          <a type="button" class="button" onclick="simulateGame()">Simulate</a>
+          <a type="button" class="button" onclick="step()">Simulate</a>
         </form>
       </div>
     </div>
@@ -51,6 +51,7 @@
   var minutes = 0;
   var score = [0];
   var expected = [];
+  var winprob  = [];
   var expectedTrace, actualTrace;
   var homeGPG, awayGPG;
 
@@ -59,7 +60,13 @@
   }
 
   function simulate() {
-    return chance.weighted([0,1],[1-(homeGPG/90),(homeGPG/90)])-chance.weighted([0,1],[1-(awayGPG/90),(awayGPG/90)])
+    var h_result = parseInt(chance.weighted([0,1],[1-(homeGPG/90),homeGPG/90]) ) || 0;
+    var a_result = parseInt(chance.weighted([0,1],[1-(awayGPG/90),awayGPG/90]) ) || 0;
+    var result = h_result-a_result;
+    if (isNaN(result) ) {
+      console.log('stop');
+    }
+    return result;
   }
 
   function factorialize(num) {
@@ -71,19 +78,41 @@
     return num;
   }
 
-  function goals(lambda, minutes){
-    goals = {};
-  	adjLambda = lambda*(minutes/90)
+  function calcGoals(lambda, minutes) {
+    var goals = {};
+  	var adjLambda = lambda-lambda*(minutes/90)
       for (i=0;i<8;i++){
           goals[i] = ((adjLambda**i)*(2.7182818**-adjLambda))/factorialize(i);
       }
   	return goals;
   }
 
-  //chance.weighted(['a', 'b', 'c', 'd'], [0.1, 0.2, 0.3, 0.4]);
-  // for 10000 times
-  // do this for team A and B and subtract the goals
-  //chance.weighted(Object.keys(goals),Object.values(goals));
+  function winProbability (homeChances, awayChances, homeScore) {
+    var prob = {
+      homeProb: 0,
+      awayProb: 0,
+      total: 0
+    };
+
+    if (minutes> 80){
+      console.log('hello');
+    }
+
+    for (i=0;i<20000;i++){
+      var h = parseInt( chance.weighted(Object.keys(homeChances),Object.values(homeChances)) );
+      var a = parseInt( chance.weighted(Object.keys(awayChances),Object.values(awayChances)) );
+      if ( (h + homeScore) > a) {
+        prob['homeProb'] += 1;
+      } else if (a > (h + homeScore) ) {
+        prob['awayProb'] += 1;
+      } else {
+        prob['homeProb'] += 1;
+        prob['awayProb'] += 1;
+      }
+    }
+
+    return (prob['homeProb']/(prob['homeProb']+prob['awayProb'])).toFixed(2);
+  }
 
   function updateTraces() {
     expectedTrace = {
@@ -99,22 +128,68 @@
         dash: 'dot'
       }
     };
+
+    winProbTrace = {
+      y: winprob,
+      mode: 'lines',
+      line: {
+        color: 'black'
+      }
+    }
   }
 
+  var goalLayout = {
+    xaxis: {range: [0, 90]},
+    yaxis: {
+      range: [-5, 5],
+      title: 'Home Margin'
+}
+  };
+
+  var winLayout = {
+    xaxis: {
+      range: [0, 90],
+      autotick: false,
+      tick0: 0,
+      dtick: 15
+    },
+    yaxis: {
+      title: 'Home Win %',
+      range: [0, 1],
+      showgrid: true,
+    autotick: false,
+    tick0: 0,
+    dtick: 0.25}
+  };
+
+
   updateTraces();
-  Plotly.plot('goalProbabilityChart', [expectedTrace, actualTrace]);
+  Plotly.plot('goalProbabilityChart', [expectedTrace, actualTrace], goalLayout);
+  Plotly.plot('winProbabilityChart', [winProbTrace], winLayout);
 
   function step() {
     homeGPG = parseFloat( $('#homeGoals').val() ) || 0;
     awayGPG = parseFloat( $('#awayGoals').val() ) || 0;
     expected.push(homeGPG-awayGPG);
+    var homeExpected = calcGoals(homeGPG, minutes);
+    var awayExpected = calcGoals(awayGPG, minutes);
+    winprob.push(winProbability(homeExpected, awayExpected, score[0]));
 
     var interval = setInterval(function() {
-      score.push( score[score.length-1] + simulate() );
+      var minuteScore = simulate();
+      var currentScore = score[score.length-1];
+      if (isNaN(currentScore) || isNaN(minuteScore) ) {
+        console.log('stop');
+      }
+      score.push( currentScore + minuteScore );
       expected.push ( expected[0]-expected[0]*(minutes/90)+score[score.length-1] );
+      var homeExpected = calcGoals(homeGPG, minutes);
+      var awayExpected = calcGoals(awayGPG, minutes);
+      winprob.push(winProbability(homeExpected, awayExpected, score[score.length-1]));
       updateTraces();
 
-      Plotly.newPlot('goalProbabilityChart', [expectedTrace, actualTrace], {})
+      Plotly.newPlot('goalProbabilityChart', [expectedTrace, actualTrace], goalLayout)
+      Plotly.newPlot('winProbabilityChart', [winProbTrace], winLayout)
       minutes +=1;
 
       if(minutes === 90) clearInterval(interval);
