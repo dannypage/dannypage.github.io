@@ -22,27 +22,28 @@
 </head>
 <body>
   <div id="navHeader"></div>
-  <section class="container ">
-    <h1>Win Probability</h1>
+
+  <section class="container">
+    <h1>Win Probability Simulator</h1>
     <div class="clearfix">
-      <div class="sm-col sm-col-6 px1">
-        <h3>Team Shots by Probability</h3>
-        <form id="calculate">
+      <div class="sm-col sm-col-12 px1">
+        <form id="simulate">
           <label for="homeGoals">Home Goals Per Game</label>
-          <input id="homeGoals" type="text" class="block col-4 mb1 field" value=1.5>
+          <input id="homeGoals" type="text" class="col-3 mb1 field" value=1.5>
           <label for="awayGoals">Away Goals Per Game</label>
-          <input id="awayGoals" type="text" class="block col-4 mb1 field" value=1.0>
+          <input id="awayGoals" type="text" class="col-3 mb1 field" value=1.2>
           <a type="button" class="button" onclick="step()">Simulate</a>
         </form>
       </div>
     </div>
     <div class="clearfix">
-      <h3>Match Graphs</h3>
-      <div class="sm-col sm-col-6 ">
-        <div id="goalProbabilityChart" style="height: 350px; width: 100%;"></div>
+      <h2>Win Margin (Estimated and Actual)</h2>
+      <div class="sm-col sm-col-12 ">
+        <div id="goalProbabilityChart" style="height: 300px; width: 100%;"></div>
       </div>
-      <div class="sm-col sm-col-6 ">
-        <div id="winProbabilityChart" style="height: 350px; width: 100%;"></div>
+      <h2>Win Probability</h2>
+      <div class="sm-col sm-col-12 ">
+        <div id="winProbabilityChart" style="height: 300px; width: 100%;"></div>
       </div>
     </div>
   </section>
@@ -51,7 +52,7 @@
   var minutes = 0;
   var score = [0];
   var expected = [];
-  var winprob  = [];
+  var winprob = [];
   var expectedTrace, actualTrace;
   var homeGPG, awayGPG;
 
@@ -63,15 +64,12 @@
     var h_result = parseInt(chance.weighted([0,1],[1-(homeGPG/90),homeGPG/90]) ) || 0;
     var a_result = parseInt(chance.weighted([0,1],[1-(awayGPG/90),awayGPG/90]) ) || 0;
     var result = h_result-a_result;
-    if (isNaN(result) ) {
-      console.log('stop');
-    }
     return result;
   }
 
   function factorialize(num) {
     if (num === 0 || num === 1)
-      return 1;
+    return 1;
     for (var i = num - 1; i >= 1; i--) {
       num *= i;
     }
@@ -80,11 +78,11 @@
 
   function calcGoals(lambda, minutes) {
     var goals = {};
-  	var adjLambda = lambda-lambda*(minutes/90)
-      for (i=0;i<8;i++){
-          goals[i] = ((adjLambda**i)*(2.7182818**-adjLambda))/factorialize(i);
-      }
-  	return goals;
+    var adjLambda = lambda-lambda*(minutes/90)
+    for (i=0;i<8;i++){
+      goals[i] = ((adjLambda**i)*(2.7182818**-adjLambda))/factorialize(i);
+    }
+    return goals;
   }
 
   function winProbability (homeChances, awayChances, homeScore) {
@@ -94,11 +92,7 @@
       total: 0
     };
 
-    if (minutes> 80){
-      console.log('hello');
-    }
-
-    for (i=0;i<20000;i++){
+    for (i=0;i<10000;i++){
       var h = parseInt( chance.weighted(Object.keys(homeChances),Object.values(homeChances)) );
       var a = parseInt( chance.weighted(Object.keys(awayChances),Object.values(awayChances)) );
       if ( (h + homeScore) > a) {
@@ -117,15 +111,22 @@
   function updateTraces() {
     expectedTrace = {
       y: expected,
-      mode: 'lines'
+      name: 'Expected Final Score',
+      mode: 'lines',
+      line: {
+        color: 'silver',
+        dash: 'dot',
+        width: 2
+      }
     };
 
     actualTrace = {
       y: score,
       mode: 'lines',
+      name: 'Current Score',
       line: {
         color: 'black',
-        dash: 'dot'
+        width: 3
       }
     };
 
@@ -139,35 +140,75 @@
   }
 
   var goalLayout = {
-    xaxis: {range: [0, 90]},
+    xaxis: {
+      range: [0, 91],
+      autotick: false,
+      tick0: 0,
+      dtick: 15,
+      gridwidth: 2
+    },
     yaxis: {
       range: [-5, 5],
-      title: 'Home Margin'
-}
+      hoverformat: '.2f',
+      title: 'Home Margin',
+      gridwidth: 2
+    },
+    margin: {
+      l: 40,
+      r: 40,
+      b: 40,
+      t: 20,
+      pad: 3
+    },
+    legend: {
+      x: 0.01,
+      y: 1,
+      bgcolor: 'rgba(0,0,0,0)'
+    }
   };
 
   var winLayout = {
     xaxis: {
-      range: [0, 90],
+      range: [0, 91],
       autotick: false,
       tick0: 0,
-      dtick: 15
+      dtick: 15,
+      gridwidth: 2
     },
     yaxis: {
       title: 'Home Win %',
-      range: [0, 1],
+      range: [0, 1.01],
+      hoverformat: '.2f',
       showgrid: true,
-    autotick: false,
-    tick0: 0,
-    dtick: 0.25}
+      autotick: false,
+      tick0: 0,
+      dtick: 0.25,
+      gridwidth: 2
+    },
+    margin: {
+      l: 40,
+      r: 40,
+      b: 40,
+      t: 20,
+      pad: 3
+    },
+    legend: {
+      x: 0.01,
+      y: 1,
+      bgcolor: 'rgba(0,0,0,0)'
+    }
   };
-
 
   updateTraces();
   Plotly.plot('goalProbabilityChart', [expectedTrace, actualTrace], goalLayout);
   Plotly.plot('winProbabilityChart', [winProbTrace], winLayout);
 
   function step() {
+    minutes = 0;
+    score = [0];
+    expected = [];
+    winprob  = [];
+
     homeGPG = parseFloat( $('#homeGoals').val() ) || 0;
     awayGPG = parseFloat( $('#awayGoals').val() ) || 0;
     expected.push(homeGPG-awayGPG);
@@ -175,12 +216,11 @@
     var awayExpected = calcGoals(awayGPG, minutes);
     winprob.push(winProbability(homeExpected, awayExpected, score[0]));
 
+    updateTraces();
+
     var interval = setInterval(function() {
       var minuteScore = simulate();
       var currentScore = score[score.length-1];
-      if (isNaN(currentScore) || isNaN(minuteScore) ) {
-        console.log('stop');
-      }
       score.push( currentScore + minuteScore );
       expected.push ( expected[0]-expected[0]*(minutes/90)+score[score.length-1] );
       var homeExpected = calcGoals(homeGPG, minutes);
@@ -192,9 +232,21 @@
       Plotly.newPlot('winProbabilityChart', [winProbTrace], winLayout)
       minutes +=1;
 
-      if(minutes === 90) clearInterval(interval);
+      if(minutes > 90) clearInterval(interval);
     }, 100);
   }
+  </script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    //On Load
+    step();
+    //On Form Submit
+    $('#simulate').keyup(function(event) {
+      if(event.keyCode === 13) {
+        step();
+      }
+    });
+  });
   </script>
 
   <div id="navFooter"></div>
