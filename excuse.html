@@ -75,7 +75,15 @@
         document.getElementById('subject').innerHTML = subject;
         document.getElementById('action').innerHTML = action;
         document.getElementById('object').innerHTML = object;   
-        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');        
+        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');
+      } else if (Math.floor(Math.random()*50) == 2) {
+        var subject = "It's always;
+        var action = 'in the whole';
+        var object = 'that you find the truth';
+        document.getElementById('subject').innerHTML = subject;
+        document.getElementById('action').innerHTML = action;
+        document.getElementById('object').innerHTML = object;   
+        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');       
       } else {
         var subject = Math.floor(Math.random()*subjects.length)
         var action = Math.floor(Math.random()*actions.length);
