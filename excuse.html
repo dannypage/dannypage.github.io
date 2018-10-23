@@ -68,8 +68,32 @@
     var actions = ["betrayed", "delayed", "did not listen to", "denied", "parked on", "ignored", "turned a blind eye to", "was disrespectful to", "was distracted by", "was intimidated by", "ruined", "cheated"];
     var objects = ["Marcus Rashford", "my plans", "our arrival", "my instructions", "my ego", "my genius", "my lack of options", "my small transfer budget", "the dressing room", "the Special One", "expected goals", "his teammates"];
 
+    // https://stackoverflow.com/a/19303725/84732
+    var seed = new Date().getTime();
+    function random() {
+      var x = Math.sin(seed++) * 10000;
+      return x - Math.floor(x);
+    }
+
+    var qs = document.location.search,
+      params = qs.substring(1).split('&');
+
+    for (var i = 0; i < params.length; i++) {
+      var pair = params[i].split('=');
+      if (decodeURIComponent(pair[0]) == 'qid' && pair[1]) {
+        var newSeed = parseInt(pair[1]);
+        if (!isNaN(newSeed)) {
+          seed = newSeed;
+        }
+        break;
+      }
+    }
+
     function newExcuse(){
-      if (Math.floor(Math.random()*50) == 1) {
+
+      var startSeed = seed;   // save see at start to get a link back in
+
+      if (Math.floor(random()*50) == 1) {
         var subject = 'Envy';
         var action = 'is the greatest tribute';
         var object = 'that the shadows do to the man';
@@ -77,7 +101,7 @@
         document.getElementById('action').innerHTML = action;
         document.getElementById('object').innerHTML = object;   
         var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');
-      } else if (Math.floor(Math.random()*50) == 2) {
+      } else if (Math.floor(random()*50) == 2) {
         var subject = "It's always";
         var action = 'in the whole';
         var object = 'that you find the truth';
@@ -86,24 +110,32 @@
         document.getElementById('object').innerHTML = object;   
         var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');       
       } else {
-        var subject = Math.floor(Math.random()*subjects.length)
-        var action = Math.floor(Math.random()*actions.length);
-        var object = Math.floor(Math.random()*objects.length);
+        var subject = Math.floor(random()*subjects.length)
+        var action = Math.floor(random()*actions.length);
+        var object = Math.floor(random()*objects.length);
         document.getElementById('subject').innerHTML = subjects[subject];
         document.getElementById('action').innerHTML = actions[action];
         document.getElementById('object').innerHTML = objects[object];
         var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
       }
-      var image = Math.floor(Math.random()*12)
+      var image = Math.floor(random()*12)
       document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
-      var shareURL = getShareURL();
+
+      var shareURL = getShareURL(startSeed);
       $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
+      window.history.replaceState({}, ' Mourinho Random Excuse Generator ', shareURL);
+
     }
       
-    function getShareURL() {
-      var origin = document.location['origin'];
-      var pathname = document.location['pathname'];
-      return origin + pathname;
+    function getShareURL(qid) {
+      var origin = document.location['origin'],
+        pathname = document.location['pathname'],
+        url = origin + pathname;
+
+      if (qid !== undefined) {
+        url = url + '?qid=' + qid;
+      }
+      return url;
     }
       
     window.onload = newExcuse();
