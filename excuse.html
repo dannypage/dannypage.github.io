@@ -34,6 +34,32 @@
       .twitter {
         background-color: #55acee;
       }
+      #holder {
+        position: relative;
+      }
+      #holder img {
+        width: 100%;
+
+      }
+      #holder h2 {
+        background-color: yellow;
+        color: black;
+        padding: 3px;
+        margin: 1%;
+        display: inline;
+
+        font-size: 2.5rem;
+      }
+
+      #holder #quotepark {
+        position: absolute;
+        top: 80%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+
+      }
     </style>
   </head>
   <body>
@@ -45,14 +71,16 @@
         <button class="button rounded" onclick="newExcuse()">Generate Excuse!</button></p>
       </div>
     </br>
-      <div class="col col-6 sm-col-6 md-col-4 lg-col-3 px1">
-        <a href="#">
-          <img id='image' src="/assets/mou_images/1.jpg" />
-        </a>
+      <div>
+        <div id="holder">
+          <img id="image" src="/assets/mou_images/1.jpg" alt="mou" />
+          <div id="quotepark">
+            <h2><span id="subject"></span> <span id="action"></span> <span id="object"></span>.</h2>
+          </div>
+        </div>
       </div>
-      <div class="px1">
-        <h2><span id="subject"></span> <span id="action"></span> <span id="object"></span>.</h2>
-        <a class="btnz share twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https://dannypage.github.io/excuse.html" id="twitterShare" ><i class="fa fa-twitter"></i> Tweet This Excuse!</a>
+      <div>
+        <a class="btnz share twitter" target="_blank" href="https://twitter.com/intent/tweet?url=http://dannypage.github.io/excuse.html" id="twitterShare" ><i class="fa fa-twitter"></i> Tweet This Excuse!</a>
       </div>
     </section>
     </br>
