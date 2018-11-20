@@ -69,11 +69,7 @@
 
       function generateSpongebobText () {
         var input = document.getElementById('inputText').value;
-        var res = "";
-        for (i=0; i < input.length; i++) {
-           res += i % 2 == 0 ? input.charAt(i).toLowerCase() : input.charAt(i).toUpperCase();
-        }
-        document.getElementById('outputText').value = res;
+        document.getElementById('outputText').value = input.replace(/./g, (s, i) => i%2 ? s.toUpperCase() : s.toLowerCase());;
         $( "#image" ).show();
       }
 
