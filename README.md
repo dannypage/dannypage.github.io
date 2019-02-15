@@ -1,6 +1,6 @@
 ## dannypage.github.io
 
-[My Personal Portfolio](http://dannypage.github.io/)
+[My Personal Portfolio](https://dannypage.github.io/)
 
 ### To Do
 
