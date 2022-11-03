@@ -1,0 +1,3 @@
+/.well-known/host-meta* https://banter.danny.page/.well-known/host-meta:splat 301
+/.well-known/webfinger* https://banter.danny.page/.well-known/webfinger:splat 301
+/.well-known/nodeinfo* https://banter.danny.page/.well-known/nodeinfo:splat 301
