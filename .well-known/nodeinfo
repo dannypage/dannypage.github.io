@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<XRD xmlns="http://docs.oasis-open.org/ns/xri/xrd-1.0">
-  <Link rel="lrdd" type="application/xrd+xml" template="https://banter.danny.page/.well-known/nodeinfo?resource={uri}"/>
-</XRD>
+<!DOCTYPE html>
+<html data-destination="https://banter.danny.page/.well-known/nodeinfo">
+  <head>
+    <noscript><meta id="redirect" http-equiv="refresh" content="0; url=https://banter.danny.page/.well-known/nodeinfo"></noscript>
+  </head>
+
+  <body>
+    This page has moved. Redirecting...
+    
+  <!-- Redirect in JavaScript with meta refresh fallback above in noscript -->
+  <script>
+  var destination = document.documentElement.getAttribute('data-destination');
+  window.location.href = destination + (window.location.search || '') + (window.location.hash || '');
+  </script>
+  </body>
+</html>
