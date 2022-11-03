@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html data-destination="https://banter.danny.page/.well-known/host-meta">
+  <head>
+    <noscript><meta id="redirect" http-equiv="refresh" content="0; url=https://banter.danny.page/.well-known/host-meta"></noscript>
+  </head>
+
+  <body>
+    This page has moved. Redirecting...
+    
+  <!-- Redirect in JavaScript with meta refresh fallback above in noscript -->
+  <script>
+  var destination = document.documentElement.getAttribute('data-destination');
+  window.location.href = destination + (window.location.search || '') + (window.location.hash || '');
+  </script>
+  </body>
+</html>
