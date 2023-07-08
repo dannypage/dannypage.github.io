@@ -1,0 +1,177 @@
+*****MoneyPuck.com Player and Team Data******,
+,
+Please reach out through MoneyPuck.com if you have any feedback,
+No guarantees are made to the quality of the data. NHL data is known to have issues and biases.,
+You are welcome to use this data in any work. Just please cite MoneyPuck.com,
+,
+Below are a description of general terms used in the data as well as a data dictionary below it:,
+,
+,
+,
+General Terms,Description
+Expected Goals,"The sum of the probabilities of unblocked shot attempts being goals. For example, a rebound shot in the slot may be worth 0.5 expected goals, while a shot from the blueline while short handed may be worth 0.01 expected goals. The expected value of each shot attempt is calculated by the MoneyPuck Expected Goals model. Expected goals is commonly abbreviated as ""xGoals"". Blocked shot attempts are valued at 0 xGoals. See more here: http://moneypuck.com/about.htm#shotModel"
+Score Adjusted,Adjusts metrics to gives more credit to away teams and teams with large leads.
+Flurry Adjusted,See http://moneypuck.com/about.htm#flurry
+I_F,"""Individual For"". For stats credited to an individual. For example, I_F_goals is the number of goals a player has scored"
+OnIce_F,"""On-ice For"". Every player on the ice on the team doing the event receives credit. OnIce_F_goals is the number of goals the player's team has scored while that player is on the ice, regardless of if they were the one who scored the goal or not."
+OnIce_A,"""On-ice Against"". Every opposing team's players on the ice on receives credit. OnIce_A_goals is the number of goals the player's team has given up while the player is on the ice"
+OffIce_F,"""Off-ice For"". Every player on the bench of  the team doing the event receives ""credit"". OffIce_F_goals is the number of goals the player's team has scored while that player is on the bench."
+OffIce_A,"""Off-ice Against"". Every player on the opposing team's bench of  the team doing the event receives ""credit"". OffIce_A_goals is the number of goals the player's team has given up while that player is on the bench."
+Low Danger Shots,Unblocked Shot attempts with a < 8% probability of being a goal. Low danger shots accounts for ~75% of shots and ~33% of goals
+Medium Danger Shots,Unblocked Shot attempts with between >=8% but less than 20% probability of being a goal. Medium danger shots account for ~20% of shots and ~33% of goals
+High Danger Shots,Unblocked Shot attempts  with >= 20% probability of being a goal. High danger shots account for ~5% of shots and ~33% of goals
+Created Expected Goals,See http://moneypuck.com/about.htm#xRebounds 
+,
+,
+Column Name,Description
+playerId,Unique ID for each player assigned by the NHL
+season,Starting year of the season. For example 2018 for the 2018-2019 season
+situation,"5on5 for normal play, 5on4 for a normal powerplay, 4on5 for a normal PK. 'Other' includes everything else: two man advantage, empty net, 4on3, etc. 'all' includes all situations"
+games_played,Number of games played.
+icetime,Ice time in seconds
+shifts,Number of shifts a player had
+gameScore,Game Score rating as designed by @domluszczyszyn
+onIce_xGoalsPercentage,On Ice xGoals For / (On Ice xGoals For + On Ice xGoals Against)
+offIce_xGoalsPercentage,Off Ice xGoals For / (Off Ice xGoals For + Off Ice xGoals Against)
+onIce_corsiPercentage,On Ice Shot Attempts For / (On Ice Shot Attempts For + On Ice Shot Attempts Against)
+offIce_corsiPercentage,Off Ice Shot Attempts For / (Off Ice Shot Attempts For + Off Ice Shot Attempts Against)
+onIce_fenwickPercentage,On Ice Unblocked Shot Attempts For / (On Ice Unlbocked Shot Attempts For + On Ice Unbloked Shot Attempts Against)
+offIce_fenwickPercentage,Off Ice Unblocked Shot Attempts For / (Off Ice Unlbocked Shot Attempts For + Off Ice Unbloked Shot Attempts Against)
+iceTimeRank,Rank of the player's ice time in a given game. Forwards and Defensemen are ranked seperately. 1 means the player got more icetime in the game than any other forward/D.
+I_F_xOnGoal,"Expected number of unblocked shot attempts that are expected to be a shot on goal (not miss the net) given the context (distance, situation, etc) they were taken from. This assumes the player has average shooting talent."
+I_F_xGoals,Expected Goals. See 'General Concepts' tab for more info.
+I_F_xRebounds,Expected Rebounds. The expected number of rebound shots generated from the player's unblocked shot attempts.
+I_F_xFreeze,Expected puck freezes after shots. The expected number of puck freezes by the goalie after the player's unblocked shot attempts.
+I_F_xPlayStopped,"Expected number of times the play is stopped after shots for reasons other than the goalie freezing the puck, such as the puck going over the glass or a dislodged net."
+I_F_xPlayContinuedInZone,"Expected number of times the play continues in the offensive zone after the player's shot besides an immediate rebound shot. This is proxied by another event happening in the zone after the shot (such as a hit, takeaway, etc) without any events outside of the zone happening inbetween and all the same players for both teams are still on the ice as they were for the original shot"
+I_F_xPlayContinuedOutsideZone,Expected number of times the play goes outside the offensive zone after the player's shot. 
+I_F_flurryAdjustedxGoals,Flurry Adjusted Expected Goals. See 'General Concepts' tab for more info.
+I_F_scoreVenueAdjustedxGoals,Score and Venue Adjusted xGoals. Gives more credit to away teams and teams with large leads when they get an xGoal.
+I_F_flurryScoreVenueAdjustedxGoals,Fluury and Score and Venued Adjusted xGoals
+I_F_primaryAssists,Primary Assists the player has received on teammates' goals
+I_F_secondaryAssists,Secondary Assists the player has received on teammates' goals
+I_F_shotsOnGoal,Shots on goal. Does not include shots that miss the net or blocked shots
+I_F_missedShots,Missed shots. Shots that aren't blocked but don't hit the net
+I_F_blockedShotAttempts,Blocked shot attempts. The numbe of shot attempts a player has taken that were blocked by the opponent's team
+I_F_shotAttempts,"Shot attempts. Includes shots on goal, missed shots, and blocked shot attempts"
+I_F_points,Goals + Assists
+I_F_goals,Goals
+I_F_rebounds,Rebound shot attempts. These must occur within 3 seconds of a previous shot.
+I_F_reboundGoals,Goals from rebound shot attempts
+I_F_freeze,Puck freezes after a player's shots. The  number of puck freezes by  goalies after the player's unblocked shot attempts.
+I_F_playStopped,"Number of times the play is stopped after shots for reasons other than the goalie freezing the puck, such as the puck going over the glass or a dislodged net."
+I_F_playContinuedInZone,"Number of times the play continues in the offensive zone after the player's shot besides an immediate rebound shot. This is proxied by another event happening in the zone after the shot (such as a hit, takeaway, etc) without any events outside of the zone happening inbetween and all the same players for both teams are still on the ice as they were for the original shot"
+I_F_playContinuedOutsideZone,Number of times the play goes outside the offensive zone after the player's shot. 
+I_F_savedShotsOnGoal,Number of the player's unblocked shots that were saved by the goalie
+I_F_savedUnblockedShotAttempts,Number of the player's unblocked shots that were saved by the goalie or missed the net
+penalties,Number of penalties the player has received. Both majors and minors both count as '1'
+I_F_penalityMinutes,Number of penalty minutes the player has received
+I_F_faceOffsWon,Number of faceoffs the player has won
+I_F_hits,Number of hits the player has given
+I_F_takeaways,Number of takeaways the player has taken from opponents
+I_F_giveaways,Number of giveaways the player has given to other team
+I_F_lowDangerShots,Low danger shots (<8% xGoal value)
+I_F_mediumDangerShots,Medium danger shots (Between 8% and 20% xGoal Value)
+I_F_highDangerShots,High Danger Shots (Higher than 20% xGoal Value)
+I_F_lowDangerxGoals,Sum of expected goals from low danger shots
+I_F_mediumDangerxGoals,Sum of expected goals from medium danger shots
+I_F_highDangerxGoals,Sum of expected goals from high danger shots
+I_F_lowDangerGoals,Goals from low danger shots
+I_F_mediumDangerGoals,Goals from medium danger shots
+I_F_highDangerGoals,Goals from high danger shots
+I_F_scoreAdjustedShotsAttempts,Shot attempts adjusted for score and venue
+I_F_unblockedShotAttempts,All shot attempts that weren't blocked
+I_F_scoreAdjustedUnblockedShotAttempts,Unblocked shot attempts adjusted for score and venue
+I_F_dZoneGiveaways,Giveaways in the team's defensive zone
+I_F_xGoalsFromxReboundsOfShots,"Expected Goals from Expected Rebounds of player's shots. Even if a shot does not actually generate a rebound, if it's a shot that is likely to generate a rebound the player is credited with xGoalsFromxRebounds"
+I_F_xGoalsFromActualReboundsOfShots,Expected Goals from actual rebounds shots of player's shots. 
+I_F_reboundxGoals,Expected Goal on rebound shots
+I_F_xGoals_with_earned_rebounds,"xGoals With Earned Rebounds. Also known as 'Created Expected Goals': Expected Goals of non-rebound shots + xGoals of xRebounds of all shots. This metric gives credit to the player that created the original shot, opposed to the player getting the rebound. See http://moneypuck.com/about.htm#xRebounds for more info"
+I_F_xGoals_with_earned_rebounds_scoreAdjusted,Score adjusted xGoals With Earned Rebounds
+I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted,Score and flurry adjusted xGoals With Earned Rebounds
+I_F_shifts,Number of shifts a player had
+I_F_oZoneShiftStarts,Number of offensive zone face-off shift starts a player had
+I_F_dZoneShiftStarts,Number of defensive zone face-off shift starts a player had
+I_F_neutralZoneShiftStarts,Number of neutral zone face-off shift starts a player had
+I_F_flyShiftStarts,Number of shift starts on the fly a player had
+I_F_oZoneShiftEnds,Number of player's shifts that end with an offensive zone faceoff for the oncoming players
+I_F_dZoneShiftEnds,Number of player's shifts that end with a defensive zone faceoff for the oncoming players
+I_F_neutralZoneShiftEnds,Number of player's shifts that end with a neutral zone faceoff for the oncoming players
+I_F_flyShiftEnds,Number of player's shifts that end on the fly
+faceoffsWon,Number of faceoffs the player has won
+faceoffsLost,Number of faceoffs the player has lost
+timeOnBench,Amount of time the player has been on the bench for. (in seconds)
+penalityMinutes,Number of penalty minutes the player has received
+penalityMinutesDrawn,Number of penalty minutes the player has drawn
+penaltiesDrawn,Number of penalties the player has drawn
+shotsBlockedByPlayer,Number of shot attempts blocked by the player
+OnIce_F_xOnGoal,"""On Ice For"" version of xOnGoal stat. Gives credit to all of the team's players on the ice for the event, opposed to just the player who did the event"
+OnIce_F_xGoals,See above
+OnIce_F_flurryAdjustedxGoals,See above
+OnIce_F_scoreVenueAdjustedxGoals,See above
+OnIce_F_flurryScoreVenueAdjustedxGoals,See above
+OnIce_F_shotsOnGoal,See above
+OnIce_F_missedShots,See above
+OnIce_F_blockedShotAttempts,See above
+OnIce_F_shotAttempts,See above
+OnIce_F_goals,See above
+OnIce_F_rebounds,See above
+OnIce_F_reboundGoals,See above
+OnIce_F_lowDangerShots,See above
+OnIce_F_mediumDangerShots,See above
+OnIce_F_highDangerShots,See above
+OnIce_F_lowDangerxGoals,See above
+OnIce_F_mediumDangerxGoals,See above
+OnIce_F_highDangerxGoals,See above
+OnIce_F_lowDangerGoals,See above
+OnIce_F_mediumDangerGoals,See above
+OnIce_F_highDangerGoals,See above
+OnIce_F_scoreAdjustedShotsAttempts,See above
+OnIce_F_unblockedShotAttempts,See above
+OnIce_F_scoreAdjustedUnblockedShotAttempts,See above
+OnIce_F_xGoalsFromxReboundsOfShots,See above
+OnIce_F_xGoalsFromActualReboundsOfShots,See above
+OnIce_F_reboundxGoals,See above
+OnIce_F_xGoals_with_earned_rebounds,See above
+OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted,See above
+OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted,See above
+OnIce_A_xOnGoal,"""On Ice Against"" version of xOnGoal stat. Gives 'credit' to all of the opposing team's player on ice for the event."
+OnIce_A_xGoals,See above
+OnIce_A_flurryAdjustedxGoals,See above
+OnIce_A_scoreVenueAdjustedxGoals,See above
+OnIce_A_flurryScoreVenueAdjustedxGoals,See above
+OnIce_A_shotsOnGoal,See above
+OnIce_A_missedShots,See above
+OnIce_A_blockedShotAttempts,See above
+OnIce_A_shotAttempts,See above
+OnIce_A_goals,See above
+OnIce_A_rebounds,See above
+OnIce_A_reboundGoals,See above
+OnIce_A_lowDangerShots,See above
+OnIce_A_mediumDangerShots,See above
+OnIce_A_highDangerShots,See above
+OnIce_A_lowDangerxGoals,See above
+OnIce_A_mediumDangerxGoals,See above
+OnIce_A_highDangerxGoals,See above
+OnIce_A_lowDangerGoals,See above
+OnIce_A_mediumDangerGoals,See above
+OnIce_A_highDangerGoals,See above
+OnIce_A_scoreAdjustedShotsAttempts,See above
+OnIce_A_unblockedShotAttempts,See above
+OnIce_A_scoreAdjustedUnblockedShotAttempts,See above
+OnIce_A_xGoalsFromxReboundsOfShots,See above
+OnIce_A_xGoalsFromActualReboundsOfShots,See above
+OnIce_A_reboundxGoals,See above
+OnIce_A_xGoals_with_earned_rebounds,See above
+OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted,See above
+OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted,See above
+OffIce_F_xGoals,See above
+OffIce_A_xGoals,See above
+OffIce_F_shotAttempts,See above
+OffIce_A_shotAttempts,See above
+xGoalsForAfterShifts,xGoals the player's team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to give credit to give players who leave the ice when the puck is going towards the opposing team's zone 
+xGoalsAgainstAfterShifts,xGoals the opposing team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to identify players who shift off instead of backchecking
+corsiForAfterShifts,Shot attempts the player's team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to give credit to give players who leave the ice when the puck is going towards the opposing team's zone 
+corsiAgainstAfterShifts,Shot attempts the opposing team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to identify players who shift off instead of backchecking
+fenwickForAfterShifts,Unblocked Shot attempts the player's team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to give credit to give players who leave the ice when the puck is going towards the opposing team's zone 
+fenwickAgainstAfterShifts,Unblocked Shot attempts the opposing team gets between 1 and 5 seconds after the player has shifted off on the fly. Meant to identify players who shift off instead of backchecking
