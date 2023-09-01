@@ -2,45 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <title> Mourinho Random Excuse Generator </title>
-    <link rel="stylesheet" type="text/css" href="/css/basscss.min.css">
-    <script type="text/javascript" src="/js/jquery/jquery-2.1.4.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mourinho Random Excuse Generator</title>
+    <link rel="stylesheet" type="text/css" href="/css/basscss.min.css" />
+    <script
+      type="text/javascript"
+      src="/js/jquery/jquery-2.1.4.min.js"
+    ></script>
     <script type="text/javascript" src="/templates/templates.js"></script>
     <script type="text/javascript" src="/templates/ga.js"></script>
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="https://use.fontawesome.com/83536f4ef8.js"></script>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@dannypage" />
     <meta name="twitter:title" content="Mourinho Random Excuse Generator" />
-    <meta name="twitter:description" content="United lost again? It's not Mourinho's fault." />
-    <meta name="twitter:image" content="https://dannypage.github.io/assets/mou_images/5.jpg" />
+    <meta
+      name="twitter:description"
+      content="United lost again? It's not Mourinho's fault."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dannypage.github.io/assets/mou_images/5.jpg"
+    />
 
     <style>
-    .btnz {
+      .btnz {
         display: block;
         float: left;
         padding: 10px 15px;
-        border:none;
+        border: none;
         background-color: #ececec;
         text-decoration: none;
         font-size: 18px;
-        color: #FFF;
+        color: #fff;
       }
       .btnz:hover {
         color: #efefef;
       }
       .twitter {
         color: #000000;
-        background-color: #7DBFF2;
+        background-color: #7dbff2;
       }
       #holder {
         position: relative;
       }
       #holder img {
         width: 100%;
-
       }
       #holder h2 {
         background-color: yellow;
@@ -59,7 +67,6 @@
         left: 0px;
         right: 0px;
         text-align: center;
-
       }
     </style>
   </head>
@@ -69,105 +76,184 @@
     <section class="container px1 py1">
       <div>
         <h1>Mourinho Random Excuse Generator</h1>
-        <button class="button rounded" onclick="newExcuse()">Generate Excuse!</button></p>
+        <button class="button rounded" onclick="newExcuse()">
+          Generate Excuse!
+        </button>
       </div>
-    </br>
+      <br />
       <div>
         <div id="holder">
           <img id="image" src="/assets/mou_images/1.jpg" alt="mou" />
           <div id="quotepark">
-            <h2><span id="subject"></span> <span id="action"></span> <span id="object"></span>.</h2>
+            <h2>
+              <span id="subject"></span> <span id="action"></span>
+              <span id="object"></span>.
+            </h2>
           </div>
         </div>
       </div>
       <div>
-        <a class="btnz share twitter" target="_blank" href="https://twitter.com/intent/tweet?url=http://dannypage.github.io/excuse.html" id="twitterShare" ><i class="fa fa-twitter"></i> Tweet This Excuse!</a>
+        <a
+          class="btnz share twitter"
+          target="_blank"
+          href="https://twitter.com/intent/tweet?url=http://dannypage.github.io/excuse.html"
+          id="twitterShare"
+          ><i class="fa fa-twitter"></i> Tweet This Excuse!</a
+        >
       </div>
     </section>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div id="navFooter"></div>
     <script type="text/javascript">
-    var subjects = ["Hugo Lloris", "The NFL games", "Harry Kane", "The referee", "The players", "Son Heung-min", "The post", "The crowd", "Sissoko", "Arsene Wenger", "The bus", "The pitch", "The doctor", "The FA", "ENIC", "The Media", "The ball boy", "The air-conditioned analyst", "The crossbar", "Levy"];
-    var actions = ["betrayed", "delayed", "did not listen to", "denied", "parked on", "ignored", "turned a blind eye to", "was disrespectful to", "was distracted by", "was intimidated by", "ruined", "cheated"];
-    var objects = ["Harry Kane", "my plans", "our arrival", "my instructions", "my ego", "my genius", "my lack of options", "my small transfer budget", "the dressing room", "the Special One", "expected goals", "his teammates"];
+      var subjects = [
+        "Romelu Lukaku",
+        "Fedayn",
+        "Belotti",
+        "The referee",
+        "The players",
+        "Patrício",
+        "The post",
+        "The crowd",
+        "Cristante",
+        "Arsene Wenger",
+        "The bus",
+        "The pitch",
+        "The doctor",
+        "Il FIF",
+        "La Media",
+        "The ball boy",
+        "The air-conditioned analyst",
+        "The crossbar",
+        "Tammy Abraham",
+      ];
+      var actions = [
+        "betrayed",
+        "delayed",
+        "did not listen to",
+        "denied",
+        "parked on",
+        "ignored",
+        "turned a blind eye to",
+        "was disrespectful to",
+        "was distracted by",
+        "was intimidated by",
+        "ruined",
+        "cheated",
+      ];
+      var objects = [
+        "Belotti",
+        "my plans",
+        "our arrival",
+        "my instructions",
+        "my ego",
+        "my genius",
+        "my lack of options",
+        "my small transfer budget",
+        "the dressing room",
+        "the Special One",
+        "expected goals",
+        "his teammates",
+      ];
 
-    // https://stackoverflow.com/a/19303725/84732
-    var seed = new Date().getTime();
-    function random() {
-      var x = Math.sin(seed++) * 10000;
-      return x - Math.floor(x);
-    }
+      // https://stackoverflow.com/a/19303725/84732
+      var seed = new Date().getTime();
+      function random() {
+        var x = Math.sin(seed++) * 10000;
+        return x - Math.floor(x);
+      }
 
-    var qs = document.location.search,
-      params = qs.substring(1).split('&');
+      var qs = document.location.search,
+        params = qs.substring(1).split("&");
 
-    for (var i = 0; i < params.length; i++) {
-      var pair = params[i].split('=');
-      if (decodeURIComponent(pair[0]) == 'qid' && pair[1]) {
-        var newSeed = parseInt(pair[1]);
-        if (!isNaN(newSeed)) {
-          seed = newSeed;
+      for (var i = 0; i < params.length; i++) {
+        var pair = params[i].split("=");
+        if (decodeURIComponent(pair[0]) == "qid" && pair[1]) {
+          var newSeed = parseInt(pair[1]);
+          if (!isNaN(newSeed)) {
+            seed = newSeed;
+          }
+          break;
         }
-        break;
       }
-    }
 
-    function newExcuse(){
+      function newExcuse() {
+        var startSeed = seed; // save see at start to get a link back in
 
-      var startSeed = seed;   // save see at start to get a link back in
+        if (Math.floor(random() * 50) == 1) {
+          var subject = "Envy";
+          var action = "is the greatest tribute";
+          var object = "that the shadows do to the man";
+          document.getElementById("subject").innerHTML = subject;
+          document.getElementById("action").innerHTML = action;
+          document.getElementById("object").innerHTML = object;
+          var shareText = encodeURI(
+            '"' + subject + " " + action + " " + object + '." - José Mourinho |'
+          );
+        } else if (Math.floor(random() * 50) == 2) {
+          var subject = "It's always";
+          var action = "in the whole";
+          var object = "that you find the truth";
+          document.getElementById("subject").innerHTML = subject;
+          document.getElementById("action").innerHTML = action;
+          document.getElementById("object").innerHTML = object;
+          var shareText = encodeURI(
+            '"' + subject + " " + action + " " + object + '." - José Mourinho |'
+          );
+        } else {
+          var subject = Math.floor(random() * subjects.length);
+          var action = Math.floor(random() * actions.length);
+          var object = Math.floor(random() * objects.length);
+          document.getElementById("subject").innerHTML = subjects[subject];
+          document.getElementById("action").innerHTML = actions[action];
+          document.getElementById("object").innerHTML = objects[object];
+          var shareText = encodeURI(
+            '"' +
+              subjects[subject] +
+              " " +
+              actions[action] +
+              " " +
+              objects[object] +
+              '." - José Mourinho |'
+          );
+        }
+        var image = Math.floor(random() * 12);
+        document.getElementById("image").src =
+          "/assets/mou_images/" + image + ".jpg";
 
-      if (Math.floor(random()*50) == 1) {
-        var subject = 'Envy';
-        var action = 'is the greatest tribute';
-        var object = 'that the shadows do to the man';
-        document.getElementById('subject').innerHTML = subject;
-        document.getElementById('action').innerHTML = action;
-        document.getElementById('object').innerHTML = object;   
-        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');
-      } else if (Math.floor(random()*50) == 2) {
-        var subject = "It's always";
-        var action = 'in the whole';
-        var object = 'that you find the truth';
-        document.getElementById('subject').innerHTML = subject;
-        document.getElementById('action').innerHTML = action;
-        document.getElementById('object').innerHTML = object;   
-        var shareText = encodeURI('"' + subject + " " + action + " " + object + '." - José Mourinho |');       
-      } else {
-        var subject = Math.floor(random()*subjects.length)
-        var action = Math.floor(random()*actions.length);
-        var object = Math.floor(random()*objects.length);
-        document.getElementById('subject').innerHTML = subjects[subject];
-        document.getElementById('action').innerHTML = actions[action];
-        document.getElementById('object').innerHTML = objects[object];
-        var shareText = encodeURI('"' + subjects[subject] + " " + actions[action] + " " + objects[object] + '." - José Mourinho |');
+        var shareURL = getShareURL(startSeed);
+        $("#twitterShare").prop(
+          "href",
+          "https://twitter.com/intent/tweet?text=" +
+            shareText +
+            "&url=" +
+            shareURL +
+            "&via=DannyPage"
+        );
+        window.history.replaceState(
+          {},
+          " Mourinho Random Excuse Generator ",
+          shareURL
+        );
       }
-      var image = Math.floor(random()*12)
-      document.getElementById('image').src = "/assets/mou_images/" + image + ".jpg";
 
-      var shareURL = getShareURL(startSeed);
-      $("#twitterShare").prop('href', "https://twitter.com/intent/tweet?text=" + shareText + "&url=" + shareURL + "&via=DannyPage");
-      window.history.replaceState({}, ' Mourinho Random Excuse Generator ', shareURL);
+      function getShareURL(qid) {
+        var origin = document.location["origin"],
+          pathname = document.location["pathname"],
+          url = origin + pathname;
 
-    }
-      
-    function getShareURL(qid) {
-      var origin = document.location['origin'],
-        pathname = document.location['pathname'],
-        url = origin + pathname;
-
-      if (qid !== undefined) {
-        url = url + '?qid=' + qid;
+        if (qid !== undefined) {
+          url = url + "?qid=" + qid;
+        }
+        return url;
       }
-      return url;
-    }
-      
-    window.onload = newExcuse();
+
+      window.onload = newExcuse();
     </script>
   </body>
 </html>
