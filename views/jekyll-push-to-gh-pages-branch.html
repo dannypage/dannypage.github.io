@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Pushing your Custom Jekyll build to GH-Pages | Page Views</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Pushing your Custom Jekyll build to GH-Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I spent an hour or two trying to find a good script on how to push custom Jekyll builds to Github Pages. Surprisingly, they don’t allow you to target a specific folder for the build and keep just one branch. (Outside of /docs, but I couldn’t find a way to build Jekyll in /docs) - There was some complicated ways to setup Github Actions or other one-off solutions to build to a new branch. However, I finally found a solution that works for me, and I’ve compiled it here for my own reference and maybe it’ll help you!" />
+<meta property="og:description" content="I spent an hour or two trying to find a good script on how to push custom Jekyll builds to Github Pages. Surprisingly, they don’t allow you to target a specific folder for the build and keep just one branch. (Outside of /docs, but I couldn’t find a way to build Jekyll in /docs) - There was some complicated ways to setup Github Actions or other one-off solutions to build to a new branch. However, I finally found a solution that works for me, and I’ve compiled it here for my own reference and maybe it’ll help you!" />
+<link rel="canonical" href="https://danny.page/views/jekyll-push-to-gh-pages-branch" />
+<meta property="og:url" content="https://danny.page/views/jekyll-push-to-gh-pages-branch" />
+<meta property="og:site_name" content="Page Views" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-08T00:00:00+00:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://danny.page/views/jekyll-push-to-gh-pages-branch"},"description":"I spent an hour or two trying to find a good script on how to push custom Jekyll builds to Github Pages. Surprisingly, they don’t allow you to target a specific folder for the build and keep just one branch. (Outside of /docs, but I couldn’t find a way to build Jekyll in /docs) - There was some complicated ways to setup Github Actions or other one-off solutions to build to a new branch. However, I finally found a solution that works for me, and I’ve compiled it here for my own reference and maybe it’ll help you!","url":"https://danny.page/views/jekyll-push-to-gh-pages-branch","@type":"BlogPosting","headline":"Pushing your Custom Jekyll build to GH-Pages","dateModified":"2020-02-08T00:00:00+00:00","datePublished":"2020-02-08T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="/views/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://danny.page/views/feed.xml" title="Page Views" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/views/">Page Views</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/views/credits/">Credits</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Pushing your Custom Jekyll build to GH-Pages</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-02-08T00:00:00+00:00" itemprop="datePublished">Feb 8, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content md" itemprop="articleBody">
+    <p>I spent an hour or two trying to find a good script on how to push custom Jekyll builds to Github Pages. Surprisingly, they don’t allow you to target a specific folder for the build and keep just one branch. (Outside of /docs, but I couldn’t find a way to build Jekyll in /docs) - There was some complicated ways to setup Github Actions or other one-off solutions to build to a new branch. However, I finally found a solution that works for me, and I’ve compiled it here for my own reference and maybe it’ll help you!</p>
+
+<h1 id="setup">Setup</h1>
+
+<p><code class="highlighter-rouge">site</code> is your build folder.
+<code class="highlighter-rouge">gh-pages</code> can be any other branch if you have a different name or need.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> _site
+<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"_site/"</span> <span class="o">&gt;&gt;</span> .gitignore
+<span class="nv">$ </span>git worktree add dist gh-pages
+</code></pre></div></div>
+
+<h1 id="script">Script</h1>
+
+<p>Create a new file called  <code class="highlighter-rouge">push-to-gh-pages.sh</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build  <span class="c"># This can be whatever your build command is</span>
+<span class="nb">cd </span>_site
+git add <span class="nt">--all</span>
+git commit <span class="nt">-m</span> <span class="s2">"Build at </span><span class="sb">`</span><span class="nb">date</span> +<span class="s1">'%Y-%m-%d %H:%M:%S'</span><span class="sb">`</span><span class="s2">"</span>
+git push origin gh-pages <span class="nt">--force</span>
+<span class="nb">cd</span> ..
+</code></pre></div></div>
+
+<p>Give it Execute permission:</p>
+
+<p><code class="highlighter-rouge">$ chmod +x push-to-gh-pages.sh</code></p>
+
+<h1 id="putting-it-all-together">Putting it all together</h1>
+
+<p>Once you have all that set up, you can make any changes you need in your repo, then after completing your work, you can make <code class="highlighter-rouge">./push-to-gh-pages.sh</code> part of your deploy process and see changes on your *.github.io site!</p>
+
+<h1 id="citations">Citations</h1>
+
+<p><a href="https://gist.github.com/cobyism/4730490#gistcomment-2375522">Gist with a ton of info</a></p>
+
+<p><a href="https://stackoverflow.com/questions/33172857/how-do-i-force-a-subtree-push-to-overwrite-remote-changes">Stack Overflow with my specific need</a></p>
+
+<p><a href="https://musteresel.github.io/posts/2018/01/git-worktree-for-deploying.html">More on Git Worktree</a></p>
+
+  </div>
+
+  <a class="u-url" href="/views/jekyll-push-to-gh-pages-branch" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/views/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+          <p style="margin-top: .4rem">Danny Page&#39;s articles, code snippets, and other things to store and share.</p>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/dannypage"><svg class="svg-icon"><use xlink:href="/views/assets/minima-social-icons.svg#github"></use></svg> <span class="username">dannypage</span></a></li><li><a href="https://www.twitter.com/dannypage"><svg class="svg-icon"><use xlink:href="/views/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">dannypage</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list"><li>Get in contact: <a class="u-email" href="mailto:daniel.w.page@gmail.com">daniel.w.page@gmail.com</a></li><li><a href="https://danny.page/">Danny Page's Portfolio
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
