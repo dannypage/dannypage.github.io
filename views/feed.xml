@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://danny.page/views/feed.xml" rel="self" type="application/atom+xml" /><link href="https://danny.page/views/" rel="alternate" type="text/html" /><updated>2024-06-18T17:37:11+00:00</updated><id>https://danny.page/views/feed.xml</id><title type="html">Danny Page - Page Views</title><subtitle>Danny Page's articles, code snippets, and other things to store and share.</subtitle><entry><title type="html">How and Why to Watch the T20 Cricket World Cup in the USA (2024)</title><link href="https://danny.page/views/how-to-watch-usa-cricket-2024" rel="alternate" type="text/html" title="How and Why to Watch the T20 Cricket World Cup in the USA (2024)" /><published>2024-06-18T00:00:00+00:00</published><updated>2024-06-18T00:00:00+00:00</updated><id>https://danny.page/views/how-to-watch-usa-cricket-2024</id><content type="html" xml:base="https://danny.page/views/how-to-watch-usa-cricket-2024">&lt;p&gt;USA Cricket is on it’s way to the Super 8. Not the motel, but instead the next round of the Men’s T20 Cricket World Cup. They finished second in their group with wins over Canada and Pakistan, a close loss to India, and a washout game against Ireland. This granted them 5 points and a berth into the next round. They’ll go on to face South Africa, West Indies (Known as the Windies), and England. Two wins in this round-robin group would likely be enough to see them through to the semi-finals.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://danny.page/views/feed.xml" rel="self" type="application/atom+xml" /><link href="https://danny.page/views/" rel="alternate" type="text/html" /><updated>2024-06-18T17:41:45+00:00</updated><id>https://danny.page/views/feed.xml</id><title type="html">Danny Page - Page Views</title><subtitle>Danny Page's articles, code snippets, and other things to store and share.</subtitle><entry><title type="html">How and Why to Watch the T20 Cricket World Cup in the USA (2024)</title><link href="https://danny.page/views/how-to-watch-usa-cricket-2024" rel="alternate" type="text/html" title="How and Why to Watch the T20 Cricket World Cup in the USA (2024)" /><published>2024-06-18T00:00:00+00:00</published><updated>2024-06-18T00:00:00+00:00</updated><id>https://danny.page/views/how-to-watch-usa-cricket-2024</id><content type="html" xml:base="https://danny.page/views/how-to-watch-usa-cricket-2024">&lt;p&gt;USA Cricket is on it’s way to the Super 8. Not the motel, but instead the next round of the Men’s T20 Cricket World Cup. They finished second in their group with wins over Canada and Pakistan, a close loss to India, and a washout game against Ireland. This granted them 5 points and a berth into the next round. They’ll go on to face South Africa, West Indies (Known as the Windies), and England. Two wins in this round-robin group would likely be enough to see them through to the semi-finals.&lt;/p&gt;
 
 &lt;h2 id=&quot;definitions&quot;&gt;Definitions&lt;/h2&gt;
 
@@ -19,19 +19,18 @@
 
 &lt;p&gt;Let’s break down a few scorelines to understand why there are fractions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/views/assets/img/canada-vs-usa.jpeg&quot; alt=&quot;Canada Vs USA - T20 World Cup&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/views/views/assets/img/canada-vs-usa.jpeg&quot; alt=&quot;Canada Vs USA - T20 World Cup&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Canada batted first. They scored 194 runs, with 5 of their batters going out in 20 overs. USA batted second, and needed to hit a target of 195. They successfully did so by scoring 197 runs in 17.4 Overs. (17 full overs, and 4 of the 6 balls delivered in the 18th over). They only had 3 batters go out. (197/3)&lt;/p&gt;
 
 &lt;p&gt;In a bit of parlance that I believe is left over from Test Cricket, this is denoted with “winning by 7 wickets” - but more importantly is “winning by 14 balls”. Given the 120 balls available to score the points, it lets us know how many resources they had left.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/views/assets/img/pakistan-vs-usa.jpeg&quot; alt=&quot;Pakistan Vs USA - T20 World Cup&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In one of the most tense matches for this newer cricket fans, USA had to chase again. Pakistan had 7 batters go out as they scored 159 runs. USA needed to score 160 runs to win. However, they only tied at 159 runs. Even though they only had 3 batters to go out, that’s not used as a tie breaker.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/views/views/assets/img/pakistan-vs-usa.jpeg&quot; alt=&quot;Pakistan Vs USA - T20 World Cup&quot; /&gt;
+In one of the most tense matches for this newer cricket fans, USA had to chase again. Pakistan had 7 batters go out as they scored 159 runs. USA needed to score 160 runs to win. However, they only tied at 159 runs. Even though they only had 3 batters to go out, that’s not used as a tie breaker.&lt;/p&gt;
 
 &lt;p&gt;The teams went to a Super Over, which is a single over for both teams. USA batted first and scored 18 runs with 1 out (18/1), setting a target of 19 for Pakistan. If they scored 18, it would be a second Super Over. However, Pakistan only scored 13, and the USA won their second match.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/views/assets/img/india-vs-usa.jpeg&quot; alt=&quot;India vs USA - T20 World Cup&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/views/views/assets/img/india-vs-usa.jpeg&quot; alt=&quot;India vs USA - T20 World Cup&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ll leave this to the reader! Can you answer the following:&lt;/p&gt;
 
