@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Expected Goals Just Don’t Add Up — They Also Multiply." />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="#### Exploring Variance in Expected Goals" />
-<meta property="og:description" content="#### Exploring Variance in Expected Goals" />
+<meta name="description" content="Exploring Variance in Expected Goals" />
+<meta property="og:description" content="Exploring Variance in Expected Goals" />
 <link rel="canonical" href="https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply" />
 <meta property="og:url" content="https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply" />
 <meta property="og:site_name" content="Danny Page - Page Views" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2015-11-09T00:00:00+00:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply"},"description":"#### Exploring Variance in Expected Goals","url":"https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply","@type":"BlogPosting","headline":"Expected Goals Just Don’t Add Up — They Also Multiply.","dateModified":"2015-11-09T00:00:00+00:00","datePublished":"2015-11-09T00:00:00+00:00","@context":"https://schema.org"}</script>
+{"description":"Exploring Variance in Expected Goals","url":"https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply","@type":"BlogPosting","headline":"Expected Goals Just Don’t Add Up — They Also Multiply.","dateModified":"2015-11-09T00:00:00+00:00","datePublished":"2015-11-09T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://danny.page/views/expected-goals-just-don-t-add-up-they-also-multiply"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
   <link rel="stylesheet" href="/views/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://danny.page/views/feed.xml" title="Danny Page - Page Views" /></head>
@@ -45,13 +45,19 @@
   </header>
 
   <div class="post-content e-content md" itemprop="articleBody">
-    <p>#### Exploring Variance in Expected Goals</p>
+    <h2 id="exploring-variance-in-expectedgoals">Exploring Variance in Expected Goals</h2>
 
 <p>Soccer and hockey analytical communities have been pleased to discover some measure of shot quality in their sports. While the quantity of shots has been very important in predicting future success, more information from game play-by-plays allows analysts to measure the quality of each shot. We’ve been able to take each shot from a game and assign them a number; these are called “expected goals” (xG for the rest of this article). For example: A shot measured equaling 0.25 xG is determined to be converted into a goal 25% of the time. Many analysts have used seasons of data to populate their models. While they might not agree on the details (“What is a header worth in the EPL?” may differ from model to model; same for the value of a “Shot from the Blue Line in NHL”), overall they agree and have been shown to reliably quantify shot quality. There are a few expected goal models linked at the end of this article if you’re interested in those specifics!</p>
 
-<p><img src="/views/assets/img/1*0Q5zOvfOGVZk5Exkb9ud4w.png" alt="" /><a href="https://twitter.com/DTMAboutHeart/status/663024045932347392">https://twitter.com/DTMAboutHeart/status/663024045932347392</a>Using this information, we have measured games and seasons in terms of expected goals and can compare to the observed goals. Here are two examples, one in hockey and one in soccer. The Pittsburgh vs Edmonton NHL game ended 2–1; the total xG scoreline would be 2.7–2.2.</p>
+<p><a href="https://twitter.com/DTMAboutHeart/"><img src="/views/assets/img/1*0Q5zOvfOGVZk5Exkb9ud4w.png" alt="Hockey shot chart" /></a></p>
 
-<p><img src="/views/assets/img/1*mG7dpVm7OMwCTKtTZ6QTmQ.jpeg" alt="" /><a href="https://twitter.com/11tegen11/status/660510093365129216">https://twitter.com/11tegen11/status/660510093365129216</a>Arsenal won 0–3 with a xG scoreline of 0.39–1.49. In these cases, some may say “The right team won” because the xG and real life scorelines match. However, these values are only <strong>adding</strong> expected goals. But something is missing. <strong>Only adding</strong> i<strong>ndependent probabilities misses half of the story: variance.</strong></p>
+<p>Using this information, we have measured games and seasons in terms of expected goals and can compare to the observed goals. Here are two examples, one in hockey and one in soccer. The Pittsburgh vs Edmonton NHL game ended 2–1; the total xG scoreline would be 2.7–2.2.</p>
+
+<p><a href="https://twitter.com/11tegen11/status/660510093365129216"><img src="/views/assets/img/1*mG7dpVm7OMwCTKtTZ6QTmQ.jpeg" alt="soccer expected goals timeline" /></a></p>
+
+<p>Arsenal won 0–3 with a xG scoreline of 0.39–1.49. In these cases, some may say “The right team won” because the xG and real life scorelines match. However, these values are only <strong>adding</strong> expected goals. But something is missing. <strong>Only adding independent probabilities misses half of the story: variance.</strong></p>
+
+<hr />
 
 <p>Here’s a simple example to explain what’s missing: Let’s pretend have Team Coin and Team Die. We are going to compare the “number of times the coin lands on heads” to the “number of times the die rolls six”, and compare them like we would a soccer or hockey match.</p>
 
@@ -62,47 +68,68 @@
 <ul>
   <li><strong>Add Standard Deviation to the scoreline:</strong> It would read Coin 2<strong>±</strong>1 — Die: 2<strong>±</strong>1.29. The “<strong>±</strong>1” is the standard deviation of the result. <a href="https://simple.wikipedia.org/wiki/Standard_deviation">Standard deviation</a> is a number used to tell how measurements for a group are spread out from the average. Team Coin’s score would fall into the spread of <strong>±</strong>1 goal 68% of the time and <strong>±</strong>2 goals 95% of the time. Die’s “<strong>±</strong>1.29” denotes that their score will fluctuate more than Coin’s results. (<strong>±</strong>1.29 68% of the time; <strong>±2</strong>.58 95% of the time)</li>
   <li><strong>The Winning Percentage of the two “teams”:</strong> Team Coin would win 40% games to Team Die’s 36%, and a draw occurs 24% the time.</li>
-  <li><strong>The Points Per Game for each team:</strong> Team Coin would earn 1.42 PPG to Team Die’s 1.34 PPG. (This is within the 3-point system; NHL’s 2-point system would require a different calculation.)
-<img src="/views/assets/img/1*lBNXJKdU4Wpu1t5prPWxTA.png" alt="" />Red: Die — Blue: Coin — Gold: Draw — Y-Axis: Occurrences out of 10,000 simsIn my opinion, Win Percentage would be the most reasonable determination if you’re tweeting out expected goal scores. If you’re including a picture in your report, graphing the goal difference will show the variance in possible results, and allows you to display the probability of each result. In this case, ±0 was the most likely result, followed by +1 Coin, then -1 Die.</li>
+  <li><strong>The Points Per Game for each team:</strong> Team Coin would earn 1.42 PPG to Team Die’s 1.34 PPG. (This is within the 3-point system; NHL’s 2-point system would require a different calculation.)</li>
 </ul>
 
-<p><img src="/views/assets/img/1*-gkW5kFmkWus_t9igHm7xw.png" alt="" /><a href="http://dannypage.github.io/expected_season_goals.html?name=Jamie%20Vardy&amp;chances=0.1872,%200.3436,%200.3436,%200.3436,%200.7646,%200.4911,%200.4903,%200.4911,%200.3591,%200.3394,%200.3394,%200.25,%200.25,%200.1977,%200.3,%200.1,%200.1679,%200.1299,%200.1081&amp;goals=10">http://dannypage.github.io/expected_season_goals.html?name=Jamie%20Vardy&amp;chances=0.1872,%200.3436,%200.3436,%200.3436,%200.7646,%200.4911,%200.4903,%200.4911,%200.3591,%200.3394,%200.3394,%200.25,%200.25,%200.1977,%200.3,%200.1,%200.1679,%200.1299,%200.1081&amp;goals=10</a>We must also keep this in mind for players. Jamie Vardy is having a heck of a year. 10 goals from 19 shots on target is tough to repeat. Over many simulations, we’d expect 6<strong>±</strong>1.9 xG from Vardy. This means we would an average of 6 goals from him, and his results would have a Standard Deviation of 1.9 goals.</p>
+<p><img src="/views/assets/img/1*lBNXJKdU4Wpu1t5prPWxTA.png" alt="goal difference chart" /></p>
+
+<p><em>Red: Die — Blue: Coin — Gold: Draw — Y-Axis: Occurrences out of 10,000 sims</em></p>
+
+<p>In my opinion, Win Percentage would be the most reasonable determination if you’re tweeting out expected goal scores. If you’re including a picture in your report, graphing the goal difference will show the variance in possible results, and allows you to display the probability of each result. In this case, ±0 was the most likely result, followed by +1 Coin, then -1 Die.</p>
+
+<p><a href="http://dannypage.github.io/expected\_season\_goals.html?name=Jamie%20Vardy&amp;chances=0.1872,%200.3436,%200.3436,%200.3436,%200.7646,%200.4911,%200.4903,%200.4911,%200.3591,%200.3394,%200.3394,%200.25,%200.25,%200.1977,%200.3,%200.1,%200.1679,%200.1299,%200.1081&amp;goals=10"><img src="/views/assets/img/1*-gkW5kFmkWus_t9igHm7xw.png" alt="Simulation Outcomes for Jamie Vardy" /></a></p>
+
+<p>We must also keep this in mind for players. Jamie Vardy is having a heck of a year. 10 goals from 19 shots on target is tough to repeat. Over many simulations, we’d expect 6<strong>±</strong>1.9 xG from Vardy. This means we would an average of 6 goals from him, and his results would have a Standard Deviation of 1.9 goals.</p>
 
 <p>His observed 10 goals are 2.12 Standard Deviations above the mean, which only happens 2.5% of the time. [10 goals = 6xG + 1.9 SD * 2.12 ] Perhaps the model is missing something that Vardy does well, or more likely, his goalscoring will revert towards his expected average in the rest of the season.</p>
 
-<p>A third instance of expected goals not “adding up” is when you’re evaluating a single attack with multiple shots. Whether that’s a few shots after a zone entry in hockey, or the keeper rebounds the ball and it results in a second shot, adding up expected goals will not give you a clear result. For example:</p>
+<h2 id="sustained-attacks">Sustained Attacks</h2>
+
+<p>A another instance of expected goals not “adding up” is when you’re evaluating a single attack with multiple shots. Whether that’s a few shots after a zone entry in hockey, or the keeper rebounds the ball and it results in a second shot, adding up expected goals will not give you a clear result. For example:</p>
 
 <ol>
   <li>Imagine a striker takes a solid shot at the keeper, evaluated at 0.25 xG. It’s deflected by the keeper.</li>
   <li>That midfielder takes a volley, worth 0.4 xG. It bounces off the crossbar.</li>
-  <li>The chasing wingback moves into the area, collects the rebound and scores a close header, worth 0.6 xG.
-How should we evaluate this attack? If we added these shots together, it would equal 1.25 xG, which is a meaningless number. This would seem to mean that a goal was certain, but we know that’s not true. Likely, but definitely not 100% (or 125%!) certain. If you remember Independent Probabilities from stats class, this will be familiar:</li>
+  <li>The chasing wingback moves into the area, collects the rebound and scores a close header, worth 0.6 xG.</li>
 </ol>
 
-<p>A = 0.25 | A’ = 0.75 // P(A) means 25% chance of it happening<br />
-B = 0.40 | B’ = 0.60 // The ‘ in B’ means not converting the shot.<br />
-C = 0.60 | C’ = 0.40 // P(Goal) is overall chance of a goalAddition // Bad<br />
-P(Goal) = P(A) + P(B) + P(C) = 0.25 + 0.4 + 0.6 = 1.25Multiplication // Good<br />
-P(Goal) = P(A) + P(A’ | B) + P( C | A’| B’)<br />
-P(Goal) = 0.25 + 0.75<em>0.40 + 0.60</em>0.60*0.75<br />
-P(Goal) = 0.25 + 0.30 + 0.27 <br />
-P(Goal) = 0.82Therefore, we can see that with multiplication, we can appropriately determine the chance of a set of shots producing one goal. In this case, the 3-shot attack would have produced a goal 82% of the time.</p>
+<p>How should we evaluate this attack? If we added these shots together, it would equal 1.25 xG, which is a meaningless number. This would seem to mean that a goal was certain, but we know that’s not true. Likely, but definitely not 100% (or 125%!) certain. If you remember Independent Probabilities from stats class, this will be familiar:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A = 0.25 | A' = 0.75 // P(A) means 25% chance of it happening  
+B = 0.40 | B' = 0.60 // The ' in B' means not converting the shot.  
+C = 0.60 | C' = 0.40 // P(Goal) is overall chance of a goal 
+
+Addition // Bad  
+P(Goal) = P(A) + P(B) + P(C) = 0.25 + 0.4 + 0.6 = 1.25 
+
+Multiplication // Good  
+P(Goal) = P(A) + P(A' | B) + P( C | A'| B')  
+P(Goal) = 0.25 + 0.75*0.40 + 0.60*0.60*0.75  
+P(Goal) = 0.25 + 0.30 + 0.27   
+P(Goal) = 0.82
+</code></pre></div></div>
+
+<p>Therefore, we can see that with multiplication, we can appropriately determine the chance of a set of shots producing one goal. In this case, the 3-shot attack would have produced a goal 82% of the time. <em>Edit (2024): This simplified calculation does <strong>not</strong> incorporate the chance of the rebound turning into another attack, so the 82% number would likely be even lower. Not every shot turns into a rebound into another attack for the offensive team.</em></p>
 
 <p>If you were to include 1.25 xG in your scoreline instead of 0.82 xG, your expected goals model may overrate teams that created rebounds or unfairly punish teams that give up rebounds. Rebounds are valuable, but must also be evaluated properly, so any expected goals model must keep this in mind. Each model must determine when a shot can be considered independent of any previous attempts on goal. For example: all attacks in a specific zone entry, waiting for a 15 second cool down period after a shot, or waiting for the defense to take control.</p>
 
-<p><img src="/views/assets/img/1*7Ku3Ep6RAE8lK620hECFBw.png" alt="" />So we’ve covered three very important situations where only showing the sum total of xG doesn’t make the most sense. But at the seasonal level, perhaps it’s not all that bad. We would assume that over time, xG would revert towards the mean. In one such example (973 shots on target), the observed goals of 298 was not far off our expected mean of 290. In a pinch, you would not be far off. However, there may be more variance for an individual team, even over 38/82 games, and quantifying exactly how much a team can vary will require extra research.</p>
+<hr />
 
-<h4 id="conclusion">Conclusion</h4>
+<p><img src="/views/assets/img/1*7Ku3Ep6RAE8lK620hECFBw.png" alt="" /></p>
+
+<p>So we’ve covered three very important situations where only showing the sum total of xG doesn’t make the most sense. But at the seasonal level, perhaps it’s not all that bad. We would assume that over time, xG would revert towards the mean. In one such example (973 shots on target), the observed goals of 298 was not far off our expected mean of 290. In a pinch, you would not be far off. However, there may be more variance for an individual team, even over 38/82 games, and quantifying exactly how much a team can vary will require extra research.</p>
+
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Lots of great work has been done in both soccer and hockey to be able to quantify the value of an individual shot. In this article I’ve shown how we can properly combine 2, 3, or 50 shots while accurately portraying all the applicable information. **Summing xG is only half of the story; we must also consider variance as well. **Failure to do so may mislead the reader into taking the wrong conclusion from a simple sum xG scoreline. In the future, we must take the extra step and communicate the entire range of possibilities.</p>
 
 <p>Thanks for reading! If you have any questions or comments, you can contact me on <a href="https://twitter.com/dannypage">Twitter</a>, and please share if you liked this article!</p>
 
-<h4 id="addendum">Addendum</h4>
+<h2 id="addendum">Addendum</h2>
 
 <p><a href="https://twitter.com/MarkTaylor0">Mark Taylor</a> <a href="http://thepowerofgoals.blogspot.com/2014/02/twelve-shots-good-two-shots-better.html">covered in 2014</a> how one team can win more when two teams score the same amount of xG. There are even a set of circumstances where you can have a larger sum-total xG, and still lose over time. I’ve left this as an exercise to the reader, and you can use my Match Expected Goals Simulator to discover this scenario.</p>
 
-<p>Expected Goals Models — explanations and twitter handles:</p>
+<h3 id="expected-goals-modelsexplanations-and-twitter-handles">Expected Goals Models — explanations and twitter handles:</h3>
 
 <ul>
   <li><a href="http://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premier-league-projections-and-new-expected-goals">Michael Caley (@MC_of_A)</a> — Soccer</li>
@@ -110,13 +137,16 @@ P(Goal) = 0.82Therefore, we can see that with multiplication, we can appropriate
   <li><a href="http://hockey-graphs.com/2015/10/01/expected-goals-are-a-better-predictor-of-future-scoring-than-corsi-goals/">Hockey-Graphs (@DTMAboutHeart &amp; @asmean)</a> — Hockey</li>
   <li><a href="http://11tegen11.net/2015/08/14/a-close-look-at-my-new-expected-goals-model/">@11tegen11 </a>— Soccer</li>
   <li><a href="http://www.michaelbertin.com/the-third-to-last-thing-ill-ever-write-about-expected-goals/">Michael Bertin (@bertinbertin)</a> — Soccer</li>
-  <li>
-    <p><a href="https://differentgame.wordpress.com/2014/05/19/a-shooting-model-an-expglanation-and-application/">Paul Riley (@footballfactman)</a> — Soccer
-Interactives:</p>
-  </li>
+  <li><a href="https://differentgame.wordpress.com/2014/05/19/a-shooting-model-an-expglanation-and-application/">Paul Riley (@footballfactman)</a> — Soccer</li>
+</ul>
+
+<h3 id="interactives">Interactives:</h3>
+
+<ul>
   <li><a href="https://public.tableau.com/profile/paul.riley#!/vizhome/PremierLeague201516xGMap/PremierLeague201516ShotonTargetxGDashboard">Paul Riley’s Tableau Map</a></li>
   <li><a href="https://medium.com/u/43ec7960ce0d">Danny Page</a>’s <a href="http://dannypage.github.io/expected_goals.html">Match Expected Goals Simulator</a></li>
   <li><a href="https://medium.com/u/43ec7960ce0d">Danny Page</a>’s <a href="http://dannypage.github.io/expected_season_goals.html">Longterm Expected Goals Simulator</a></li>
+  <li><a href="https://medium.com/@dannypage/expected-goals-just-don-t-add-up-they-also-multiply-1dfd9b52c7d0">The Original Medium article</a></li>
 </ul>
 
 
