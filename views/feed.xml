@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://danny.page/views/feed.xml" rel="self" type="application/atom+xml" /><link href="https://danny.page/views/" rel="alternate" type="text/html" /><updated>2024-07-03T14:52:40+00:00</updated><id>https://danny.page/views/feed.xml</id><title type="html">Danny Page - Page Views</title><subtitle>Danny Page's articles, code snippets, and other things to store and share.</subtitle><entry><title type="html">How and Why to Watch the T20 Cricket World Cup in the USA (2024)</title><link href="https://danny.page/views/how-to-watch-usa-cricket-2024" rel="alternate" type="text/html" title="How and Why to Watch the T20 Cricket World Cup in the USA (2024)" /><published>2024-06-18T00:00:00+00:00</published><updated>2024-06-18T00:00:00+00:00</updated><id>https://danny.page/views/how-to-watch-usa-cricket-2024</id><content type="html" xml:base="https://danny.page/views/how-to-watch-usa-cricket-2024">&lt;p&gt;USA Cricket is on it’s way to the Super 8. Not the motel, but instead the next round of the Men’s T20 Cricket World Cup. They finished second in their group with wins over Canada and Pakistan, a close loss to India, and a washout game against Ireland. This granted them 5 points and a berth into the next round. They’ll go on to face South Africa, West Indies (Known as the Windies), and England. Two wins in this round-robin group would likely be enough to see them through to the semi-finals.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://danny.page/views/feed.xml" rel="self" type="application/atom+xml" /><link href="https://danny.page/views/" rel="alternate" type="text/html" /><updated>2024-07-05T20:40:05+00:00</updated><id>https://danny.page/views/feed.xml</id><title type="html">Danny Page - Page Views</title><subtitle>Danny Page's articles, code snippets, and other things to store and share.</subtitle><entry><title type="html">Tracking Fireworks’ Impact on Fourth of July AQI</title><link href="https://danny.page/views/tracking-fireworks-on-july-4th" rel="alternate" type="text/html" title="Tracking Fireworks' Impact on Fourth of July AQI" /><published>2024-07-05T00:00:00+00:00</published><updated>2024-07-05T00:00:00+00:00</updated><id>https://danny.page/views/tracking-fireworks-on-july-4th</id><content type="html" xml:base="https://danny.page/views/tracking-fireworks-on-july-4th">&lt;p&gt;I’m increasingly of the opinion that fireworks should not be used at all, or at best sparingly in the best conditions for safe dispersal of the pollutants. There are fire risks, limb risks, and breathing risks that come with exploding toxic chemicals in the air. However, America disagrees with me, especially at 8:45 PM local time on July 4th each year.&lt;/p&gt;
+
+&lt;p&gt;I learned about &lt;a href=&quot;https://www2.purpleair.com/&quot;&gt;PurpleAir&lt;/a&gt; after spending a few years in California and having to adjust my life when wildfire smoke was around. The &lt;a href=&quot;https://www.airnow.gov/national-maps/&quot;&gt;US Government’s Air Quality map&lt;/a&gt; usually lags what you can see in the air. Often times I’d open it when it was dreadfully obvious that it was a 150-200 PM2.5 AQI day, and it was still reporting under 100. Only after multiple days of requiring a N95 and clothes smelling like a campfire would it be updated. Fortunately, many people have adjusted by buying PurpleAir monitors and you can see live-to-the-minute information about the air quality around you on the &lt;a href=&quot;https://map.purpleair.com/&quot;&gt;PurpleAir map.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;![[/views/assets/img/fireworksdc-purpleair.png]]&lt;/p&gt;
+
+&lt;p&gt;Armed with this massive and real-time map, you can see the effects of fireworks can be acutely and suddenly be seen on the national scale. I remembered to check this site after hearing fireworks in the DC area. You can quite clearly see various monitors noting massive rises in the AQI metric in the evening of July 4th.&lt;/p&gt;
+
+&lt;p&gt;![[/views/assets/img/fireworks/dc-purpleair-graph.png]]&lt;/p&gt;
+
+&lt;p&gt;Having missed my chance for watching this unfold in DC, I turned my attention to the San Francisco Bay Area. I setup &lt;a href=&quot;https://github.com/simonw/shot-scraper?tab=readme-ov-file&quot;&gt;Shot-Scraper&lt;/a&gt;, a Python command line library, that opens a headless browser, waits a few second, and then takes a screenshot. I installed the library in its own virtual environment, created a folder for the images, and fired off a few test screenshots to make sure it looked good.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir purpleair &amp;amp;&amp;amp; cd purpleair
+$ python3 -m venv venv 
+$ source venv/bin/activate
+$ pip install shot-scraper
+$ mkdir images
+$ shot-scraper https://map.purpleair.com/1/mAQI/a10/p604800/cC0#8.45/37.764/-121.62 --wait 5000 -o ~/Projects/images/bay-area-$(date +%Y%m%d_%H%M%S).png`
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;![[/views/assets/img/fireworks/bay-area-20240704_220000.png]]&lt;/p&gt;
+
+&lt;p&gt;Here’s what I eventually landed on. The first shot was at 10 PM EDT, or 7 PM local. You could see there were a few hot spots already; unclear if those were fireworks related.&lt;/p&gt;
+
+&lt;p&gt;Once I had it creating screenshots via the command line, I needed a script to activate the Python environment and trigger the command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Projects/purpleair
+&lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;venv/bin/activate
+
+shot-scraper https://map.purpleair.com/1/mAQI/a10/p604800/cC0#8.45/37.764/-121.62 &lt;span class=&quot;nt&quot;&gt;--wait&lt;/span&gt; 5000 &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /Users/dpage/Projects/purpleair/images/bay-area-&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y%m%d_%H%M%S&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;.png
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using the &lt;code class=&quot;highlighter-rouge&quot;&gt;$ crontab -e&lt;/code&gt; command, I added an entry to fire off that script every minute.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*/1 * * * * ~/Projects/purpleair/scraper.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And then I let it run overnight. After 12 hours of running, I had plenty to work with. Using &lt;code class=&quot;highlighter-rouge&quot;&gt;ffmpeg&lt;/code&gt;, I could then combine the images into a 30 second video.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ffmpeg 
+	-f image2 
+	-pattern_type glob
+	-export_path_metadata 1
+	-i '*'
+	-vf &quot;drawtext=text='%{metadata\:lavf.image2dec.source_basename\:NA}'&quot;
+	-r 30 -c:v libx264 -b:v 1M -vf scale=640:-1
+	../output.mp4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Twitter is very particular about what video format it accepts, you may need to &lt;a href=&quot;https://stackoverflow.com/questions/59056863/i-cant-upload-this-video-file-mp4-to-twitter&quot;&gt;fight with the conversion&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, here is that video! This runs from 7 PM to 7 AM in the San Francisco Bay Area as well as the Central Valley.&lt;/p&gt;
+
+&lt;p&gt;![[/views/assets/img/fireworks/output.mp4]]&lt;/p&gt;
+
+&lt;p&gt;You can instantly see the impact of the fireworks. 200+ plus is dangerous for &lt;strong&gt;anyone&lt;/strong&gt; if exposed to it for sustained amount of time. 100+ can hit sensitive groups hard. And given the nature of the Bay Area and the Oakland/Fremont hills, the toxic air can hang around. It’s dreadful during wildfire season and makes it all the more questionable that we would do this to ourselves.&lt;/p&gt;</content><author><name></name></author><summary type="html">I’m increasingly of the opinion that fireworks should not be used at all, or at best sparingly in the best conditions for safe dispersal of the pollutants. There are fire risks, limb risks, and breathing risks that come with exploding toxic chemicals in the air. However, America disagrees with me, especially at 8:45 PM local time on July 4th each year.</summary></entry><entry><title type="html">How and Why to Watch the T20 Cricket World Cup in the USA (2024)</title><link href="https://danny.page/views/how-to-watch-usa-cricket-2024" rel="alternate" type="text/html" title="How and Why to Watch the T20 Cricket World Cup in the USA (2024)" /><published>2024-06-18T00:00:00+00:00</published><updated>2024-06-18T00:00:00+00:00</updated><id>https://danny.page/views/how-to-watch-usa-cricket-2024</id><content type="html" xml:base="https://danny.page/views/how-to-watch-usa-cricket-2024">&lt;p&gt;USA Cricket is on it’s way to the Super 8. Not the motel, but instead the next round of the Men’s T20 Cricket World Cup. They finished second in their group with wins over Canada and Pakistan, a close loss to India, and a washout game against Ireland. This granted them 5 points and a berth into the next round. They’ll go on to face South Africa, West Indies (Known as the Windies), and England. Two wins in this round-robin group would likely be enough to see them through to the semi-finals.&lt;/p&gt;
 
 &lt;h2 id=&quot;definitions&quot;&gt;Definitions&lt;/h2&gt;
 
@@ -298,40 +357,4 @@ So when we add in more data, his contract seems pretty good! If that’s the sta
   &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/players/e/esposph01.html&quot;&gt;Phil Esposito&lt;/a&gt; 0.491&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/players/o/ovechal01.html&quot;&gt;Alex Ovechkin&lt;/a&gt; 0.486&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/players/c/crosbsi01.html&quot;&gt;Sidney Crosby&lt;/a&gt; 0.479&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">make sure to wear protective gloves when handling hot takesI hadn’t planned on a part two, but I had to address a few things! The original piece was a quick way to compare different eras of scoring within the NHL. Obviously Gretzky is a better all-around player (his assists alone would set the record for NHL points)! But there’s a possibility that Ovechkin is a better goal-scorer and many people thought that worth looking at after his historic milestone. There’s always the issue of comparing eras which can be complicated, but multiple people have came to the same conclusion that Ovi is scoring as well or better than Gretzky did. Straight-forward, right?</summary></entry><entry><title type="html">Is Alex Ovechkin a better scorer than The Great One?</title><link href="https://danny.page/views/is-alex-ovechkin-a-better-scorer-than-the-great-one" rel="alternate" type="text/html" title="Is Alex Ovechkin a better scorer than The Great One?" /><published>2016-01-11T00:00:00+00:00</published><updated>2016-01-11T00:00:00+00:00</updated><id>https://danny.page/views/is-alex-ovechkin-a-better-scorer-than-the-great-one</id><content type="html" xml:base="https://danny.page/views/is-alex-ovechkin-a-better-scorer-than-the-great-one">&lt;p&gt;&lt;img src=&quot;/views/assets/img/1*BuJ-GEfXDXAR2c7jhOfNfQ.jpeg&quot; alt=&quot;&quot; /&gt;Photo: Capstragram / &lt;a href=&quot;http://www.russianmachineneverbreaks.com/2016/01/11/alex-ovechkin-poses-with-the-milestone-500-goal-puck-photos/&quot;&gt;Russian Machine Never Breaks&lt;/a&gt;Alex Ovechkin scored &lt;a href=&quot;https://www.youtube.com/watch?v=HXH5GER3ivs&quot;&gt;the 500th&lt;/a&gt; (&lt;a href=&quot;https://www.youtube.com/watch?v=4Dtn2TASmck&quot;&gt;and 501th&lt;/a&gt;) NHL regular season goals of his illustrious career. Both goals look like the standard Ovechkin goals; the first was a power play slapshot from the “Ovi Spot”, the second an impressive skate down the ice, deking past the likely Norris trophy finalist Erik Karlsson. What’s non-standard about this feat is that he accomplished it as fifth fastest in league history, which is absurd given the paucity of goals to go around in this era of impressive goaltending. How can we compare this to Wayne Gretzky, who scored his 500 goals in 575 games, but played during a shooter’s era?&lt;/p&gt;
-
-&lt;p&gt;Thanks to Hockey Reference, we can compare the two shooters performance year-by-year, as according to their age. For context, Ovechkin started playing in his 20th year and Gretzky in his 19th Year, so I’ve matched them up by their age during the season they played. Then I used the formula to see how many goals they scored as compared to the team goal per game average for that season. Stated succinctly:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Goal Share = Player’s GPG / Seasonal GPG&lt;img src=&quot;/views/assets/img/1*QTptq7QVo6gaulW_unU-TQ.png&quot; alt=&quot;&quot; /&gt;So how do they compare? For the first few years, their goal share tracked together quite tightly. This even includes the last few years of Boudreau and the half season of Dale Hunter which really clamped down on Ovechkin’s production. But after Oates came in (and despite his questionable coaching of the team), Alex Ovechkin was allowed to flourish again. And for 4 straight seasons, Alex Ovechkin is scoring at a phenomenal rate. At the same age that Gretzky stopped scoring (as much), Ovi is still giving goalies fits into his 30th year season. How is he doing this?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/views/assets/img/1*DsytyWzDDggi8uoFUE8wRA.png&quot; alt=&quot;&quot; /&gt;Alex Ovechkin has a machine gun for a hockey stick. Hockey-Reference doesn’t have shot numbers data prior to Gretzky’s 24th year, but for the data we do have, he’s one of the league’s most prolific shooters. Put simply: The NHL still has not figured out that Ovi will get the puck and shoot, especially on the powerplay. Perhaps, no one will ever figure him out. The only thing stopping him is… better goalies. Here is the league’s average save percentage per age-season:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/views/assets/img/1*P-YfH1EspT_OhHAACVOCBw.png&quot; alt=&quot;&quot; /&gt;Gretzky: 1983–84 &amp;lt;-&amp;gt; 1998–99&lt;/td&gt;
-      &lt;td&gt;Ovechkin 2005–06 &amp;lt;-&amp;gt; 2015–16Goalies have been getting better season over season, which has been a large reason that scoring has dropped over time. And yet we see Ovechkin staying consistent in his Goal Share in the last few years. (thank you based Trotz)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;One day Ovechkin will slow-down. Will he hit Gretzky’s goal total? Perhaps, perhaps not. He’d need quite a few more years of 40+ goal seasons against goaltenders that continue to get better (and bigger). But one thing’s for sure, we may be seeing the best goalscorer ever in NHL history. Even if he never wins a ring (I hope he does!), don’t forget to take a moment and just stare in awe at the way he continues to score in a way we haven’t seen in a long time.&lt;/p&gt;
-
-&lt;h4 id=&quot;poll-results&quot;&gt;Poll Results&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/views/assets/img/1*RhKLg-WX416hhfmQVgmorw.png&quot; alt=&quot;&quot; /&gt;Earlier today I teased this article by asking how many seasons did Ovechkin have a greater Goal Share than Gretzky. At publishing time and thanks to a “Micah Blake McCurdy Bump”, 163 people voted, and overall were correct. Ovechkin was better in 7 seasons: 3 in the 20–26 age-seasons, and 4 since. I’m guessing we’ll see many more dominant seasons soon!&lt;/p&gt;
-
-&lt;h4 id=&quot;exercise-for-thereader&quot;&gt;Exercise for the reader&lt;/h4&gt;
-
-&lt;p&gt;Hockey Reference has their own method of adjusted goals: &lt;a href=&quot;http://www.hockey-reference.com/leaders/goals_adjusted_career.html&quot;&gt;http://www.hockey-reference.com/leaders/goals_adjusted_career.html&lt;/a&gt; — Gordie Howe, Jaromir Jagr, and Wayne Gretzky are 1,2,3 in their method, so comparing to Howe and the (still active!) Jagr would be quite interesting. Is Ovechkin scoring more than them? Could he lead this ranking after his career is finished? Let me know!&lt;/p&gt;
-
-&lt;h4 id=&quot;links&quot;&gt;Links:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/leagues/stats.html&quot;&gt;http://www.hockey-reference.com/leagues/stats.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/players/o/ovechal01.html&quot;&gt;http://www.hockey-reference.com/players/o/ovechal01.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.hockey-reference.com/players/g/gretzwa01.html&quot;&gt;http://www.hockey-reference.com/players/g/gretzwa01.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;More numbers on his dominating performance by &lt;a href=&quot;http://twitter.com/ngreenberg&quot;&gt;Neil Greenberg&lt;/a&gt;: &lt;a href=&quot;https://www.washingtonpost.com/news/fancy-stats/wp/2016/01/10/crunching-the-incredible-numbers-on-alex-ovechkins-run-to-500-goals/&quot;&gt;https://www.washingtonpost.com/news/fancy-stats/wp/2016/01/10/crunching-the-incredible-numbers-on-alex-ovechkins-run-to-500-goals/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Photo: Capstragram / Russian Machine Never BreaksAlex Ovechkin scored the 500th (and 501th) NHL regular season goals of his illustrious career. Both goals look like the standard Ovechkin goals; the first was a power play slapshot from the “Ovi Spot”, the second an impressive skate down the ice, deking past the likely Norris trophy finalist Erik Karlsson. What’s non-standard about this feat is that he accomplished it as fifth fastest in league history, which is absurd given the paucity of goals to go around in this era of impressive goaltending. How can we compare this to Wayne Gretzky, who scored his 500 goals in 575 games, but played during a shooter’s era?</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">make sure to wear protective gloves when handling hot takesI hadn’t planned on a part two, but I had to address a few things! The original piece was a quick way to compare different eras of scoring within the NHL. Obviously Gretzky is a better all-around player (his assists alone would set the record for NHL points)! But there’s a possibility that Ovechkin is a better goal-scorer and many people thought that worth looking at after his historic milestone. There’s always the issue of comparing eras which can be complicated, but multiple people have came to the same conclusion that Ovi is scoring as well or better than Gretzky did. Straight-forward, right?</summary></entry></feed>
