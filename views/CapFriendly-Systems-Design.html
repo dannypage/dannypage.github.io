@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>CapFriendly Systems Design | Danny Page - Page Views</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="CapFriendly Systems Design" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="CapFriendly was a website for hockey fans, the media, and even teams (they were so indispensible, they were acquired by the Washington Capitals). They covered many different facets in hockey player management: salary caps, draft inventory, transactions, and more. All while handling millions of visitors every month and keeping up with the Free Agency rush every July. It’s a monumental feat and one that should be celebrated for others to learn from." />
+<meta property="og:description" content="CapFriendly was a website for hockey fans, the media, and even teams (they were so indispensible, they were acquired by the Washington Capitals). They covered many different facets in hockey player management: salary caps, draft inventory, transactions, and more. All while handling millions of visitors every month and keeping up with the Free Agency rush every July. It’s a monumental feat and one that should be celebrated for others to learn from." />
+<link rel="canonical" href="https://danny.page/views/CapFriendly-Systems-Design" />
+<meta property="og:url" content="https://danny.page/views/CapFriendly-Systems-Design" />
+<meta property="og:site_name" content="Danny Page - Page Views" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-07-10T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"CapFriendly was a website for hockey fans, the media, and even teams (they were so indispensible, they were acquired by the Washington Capitals). They covered many different facets in hockey player management: salary caps, draft inventory, transactions, and more. All while handling millions of visitors every month and keeping up with the Free Agency rush every July. It’s a monumental feat and one that should be celebrated for others to learn from.","url":"https://danny.page/views/CapFriendly-Systems-Design","@type":"BlogPosting","headline":"CapFriendly Systems Design","dateModified":"2024-07-10T00:00:00+00:00","datePublished":"2024-07-10T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://danny.page/views/CapFriendly-Systems-Design"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="/views/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://danny.page/views/feed.xml" title="Danny Page - Page Views" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/views/">Danny Page - Page Views</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/views/credits/">Credits</a><a class="page-link" href="/views/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CapFriendly Systems Design</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-07-10T00:00:00+00:00" itemprop="datePublished">Jul 10, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content md" itemprop="articleBody">
+    <p><a href="https://capfriendly.com">CapFriendly</a> was a website for hockey fans, the media, and even teams (they were so indispensible, <a href="https://www.espn.com/nhl/story/_/id/40337498/capitals-announce-deal-buy-nhl-salary-data-site-capfriendly">they were acquired by the Washington Capitals</a>). They covered many different facets in hockey player management: salary caps, draft inventory, transactions, and more. All while handling millions of visitors every month and keeping up with the Free Agency rush every July. It’s a monumental feat and one that should be celebrated for others to learn from.</p>
+
+<p>I’ve interviewed for many Software Engineer roles that put a heavy emphasis on <a href="https://en.wikipedia.org/wiki/Systems_design#Web_System_design">Systems Design</a>. As a full-stack engineer, part of the job is knowing how the whole system fits together. Perhaps you can write really efficient code and solve LeetCode problems, but can you explain the purpose of the system? How should different applications interact and solve those requirements? What should the database schema look like? Who will use it?</p>
+
+<p>Let’s dig into some of the major areas of CapFriendly’s system design:</p>
+
+<h2 id="product-requirements">Product Requirements</h2>
+<p><em>What are people going to come to the website for? How can we serve a variety of customers? How will it make money?</em></p>
+
+<p>CapFriendly, like CapGeek before it, was launched to help fans to better understand how teams in the NHL were managing their rosters and their salary caps. Before those sites were around, many contract details were hidden from the public. Teams would often not willingly disclose salary or term length, or if there were any No Move/Trade Clauses. Media members could get this info, but it wasn’t in one place. So the ultimate <em>raison d’être</em> of these cap sites: <strong>Get contract data to the public.</strong></p>
+
+<p>The rest of the site’s major features flow neatly from this requirement.</p>
+<ul>
+  <li><strong>Team Cap Space and Assets</strong>  - Are teams in compliance? What draft picks do they hold? Retained salaries?</li>
+  <li><strong>Player Salary Lookup</strong> - Who can fit into your favorite teams?</li>
+  <li><strong>Calculators</strong> - What if scenarios: What’s the cap hit on buying out a contract? Offer Sheets?</li>
+  <li><strong>Transactions</strong> - Trades, Drafts, Waives, Signings, Injuries</li>
+  <li><strong>Simulators</strong> - Let fans get into the mindset of a GM by giving them easy tools to make transactions.</li>
+</ul>
+
+<p>All of these features can be accomplished with two primary ingredients: contract and transaction data, and knowing the rules that govern those contracts and transactions. The latter also makes the site extremely useful in acquisition; the people running the site have been trusted by the teams and clearly understand the nuances of managing the team’s resources. While fans were the primary goal, it’s revealing that media and teams leaned on the website as well. Having all this data in a central &amp; public repository was seen as unnecessary thing by the league; clearly many stakeholders at clubs and journalists disagreed with the NHL on this point.</p>
+
+<p>The website would eventually lean on ads and a premium service to make money; quite necessary when the traffic of the site was easily in the millions of users per month. Becoming a massive hit is an exciting prospect but also brings plenty of issues. Scaling the tech, paying for more servers, and finding ways to get paid can stress a small team of developers. I believe they may have done some deals with teams; this would surely solve some monetary problems and subsidize the public traffic, but it also represents a diverging sets of interests. The public may want features that go in line with the original purpose of public contract and cap data. The teams would instead need features that would help the team win. We’ll never get to see how the site would continue to evolve to fit the public’s needs; instead the system’s purpose will be changed to “how can the Capitals win?” which will require a much different system. (More on that later)</p>
+<h2 id="major-components">Major Components</h2>
+<p><em>What applications will be needed? Which database is right for the handling of data? What APIs will we interface with to get external data? What web framework will be used?</em></p>
+
+<p><img src="/views/assets/img/IMG_0111.jpeg" alt="general systems design map" /></p>
+
+<p>Without knowing the internals of the website, I can surmise some of the major portions of their system.</p>
+
+<ul>
+  <li>Admin Panel
+    <ul>
+      <li>Media reports, scouting reports, trade entries, transactions: all of this would need to be entered into the system. There are multiple libraries that handle this data entry + data validation. Contract entry would need to have multiple things checked off before it could be submitted into the system. Or in the case of a <a href="https://www.salaryswish.com/trades/players/reggie-jackson">six-way-trade</a> entering what teams are involved, making sure they have the assets that the trade is using, and what conditionals are in place.</li>
+    </ul>
+  </li>
+  <li>Public facing app
+    <ul>
+      <li>Everything that we see. Team dashboards, player history, the forums, the Armchair GM tool, etc. Given the JavaScript-lite nature of the website, I’ll guess that it’s a Django or Ruby on Rails app that does a lot of server rendering. This can be a big benefit for mostly-read-only website; caching and load balancing is much easier with these setups.</li>
+    </ul>
+  </li>
+  <li>Database
+    <ul>
+      <li>The secret sauce of the website. The hard work. Some may say it’s easy to build such a website, but the difficulty is understanding and gathering all the data necessary to populate it. Calculating daily cap hits requires perfect data about player contracts, transactions, and business rules.
+        <h2 id="data-model">Data Model</h2>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>The website would need to keep track of the following. Some of these may need snapshots at any given day, especially the cap hit tracking.</p>
+
+<ul>
+  <li>Simple storage: Teams, Players, Trades, Waivers, Drafts, Scouting Reports</li>
+  <li>(Materialized) Views: UFAs, League Cap Dashboard, Team Cap Dashboard</li>
+  <li>Forum posts, Threads, Users</li>
+  <li>Armchair GM teams</li>
+</ul>
+
+<p>I want to call out the last part, because it’s what made the site special for many hardcore users. While I’d guess 99% of users just looked up their favorite team or pending UFAs, 1% of users created many, many Armchair GM teams. Around 1.5 URLs in my big crawl were related to this feature. Storing these user-created teams requires it’s own set of database tables so that it can store the following:</p>
+
+<ul>
+  <li>What are the current contracts for players?</li>
+  <li>What’s the current salary cap?</li>
+  <li>What’s the depth chart look like? What should special teams look like?</li>
+  <li>What trades could be made to create this new team?</li>
+  <li>What other transactions are necessary (waiving, LTIR, buyouts, etc)</li>
+</ul>
+
+<p>All of this has to be stored away from the main data. It could have been all done on the front-end and not saved in a database like my <a href="https://danny.page/expected_goals">Expected Goals calculator</a>, so a big kudos to the CapFriendly team giving people the fantasy of modifying their favorite team and building conversations around it in the Forum.</p>
+
+<h2 id="other-considerations">Other considerations</h2>
+
+<p>Some things to consider are questions around scaling the website, caching pages, user registration, forum moderation. There’s also the API that partners could use; I also did not dive deep into their premium offerings. The transformations and calculations to project out many years. All of this takes a lot of different skills and expertise, both in the general software development and business specific needs. I hope to do more architecture reviews in the future and cover these aspects.</p>
+
+<h2 id="whats-next">What’s next?</h2>
+
+<p>As of July 10th, CapFriendly is no longer public. They’ve closed the site and now are full time members of the Washington Capitals. Chris Patrick has been promoted to General Manager and needs to improve and change the product for the Caps Front Office. What might they do with the application? Here are a few things I’d suggest they take to make the best use of the software already created:</p>
+
+<ul>
+  <li>As a front office user, I want to securely access the site, so that it’s protected and I have access to add notes on players and teams. // SSO logins will protect this, train folks on how to use the backend for adding data as necessary.</li>
+  <li>As a scout, I want to be able to add scouting reports directly on each page, so that it can be one place. // Create a place on every page that lets the most recent notes be seen. Pivot the page from just being about to contract, to a one-stop shop.</li>
+  <li>As a data analyst, I want to have up-to-date stats, so that we make better decisions //  Use the integration framework to bring in data about each player, whether that’s continuing to pay for data from <a href="https://www.eliteprospects.com/">Elite Prospects</a> and <a href="https://evolving-hockey.com/">Evolving Hockey</a> or building it in-house.</li>
+</ul>
+
+<p>Ultimately the goal is to use CapFriendly like a salesperson might use Salesforce: It’s a one-stop shop for many people to collaborate and make decisions, all while having a single source of truth.</p>
+
+<h2 id="the-archive">The Archive</h2>
+
+<p>While CapFriendly is now offline for most of us, what’s next? First, <a href="https://puckpedia.com/">PuckPedia</a> has done a fantastic job of picking up the baton. But if you’re nostalgic for CapFriendy, need to double check some data, or just want to relive some of your Armchair GM teams, I’ve created a <a href="https://archive.org/details/capfriendly-warc-archive">WARC archive on the Internet Archive</a> that crawled the site shortly before the shut down.</p>
+
+<p>The important files:</p>
+<ul>
+  <li>capfriendly-full-crawl-2024-07-05.warc.gz - This is 44GB and contains all the forums. If it wasn’t captured here, it’s not going to be in any other archive. Crawled from July 5th to July 8th. (Over 2.5M web requests!)</li>
+  <li>capfriendly-short-crawl-no-forums-2024-07-09.warc.gz - This is 775MB and Is very lightweight. It has the teams and most of the players, but may be missing some data. I captured this on July 9th, right before the shutdown.</li>
+  <li>capfriendly-short-crawl-no-forums-2024-07-03.warc.gz - Crawled July 3rd after the free agent rush, and is 3GB.</li>
+</ul>
+
+<p>In order to view these files like the Wayback Machine, there are a few options:</p>
+
+<ul>
+  <li><a href="https://replayweb.page/">Replay Webpage</a> - Useful for the lightweight crawls: It is totally in-browser. Download the file, load it into the page, and then navigate to <code class="highlighter-rouge">https://www.capfriendly.com</code> when prompted.</li>
+  <li><a href="https://github.com/webrecorder/pywb">pywb</a> - Python library for capturing and serving archives. This is the ideal setup for researchers (or <em>cough</em> teams) - Download the 3 archives and run this as a server. To do that:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir cf-archive &amp;&amp; cd cf-archive
+$ python3 -m venv archive-venv
+$ source archive-venv/bin/activate
+$ pip install pywb
+// follow the instructions at https://pywb.readthedocs.io/en/latest/manual/usage.html#using-existing-web-archive-collections to setup the archives that you downloaded
+$ wayback
+</code></pre></div></div>
+
+<p>Then go to the server and search for the main URL - and then you’ll have it running locally!</p>
+
+<p><img src="/views/assets/img/IMG_0110.jpeg" alt="screenshot of PYWB running with the archive showing the capfriendly homepage as captured on July 9th" /></p>
+
+<h2 id="in-closing">In Closing</h2>
+
+<p>Hope this was useful, and I want to provide my congratulations to the Davis’s and (selfishly) I hope this means great things for the Washington Capitals. But I also share the bittersweet feelings that a public resource was lost. It must have been a difficult decision to shut down something that had been beloved by so many people. Hopefully this article can help people appreciate the hard work they did and revisit it if they so choose by checking out the archive.</p>
+
+<p>If you have any questions about this article, please reach out to me at <a href="mailto:questions@danny.page">my email</a> or my <a href="https://www.linkedin.com/in/danielwpage">LinkedIn</a>.</p>
+
+  </div>
+
+  <a class="u-url" href="/views/CapFriendly-Systems-Design" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/views/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+          <p style="margin-top: .4rem">Danny Page&#39;s articles, code snippets, and other things to store and share.</p>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/dannypage"><svg class="svg-icon"><use xlink:href="/views/assets/minima-social-icons.svg#github"></use></svg> <span class="username">dannypage</span></a></li><li><a href="https://www.twitter.com/dannypage"><svg class="svg-icon"><use xlink:href="/views/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">dannypage</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list"><li>Get in contact: <a class="u-email" href="mailto:daniel.w.page@gmail.com">daniel.w.page@gmail.com</a></li><li><a href="https://danny.page/">Danny Page's Portfolio
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
