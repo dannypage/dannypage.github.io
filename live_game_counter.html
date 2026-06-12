@@ -71,6 +71,22 @@
       }
 
       .updated-note { color: #777; font-size: 0.875rem; }
+
+      .match-list { margin-top: 0.5rem; max-width: 44rem; }
+      .match-list summary {
+        cursor: pointer;
+        color: #0074d9;
+        font-size: 0.875rem;
+        user-select: none;
+      }
+      .match-row {
+        padding: 0.4rem 0;
+        border-bottom: 1px solid #eee;
+        font-size: 0.875rem;
+      }
+      .match-row .teams { font-weight: bold; }
+      .match-row .meta { color: #777; }
+
     </style>
   </head>
   <body>
@@ -82,11 +98,19 @@
       <div class="counter-block">
         <div class="flip-counter" id="soccerCounter" aria-live="polite"></div>
         <p class="counter-label">professional soccer matches being played right now</p>
+        <details class="match-list">
+          <summary>Show the matches</summary>
+          <div id="soccerMatches"></div>
+        </details>
       </div>
 
       <div class="counter-block">
         <div class="flip-counter" id="cricketCounter" aria-live="polite"></div>
         <p class="counter-label">professional cricket matches being played right now</p>
+        <details class="match-list">
+          <summary>Show the matches</summary>
+          <div id="cricketMatches"></div>
+        </details>
       </div>
 
       <p class="updated-note" id="updatedNote">Loading live match data&hellip;</p>
@@ -159,47 +183,102 @@
           }
         }
 
-        function fetchSoccerCount() {
+        function fetchSoccerMatches() {
           var url = "https://webws.365scores.com/web/games/current/" +
             "?appTypeId=5&langId=1&timezoneName=UTC&sports=1&onlyLiveGames=true";
           return fetch(url)
             .then(function (r) { return r.json(); })
             .then(function (data) {
+              var countries = {};
+              (data.countries || []).forEach(function (c) { countries[c.id] = c.name; });
+              var competitions = {};
+              (data.competitions || []).forEach(function (c) { competitions[c.id] = c; });
+
               return (data.games || []).filter(function (g) {
                 return g.statusGroup === 3;
-              }).length;
+              }).map(function (g) {
+                var comp = competitions[g.competitionId] || {};
+                var country = countries[comp.countryId];
+                return {
+                  teams: g.homeCompetitor.name + " " + Math.round(g.homeCompetitor.score) +
+                    " – " + Math.round(g.awayCompetitor.score) + " " + g.awayCompetitor.name,
+                  meta: [g.gameTimeDisplay || g.statusText,
+                         g.competitionDisplayName + (country ? " (" + country + ")" : "")]
+                    .filter(Boolean).join(" · ")
+                };
+              });
             });
         }
 
-        function fetchCricketCount() {
+        function fetchCricketMatches() {
           var url = "https://site.web.api.espn.com/apis/v2/scoreboard/header?sport=cricket";
           return fetch(url)
             .then(function (r) { return r.json(); })
             .then(function (data) {
-              var count = 0;
+              var matches = [];
               (data.sports || []).forEach(function (sport) {
                 (sport.leagues || []).forEach(function (league) {
                   (league.events || []).forEach(function (event) {
-                    if (event.status === "in") count++;
+                    if (event.status !== "in") return;
+                    var hasScores = (event.competitors || []).some(function (c) { return c.score; });
+                    var scores = hasScores ? (event.competitors || []).map(function (c) {
+                      return c.abbreviation + (c.score ? " " + c.score : "");
+                    }).join(" v ") : "";
+                    var status = (event.fullStatus && event.fullStatus.summary) || event.summary;
+                    matches.push({
+                      teams: event.name,
+                      meta: [scores, status, league.name].filter(Boolean).join(" · ")
+                    });
                   });
                 });
               });
-              return count;
+              return matches;
             });
+        }
+
+        function renderMatches(container, matches) {
+          container.textContent = "";
+          matches.forEach(function (m) {
+            var row = document.createElement("div");
+            row.className = "match-row";
+            var teams = document.createElement("span");
+            teams.className = "teams";
+            teams.textContent = m.teams;
+            var meta = document.createElement("div");
+            meta.className = "meta";
+            meta.textContent = m.meta;
+            row.appendChild(teams);
+            row.appendChild(meta);
+            container.appendChild(row);
+          });
+          if (!matches.length) {
+            var none = document.createElement("div");
+            none.className = "match-row meta";
+            none.textContent = "No matches in progress.";
+            container.appendChild(none);
+          }
         }
 
         var soccerEl = document.getElementById("soccerCounter");
         var cricketEl = document.getElementById("cricketCounter");
+        var soccerListEl = document.getElementById("soccerMatches");
+        var cricketListEl = document.getElementById("cricketMatches");
         var noteEl = document.getElementById("updatedNote");
 
         setCounter(soccerEl, 0);
         setCounter(cricketEl, 0);
 
         function refresh() {
-          Promise.allSettled([fetchSoccerCount(), fetchCricketCount()])
+          Promise.allSettled([fetchSoccerMatches(), fetchCricketMatches()])
             .then(function (results) {
-              if (results[0].status === "fulfilled") setCounter(soccerEl, results[0].value);
-              if (results[1].status === "fulfilled") setCounter(cricketEl, results[1].value);
+              if (results[0].status === "fulfilled") {
+                setCounter(soccerEl, results[0].value.length);
+                renderMatches(soccerListEl, results[0].value);
+              }
+              if (results[1].status === "fulfilled") {
+                setCounter(cricketEl, results[1].value.length);
+                renderMatches(cricketListEl, results[1].value);
+              }
               if (results[0].status === "fulfilled" || results[1].status === "fulfilled") {
                 noteEl.textContent = "Last updated " + new Date().toLocaleTimeString();
               } else {
