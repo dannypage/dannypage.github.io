@@ -10,16 +10,207 @@
     <script type="text/javascript" src="/templates/ga.js"></script>
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
+    <style>
+      .counter-block { margin-bottom: 3rem; }
+      .counter-label { font-size: 1.25rem; color: #555; }
+
+      .flip-counter {
+        display: inline-flex;
+        gap: 6px;
+        perspective: 400px;
+      }
+      .flip-digit {
+        position: relative;
+        width: 64px;
+        height: 96px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 72px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .flip-digit .half {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background: #222;
+        backface-visibility: hidden;
+      }
+      .flip-digit .half span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 96px;
+        line-height: 96px;
+        text-align: center;
+      }
+      .flip-digit .top { top: 0; border-radius: 6px 6px 0 0; border-bottom: 1px solid #000; }
+      .flip-digit .top span { top: 0; }
+      .flip-digit .bottom { bottom: 0; border-radius: 0 0 6px 6px; }
+      .flip-digit .bottom span { bottom: 0; }
+
+      .flip-digit .flip-top,
+      .flip-digit .flip-bottom { z-index: 2; }
+      .flip-digit .flip-top {
+        transform-origin: bottom;
+        animation: flipTop 0.25s ease-in forwards;
+      }
+      .flip-digit .flip-bottom {
+        transform: rotateX(90deg);
+        transform-origin: top;
+        animation: flipBottom 0.25s ease-out 0.25s forwards;
+      }
+      @keyframes flipTop {
+        from { transform: rotateX(0deg); }
+        to   { transform: rotateX(-90deg); }
+      }
+      @keyframes flipBottom {
+        from { transform: rotateX(90deg); }
+        to   { transform: rotateX(0deg); }
+      }
+
+      .updated-note { color: #777; font-size: 0.875rem; }
+    </style>
   </head>
   <body>
     <div id="navHeader"></div>
 
-    <section class="container">
+    <section class="container px2 py2">
       <h1>Worldwide Live Game Counter</h1>
-        <p data-height="360" data-theme-id="18052" data-slug-hash="RWWwrz" data-default-tab="result" data-user="dannypage" class='codepen'>See the Pen <a href='http://codepen.io/dannypage/pen/RWWwrz/'>Soccer Game Counter</a> by Danny Page (<a href='http://codepen.io/dannypage'>@dannypage</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+      <div class="counter-block">
+        <div class="flip-counter" id="soccerCounter" aria-live="polite"></div>
+        <p class="counter-label">professional soccer matches being played right now</p>
+      </div>
+
+      <div class="counter-block">
+        <div class="flip-counter" id="cricketCounter" aria-live="polite"></div>
+        <p class="counter-label">professional cricket matches being played right now</p>
+      </div>
+
+      <p class="updated-note" id="updatedNote">Loading live match data&hellip;</p>
+      <p class="updated-note">
+        Soccer data from <a href="https://www.365scores.com/">365Scores</a>,
+        cricket data from <a href="https://www.espncricinfo.com/">ESPNcricinfo</a>.
+        Updates every minute.
+      </p>
     </section>
 
     <div id="navFooter"></div>
+
+    <script>
+      (function () {
+        var MIN_DIGITS = 3;
+        var REFRESH_MS = 60 * 1000;
+        var FLIP_MS = 500;
+
+        function makeHalf(className, digit) {
+          var half = document.createElement("div");
+          half.className = "half " + className;
+          var span = document.createElement("span");
+          span.textContent = digit;
+          half.appendChild(span);
+          return half;
+        }
+
+        function buildDigit(digit) {
+          var el = document.createElement("div");
+          el.className = "flip-digit";
+          el.dataset.value = digit;
+          el.appendChild(makeHalf("top", digit));
+          el.appendChild(makeHalf("bottom", digit));
+          return el;
+        }
+
+        function flipDigit(el, digit) {
+          if (el.dataset.value === digit) return;
+          var oldDigit = el.dataset.value;
+          el.dataset.value = digit;
+
+          // Static faces: top shows the new digit, bottom keeps the old one
+          // until the animated bottom flap lands on it.
+          el.querySelector(".top span").textContent = digit;
+
+          var flipTop = makeHalf("top flip-top", oldDigit);
+          var flipBottom = makeHalf("bottom flip-bottom", digit);
+          el.appendChild(flipTop);
+          el.appendChild(flipBottom);
+
+          setTimeout(function () {
+            el.querySelector(".bottom span").textContent = digit;
+            flipTop.remove();
+            flipBottom.remove();
+          }, FLIP_MS);
+        }
+
+        function setCounter(container, value) {
+          var digits = String(value);
+          while (digits.length < MIN_DIGITS) digits = "0" + digits;
+
+          while (container.children.length > digits.length) {
+            container.removeChild(container.firstChild);
+          }
+          while (container.children.length < digits.length) {
+            container.insertBefore(buildDigit("0"), container.firstChild);
+          }
+          for (var i = 0; i < digits.length; i++) {
+            flipDigit(container.children[i], digits[i]);
+          }
+        }
+
+        function fetchSoccerCount() {
+          var url = "https://webws.365scores.com/web/games/current/" +
+            "?appTypeId=5&langId=1&timezoneName=UTC&sports=1&onlyLiveGames=true";
+          return fetch(url)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              return (data.games || []).filter(function (g) {
+                return g.statusGroup === 3;
+              }).length;
+            });
+        }
+
+        function fetchCricketCount() {
+          var url = "https://site.web.api.espn.com/apis/v2/scoreboard/header?sport=cricket";
+          return fetch(url)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              var count = 0;
+              (data.sports || []).forEach(function (sport) {
+                (sport.leagues || []).forEach(function (league) {
+                  (league.events || []).forEach(function (event) {
+                    if (event.status === "in") count++;
+                  });
+                });
+              });
+              return count;
+            });
+        }
+
+        var soccerEl = document.getElementById("soccerCounter");
+        var cricketEl = document.getElementById("cricketCounter");
+        var noteEl = document.getElementById("updatedNote");
+
+        setCounter(soccerEl, 0);
+        setCounter(cricketEl, 0);
+
+        function refresh() {
+          Promise.allSettled([fetchSoccerCount(), fetchCricketCount()])
+            .then(function (results) {
+              if (results[0].status === "fulfilled") setCounter(soccerEl, results[0].value);
+              if (results[1].status === "fulfilled") setCounter(cricketEl, results[1].value);
+              if (results[0].status === "fulfilled" || results[1].status === "fulfilled") {
+                noteEl.textContent = "Last updated " + new Date().toLocaleTimeString();
+              } else {
+                noteEl.textContent = "Could not reach the live data sources. Retrying in a minute.";
+              }
+            });
+        }
+
+        refresh();
+        setInterval(refresh, REFRESH_MS);
+      })();
+    </script>
   </body>
 </html>
