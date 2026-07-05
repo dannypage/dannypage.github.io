@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fireworks vs. Air Quality: July 4th 2026 in time-lapse</title>
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<meta property="og:title" content="Fireworks vs. Air Quality: July 4th 2026 in time-lapse">
+<meta property="og:description" content="Time-lapses of the PurpleAir air-quality map across six US locations, from 8 PM ET on July 4th through the next morning, plus how the whole thing was built.">
+<meta property="og:type" content="article">
+<style>
+  :root { --ink:#1a1a1a; --muted:#8a8580; --paper:#fffff8; }
+  html { font-size:15px; }
+  body { background:var(--paper); color:var(--ink); margin:0;
+         font-family: et-book, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+         line-height:1.5; }
+  .wrap { max-width:1100px; margin:0 auto; padding:3.5rem 2rem 6rem; }
+  .col { max-width:680px; }
+  a { color:#3a6ea5; }
+  h1 { font-weight:400; font-size:2.4rem; line-height:1.1; margin:0 0 .4rem; }
+  h2 { font-weight:400; font-size:1.45rem; margin:2.8rem 0 .4rem; }
+  h3 { font-weight:400; font-size:1.12rem; margin:1.8rem 0 .2rem; }
+  .sub { color:var(--muted); font-style:italic; font-size:1.05rem; margin:0 0 1.6rem; }
+  p { font-size:1.05rem; }
+  .lead { font-size:1.18rem; line-height:1.55; }
+  figure { margin:0; }
+  figcaption { color:var(--muted); font-size:.92rem; font-style:italic; max-width:680px; margin:.4rem 0 0; }
+  .legend { font-size:.85rem; color:#444; margin:.6rem 0 .2rem; }
+  .chip { display:inline-block; margin-right:1.1rem; white-space:nowrap; }
+  .sw { display:inline-block; width:.8rem; height:.8rem; border-radius:2px; vertical-align:-1px; margin-right:.3rem; }
+  .video { margin:1.6rem 0 2.2rem; max-width:600px; }
+  .video h3 { margin-top:0; }
+  .bluesky-embed { margin:0 !important; }
+  .callout { border-left:3px solid #3a6ea5; padding:.1rem 0 .1rem 1rem; margin:1.4rem 0; color:#444; }
+  .pipeline { list-style:none; padding:0; margin:1rem 0; max-width:680px; }
+  .pipeline li { padding:.55rem 0; border-bottom:1px solid #efece5; font-size:1rem; }
+  .pipeline code { font-weight:700; }
+  code { font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace; font-size:.86em;
+         background:#f3ecdc; padding:.05rem .3rem; border-radius:3px; }
+  pre { background:#f7f2e7; border:1px solid #e7e0d2; border-radius:4px; padding:.9rem 1rem;
+        overflow-x:auto; font-size:.82rem; line-height:1.45; max-width:680px; }
+  pre code { background:none; padding:0; }
+  p.footnote { font-size:.85rem; color:var(--muted); font-style:italic; max-width:600px; margin:.4rem 0 0; }
+</style></head>
+<body><div class="wrap"><div class="col">
+
+<p class="sub"><a href="https://danny.page">Back to Home</a></p>
+
+<h1>Fireworks vs. Air Quality: July 4th 2026 in time-lapse</h1>
+<p>By <a href="https://bsky.app/profile/danny.page">Danny Page</a></p>
+
+<p class="lead">Every July 4th, millions of fireworks push a wave of particulate pollution into the air
+over a few hours. <a href="https://map.purpleair.com/">PurpleAir</a>'s sensor network makes that wave
+visible: thousands of low-cost sensors reporting AQI in near real time. I pointed a headless browser at
+the map, screenshotted six locations every two minutes overnight, and stitched the frames into
+time-lapses. The dots go green to yellow to orange to red as the smoke settles, then drain back to green
+by morning.</p>
+
+<div class="legend"><b>PurpleAir US EPA AQI scale:</b><br>
+<span class="chip"><span class="sw" style="background:#4dd14d"></span>0–50 Good</span><span class="chip"><span class="sw" style="background:#f5e14d"></span>51–100 Moderate</span><span class="chip"><span class="sw" style="background:#f5a623"></span>101–150 Unhealthy (sensitive)</span><span class="chip"><span class="sw" style="background:#e0442e"></span>151–200 Unhealthy</span><span class="chip"><span class="sw" style="background:#8f3f97"></span>201–300 Very unhealthy</span><span class="chip"><span class="sw" style="background:#7e2a2a"></span>301+ Hazardous</span></div>
+
+<h2>The time-lapses</h2>
+
+<p>Each clip runs from roughly 8 PM ET on the 4th to 9:30 AM ET on the 5th. The shape is the same
+everywhere: clean air, a sharp spike once the shows start, then a recovery whose speed comes down almost
+entirely to local wind. Where the air sits still, the smoke hangs around for hours.</p>
+
+<div class="video">
+  <h3>US mainland</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvptfkf7k2j" data-bluesky-cid="bafyreiccwkkv2be6ymip47ekrne6n74erhfixthu7n7o55p3bwiraw6iti">
+    <p lang="en">July 4th 2026 Fireworks vs AQI videos thread (8 PM ET to 9:30 AM ET). First up, US Mainland.<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvptfkf7k2j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<div class="video">
+  <h3>Washington, DC</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvpxmon6s2j" data-bluesky-cid="bafyreidsiaen6jhdzc7jf3kjm3xyypgs23xk4ugnwapbzlfadnabhcet74">
+    <p lang="en">Here's the DC Fireworks timelapse. Biggest thing that stands out to me is that the worst numbers are a few hours after the big show as it seems to settle down to the ground and not get swept out. Again, N95 masks!<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvpxmon6s2j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<div class="video">
+  <h3>New York City</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvpzcqfq22j" data-bluesky-cid="bafyreifcjfkraukql63l4eev5d7uh74ovxqq4aviwl7usq7uwfmsydlpmi">
+    <p lang="en">NYC's Fireworks timelapse. I know they had fireworks, but I guess the wind swept out the smoke quickly?<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvpzcqfq22j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<div class="video">
+  <h3>Chicago</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvq3qpcnc2j" data-bluesky-cid="bafyreigvjclyrkdv7jjwlwiz7yqkr26jc4l2k2xzcve5cyvmmjr6ag55j4">
+    <p lang="en">Chicago's Fireworks timelapse - lingering effects in the suburbs, the rest being blown out to the lake.<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvq3qpcnc2j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<div class="video">
+  <h3>San Francisco / San Jose Bay Area</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvq6djyvs2j" data-bluesky-cid="bafyreibjmiccbjr7n7budbiipegf5fgs5tq3avbhpffk2izharyqiujesy">
+    <p lang="en">San Francisco / San Jose Bay Area, plus a dash of central California Fireworks timelapse. Unlike previous years, it cleared out quick. I would hope they'd do less of the fireworks, but maybe everyone is stocked up on N95's all year round thanks to wildfires...<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvq6djyvs2j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<div class="video">
+  <h3>Seattle</h3>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:5tlwm4ujvnudrzndqubefgiu/app.bsky.feed.post/3mpvqbpl4tk2j" data-bluesky-cid="bafyreidjkolvkfmwvhmvdskyw4f5v7m2j7wn4tf67ewomib2b7djrt2boy">
+    <p lang="en">And finally, the Seattle's Fireworks timelapse. Clean perfect air... until the fireworks :(<br><br><a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu/post/3mpvqbpl4tk2j?ref_src=embed">View on Bluesky</a></p>
+    &mdash; Danny Page (<a href="https://bsky.app/profile/did:plc:5tlwm4ujvnudrzndqubefgiu?ref_src=embed">@danny.page</a>)
+  </blockquote>
+</div>
+
+<p class="footnote">The full thread, including a St. Louis cameo, lives
+<a href="https://bsky.app/profile/danny.page/post/3mpvptfkf7k2j">on Bluesky</a>.</p>
+
+<h2>How it's done</h2>
+
+<p>The whole thing is a small Python and shell pipeline driven by cron on a Mac. There is no PurpleAir
+API key involved. It drives a real headless browser against the public map and screenshots it, which
+sidesteps rate limits and captures exactly what a person would see.</p>
+
+<ul class="pipeline">
+  <li><code>scraper.sh</code> is the cron entry point. It activates the virtualenv and runs the capture script.</li>
+  <li><code>capture.py</code> reads the location list and, for each one, opens the PurpleAir map in headless
+  Chromium at 1280&times;800, waits for real sensor data, strips the cookie banner and "get a sensor" promo,
+  and saves a PNG into <code>images/&lt;year&gt;/&lt;name&gt;/</code>.</li>
+  <li><code>locations.conf</code> lists the capture targets as <code>name|zoom/lat/lon</code>. Those become
+  the URL hash on <code>map.purpleair.com</code>.</li>
+  <li><code>compile.sh</code> stitches each location's frames into an mp4 with ffmpeg, in chronological
+  order (the filenames embed a sortable timestamp).</li>
+  <li><code>crontab.txt</code> is the schedule: capture every two minutes across the holiday window, then
+  one compile pass the next afternoon.</li>
+</ul>
+
+<h3>The part that actually matters: waiting for the data</h3>
+
+<p>The naive version of this, "load the page, wait five seconds, screenshot," produces garbage. Half the
+frames come out with no dots because the sensor fetch hadn't finished, or because headless Chromium had
+throttled the "backgrounded" tab and delayed everything. Two fixes make the capture reliable.</p>
+
+<p>First, wait for the actual network response instead of a fixed timer. PurpleAir loads its dots from a
+<code>/v1/sensors</code> request, so the script blocks on that response before continuing, then adds a
+short fixed settle for the map to paint the dots to the canvas.</p>
+
+<pre><code>with page.expect_response(is_sensors_response,
+                          timeout=SENSORS_TIMEOUT_MS):
+    page.goto(url)
+page.wait_for_timeout(PAINT_SETTLE_MS)   # let mapbox paint the dots</code></pre>
+
+<p>Second, disable the headless throttling that otherwise stalls that fetch unpredictably:</p>
+
+<pre><code>ANTI_THROTTLE = [
+    "--disable-background-timer-throttling",
+    "--disable-renderer-backgrounding",
+    "--disable-backgrounding-occluded-windows",
+]</code></pre>
+
+<p>Data arrival is the variable part, so it gets an explicit wait. The paint step is CPU-bound and
+consistent, so a fixed delay is fine there. If the sensor response never shows up within the timeout, the
+script falls back to a plain settle and screenshots anyway, so every run still produces a frame.</p>
+
+<div class="callout">At a two-minute cadence, one real hour becomes 30 frames. Compiled at 10 fps, that
+hour plays back in three seconds, which is why a full overnight window fits into a clip you can watch in a
+minute.</div>
+
+<h3>Bonus: 2024 Bay Area</h3>
+<p>I ran an earlier version of this in 2024 for the Bay Area. That year the smoke hung around far longer
+than 2026 did, a useful contrast to the quick clearout above.</p>
+<figure class="video">
+  <video controls preload="metadata" width="100%" style="border-radius:4px;" src="videos/bay-area-2024.mp4"></video>
+</figure>
+
+<p class="footnote">Source and setup notes are in the project's README. This page mirrors the
+<a href="https://bsky.app/profile/danny.page/post/3mpvptfkf7k2j">Bluesky thread</a> so the videos live in
+one place.</p>
+
+</div></div>
+<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+</body></html>
