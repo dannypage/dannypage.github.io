@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metro Diorama</title>
+  <meta name="description" content="An animated pixel-art diorama of the Ronald Reagan Washington National Airport Metro station on a rainy day. Loops seamlessly for lofi streams.">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; background: #0b0d14; overflow: hidden; }
+    body { display: grid; place-items: center; }
+    canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+    #hud {
+      position: fixed; left: 12px; bottom: 12px; margin: 0; padding: 8px 10px;
+      font: 12px/1.5 ui-monospace, Menlo, Consolas, monospace; color: #d9dde5;
+      background: rgba(10, 12, 18, 0.72); border-radius: 6px; white-space: pre-wrap; max-width: calc(100vw - 48px);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="view" width="480" height="270" aria-label="Pixel-art Metro platform at Reagan National Airport in the rain"></canvas>
+  <pre id="hud" hidden></pre>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

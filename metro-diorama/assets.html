@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diorama Asset Workshop</title>
+  <meta name="description" content="Every generated sprite of the Metro diorama, exportable as PNG for hand edits and overrides.">
+  <style>
+    :root {
+      --bg: #10131a; --panel: #181c26; --line: #2a3040; --text: #dfe3ea; --muted: #8d95a5; --accent: #ffb454;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; }
+    header { padding: 20px 16px 8px; max-width: 1200px; margin: 0 auto; }
+    h1 { margin: 0 0 4px; font-size: 20px; }
+    p { margin: 0 0 8px; color: var(--muted); max-width: 70ch; }
+    code { color: var(--accent); }
+    form { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; padding: 12px 16px; max-width: 1200px; margin: 0 auto; }
+    label { display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+    input, select, button { font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+    input[type=text] { width: 220px; }
+    button { cursor: pointer; }
+    button.primary { background: #3a2a14; border-color: #6b4a1e; color: var(--accent); }
+    main { max-width: 1200px; margin: 0 auto; padding: 8px 16px 40px; }
+    h2 { font-size: 15px; margin: 24px 0 10px; color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; overflow: hidden; }
+    .card.wide { grid-column: 1 / -1; }
+    .card h3 { margin: 0 0 6px; font-size: 13px; display: flex; justify-content: space-between; gap: 8px; }
+    .card h3 span { color: var(--muted); font-weight: normal; }
+    .stage { overflow-x: auto; background: repeating-conic-gradient(#1c2130 0 25%, #151924 0 50%) 0 0 / 12px 12px; border-radius: 4px; padding: 6px; }
+    .stage canvas { image-rendering: pixelated; display: block; }
+    .card button { margin-top: 8px; font-size: 12px; padding: 4px 8px; }
+    .people { display: flex; flex-wrap: wrap; gap: 6px; }
+    #preview { width: 100%; max-width: 960px; image-rendering: pixelated; border-radius: 6px; display: block; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Diorama Asset Workshop</h1>
+    <p>Every sprite in the <a href="index.html">Metro diorama</a> is generated from code in <code>src/assets/</code> using the palette in <code>src/palette.js</code>.
+      Download any sprite, repaint it in Aseprite or Photoshop at the same size, save it to <code>overrides/</code>, and list it in
+      <code>config.js → overrides</code> (e.g. <code>{ tower: 'overrides/tower.png' }</code>). The scene uses your PNG instead.</p>
+  </header>
+  <form id="controls">
+    <label>Season <select id="season"></select></label>
+    <label>Station line 1 <input type="text" id="st1"></label>
+    <label>Station line 2 <input type="text" id="st2"></label>
+    <label>Line A destination <input type="text" id="d0"></label>
+    <label>Line B destination <input type="text" id="d1"></label>
+    <label>Seed <input type="number" id="seed" style="width:100px"></label>
+    <button type="button" class="primary" id="apply">Rebuild</button>
+    <button type="button" id="open">Open scene with these settings</button>
+  </form>
+  <main>
+    <h2>Composed frame</h2>
+    <canvas id="preview" width="480" height="270"></canvas>
+    <h2>Scenery</h2>
+    <div class="grid" id="scenery"></div>
+    <h2>Train</h2>
+    <div class="grid" id="train"></div>
+    <h2>Vehicles</h2>
+    <div class="grid" id="vehicles"></div>
+    <h2>Commuters (procedural; 3 random specs × every pose)</h2>
+    <div class="card wide"><div class="stage people" id="people"></div><button type="button" id="reroll">Re-roll commuters</button></div>
+  </main>
+  <script type="module">
+    import baseConfig from './config.js';
+    import { makePalette, SEASON_NAMES, seasonLabel } from './src/palette.js';
+    import { buildAssets } from './src/assets/index.js';
+    import { drawPerson, randomSpec } from './src/assets/people.js';
+    import { createScene } from './src/scene.js';
+
+    const $ = (id) => document.getElementById(id);
+    const q = new URLSearchParams(location.search);
+    const cfg = structuredClone(baseConfig);
+    cfg.mode = 'loop';
+    if (q.has('season')) cfg.season = q.get('season');
+    for (const s of SEASON_NAMES) $('season').add(new Option(seasonLabel(s), s, false, s === cfg.season));
+    $('st1').value = cfg.text.station[0]; $('st2').value = cfg.text.station[1] || '';
+    $('d0').value = cfg.text.lines[0].dest; $('d1').value = cfg.text.lines[1].dest;
+    $('seed').value = cfg.seed;
+
+    const scale = (a) => (a.w > 300 ? 2 : a.w > 60 ? 3 : 5);
+
+    function card(parent, name, a) {
+      const div = document.createElement('div');
+      div.className = 'card' + (a.w > 300 ? ' wide' : '');
+      const s = scale(a);
+      div.innerHTML = `<h3>${name}<span>${a.w}×${a.h}${a.x || a.y ? ` @ ${a.x},${a.y}` : ''}</span></h3>`;
+      const stage = document.createElement('div'); stage.className = 'stage';
+      const c = document.createElement('canvas'); c.width = a.w * s; c.height = a.h * s;
+      const g = c.getContext('2d'); g.imageSmoothingEnabled = false; g.drawImage(a.canvas, 0, 0, c.width, c.height);
+      stage.append(c); div.append(stage);
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = `Download ${name}.png (1×)`;
+      b.onclick = () => { const l = document.createElement('a'); l.href = a.canvas.toDataURL('image/png'); l.download = `${name}.png`; l.click(); };
+      div.append(b);
+      parent.append(div);
+    }
+
+    let palette;
+    function people(seedBase) {
+      const el = $('people'); el.innerHTML = '';
+      for (let i = 0; i < 3; i++) {
+        const spec = randomSpec(palette, seedBase, 'workshop', i);
+        const poses = [['back', 0, {}], ['back', 1, { phone: true }], ['front', 0, { walk: true }], ['front', 1, { walk: true }],
+          ['side', 0, { walk: true }], ['side', 1, { walk: true }], ['side', 2, { walk: true }], ['side', 3, { walk: true }], ['side', 0, { phone: true }]];
+        for (const [pose, f, o] of poses) {
+          const px = drawPerson(palette, spec, pose, f, o);
+          const c = document.createElement('canvas'); c.width = px.w * 4; c.height = px.h * 4;
+          const g = c.getContext('2d'); g.imageSmoothingEnabled = false; g.drawImage(px.toCanvas(), 0, 0, c.width, c.height);
+          c.title = `${pose} frame ${f}`;
+          el.append(c);
+        }
+      }
+    }
+
+    async function build() {
+      cfg.season = $('season').value;
+      cfg.seed = Number($('seed').value) || 1;
+      cfg.text.station = [$('st1').value, $('st2').value].filter(Boolean);
+      cfg.text.lines.forEach((l, i) => { const d = $('d' + i).value; if (d !== l.dest) Object.assign(l, { dest: d, short: d.toUpperCase().replace(/^DOWNTOWN /, '').slice(0, 12) }); });
+      palette = makePalette(cfg.season);
+      const A = await buildAssets(palette, cfg);
+      for (const id of ['scenery', 'train', 'vehicles']) $(id).innerHTML = '';
+      for (const [name, a] of Object.entries(A)) {
+        if (!a.canvas) continue;
+        const group = name.startsWith('train') ? 'train' : name.startsWith('vehicle') || name === 'plane' ? 'vehicles' : 'scenery';
+        card($(group), name, a);
+      }
+      people(cfg.seed);
+      const scene = createScene(cfg, palette, A);
+      const pctx = $('preview').getContext('2d');
+      scene.render(pctx, 36);
+    }
+    $('apply').onclick = build;
+    $('season').onchange = build;
+    $('reroll').onclick = () => people(Math.floor(Math.random() * 1e6));
+    $('open').onclick = () => {
+      const u = new URL('index.html', location.href);
+      u.searchParams.set('season', $('season').value);
+      u.searchParams.set('seed', $('seed').value);
+      u.searchParams.set('station', [$('st1').value, $('st2').value].join('|'));
+      u.searchParams.set('dests', [$('d0').value, $('d1').value].join('|'));
+      window.open(u, '_blank');
+    };
+    build();
+  </script>
+</body>
+</html>
