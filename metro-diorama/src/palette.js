@@ -68,7 +68,7 @@ const SEASONS = {
   },
   storm: {
     label: 'Heavy storm',
-    weather: 'rain', rainDensity: 1.8, snowCover: false,
+    weather: 'rain', rainDensity: 1.8, snowCover: false, lightning: true,
     sky: ['#2c313d', '#333946', '#3b4251', '#454c5c', '#515969', '#5f6778', '#6f7889'],
     haze: '#6f7889', cloudDark: '#2d333f', cloudMid: '#404755', cloudLight: '#5d6576',
   },

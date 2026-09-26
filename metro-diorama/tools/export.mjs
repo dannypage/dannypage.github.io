@@ -70,7 +70,7 @@ console.log(`loop ${period}s · rendering ${total} frames @ ${fps}fps → ${W}x$
 function ffmpegArgs(outFile) {
   const input = ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', '480x270', '-r', String(fps), '-i', '-'];
   const up = `scale=${W}:${H}:flags=neighbor`;
-  if (args.format === 'mp4') return [...input, '-vf', up, '-c:v', 'libx264', '-preset', 'slow', '-tune', 'animation', '-crf', '14', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', outFile];
+  if (args.format === 'mp4') return [...input, '-vf', up, '-c:v', 'libx264', '-preset', 'slow', '-tune', 'animation', '-crf', '16', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', outFile];
   if (args.format === 'webm') return [...input, '-vf', up, '-c:v', 'libvpx-vp9', '-b:v', '0', '-crf', '20', '-row-mt', '1', outFile];
   if (args.format === 'gif') return [...input, '-vf', `${up},split[a][b];[a]palettegen=max_colors=256:stats_mode=full[p];[b][p]paletteuse=dither=none`, '-loop', '0', outFile];
   throw new Error('unknown format ' + args.format);

@@ -2,8 +2,7 @@
 // and sprites are drawn on demand per pose/frame and cached.
 //
 // Poses:  back (waiting, facing the train), front (stepping off a train),
-//         side (walking, facing right; the scene mirrors for left),
-//         sit (on the bench, seen from behind).
+//         side (walking, facing right; the scene mirrors for left).
 import { Pix, mix, makeCanvas } from '../core/pixel.js';
 import { rng } from '../core/rng.js';
 
@@ -255,24 +254,12 @@ function drawSide(px, p, s, g, cx, frame, opts = {}) {
   if (s.headphones) { px.hline(hx0, hx0 + 3, Y(-1 + (s.hat ? 0 : 1)), '#15151a'); px.rect(hx0 + 1, Y(2), 2, 2, '#15151a'); }
 }
 
-// Seated on the bench, seen from behind (lower body hidden by the backrest).
-function drawSit(px, p, s, g, cx, frame, opts) {
-  const drop = Math.round(s.h * 0.3);
-  const tmp = new Pix(px.w, px.h);
-  drawUpright(tmp, p, { ...s, bag: s.bag === 'backpack' ? 'none' : s.bag === 'suitcase' ? 'none' : s.bag }, g, cx, 'back', frame, { ...opts, noCase: true });
-  for (let y = 0; y < px.h - drop; y++) for (let x = 0; x < px.w; x++) {
-    const c = tmp.get(x, y);
-    if (c && c[3]) px.set(x, y + drop, c);
-  }
-}
-
 function SPR_H(s) { return s.h + 4; }
 
 export function drawPerson(p, s, pose, frame, opts = {}) {
   const px = new Pix(SPR_W, SPR_H(s));
   const g = geom(s);
   if (pose === 'side') drawSide(px, p, s, g, ANCHOR_X, frame, opts);
-  else if (pose === 'sit') drawSit(px, p, s, g, ANCHOR_X, frame, opts);
   else drawUpright(px, p, s, g, ANCHOR_X, pose, frame, { ...opts, bob: opts.walk ? 0 : frame % 2 });
   // soft dark outline for readability against busy backgrounds
   px.outline('#0e10168c');

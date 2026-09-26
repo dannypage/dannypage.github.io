@@ -82,7 +82,8 @@ export function createScene(cfg, p, A) {
     else if (tt < tStop + lane.stop - ease) { x = lane.stopX; stopped = true; }
     else if (tt < tStop + lane.stop) { const r = tt - (tStop + lane.stop - ease); x = lane.stopX + (v * r * r) / (2 * ease); stopped = true; }
     else x = lane.stopX + v * ease / 2 + v * (tt - tStop - lane.stop);
-    return { x, v, lapIdx, stopped: stopped || braking };
+    const stopFrac = tt >= tStop && tt < tStop + lane.stop ? (tt - tStop) / lane.stop : -1;
+    return { x, v, lapIdx, stopped: stopped || braking, stopFrac };
   }
 
   // --- static light overlays ---------------------------------------------------
@@ -135,6 +136,7 @@ export function createScene(cfg, p, A) {
     drawTraffic(ctx, t);
     const deck = A.deck;
     ctx.drawImage(deck.canvas, 0, deck.y);
+    drawDeckWalkers(ctx, t);
     for (let x = 44; x < W; x += 122) glow(ctx, x - 5, deck.y + 3, 10, p.lamp, 0.35, 3, 0.8);
     drawLowerRoad(ctx, t);
 
@@ -173,6 +175,16 @@ export function createScene(cfg, p, A) {
 
     ctx.globalAlpha = 1;
     ctx.drawImage(vignette, 0, 0);
+    if (p.lightning) {
+      // a few flashes per loop, each a quick double flicker
+      for (const at of [37, 101, 158]) {
+        const d = t - at;
+        if (d >= 0 && d < 0.5) {
+          const a = d < 0.08 ? 0.28 : d > 0.18 && d < 0.26 ? 0.18 : 0;
+          if (a) { ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = rgba('#c9d6ff', a); ctx.fillRect(0, 0, W, L.platformEdge); ctx.globalCompositeOperation = 'source-over'; }
+        }
+      }
+    }
     ctx.globalAlpha = 1;
   }
 
@@ -225,6 +237,12 @@ export function createScene(cfg, p, A) {
         if ((kind === 'bus' || kind === 'shuttle') && pos.stopped && Math.floor(t * 1.6) % 2 === 0) {
           glow(ctx, x + 1, y + 12, 3, p.led, 0.7, 2); glow(ctx, x + a.w - 2, y + 12, 3, p.led, 0.7, 2);
         }
+        // a traveller with an umbrella dashes to the waiting car and hops in
+        if (pos.stopFrac > 0.1 && pos.stopFrac < 0.75) {
+          const f = (pos.stopFrac - 0.1) / 0.55;
+          const ux = Math.round(x + a.w + 26 - f * 30), uy = L.deckTop - 6;
+          umbrella(ctx, ux, uy, r.pick(umbrellaColors), f > 0.9 ? 1 - (f - 0.9) * 10 : 1, t);
+        }
         if (kind === 'bus' || kind === 'shuttle') {
           // scrolling LED destination
           const msg = kind === 'bus' ? 'AIRPORT EXPRESS' : cfg.text.shuttle;
@@ -232,6 +250,33 @@ export function createScene(cfg, p, A) {
         }
       }
     }
+  }
+
+  const umbrellaColors = ['#1c1f28', '#b83a3a', '#d9a13a', '#2f4a6a', '#3a6a4a', '#6b2a6a'];
+  function umbrella(ctx, x, y, col, alpha = 1, t = 0) {
+    ctx.globalAlpha = alpha * 0.9;
+    ctx.fillStyle = col;
+    ctx.fillRect(x - 2, y, 5, 1); ctx.fillRect(x - 3, y + 1, 7, 1);
+    ctx.fillStyle = mix(col, p.lamp, 0.25); ctx.fillRect(x - 1, y, 2, 1);
+    ctx.fillStyle = p.c2; ctx.fillRect(x, y + 2, 1, 3);
+    ctx.fillStyle = p.c3; ctx.fillRect(x - 1, y + 3, 2, 3);
+    ctx.globalAlpha = 1;
+  }
+
+  // travellers under umbrellas walking the departures curb
+  const deckWalkers = Array.from({ length: 5 }, (_, i) => ({
+    dir: h01('dw', i) < 0.5 ? 1 : -1, n: 2 + (i % 3), ph: h01('dwp', i), col: umbrellaColors[i % umbrellaColors.length],
+  }));
+  function drawDeckWalkers(ctx, t) {
+    const len = W + 40;
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, L.deckTop); ctx.clip();
+    for (const w of deckWalkers) {
+      const u = ((w.n * t) / P + w.ph) % 1;
+      const x = w.dir > 0 ? -20 + u * len : W + 20 - u * len;
+      const bob = Math.floor(t * 4 + w.ph * 8) % 2;
+      umbrella(ctx, Math.round(x), L.deckTop - 5 - bob, w.col);
+    }
+    ctx.restore();
   }
 
   function drawLowerRoad(ctx, t) {

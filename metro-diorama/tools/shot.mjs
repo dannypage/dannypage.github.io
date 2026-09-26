@@ -38,19 +38,20 @@ page.on('pageerror', (e) => console.log('[pageerror]', e.message));
 await page.goto(`http://localhost:${port}/index.html?${params}`);
 await page.waitForFunction(() => window.diorama && window.diorama.ready, null, { timeout: 60000 });
 if (sheet) {
-  const url = await page.evaluate(async ([times, s, cols]) => {
-    const W = 480, H = 270, rows = Math.ceil(times.length / cols);
+  const url = await page.evaluate(async ([times, s, cols, crop]) => {
+    const [cx, cy, W, H] = crop ? crop.split(':').map(Number) : [0, 0, 480, 270];
+    const rows = Math.ceil(times.length / cols);
     const c = document.createElement('canvas'); c.width = W * s * cols; c.height = (H * s + 12) * rows;
     const g = c.getContext('2d'); g.imageSmoothingEnabled = false; g.fillStyle = '#000'; g.fillRect(0, 0, c.width, c.height);
     for (let i = 0; i < times.length; i++) {
       const im = new Image();
       await new Promise((r) => { im.onload = r; im.src = window.diorama.frameDataURL(times[i], 1); });
       const x = (i % cols) * W * s, y = Math.floor(i / cols) * (H * s + 12);
-      g.drawImage(im, x, y + 12, W * s, H * s);
+      g.drawImage(im, cx, cy, W, H, x, y + 12, W * s, H * s);
       g.fillStyle = '#fff'; g.font = '11px monospace'; g.fillText('t=' + times[i], x + 4, y + 10);
     }
     return c.toDataURL();
-  }, [times, Number(scale), Number(sheet)]);
+  }, [times, Number(scale), Number(sheet), crop]);
   fs.writeFileSync(out, Buffer.from(url.split(',')[1], 'base64'));
   console.log('wrote sheet', out);
   await browser.close(); server.close(); process.exit(0);
