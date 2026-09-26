@@ -48,8 +48,10 @@ of cycles per loop, so the seam can't be seen.
 
 Other options: `--season snow`, `--format webm|gif|frames`, `--scale 8` (4K),
 `--fps 24`, `--seed 42`, `--seconds 10` (quick test), `--ffmpeg /path/to/ffmpeg`.
-The long file is big because rain is high-frequency detail; raise `-crf` in
-`export.mjs` if you need it smaller. YouTube re-encodes anyway, so uploading
+At the default CRF 16 the 3-minute loop is about 54 MB, so 10 hours is about 11 GB,
+mostly because rain is fine high-frequency detail. Raise `-crf` in `export.mjs`
+if you need it smaller. Rendering runs at about 20 frames/s, so one loop takes
+about 4.5 minutes. YouTube re-encodes anyway, so uploading
 the 3-minute loop and looping it in an editor also works.
 
 ## How it's put together
